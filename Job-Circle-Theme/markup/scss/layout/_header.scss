@@ -1,0 +1,67 @@
+.header {
+    font-size: 15px;
+    z-index: 9;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 13px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 222px;
+
+        @include media-breakpoint-up(lg) {
+            width: 155px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 200px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 222px;
+        }
+    }
+
+    .btn {
+        min-width: 125px;
+        padding: 8px 20px 10px;
+        letter-spacing: 0.75px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 13px;
+            min-width: 100px;
+            padding: 8px 15px 10px;
+        }
+    
+        @include media-breakpoint-up(xl) {
+            font-size: 15px;
+            min-width: 125px;
+            padding: 8px 20px 10px;
+        }
+    }
+}
+
+.navigation {
+    letter-spacing: 0.25px;
+
+    > li {
+        > a {
+            color: $black;
+
+            i {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .dropdown-menu {
+        background: $white;
+        border: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+        font-size: 15px;
+    }
+}

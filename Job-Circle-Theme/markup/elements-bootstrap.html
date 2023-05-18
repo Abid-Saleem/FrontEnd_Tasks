@@ -1,0 +1,1216 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 5 Structure</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.6.1.min.js"><\/script>')</script>
+	<script src="js/jquery.main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+<body>
+	<div class="container py-30">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light mb-20">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">Navbar</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Link</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										Dropdown
+									</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li><a class="dropdown-item" href="#">Another action</a></li>
+										<li><hr class="dropdown-divider"></li>
+										<li><a class="dropdown-item" href="#">Something else here</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+								</li>
+							</ul>
+							<form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Search</button>
+							</form>
+						</div>
+					</div>
+				</nav>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-20">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">Navbar w/ text</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarText">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Features</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Pricing</a>
+								</li>
+							</ul>
+							<span class="navbar-text">
+								Navbar text with an inline element
+							</span>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#">Home</a></li>
+					  <li class="breadcrumb-item"><a href="#">Library</a></li>
+					  <li class="breadcrumb-item active" aria-current="page">Data</li>
+					</ol>
+				  </nav>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="row mb-20">
+					<div class="col">
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-light">Light</button>
+						<button type="button" class="btn btn-dark">Dark</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</div>
+				</div>
+				<div class="row mb-20">
+					<div class="col">
+						<button type="button" class="btn btn-outline-primary">Primary</button>
+						<button type="button" class="btn btn-outline-secondary">Secondary</button>
+						<button type="button" class="btn btn-outline-success">Success</button>
+						<button type="button" class="btn btn-outline-danger">Danger</button>
+						<button type="button" class="btn btn-outline-warning">Warning</button>
+						<button type="button" class="btn btn-outline-info">Info</button>
+						<button type="button" class="btn btn-outline-light">Light</button>
+						<button type="button" class="btn btn-outline-dark">Dark</button>
+					</div>
+				</div>
+				<div class="row mb-10">
+					<div class="col">
+						<button type="button" class="btn btn-primary btn-sm">Small button</button>
+						<button type="button" class="btn btn-secondary btn-sm">Small button</button>
+					</div>
+				</div>
+				<div class="row mb-10">
+					<div class="col">
+						<button type="button" class="btn btn-primary btn-lg">Large button</button>
+						<button type="button" class="btn btn-secondary btn-lg">Large button</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="mb-20">
+					<nav class="nav">
+						<a class="nav-link active" aria-current="page" href="#">Active</a>
+						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link disabled">Disabled</a>
+					  </nav>
+				</div>
+				<div class="mb-20">
+					<ul class="nav nav-tabs">
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link disabled">Disabled</a>
+						</li>
+					  </ul>
+				</div>
+				<div class="mb-20">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="#">Active</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link disabled">Disabled</a>
+						</li>
+					  </ul>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<h1>h1. Bootstrap heading</h1>
+				<h2>h2. Bootstrap heading</h2>
+				<h3>h3. Bootstrap heading</h3>
+				<h4>h4. Bootstrap heading</h4>
+				<h5>h5. Bootstrap heading</h5>
+				<h6>h6. Bootstrap heading</h6>
+				<hr>
+				<p class="h1">h1. Bootstrap heading</p>
+				<p class="h2">h2. Bootstrap heading</p>
+				<p class="h3">h3. Bootstrap heading</p>
+				<p class="h4">h4. Bootstrap heading</p>
+				<p class="h5">h5. Bootstrap heading</p>
+				<p class="h6">h6. Bootstrap heading</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<h3>
+					Fancy display heading
+					<small class="text-muted">With faded secondary text</small>
+				</h3>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<h1 class="display-1">Display 1</h1>
+				<h1 class="display-2">Display 2</h1>
+				<h1 class="display-3">Display 3</h1>
+				<h1 class="display-4">Display 4</h1>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p class="lead">
+					Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+				</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<p>You can use the mark tag to <mark>highlight</mark> text.</p>
+				<p><del>This line of text is meant to be treated as deleted text.</del></p>
+				<p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+				<p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+				<p><u>This line of text will render as underlined</u></p>
+				<p><small>This line of text is meant to be treated as fine print.</small></p>
+				<p><strong>This line rendered as bold text.</strong></p>
+				<p><em>This line rendered as italicized text.</em></p>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<blockquote class="blockquote mb-20">
+					<p>A well-known quote, contained in a blockquote element.</p>
+				  </blockquote>
+				  <figure>
+					<blockquote class="blockquote mb-20">
+					  <p>A well-known quote, contained in a blockquote element.</p>
+					</blockquote>
+					<figcaption class="blockquote-footer">
+					  Someone famous in <cite title="Source Title">Source Title</cite>
+					</figcaption>
+				  </figure>
+				  <figure class="text-center mb-20">
+					<blockquote class="blockquote">
+					  <p>A well-known quote, contained in a blockquote element.</p>
+					</blockquote>
+					<figcaption class="blockquote-footer">
+					  Someone famous in <cite title="Source Title">Source Title</cite>
+					</figcaption>
+				  </figure>
+				  <figure class="text-end">
+					<blockquote class="blockquote">
+					  <p>A well-known quote, contained in a blockquote element.</p>
+					</blockquote>
+					<figcaption class="blockquote-footer">
+					  Someone famous in <cite title="Source Title">Source Title</cite>
+					</figcaption>
+				  </figure>
+			</div>
+		</div>
+		<hr class="mb-20">
+		<div class="row">
+			<div class="col">
+				<ul class="list-unstyled mb-20">
+					<li>Lorem ipsum dolor sit amet</li>
+					<li>Consectetur adipiscing elit</li>
+					<li>Integer molestie lorem at massa</li>
+					<li>Facilisis in pretium nisl aliquet</li>
+					<li>Nulla volutpat aliquam velit
+						<ul>
+							<li>Phasellus iaculis neque</li>
+							<li>Purus sodales ultricies</li>
+							<li>Vestibulum laoreet porttitor sem</li>
+							<li>Ac tristique libero volutpat at</li>
+						</ul>
+					</li>
+					<li>Faucibus porta lacus fringilla vel</li>
+					<li>Aenean sit amet erat nunc</li>
+					<li>Eget porttitor lorem</li>
+				</ul>
+				<ul class="list-inline mb-20">
+					<li class="list-inline-item">Lorem ipsum</li>
+					<li class="list-inline-item">Phasellus iaculis</li>
+					<li class="list-inline-item">Nulla volutpat</li>
+				</ul>
+				<dl class="row">
+					<dt class="col-sm-3">Description lists</dt>
+					<dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+					<dt class="col-sm-3">Euismod</dt>
+					<dd class="col-sm-9">Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+					<dd class="col-sm-9 offset-sm-3">Donec id elit non mi porta gravida at eget metus.</dd>
+
+					<dt class="col-sm-3">Malesuada porta</dt>
+					<dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+					<dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+					<dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+					<dt class="col-sm-3">Nesting</dt>
+					<dd class="col-sm-9">
+						<dl class="row">
+							<dt class="col-sm-4">Nested definition list</dt>
+							<dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+						</dl>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<table class="table mb-30">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-dark mb-5">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table mb-30">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table mb-30">
+					<thead class="thead-light">
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-borderless mb-30">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped mb-30">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-dark table-striped mb-30">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">First</th>
+							<th scope="col">Last</th>
+							<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="table-responsive">
+					<table class="table table-bordered mb-30">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@TwBootstrap</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td colspan="2">Larry the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="table-responsive">
+					<table class="table table-bordered table-dark table-hover mb-30">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@TwBootstrap</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td colspan="2">Larry the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<table class="table table-dark mb-30">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Column heading</th>
+							<th>Column heading</th>
+							<th>Column heading</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="bg-primary">
+							<th scope="row">1</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr class="bg-success">
+							<th scope="row">3</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr class="bg-info">
+							<th scope="row">5</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr class="bg-warning">
+							<th scope="row">7</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr>
+							<th scope="row">8</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+						<tr class="bg-danger">
+							<th scope="row">9</th>
+							<td>Column content</td>
+							<td>Column content</td>
+							<td>Column content</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<hr class="mb-20">
+		<div class="row">
+			<div class="col">
+				<div class="alert alert-primary" role="alert">
+					A simple primary alert—check it out!
+				  </div>
+				  <div class="alert alert-secondary" role="alert">
+					A simple secondary alert—check it out!
+				  </div>
+				  <div class="alert alert-success" role="alert">
+					A simple success alert—check it out!
+				  </div>
+				  <div class="alert alert-danger" role="alert">
+					A simple danger alert—check it out!
+				  </div>
+				  <div class="alert alert-warning" role="alert">
+					A simple warning alert—check it out!
+				  </div>
+				  <div class="alert alert-info" role="alert">
+					A simple info alert—check it out!
+				  </div>
+				  <div class="alert alert-light" role="alert">
+					A simple light alert—check it out!
+				  </div>
+				  <div class="alert alert-dark" role="alert">
+					A simple dark alert—check it out!
+				  </div>
+			</div>
+		</div>
+		<hr class="my-20">
+		<div class="row">
+			<div class="col">
+				
+				<h1>Example heading <span class="badge bg-secondary">New</span></h1>
+				<h2>Example heading <span class="badge bg-primary">New</span></h2>
+				<h3>Example heading <span class="badge bg-success">New</span></h3>
+				<h4>Example heading <span class="badge bg-info">New</span></h4>
+				<h5>Example heading <span class="badge bg-warning">New</span></h5>
+				<h6>Example heading <span class="badge bg-danger">New</span></h6>
+				<div class="row">
+					<div class="col">
+						<span class="badge text-bg-primary">Primary</span>
+						<span class="badge text-bg-secondary">Secondary</span>
+						<span class="badge text-bg-success">Success</span>
+						<span class="badge text-bg-danger">Danger</span>
+						<span class="badge text-bg-warning">Warning</span>
+						<span class="badge text-bg-info">Info</span>
+						<span class="badge text-bg-light">Light</span>
+						<span class="badge text-bg-dark">Dark</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="my-20">
+		<div class="row">
+			<div class="col">
+				<div class="row">
+					<div class="col-sm-2 col-md-4">
+						<div class="card mb-3">
+							<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+							<div class="card-footer">
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2 col-md-4">
+						<div class="card text-white bg-success mb-3">
+							<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+							<div class="card-footer">
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2 col-md-4">
+						<div class="card border-warning mb-3">
+							<svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect></svg>
+							<div class="card-body text-warning">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+							<div class="card-footer">
+								<a href="#" class="btn btn-primary">Go somewhere</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="my-20">
+		<div class="row">
+			<div class="col">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img class="d-block img-fluid w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15bb3ce35f0%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15bb3ce35f0%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22217.7%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>First slide label</h5>
+						  <p>Some representative placeholder content for the first slide.</p>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block img-fluid w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15bb3ce35f0%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15bb3ce35f0%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22217.7%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>Second slide label</h5>
+						  <p>Some representative placeholder content for the second slide.</p>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block img-fluid w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15bb3ce35f0%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15bb3ce35f0%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22217.7%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5>Third slide label</h5>
+						  <p>Some representative placeholder content for the third slide.</p>
+						</div>
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
+			</div>
+		</div>
+		<hr class="my-20">
+		<div class="row">
+			<div class="col">
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  Accordion Item #1
+						</button>
+					  </h2>
+					  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  Accordion Item #2
+						</button>
+					  </h2>
+					  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						  Accordion Item #3
+						</button>
+					  </h2>
+					  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+						  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</div>
+		<hr class="my-20">
+		<div class="row">
+			<div class="col">
+				<form>
+					<div class="form-group mb-20">
+						<label for="exampleFormControlInput1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">					  
+						<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class="form-group mb-20">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="form-group mb-20">
+						<label for="exampleFormControlSelect1" class="form-label">Example select</label>
+						<select class="form-select form-select-lg mb-20" aria-label=".form-select-lg example">
+							<option selected>Open this select menu</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+						  
+						  <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+							<option selected>Open this select menu</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					</div>
+					<div class="form-group mb-20">
+						<label for="exampleFormControlSelect2" class="form-label">Example multiple select</label>
+						<select class="form-select" multiple aria-label="multiple select example">
+							<option selected>Open this select menu</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						  </select>
+					</div>
+					<div class="form-group mb-20">
+						<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+					<div class="form-group mb-20">
+						<label for="formFile" class="form-label">Default file input example</label>
+						<input class="form-control" type="file" id="formFile">					  
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="container">
+					<form>
+						<div class="form-group row">
+							<label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="col-form-label-sm">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="colFormLabel" placeholder="col-form-label">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="col-form-label-lg">
+							</div>
+						</div>
+					</form>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="">
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+					</div>
+					<div class="form-check disabled">
+						<label class="form-check-label">
+							<input class="form-check-input" type="checkbox" value="" disabled>
+							Option two is disabled
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							Option one is this and that&mdash;be sure to include why it's great
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+							Option two can be something else and selecting it will deselect option one
+						</label>
+					</div>
+					<div class="form-check disabled">
+						<label class="form-check-label">
+							<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+							Option three is disabled
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<form>
+					<fieldset disabled>
+						<div class="form-group">
+							<label for="disabledTextInput">Disabled input</label>
+							<input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+						</div>
+						<div class="form-group">
+							<label for="disabledSelect">Disabled select menu</label>
+							<select id="disabledSelect" class="form-control">
+								<option>Disabled select</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+								<label class="form-check-label" for="disabledFieldsetCheck">
+									Can't check this
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="mb-3">
+					<label for="validationServer02">Textarea</label>
+					<input type="text" class="form-control is-invalid" id="validationServer02" value="Otto" required>
+					<div class="invalid-feedback">
+						Please enter a message in the textarea.
+					</div>
+				</div>
+				<div class="mb-3">
+					<label for="validationServer03">Textarea</label>
+					<input type="text" class="form-control is-valid" id="validationServer03" value="Otto" required>
+					<div class="valid-feedback">
+						Looks good!
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="mb-5">
+					<p class="h5 mb-3">Custom checkbox example</p>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+						<label class="form-check-label" for="flexCheckDefault">
+							Default checkbox
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+						<label class="form-check-label" for="flexCheckChecked">
+							Checked checkbox
+						</label>
+					</div>
+				</div>
+				<div class="mb-5">
+					<p class="h5 mb-3">Custom radio example</p>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+						<label class="form-check-label" for="flexRadioDefault1">
+							Default radio
+						</label>
+					</div>
+					<div class="form-check">
+						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+						<label class="form-check-label" for="flexRadioDefault2">
+							Default checked radio
+						</label>
+					</div>
+				</div>
+				<div class="mb-5">
+					<p class="h5 mb-3">Switch example</p>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+						<label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+						<label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+						<label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+					</div>
+					<div class="form-check form-switch">
+						<input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+						<label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+					</div>
+				</div>
+				<div class="mb-5">
+					<p class="h5 mb-3">Custom select example</p>
+					<div class="input-group mb-20">
+						<label class="input-group-text" for="inputGroupSelect01">Options</label>
+						<select class="form-select" id="inputGroupSelect01">
+							<option selected>Choose...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class="input-group mb-20">
+						<select class="form-select" id="inputGroupSelect02">
+							<option selected>Choose...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<label class="input-group-text" for="inputGroupSelect02">Options</label>
+					</div>
+
+					<div class="input-group mb-20">
+						<button class="btn btn-outline-secondary" type="button">Button</button>
+						<select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+							<option selected>Choose...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class="input-group">
+						<select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+							<option selected>Choose...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<button class="btn btn-outline-secondary" type="button">Button</button>
+					</div>
+				</div>
+				<div class="mb-5">
+					<p class="h5 mb-3">Custom range example</p>
+					<label for="customRange1" class="form-label">Example range</label>
+					<input type="range" class="form-range" id="customRange1">
+				</div>
+				<div class="mb-5">
+					<p class="h5 mb-3">Custom input-file example</p>
+					<div class="mb-20">
+						<label for="formFile" class="form-label">Default file input example</label>
+						<input class="form-control" type="file" id="formFile">
+					</div>
+					<div class="mb-20">
+						<label for="formFileMultiple" class="form-label">Multiple files input example</label>
+						<input class="form-control" type="file" id="formFileMultiple" multiple>
+					</div>
+					<div class="mb-20">
+						<label for="formFileDisabled" class="form-label">Disabled file input example</label>
+						<input class="form-control" type="file" id="formFileDisabled" disabled>
+					</div>
+					<div class="mb-20">
+						<label for="formFileSm" class="form-label">Small file input example</label>
+						<input class="form-control form-control-sm" id="formFileSm" type="file">
+					</div>
+					<div>
+						<label for="formFileLg" class="form-label">Large file input example</label>
+						<input class="form-control form-control-lg" id="formFileLg" type="file">
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<nav aria-label="...">
+					<ul class="pagination">
+					  <li class="page-item disabled">
+						<a class="page-link">Previous</a>
+					  </li>
+					  <li class="page-item"><a class="page-link" href="#">1</a></li>
+					  <li class="page-item active" aria-current="page">
+						<a class="page-link" href="#">2</a>
+					  </li>
+					  <li class="page-item"><a class="page-link" href="#">3</a></li>
+					  <li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					  </li>
+					</ul>
+				  </nav>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="progress mb-2">
+					<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+					<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+					<div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="progress mb-2">
+					<div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col">
+				<div class="spinner-border text-primary" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-secondary" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-success" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-danger" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-warning" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-info" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-light" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+				<div class="spinner-border text-dark" role="status">
+					<span class="visually-hidden">Loading...</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</html>
