@@ -1,17 +1,20 @@
 .header {
-    font-size: 15px;
-    z-index: 9;
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 75px 0;
 
-    @include media-breakpoint-up(lg) {
-        font-size: 13px;
-    }
-
-    @include media-breakpoint-up(xl) {
-        font-size: 15px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .logo {
         width: 222px;
+        display: block;
 
         @include media-breakpoint-up(lg) {
             width: 155px;
@@ -46,11 +49,26 @@
 }
 
 .navigation {
-    letter-spacing: 0.25px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 24px;
+    }
 
     > li {
+        padding: 0 40px;
+
         > a {
-            color: $black;
+            color: $white;
 
             i {
                 font-size: 11px;

@@ -1,0 +1,24 @@
+/* Visal Block Styles */
+.visal-block {
+    position: relative;
+    overflow: hidden;
+
+    .top-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        max-width: 932px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+/* Form Search Styles */
+.form-search {
+
+}
