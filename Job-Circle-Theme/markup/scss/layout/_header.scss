@@ -4,7 +4,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    padding: 75px 0;
+    padding: 72px 0;
 
     .container {
         display: flex;
@@ -28,33 +28,17 @@
             width: 222px;
         }
     }
-
-    .btn {
-        min-width: 125px;
-        padding: 8px 20px 10px;
-        letter-spacing: 0.75px;
-
-        @include media-breakpoint-up(lg) {
-            font-size: 13px;
-            min-width: 100px;
-            padding: 8px 15px 10px;
-        }
-    
-        @include media-breakpoint-up(xl) {
-            font-size: 15px;
-            min-width: 125px;
-            padding: 8px 20px 10px;
-        }
-    }
 }
 
 .navigation {
     display: flex;
     align-items: center;
     font-size: 16px;
+    line-height: 1.5;
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: $headings-font-family;
 
     @include media-breakpoint-up(lg) {
         font-size: 20px;
@@ -65,13 +49,58 @@
     }
 
     > li {
-        padding: 0 40px;
+        position: relative;
+        
+        &:not(:last-child) {
+            padding: 0 40px;
+        }
 
         > a {
-            color: $white;
+            display: flex;
+            align-items: center;
 
-            i {
-                font-size: 11px;
+            &:not(.btn) {
+                color: $white;
+                padding: 10px 0;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .icon-user {
+                font-size: 28px;
+                margin-right: 12px;
+            }
+
+            &.dropdown-toggle {
+                &:after {
+                    border: 0;
+                    font-family: 'icomoon';
+                    content: '\e917';
+                    line-height: 1;
+                }
+            }
+
+            &.btn-info {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
+        }
+
+        &.active {
+            > a {
+                color: $primary;
+            }
+        }
+
+        &:hover {
+            .dropdown-menu {
+                @include media-breakpoint-up(lg) {
+                    opacity: 1;
+                    visibility: visible;
+                    margin-top: 0;
+                }
             }
         }
     }
@@ -79,7 +108,27 @@
     .dropdown-menu {
         background: $white;
         border: 0;
-        box-shadow: 0 0 10px rgba(0,0,0,0.15);
-        font-size: 15px;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+            min-width: 220px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            font-size: 16px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+            margin-top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dropdown-item {
+            padding: 7px 15px;
+
+            &:hover {
+                color: $white;
+                background: $primary;
+            }
+        }
     }
 }

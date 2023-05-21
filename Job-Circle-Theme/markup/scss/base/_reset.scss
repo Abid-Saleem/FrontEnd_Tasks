@@ -7,7 +7,7 @@ h1 {
         font-size: 32px;
     }
 
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(sm) {
         font-size: 30px;
     }
 }
@@ -35,6 +35,59 @@ a {
 }
 
 .btn {
+    overflow: hidden;
+    position: relative;
+    border: none;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        content: '';
+        border-radius: 40px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &.btn-primary {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:hover {
+            &:before {
+                background: $info;
+            }
+        }
+    }
+
+    &.btn-info {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:hover {
+            &:before {
+                background: $primary;
+            }
+        }
+    }
+
     &.btn-link {
         color: $black;
         text-decoration: underline;
@@ -43,5 +96,10 @@ a {
         &:focus {
             color: $primary;
         }
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 1;
     }
 }
