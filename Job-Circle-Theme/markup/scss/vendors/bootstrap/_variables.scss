@@ -10,7 +10,7 @@ $white:    #fff !default;
 $gray-100: #f1f1f1 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
+$gray-400: #ccc !default;
 $gray-500: #adb5bd !default;
 $gray-600: #666 !default;
 $gray-700: #495057 !default;
@@ -41,7 +41,7 @@ $grays: (
 // scss-docs-start color-variables
 $blue:    #220389 !default;
 $indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
+$purple:  #b16ee5 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
@@ -432,6 +432,14 @@ $spacers: (
   200: $spacer * 20,
   205: $spacer * 20.5,
   210: $spacer * 21,
+  215: $spacer * 21.5,
+  220: $spacer * 22,
+  225: $spacer * 22.5,
+  230: $spacer * 23,
+  235: $spacer * 23.5,
+  240: $spacer * 24,
+  245: $spacer * 24.5,
+  250: $spacer * 25,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -648,7 +656,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        $font-family-inter !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        $font-weight-bold;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.35;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
@@ -802,8 +810,8 @@ $input-btn-border-width:      $border-width !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
-$btn-padding-y:               17px 45px;
-$btn-padding-x:               16px;
+$btn-padding-y:               18px;
+$btn-padding-x:               46px;
 $btn-font-family:             $headings-font-family;
 $btn-font-size:               24px;
 $btn-line-height:             1.5;
