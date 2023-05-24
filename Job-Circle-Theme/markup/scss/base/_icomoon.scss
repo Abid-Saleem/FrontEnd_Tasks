@@ -25,20 +25,8 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-youtube:before {
-  content: "\e900";
-}
-.icon-arrow-left:before {
-  content: "\e901";
-}
-.icon-arrow-right1:before {
-  content: "\e902";
-}
-.icon-arrow-down:before {
-  content: "\e903";
-}
-.icon-arrow-up:before {
-  content: "\e904";
+.icon-document-code:before {
+  content: "\e921";
 }
 .icon-mail:before {
   content: "\e905";
@@ -120,6 +108,21 @@ i {
 }
 .icon-search:before {
   content: "\e919";
+}
+.icon-youtube:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right1:before {
+  content: "\e902";
+}
+.icon-arrow-down:before {
+  content: "\e903";
+}
+.icon-arrow-up:before {
+  content: "\e904";
 }
 .icon-comments:before {
   content: "\e91a";
