@@ -845,6 +845,7 @@ a {
   margin-top: 12px;
 }
 
+/* Star Ratings Styles */
 .star-ratings {
   list-style: none;
   padding: 0;
@@ -916,6 +917,7 @@ a {
   margin-bottom: 0;
 }
 
+/* Category Box Styles */
 .category-box {
   height: 100%;
   display: -webkit-box;
@@ -1158,6 +1160,7 @@ a {
   background: #f9f9fb;
 }
 
+/* Featured Box Styles */
 .section-notified {
   background-color: #311181;
   background-size: cover;
@@ -1204,6 +1207,95 @@ a {
 }
 .section-notified .btn {
   min-width: 268px;
+}
+
+/* Section Block Styles */
+.testimonials-block {
+  padding: 62px 75px;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #c6c6c6;
+  position: relative;
+}
+.testimonials-block .map-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+.testimonials-block .quote-icon {
+  position: absolute;
+  right: 43px;
+  bottom: -71px;
+  color: #ffca1d;
+  font-size: 250px;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.testimonials-block blockquote {
+  font-size: 24px;
+  line-height: 2.167;
+  text-align: center;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin: 0 0 10px;
+}
+.testimonials-block blockquote q {
+  display: block;
+  margin: 0 0 27px;
+  quotes: none;
+}
+.testimonials-block blockquote .author-info {
+  display: block;
+  font-style: normal;
+}
+.testimonials-block blockquote .author-info .author-name {
+  display: block;
+  color: #220389;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+/* Thumbnail Slider Styles */
+.thumbnail-slider {
+  max-width: 348px;
+  margin: 0 auto 26px;
+}
+.thumbnail-slider .slick-list {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.thumbnail-slider .slick-slide {
+  padding: 0;
+}
+.thumbnail-slider .slick-slide.slick-center .thumbnail {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  border-color: #ffca1d;
+}
+.thumbnail-slider .thumbnail {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 7px solid transparent;
+  margin: 0 -7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.thumbnail-slider .thumbnail img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
 }
 
 /* News Post Styles */

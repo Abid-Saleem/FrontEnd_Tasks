@@ -6,6 +6,28 @@ jQuery(function(){
 
 // slick init
 function initSlickCarousel() {
+		jQuery('.testimonials-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.thumbnail-slider',
+		focusOnSelect: true,
+		autoplay: true,
+	});
+
+	jQuery('.thumbnail-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.testimonials-slider',
+		dots: false,
+		arrows: false,
+		centerMode: true,
+		focusOnSelect: true,
+		autoplay: true,
+		centerPadding: '0',
+	});
+
 	jQuery('.slider').slick({
 		slidesToScroll: 1,
 		slidesToShow: 4,
