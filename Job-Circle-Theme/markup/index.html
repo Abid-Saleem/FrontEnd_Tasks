@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-3.6.4.min.js"></script>
 	<script src="js/vendor.js"></script>
@@ -21,15 +22,19 @@
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
 		<!-- header of the page -->
-		<header class="header position-absolute top-0 start-0 w-100">
+		<header class="header">
 			<div class="container">
 				<strong class="logo">
-					<a href="index.html"><img src="images/logo.png" width="224" height="62" alt="Job Circle"></a>
+					<a href="index.html">
+						<img class="normal-logo" src="images/logo.png" width="224" height="62" alt="Job Circle">
+						<img class="sticky-logo" src="images/sticky-logo.png" width="224" height="62" alt="Job Circle">
+					</a>
 				</strong>
 				<!-- main menu -->
 				<div class="main-nav">
 					<a href="#" class="nav-opener d-flex d-lg-none"><span></span></a>
 					<div class="nav-drop">
+						<a href="#" class="nav-close d-flex d-lg-none"><span></span></a>
 						<!-- navigation -->
 						<ul class="navigation">
 							<li><a href="#">Home</a></li>
@@ -62,18 +67,20 @@
 			</div>
 		</header>
 		<!-- Visual of the page -->
-		<div class="visal-block bg-blue pt-230 pb-45 text-white">
-			<span class="top-shape"><img src="images/banner-shape-top.svg" width="932" height="347" alt="Banner Shape Top"></span>
+		<div class="visal-block bg-blue pt-100 pt-md-140 pt-xl-180 pt-xxl-230 pb-25 pb-md-45 text-white">
+			<span class="shape top"><img src="images/banner-shape-top.png" width="93" height="241" alt="Banner Shape Top"></span>
+			<span class="shape bottom"><img src="images/banner-shape-bottom.png" width="1115" height="347" alt="Banner Shape Bottom"></span>
 			<div class="container position-relative">
 				<div class="row justify-content-between">
-					<div class="col col-lg-7">
+					<div class="col-12 col-lg-7 position-relative">
+						<div class="icons-image"><img src="images/banner-icons.png" alt="Icons"></div>
 						<!-- visual textbox -->
 						<div class="visual-textbox">
 							<h1>Finding a Job Has Never Been This Easy</h1>
 							<p>Create, Build, Collaborate and Grow with Us More faster Now</p>
 							<!-- search form -->
 							<form class="form-search" action="#">
-								<div class="fields-holder bg-white text-black d-flex">
+								<div class="fields-holder bg-white text-black d-flex flex-wrap flex-md-nowrap">
 									<div class="form-group">
 										<i class="icon icon-search"></i>
 										<input class="form-control" type="search" placeholder="Search Job Title">
@@ -81,7 +88,7 @@
 									<div class="form-group">
 										<i class="icon icon-map-pin"></i>
 										<select class="select2" name="state" data-placeholder="Select Country">
-											<option value="Select Country">Select Country</option>
+											<option></option>
 											<option value="AF">Afghanistan</option>
 											<option value="AX">Aland Islands</option>
 											<option value="AL">Albania</option>
@@ -341,7 +348,7 @@
 							</form>
 						</div>
 					</div>
-					<div class="col col-lg-5 d-flex justify-content-end">
+					<div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end">
 						<!-- visual Image -->
 						<div class="visual-image position-relative">
 							<img src="images/image-banner.png" width="563" height="733" alt="Finding a Job Has Never Been This Easy">
@@ -387,16 +394,16 @@
 		<!-- contain main informative part of the site -->
 		<main class="main">
 			<!-- Popular Categories Section -->
-			<section class="section section-categories pt-65 pb-0">
+			<section class="section section-categories pt-35 pt-md-50 pt-lg-65 pb-0">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-60">
+					<header class="section-header text-center mb-30 mb-md-45 mb-xl-60">
 						<h2>Popular <span class="text-primary">Categories</span></h2>
 						<div class="seprator"></div>
 						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
 					</header>
 					<div class="row">
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
 							<!-- Category Box -->
 							<a href="#" class="category-box">
 								<div class="textbox">
@@ -414,7 +421,7 @@
 								</footer>
 							</a>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
 							<!-- Category Box -->
 							<a href="#" class="category-box">
 								<div class="textbox">
@@ -432,7 +439,7 @@
 								</footer>
 							</a>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
 							<!-- Category Box -->
 							<a href="#" class="category-box">
 								<div class="textbox">
@@ -450,7 +457,7 @@
 								</footer>
 							</a>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
 							<!-- Category Box -->
 							<a href="#" class="category-box">
 								<div class="textbox">
@@ -468,7 +475,7 @@
 								</footer>
 							</a>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
 							<!-- Category Box -->
 							<a href="#" class="category-box">
 								<div class="textbox">
@@ -486,7 +493,7 @@
 								</footer>
 							</a>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
 							<!-- Category Box -->
 							<a href="#" class="category-box">
 								<div class="textbox">
@@ -508,16 +515,16 @@
 				</div>
 			</section>
 			<!-- Featured Jobs Section -->
-			<section class="section section-categories pt-35 pb-35 pb-md-105">
+			<section class="section section-categories pt-35 pb-35 pb-md-50 pb-xl-75 pb-xxl-105">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-55">
+					<header class="section-header text-center mb-30 mb-md-45 mb-xl-55">
 						<h2>Featured <span class="text-primary">Jobs</span></h2>
 						<div class="seprator"></div>
 						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
 					</header>
 					<div class="row">
-						<div class="col col-md-6 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 mb-15 mb-md-30">
 							<!-- Featured Box -->
 							<article class="featured-box">
 								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
@@ -549,7 +556,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 mb-15 mb-md-30">
 							<!-- Featured Box -->
 							<article class="featured-box">
 								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
@@ -581,7 +588,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 mb-15 mb-md-30">
 							<!-- Featured Box -->
 							<article class="featured-box">
 								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
@@ -613,7 +620,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 mb-15 mb-md-30">
 							<!-- Featured Box -->
 							<article class="featured-box">
 								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
@@ -645,7 +652,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 mb-15 mb-md-30">
 							<!-- Featured Box -->
 							<article class="featured-box">
 								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
@@ -677,7 +684,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 mb-20 mb-md-30">
+						<div class="col-12 col-md-6 mb-15 mb-md-30">
 							<!-- Featured Box -->
 							<article class="featured-box">
 								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
@@ -713,15 +720,15 @@
 				</div>
 			</section>
 			<!-- Profile Notified Section -->
-			<section class="section bg-overlay section-notified pt-35 pb-0 pt-md-80 pb-md-80" style="background-image: url('images/image-notified.jpg');">
+			<section class="section bg-overlay section-notified pt-35 pt-md-50 pt-lg-80 pb-35 pb-md-50 pb-lg-80" style="background-image: url('images/image-notified.jpg');">
 				<div class="container">
-					<div class="row">
-						<div class="col col-md-6">
+					<div class="row align-items-center align-items-xxxl-start">
+						<div class="col-12 col-lg-6">
 							<div class="image-holder">
 								<img src="images/image-notified.png" width="748" height="678" alt="Get Your Profile to Get Noticed All Around The World">
 							</div>
 						</div>
-						<div class="col col-md-6 pt-md-10">
+						<div class="col-12 col-lg-6 pt-lg-10">
 							<div class="textbox">
 								<h2 class="h1">Get Your <span class="text-primary">Profile to</span> Get Noticed All <span class="text-primary">Around The World</span></h2>
 								<p>Pellentesque porta, ex non posuere consequat, lacus nulla lobortis mi, nec imperdiet nulla lorem in mauris. Morbi interdum quam ac augue . Integer eu efficitur mauris. </p>
@@ -733,10 +740,10 @@
 				</div>
 			</section>
 			<!-- Featured Testimonials Section -->
-			<section class="section section-testimonials pt-35 pb-35 pt-md-60 pb-md-40">
+			<section class="section section-testimonials pt-35 pt-md-50 pt-lg-60 pb-20 pb-md-40">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-50">
+					<header class="section-header text-center mb-30 mb-md-45 mb-lg-50">
 						<h2>Featured <span class="text-primary">Testimony</span></h2>
 						<div class="seprator"></div>
 						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
@@ -827,16 +834,16 @@
 				</div>
 			</section>
 			<!-- Our Team Section -->
-			<section class="section section-team pt-25 pb-md-50 pb-lg-70">
+			<section class="section section-team pt-25 pb-20 pb-md-35 pb-lg-40">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-50">
+					<header class="section-header text-center mb-30 mb-md-45 mb-lg-50">
 						<h2>Meet our <span class="text-primary">Talented Team</span></h2>
 						<div class="seprator"></div>
 						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
 					</header>
 					<div class="row">
-						<div class="col col-md-6 col-lg-3">
+						<div class="col-12 col-sm-6 col-lg-3 mb-30">
 							<!-- Team Member Box -->
 							<article class="team-box">
 								<div class="image-holder">
@@ -851,7 +858,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 col-lg-3">
+						<div class="col-12 col-sm-6 col-lg-3 mb-30">
 							<!-- Team Member Box -->
 							<article class="team-box">
 								<div class="image-holder">
@@ -866,7 +873,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 col-lg-3">
+						<div class="col-12 col-sm-6 col-lg-3 mb-30">
 							<!-- Team Member Box -->
 							<article class="team-box">
 								<div class="image-holder">
@@ -881,7 +888,7 @@
 								</div>
 							</article>
 						</div>
-						<div class="col col-md-6 col-lg-3">
+						<div class="col-12 col-sm-6 col-lg-3 mb-30">
 							<!-- Team Member Box -->
 							<article class="team-box">
 								<div class="image-holder">
@@ -903,8 +910,8 @@
 			<section class="section bg-overlay section-workspace pt-35 pb-0 pt-md-40" style="background-image: url('images/image-linked.jpg');">
 				<div class="container">
 					<div class="row">
-						<div class="col col-md-6">
-							<div class="d-flex align-items-center h-100 pb-55">
+						<div class="col-12 col-md-6">
+							<div class="d-flex align-items-center h-100 pb-35 pb-md-45 pb-lg-55">
 								<div class="textbox">
 									<strong class="h3 subtitle">Always Stay Linked</strong>
 									<h2 class="h1">You Can Now Get Your Desired <span class="text-primary">Workspace</span> with Us</h2>
@@ -912,7 +919,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col col-md-6 d-flex justify-content-end">
+						<div class="col-12 col-md-6 d-flex justify-content-end">
 							<div class="d-flex align-items-end h-100">
 								<div class="image-holder">
 									<img src="images/image-user.png" width="649" height="680" alt="Always Stay Linked">
@@ -923,16 +930,16 @@
 				</div>
 			</section>
 			<!-- News Section -->
-			<section class="section section-news pt-35 pb-20 pt-md-50 pb-md-30 pt-lg-65 pb-lg-70">
+			<section class="section section-news pt-35 pb-25 pt-md-50 pb-md-30 pt-lg-65 pb-lg-70">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-50">
+					<header class="section-header text-center mb-30 mb-md-45 mb-lg-50">
 						<h2>Latest <span class="text-primary">News</span></h2>
 						<div class="seprator"></div>
 						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
 					</header>
 					<div class="row">
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-4 mb-35 mb-md-30">
 							<!-- News Post -->
 							<article class="news-post">
 								<div class="image-holder">
@@ -952,7 +959,7 @@
 								</footer>
 							</article>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-4 mb-35 mb-md-30">
 							<!-- News Post -->
 							<article class="news-post">
 								<div class="image-holder">
@@ -972,7 +979,7 @@
 								</footer>
 							</article>
 						</div>
-						<div class="col col-md-4 mb-20 mb-md-30">
+						<div class="col-12 col-md-4 mb-35 mb-md-30">
 							<!-- News Post -->
 							<article class="news-post">
 								<div class="image-holder">
@@ -998,16 +1005,9 @@
 			<!-- Workspace Section -->
 			<section class="section bg-overlay bg-primary section-newsletter py-0" style="background-image: url('images/image-newsletter.jpg');">
 				<div class="container">
-					<div class="row">
-						<div class="col col-md-6 d-flex justify-content-center">
-							<div class="d-flex align-items-end h-100">
-								<div class="image-holder">
-									<img src="images/image-girl.png" width="517" height="496" alt="Support">
-								</div>
-							</div>
-						</div>
-						<div class="col col-md-6">
-							<div class="d-flex align-items-center h-100 py-25">
+					<div class="row flex-md-row-reverse pt-35 pt-md-0">
+						<div class="col-12 col-md-7 col-lg-6">
+							<div class="d-flex align-items-center h-100 py-md-25 mb-35 mb-lg-0">
 								<div class="textbox">
 									<strong class="h4 subtitle">Support</strong>
 									<h2>Subscribe Newsletter & get Job Updates</h2>
@@ -1018,28 +1018,83 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-12 col-md-5 col-lg-6 d-flex justify-content-center">
+							<div class="d-flex align-items-end h-100">
+								<div class="image-holder">
+									<img src="images/image-girl.png" width="517" height="496" alt="Support">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<!-- footer of the page -->
 		<footer class="footer">
-			<div class="pri-footer bg-blue-dark text-white">
+			<div class="pri-footer bg-blue-dark text-white pt-30 pt-md-50 pb-20 pb-md-35">
 				<div class="container">
 					<div class="row">
-						<div class="col col-md-6 col-lg-4">
+						<div class="col-12 col-lg-4">
+							<!-- Footer Information -->
 							<div class="footer-info">
 								<strong class="logo">
 									<a href="index.html"><img src="images/logo.png" width="224" height="62" alt="Job Circle"></a>
 								</strong>
 								<p>Duis molestie lobors nibh ut consectetur. In iaculis suscipit ante vel egestas. Intr quis ul id tempor risus.Quisque auctor neque et lacus finibus.</p>
 								<p>Etiam eu elit sollicitudin, ultricies enim quis, pharetra tortor. Vivamus at diam eget dui scelerisque . Quisque es nequea et lacus finibus, et fringilla diam mattis. </p>
+								<!-- App Buttons -->
+								<ul class="app-buttons">
+									<li><a href="#"><img src="images/icon-play.png" alt="Google Play"></a></li>
+									<li><a href="#"><img src="images/icon-app.png" alt="App Store"></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-5 pe-xl-70">
+							<!-- Images Gallery -->
+							<h5 class="h4">Gallery</h5>
+							<ul class="gallery-list">
+								<li><a href="images/image-gallery01.jpg" data-fancybox="gallery"><img src="images/image-gallery01.jpg" width="166" height="125" alt="Image Gallery"></a></li>
+								<li><a href="images/image-gallery02.jpg" data-fancybox="gallery"><img src="images/image-gallery02.jpg" width="166" height="125" alt="Image Gallery"></a></li>
+								<li><a href="images/image-gallery03.jpg" data-fancybox="gallery"><img src="images/image-gallery03.jpg" width="166" height="125" alt="Image Gallery"></a></li>
+								<li><a href="images/image-gallery04.jpg" data-fancybox="gallery"><img src="images/image-gallery04.jpg" width="166" height="125" alt="Image Gallery"></a></li>
+								<li><a href="images/image-gallery05.jpg" data-fancybox="gallery"><img src="images/image-gallery05.jpg" width="166" height="125" alt="Image Gallery"></a></li>
+								<li><a href="images/image-gallery06.jpg" data-fancybox="gallery"><img src="images/image-gallery06.jpg" width="166" height="125" alt="Image Gallery"></a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							<div class="ms-xl-n50">
+								<!-- Contact Information -->
+								<h5 class="h4">Contact Us</h5>
+								<ul class="contact-list">
+									<li>
+										<i class="icon-map-pin"></i>
+										<span class="text">2612th Street New York, 10342, USA</span>
+									</li>
+									<li>
+										<i class="icon-mail"></i>
+										<span class="text"><a href="mailto:example@mail.com">example@mail.com</a></span>
+									</li>
+									<li>
+										<i class="icon-phone"></i>
+										<span class="text"><a href="tel:111222333444">111-222-333-444</a></span>
+									</li>
+								</ul>
+								<!-- Social Networks -->
+								<div class="social-box">
+									<strong class="title">Social Media</strong>
+									<ul class="social-networks">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-instagram"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-youtube-play"></i></a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="sec-footer bg-blue-darker text-center text-white">
+			<div class="sec-footer bg-blue-darker text-center text-white py-15 py-md-20">
 				<p>All Rights Reserved © Jobcircle.com</p>
 			</div>
 		</footer>

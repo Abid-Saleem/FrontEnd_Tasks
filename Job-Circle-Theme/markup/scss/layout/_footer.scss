@@ -6,15 +6,173 @@
 
 /* Primary Footer Styles */
 .pri-footer {
-    padding: 48px 0;
+    overflow: hidden;
+    line-height: 1.875;
 
+    .footer-info {
+        max-width: 448px;
+    }
+
+    .logo {
+        width: 150px;
+        display: block;
+        margin: 0 0 23px;
+
+        @include media-breakpoint-up(lg) {
+            width: 155px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 200px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 210px;
+            margin-left: 6px;
+        }
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    h5 {
+        padding: 12px 0 0;
+        margin: 0 0 35px;
+    }
+}
+
+/* App Buttons Styles */
+.app-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0 -5px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    
+    li {
+        width: 50%;
+        padding: 0 5px 10px;
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+/* Gallery List Styles */
+.gallery-list {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2px 0 0;
+    margin: -10px -9px;
+    list-style: none;
+    max-width: 550px;
+
+    li {
+        width: 33.333%;
+        padding: 10px 9px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+
+/* Contact List */
+.contact-list {
+    list-style: none;
+    padding: 2px 0 0;
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+
+    li {
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 26px;
+
+        i {
+            font-size: 28px;
+            line-height: 1;
+            margin: 0 20px 0 0;
+        }
+
+        a {
+            color: $white;
+            text-decoration: underline;
+            font-weight: 600;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/* Social Box Styles */
+.social-box {
+    overflow: hidden;
+
+    .title {
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        margin: 0 0 15px;
+    }
+}
+
+/* Social Networks Styles */
+.social-networks {
+    list-style: none;
+    padding: 0;
+    margin: 0 -7px;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 24px;
+    line-height: 1;
+
+    li {
+        padding: 0 7px;
+
+        a {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            background: rgba(255,255,255,0.3);
+
+            &:hover {
+                background: $primary;
+            }
+        }
+    }
 }
 
 /* Secondary Footer Styles */
 .sec-footer {
     font-size: 20px;
     font-weight: 500;
-    padding: 20px 0;
 
     p {
         margin: 0;
