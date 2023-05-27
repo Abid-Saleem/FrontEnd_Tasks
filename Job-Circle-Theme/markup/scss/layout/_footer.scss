@@ -1,0 +1,22 @@
+/* Footer Styles */
+.footer {
+    overflow: hidden;
+    font-family: $headings-font-family;
+}
+
+/* Primary Footer Styles */
+.pri-footer {
+    padding: 48px 0;
+
+}
+
+/* Secondary Footer Styles */
+.sec-footer {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+
+    p {
+        margin: 0;
+    }
+}

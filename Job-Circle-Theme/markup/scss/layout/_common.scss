@@ -76,6 +76,8 @@
         width: 52%;
         position: relative;
         padding: 22px 35px 22px 100px;
+        display: flex;
+        align-items: center;
 
         &:first-child {
             width: 48%;
@@ -356,7 +358,6 @@
 .section {
     padding: 35px 0;
     position: relative;
-    overflow: hidden;
 }
 
 /* Section Header Global Styles */
@@ -640,17 +641,14 @@
     }
 }
 
-/* Featured Box Styles */
-.section-notified {
-    background-color: #311181;
+/* Background Overlay Styles */
+.bg-overlay {
+    background-color: $secondary;
     background-size: cover;
     background-position: center top;
     background-blend-mode: overlay;
     position: relative;
     color: $white;
-    font-size: 24px;
-    line-height: 1.583;
-    font-family: $headings-font-family;
 
     &:after {
         position: absolute;
@@ -659,7 +657,7 @@
         bottom: 0;
         left: 0;
         content: '';
-        background: #311181;
+        background: $secondary;
         opacity: 0.9;
     }
 
@@ -667,6 +665,23 @@
         position: relative;
         z-index: 1;
     }
+
+    &.bg-primary {
+        background-color: $primary;
+        background-blend-mode: normal;
+
+        &:after {
+            background: $primary;
+            opacity: 0.92;
+        }
+    }
+}
+
+/* Section Notified Styles */
+.section-notified {
+    font-size: 24px;
+    line-height: 1.583;
+    font-family: $headings-font-family;
 
     .image-holder {
         overflow: hidden;
@@ -697,7 +712,7 @@
     }
 }
 
-/* Section Block Styles */
+/* Section Testimonials Block Styles */
 .testimonials-block {
     padding: 62px 75px;
     max-width: 1400px;
@@ -713,6 +728,14 @@
         top: 50%;
         transform: translate(-50%, -50%);
         opacity: 0.4;
+        width: 100%;
+        max-width: 1006px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 
     .quote-icon {
@@ -735,7 +758,7 @@
 
         q {
             display: block;
-            margin: 0 0 27px;
+            margin: 0 0 28px;
             quotes: none;
         }
 
@@ -749,6 +772,7 @@
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 1.5;
+                margin: 0 0 -2px;
             }
         }
     }
@@ -794,6 +818,132 @@
     }
 }
 
+
+/* Team Member Box Styles */
+.team-box {
+    overflow: hidden;
+    text-align: center;
+    font-family: $headings-font-family;
+
+    .image-holder {
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+        margin: 0 0 35px;
+        transition: border-radius 0.7s ease-in-out;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        &:hover {
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 45px;
+            
+            .button-overplay {
+                opacity: 1;
+                visibility: visible;
+                height: 100%;
+            }
+        }
+    }
+
+    .button-overplay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(34, 3, 137, 0.9);
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        // transition: all 0.7s  cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        // transition: all 0.7s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+        .btn {
+            font-weight: 600;
+        }
+    }
+
+    .textbox {
+        overflow: hidden;
+    }
+
+    h3 {
+        margin: 0 0 15px;
+
+        a {
+            color: $body-color;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .subtext {
+        font-size: 24px;
+        line-height: 1.5;
+        color: #aeaeae;
+        display: block;
+        font-weight: 500;
+    }
+}
+
+/* Section Workspace Styles */
+.section-workspace {
+    .subtitle {
+        position: relative;
+        padding-bottom: 27px;
+        margin: 0 0 32px;
+        display: block;
+        letter-spacing: 0.8px;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 41px;
+        }
+
+        &:before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 72px;
+            height: 4px;
+            background: $primary;
+            content: '';
+        }
+    }
+
+    .h1 {
+        letter-spacing: 1.2px;
+        line-height: 1.28;
+        margin: 0 0 45px;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 65px;
+        }
+    }
+
+    .image-holder {
+        @include media-breakpoint-up(xl) {
+            margin-right: -10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
 /* News Post Styles */
 .news-post {
     overflow: hidden;
@@ -805,7 +955,7 @@
         overflow: hidden;
         position: relative;
         border-radius: 5px;
-        margin: 0 0 35px;
+        margin: 0 0 28px;
         transition: all 0.3s ease-in-out;
 
         img {
@@ -821,6 +971,7 @@
 
     h3 {
         margin: 0 0 20px;
+        line-height: 1.2;
 
         a {
             color: $body-color;
@@ -829,6 +980,11 @@
                 color: $primary;
             }
         }
+    }
+
+    p {
+        letter-spacing: 0.35px;
+        margin: 0 0 20px;
     }
 
     &:hover {
@@ -848,7 +1004,7 @@
 /* Post Meta Styles */
 .post-meta {
     padding: 0;
-    margin: 0 0 20px;
+    margin: 0 0 21px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -880,11 +1036,12 @@
         align-items: center;
         font-weight: 600;
         color: $black;
+        letter-spacing: 0.35px;
 
         .icon {
-            font-size: 18px;
+            font-size: 20px;
             line-height: 1;
-            margin-left: 10px;
+            margin-left: 20px;
         }
 
         &:hover {
@@ -895,6 +1052,80 @@
     .post-author {
         font-size: 18px;
         color: $gray-500;
+    }
+}
+
+/* Section Newsletter Styles */
+.section-newsletter {
+    font-family: $headings-font-family;
+
+    .image-holder {
+        margin-top: -13px;
+
+        @include media-breakpoint-up(xl) {
+            margin-right: -10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .textbox {
+        max-width: 645px;
+    }
+
+    .subtitle {
+        position: relative;
+        padding-bottom: 20px;
+        margin: 0 0 10px;
+        display: block;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 124px;
+            height: 6px;
+            background: $white;
+            content: '';
+        }
+    }
+
+    h2 {
+        line-height: 1.28;
+        margin: 0 0 27px;
+    }
+}
+
+.form-newsletter {
+    overflow: hidden;
+    position: relative;
+
+    .form-control {
+        height: 71px;
+        border: 1px solid $white;
+        font-size: 20px;
+        line-height: 1.5;
+        color: $black;
+        font-family: $headings-font-family;
+        padding-left: 35px;
+        padding-right: 215px;
+
+        &::placeholder {
+            color: #a7a7a7;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        min-width: 180px;
     }
 }
 

@@ -27,6 +27,16 @@
         @include media-breakpoint-up(xxl) {
             width: 222px;
         }
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 }
 

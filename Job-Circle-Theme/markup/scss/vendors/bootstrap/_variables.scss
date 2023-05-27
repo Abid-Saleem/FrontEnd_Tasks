@@ -23,6 +23,8 @@ $black:    #000 !default;
 // custom color
 $green-alt: #78b258;
 $light-gray: #f5f5f5;
+$blue-dark: #0d0035;
+$blue-darker: #0a0026;
 // fusv-disable
 // scss-docs-start gray-colors-map
 $grays: (
@@ -69,6 +71,8 @@ $colors: (
   "gray":       $gray-600,
   "gray-dark":  $gray-800,
   "light-gray": $light-gray,
+  "blue-dark":  $blue-dark,
+  "blue-darker": $blue-darker,
 ) !default;
 // scss-docs-end colors-map
 
@@ -313,6 +317,8 @@ $blue:          $blue !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $light-gray:    $light-gray !default;
+$blue-dark:     $blue-dark;
+$blue-darker:   $blue-darker;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -327,6 +333,8 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "light-gray": $light-gray,
+  "blue-dark":  $blue-dark,
+  "blue-darker": $blue-darker,
   
 ) !default;
 // scss-docs-end theme-colors-map
@@ -821,9 +829,9 @@ $btn-font-size:               24px;
 $btn-line-height:             1.5;
 $btn-white-space:             null !default; // Set to `nowrap` to prevent text wrapping
 
-$btn-padding-y-sm:            11px 20px;
-$btn-padding-x-sm:            13px;
-$btn-font-size-sm:            15px;
+$btn-padding-y-sm:            16px;
+$btn-padding-x-sm:            30px;
+$btn-font-size-sm:            18px;
 
 $btn-padding-y-lg:            17px 30px;
 $btn-padding-x-lg:            19px;
