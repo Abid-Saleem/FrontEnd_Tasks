@@ -671,7 +671,7 @@ $headings-font-family:        $font-family-inter !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        $font-weight-bold;
 $headings-line-height:        1.35;
-$headings-color:              null !default;
+$headings-color:              inherit !default;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
@@ -1139,7 +1139,7 @@ $zindex-toast:                      1090 !default;
 $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
-$nav-link-font-weight:              null !default;
+$nav-link-font-weight:              normal !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
 $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
@@ -1248,7 +1248,7 @@ $dropdown-dark-color:               $gray-300 !default;
 $dropdown-dark-bg:                  $gray-800 !default;
 $dropdown-dark-border-color:        $dropdown-border-color !default;
 $dropdown-dark-divider-bg:          $dropdown-divider-bg !default;
-$dropdown-dark-box-shadow:          null !default;
+$dropdown-dark-box-shadow:          none !default;
 $dropdown-dark-link-color:          $dropdown-dark-color !default;
 $dropdown-dark-link-hover-color:    $white !default;
 $dropdown-dark-link-hover-bg:       rgba($white, .15) !default;
@@ -1318,14 +1318,14 @@ $card-title-spacer-y:               $spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
 $card-border-radius:                $border-radius !default;
-$card-box-shadow:                   null !default;
+$card-box-shadow:                   none !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
 $card-cap-bg:                       rgba($black, .03) !default;
-$card-cap-color:                    null !default;
-$card-height:                       null !default;
-$card-color:                        null !default;
+$card-cap-color:                    inherit !default;
+$card-height:                       auto !default;
+$card-color:                        inherit !default;
 $card-bg:                           $white !default;
 $card-img-overlay-padding:          $spacer !default;
 $card-group-margin:                 $grid-gutter-width * .5 !default;
@@ -1378,7 +1378,7 @@ $tooltip-border-radius:             $border-radius !default;
 $tooltip-opacity:                   .9 !default;
 $tooltip-padding-y:                 $spacer * .25 !default;
 $tooltip-padding-x:                 $spacer * .5 !default;
-$tooltip-margin:                    null !default; // TODO: remove this in v6
+$tooltip-margin:                    0 !default; // TODO: remove this in v6
 
 $tooltip-arrow-width:               .8rem !default;
 $tooltip-arrow-height:              .4rem !default;
@@ -1438,7 +1438,7 @@ $toast-max-width:                   350px !default;
 $toast-padding-x:                   .75rem !default;
 $toast-padding-y:                   .5rem !default;
 $toast-font-size:                   .875rem !default;
-$toast-color:                       null !default;
+$toast-color:                       inherit !default;
 $toast-background-color:            rgba($white, .85) !default;
 $toast-border-width:                $border-width !default;
 $toast-border-color:                var(--#{$prefix}border-color-translucent) !default;
@@ -1476,7 +1476,7 @@ $modal-dialog-margin-y-sm-up:       1.75rem !default;
 
 $modal-title-line-height:           $line-height-base !default;
 
-$modal-content-color:               null !default;
+$modal-content-color:               inherit !default;
 $modal-content-bg:                  $white !default;
 $modal-content-border-color:        var(--#{$prefix}border-color-translucent) !default;
 $modal-content-border-width:        $border-width !default;
@@ -1494,7 +1494,7 @@ $modal-header-padding-y:            $modal-inner-padding !default;
 $modal-header-padding-x:            $modal-inner-padding !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
-$modal-footer-bg:                   null !default;
+$modal-footer-bg:                   transparent !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
 
@@ -1596,17 +1596,17 @@ $figure-caption-color:              $gray-600 !default;
 // Breadcrumbs
 
 // scss-docs-start breadcrumb-variables
-$breadcrumb-font-size:              null !default;
+$breadcrumb-font-size:              inherit !default;
 $breadcrumb-padding-y:              0 !default;
 $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x:         .5rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
-$breadcrumb-bg:                     null !default;
+$breadcrumb-bg:                     transparent !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
-$breadcrumb-border-radius:          null !default;
+$breadcrumb-border-radius:          inherit !default;
 // scss-docs-end breadcrumb-variables
 
 // Carousel

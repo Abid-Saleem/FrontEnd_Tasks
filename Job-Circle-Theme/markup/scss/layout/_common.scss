@@ -98,6 +98,8 @@
 
         img {
             width: 100%;
+            height: auto;
+            display: block;
         }
     }
 }
@@ -1708,6 +1710,14 @@
 .section-newsletter {
     font-family: $headings-font-family;
 
+    .row {
+         div {
+            @include media-breakpoint-down(md) {
+                height: auto !important;
+            }
+        }
+    }
+
     .image-holder {
         @include media-breakpoint-up(md) {
             margin-top: -13px;
@@ -1740,10 +1750,15 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 124px;
-            height: 6px;
+            width: 90px;
+            height: 4px;
             background: $white;
             content: '';
+
+            @include media-breakpoint-up(md) {
+                width: 124px;
+                height: 6px;
+            }
         }
     }
 
