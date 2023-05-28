@@ -668,7 +668,7 @@ $font-sizes: (
 // scss-docs-start headings-variables
 $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        $font-family-inter !default;
-$headings-font-style:         null !default;
+$headings-font-style:         normal !default;
 $headings-font-weight:        $font-weight-bold;
 $headings-line-height:        1.35;
 $headings-color:              inherit !default;
