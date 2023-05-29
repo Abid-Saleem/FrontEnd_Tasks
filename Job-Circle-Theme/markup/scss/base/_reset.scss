@@ -1,6 +1,15 @@
 body {
 	min-width: $base-min-width;
 
+    @include media-breakpoint-down(xl) {
+        line-height: 1.75;
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        line-height: 1.5;
+    }
+
     @include media-breakpoint-down(sm) {
         font-size: 14px;
     }

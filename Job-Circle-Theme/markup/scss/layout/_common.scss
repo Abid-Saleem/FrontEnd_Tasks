@@ -294,6 +294,13 @@
             padding: 5px 0;
             display: block;
             height: auto;
+            border-radius: 0 !important;
+        }
+
+        .select2-selection--single {
+            .select2-selection__arrow {
+                right: 0;
+            }
         }
     }
 
@@ -1042,7 +1049,8 @@
     }
 
     .subtitle {
-        display: block;
+        display: flex;
+        align-items: center;
         font-size: 16px;
         line-height: 1.5;
         color: #b4b4b4;
@@ -1055,6 +1063,20 @@
 
         @include media-breakpoint-up(xl) {
             font-size: 20px;
+        }
+
+        .icon {
+            width: 44px;
+            height: 44px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            + .txt {
+                padding-left: 18px;
+                color: $black;
+            }
         }
     }
 
@@ -1102,6 +1124,13 @@
                 font-size: 22px;
                 margin: 0 12px 0 0;
             }
+
+            img {
+                width: auto;
+                height: auto;
+                display: block;
+                max-width: 100%;
+            }
         }
     }
 
@@ -1123,12 +1152,21 @@
                 min-width: 110px;
             }
         }
+
+        + p {
+            margin-top: 20px;
+        }
     }
 
     &:hover {
         .icon-box {
             background: #f9f9fb;
         }
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 15px;
     }
 }
 
@@ -2088,11 +2126,33 @@
 .subhead-filters {
     display: flex;
     align-items: center;
+
+    .select2-container--default {
+        width: 100% !important;
+    }
 }
 
 /* Select 2 Styles */
 .select2-container--default {
+    min-width: 190px;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+
     .select2-selection--single {
+        border-radius: 50px !important;
+        color: $black;
+        height: auto;
+        border-color: #c0c0c0;
+        text-align: left;
+
+        .select2-selection__rendered {
+            padding: 11px 45px 11px 22px;
+        }
+
         .select2-selection__rendered,
         .select2-selection__placeholder {
             font-family: $headings-font-family;
@@ -2100,6 +2160,7 @@
 
         .select2-selection__arrow {
             top: 50%;
+            right: 15px;
             transform: translateY(-50%);
 
             &:before {
