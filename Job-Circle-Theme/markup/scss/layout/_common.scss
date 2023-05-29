@@ -181,6 +181,8 @@
         background: $white;
         margin: 0 0 20px;
         border-radius: 35px;
+        display: flex;
+        align-items: center;
 
         @include media-breakpoint-up(md) {
             width: 52%;
@@ -330,6 +332,46 @@
     .btn {
         @include media-breakpoint-down(lg) {
             width: 100%;
+        }
+    }
+
+    &.form-inline {
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto;
+        text-align: left;
+        position: relative;
+
+        .fields-holder {
+            @include media-breakpoint-up(lg) {
+                padding-right: 162px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-right: 185px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding-right: 233px;
+            }
+        }
+
+        .btn {
+            @include media-breakpoint-up(lg) {
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 71px;
+                border-radius: 50px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                height: 90px;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                height: 94px;
+            }
         }
     }
 }
@@ -1872,11 +1914,11 @@
         max-width: 1187px;
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -31%);
+        bottom: 11.5%;
+        transform: translateC(-50%);
 
         @include media-breakpoint-up(xxl) {
-            transform: translate(-51%, -31%);
+            transform: translateX(-51%);
         }
 
         img {
@@ -2042,6 +2084,12 @@
     }
 }
 
+/* Subhead Filters Styles */
+.subhead-filters {
+    display: flex;
+    align-items: center;
+}
+
 /* Select 2 Styles */
 .select2-container--default {
     .select2-selection--single {
@@ -2101,7 +2149,7 @@
     overflow: hidden;
     font-size: 16px;
     line-height: 1.5;
-    padding: 10px 0;
+    padding: 15px 0;
 
     .select2-results__option {
         padding: 8px 15px;
@@ -2110,10 +2158,12 @@
 
 .select2-container--open {
     .select2-dropdown--below {
-        box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+        margin-top: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.25);
     }
 
     .select2-dropdown--above {
-        box-shadow: 0 -5px 10px rgba(0,0,0,0.25);
+        margin-top: -10px;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.25);
     }
 }
