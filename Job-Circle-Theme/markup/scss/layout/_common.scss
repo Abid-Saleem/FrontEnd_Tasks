@@ -2023,6 +2023,99 @@
     }
 }
 
+/* candidate Box Styles */
+.candidate-box {
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #c0c0c0;
+    
+    .textbox {
+        padding: 25px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .pin-job {
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 1px solid #ccc;
+        font-size: 20px;
+        line-height: 1;
+        color: $black;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        &:hover {
+            color: $info;
+        }
+    }
+
+    .icon-box {
+        width: 104px;
+        height: 104px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+        padding: 20px;
+        border-radius: 100%;
+        border: 1px solid #c0c0c0;
+
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+    .subtitle {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 0 20px;
+    }
+
+    h2 {
+        color: $black;
+        margin: 0 0 15px;
+    }
+
+    .star-ratings {
+        justify-content: center;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .stats-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        font-weight: 600;
+        color: $black;
+        border-top: 1px solid #c0c0c0;
+        
+        li {
+            width: 50%;
+            padding: 10px 15px;
+
+            + li {
+                border-left: 1px solid #c0c0c0;
+            }
+        }
+    }
+}
+
 /* Pagination Styles */
 .pagination {
     margin: 0 -10px;
@@ -2226,5 +2319,27 @@
     .select2-dropdown--above {
         margin-top: -10px;
         box-shadow: 0 -3px 10px rgba(0,0,0,0.25);
+    }
+}
+
+/* Select2 Small Styles */
+.select2 {
+    &.small {
+        + .select2-container--default {
+            font-size: 14px;
+            min-width: 130px;
+
+            .select2-selection--single {
+                border-radius: 7px !important;
+
+                .select2-selection__rendered {
+                    padding: 5px 30px 5px 12px;
+                }
+
+                .select2-selection__arrow {
+                    right: 10px;
+                }
+            }
+        }
     }
 }
