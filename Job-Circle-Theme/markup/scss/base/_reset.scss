@@ -185,6 +185,13 @@ a {
         }
     }
 
+    &.btn-sm {
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+
     .btn-text {
         position: relative;
         z-index: 1;

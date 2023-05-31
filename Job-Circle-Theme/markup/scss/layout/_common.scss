@@ -722,6 +722,10 @@
     .filled {
         color: $primary;
     }
+
+    &.large {
+        font-size: 25px;
+    }
 }
 
 /* Section Global Styles */
@@ -2022,6 +2026,121 @@
         }
     }
 }
+/* Subhead Filters Styles */
+.subhead-filters {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+
+    .select2-container--default {
+        width: 100% !important;
+    }
+
+    .form-group {
+        padding: 0 10px;
+
+        label {
+            font-weight: 500;
+            margin: 0 10px 0 0;
+        }
+    }
+}
+
+/* Sorting List Styles */
+.sorting-list {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    font-family: $headings-font-family;
+    line-height: 1.5;
+    font-size: 13px;
+    padding: 0 10px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 0 25px;
+    }
+
+    @include media-breakpoint-down(md) {
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    li {
+        padding: 8px 0 9px;
+        position: relative;
+
+        a {
+            color: #000;
+            padding: 5px 7px;
+            display: block;
+
+            @include media-breakpoint-up(lg) {
+                padding: 5px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 10px;
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                bottom: -1px;
+                left: 50%;
+                content: '';
+                transform: translateX(-50%);
+                border-style: solid;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            &:before {
+                border-width: 0 7px 8px 7px;
+                border-color: transparent transparent #c0c0c0 transparent;
+            }
+
+            &:after {
+                border-width: 0 6px 6px 6px;
+                border-color: transparent transparent #fff transparent;
+            }
+
+            &:hover {
+                color: $primary;
+
+                &:before,
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:first-child {
+            text-transform: capitalize;
+        }
+
+        &.active {
+            a {
+                color: $primary;
+
+                &:before,
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
 
 /* candidate Box Styles */
 .candidate-box {
@@ -2029,6 +2148,7 @@
     border-radius: 5px;
     text-align: center;
     border: 1px solid #c0c0c0;
+    transition: border 0.3s ease-in-out;
     
     .textbox {
         padding: 25px;
@@ -2044,12 +2164,13 @@
         justify-content: center;
         border-radius: 100%;
         border: 1px solid #ccc;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 1;
         color: $black;
         position: absolute;
-        right: 20px;
-        top: 20px;
+        right: 24px;
+        top: 38px;
+        font-weight: 400;
 
         &:hover {
             color: $info;
@@ -2057,15 +2178,17 @@
     }
 
     .icon-box {
-        width: 104px;
-        height: 104px;
+        width: 114px;
+        height: 114px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 15px;
+        margin: 0 auto 7px;
         padding: 20px;
         border-radius: 100%;
-        border: 1px solid #c0c0c0;
+        box-shadow: inset 0 0 0 1px #c0c0c0;
+        border: 5px solid #fff;
+        transition: all 0.3s ease-in-out;
 
         img {
             width: auto;
@@ -2074,25 +2197,39 @@
         }
     }
 
+    h2 {
+        color: $black;
+        margin: 0 0 6px;
+
+        a {
+            color: $black;
+
+            &:hover {
+                color: $info;
+            }
+        }
+    }
+
     .subtitle {
         display: block;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.5;
-        margin: 0 0 20px;
-    }
+        margin: 0 0 25px;
 
-    h2 {
-        color: $black;
-        margin: 0 0 15px;
+        @include media-breakpoint-up(xl) {
+            font-size: 16px;
+        }
     }
 
     .star-ratings {
         justify-content: center;
+        margin: 0 0 8px;
     }
 
     .btn {
-        margin-bottom: 20px;
+        margin-bottom: 21px;
+        min-width: 175px;
     }
 
     .stats-list {
@@ -2104,13 +2241,46 @@
         font-weight: 600;
         color: $black;
         border-top: 1px solid #c0c0c0;
+        transition: border 0.3s ease-in-out;
         
         li {
             width: 50%;
-            padding: 10px 15px;
+            padding: 14px 10px;
+            font-size: 12px;
+
+            @include media-breakpoint-up(xl) {
+                font-size: 14px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                padding: 14px 20px;
+                font-size: 16px;
+            }
 
             + li {
                 border-left: 1px solid #c0c0c0;
+            }
+        }
+    }
+
+    &:hover {
+        border-color: $info;
+
+        .icon-box {
+            box-shadow: inset 0 0 0 1px #fff;
+            border-color: $info;
+        }
+
+        .stats-list {
+            border-color: $info;
+        }
+
+        .btn {
+            &.btn-primary {
+                &:before {
+                    background: $info;
+                    width: 100%;
+                }
             }
         }
     }
@@ -2215,16 +2385,6 @@
     }
 }
 
-/* Subhead Filters Styles */
-.subhead-filters {
-    display: flex;
-    align-items: center;
-
-    .select2-container--default {
-        width: 100% !important;
-    }
-}
-
 /* Select 2 Styles */
 .select2-container--default {
     min-width: 190px;
@@ -2301,7 +2461,7 @@
     border: 0;
     border-radius: 10px !important;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     padding: 15px 0;
 
@@ -2327,13 +2487,14 @@
     &.small {
         + .select2-container--default {
             font-size: 14px;
-            min-width: 130px;
+            min-width: 125px;
 
             .select2-selection--single {
                 border-radius: 7px !important;
 
                 .select2-selection__rendered {
                     padding: 5px 30px 5px 12px;
+                    line-height: 22px;
                 }
 
                 .select2-selection__arrow {
