@@ -889,10 +889,10 @@ $form-label-color:                      null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
-$input-padding-y:                       $input-btn-padding-y !default;
-$input-padding-x:                       $input-btn-padding-x !default;
+$input-padding-y:                       17px;
+$input-padding-x:                       30px;
 $input-font-family:                     $input-btn-font-family !default;
-$input-font-size:                       $input-btn-font-size !default;
+$input-font-size:                       16px;
 $input-font-weight:                     $font-weight-base !default;
 $input-line-height:                     $input-btn-line-height !default;
 
@@ -900,9 +900,9 @@ $input-padding-y-sm:                    $input-btn-padding-y-sm !default;
 $input-padding-x-sm:                    $input-btn-padding-x-sm !default;
 $input-font-size-sm:                    $input-btn-font-size-sm !default;
 
-$input-padding-y-lg:                    $input-btn-padding-y-lg !default;
-$input-padding-x-lg:                    $input-btn-padding-x-lg !default;
-$input-font-size-lg:                    $input-btn-font-size-lg !default;
+$input-padding-y-lg:                    23px;
+$input-padding-x-lg:                    50px;
+$input-font-size-lg:                    24px;
 
 $input-bg:                              $body-bg !default;
 $input-disabled-color:                  null !default;

@@ -197,3 +197,64 @@ a {
         z-index: 1;
     }
 }
+
+.form-control {
+    color: $black;
+    border-color: #c0c0c0;
+
+    &:focus {
+        box-shadow: none;
+        border-color: #c0c0c0;
+    }
+
+    &::placeholder {
+        color: rgba(0,0,0,0.3);
+        opacity: 1;
+    }
+
+    &.form-control-lg {
+        border-radius: 55px;
+        border-width: 2px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 20px;
+            padding: 15px 40px;
+            min-height: inherit;
+        }
+
+        @include media-breakpoint-down(xl) {
+            font-size: 18px;
+            padding: 13px 32px;
+            border-width: 1px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            padding: 10px 25px;
+            border-width: 1px;
+        }
+    }
+}
+
+textarea {
+    resize: none;
+
+    &.form-control {
+        &.form-control-lg {
+            border-radius: 10px;
+            height: 420px;
+
+            @include media-breakpoint-down(xxl) {
+                height: 350px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                height: 280px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                height: 200px;
+            }
+        }
+    }
+}

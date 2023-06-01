@@ -348,364 +348,210 @@
 		</div>
 		<!-- contain main informative part of the site -->
 		<main class="main">
-			<!-- Featured Jobs Section -->
-			<section class="section section-categories pt-35 pt-md-50 pt-lg-75 pt-xl-95 pb-35 pb-md-50 pb-xl-75">
+			<!-- Page subheader -->
+			<header class="page-subheader pt-35 pt-md-50 pt-lg-75 mb-20 mb-md-30 mb-lg-45 mb-xl-60">
 				<div class="container">
-					<!-- Page subheader -->
-					<header class="page-subheader mb-30 mb-md-45 mb-xl-60 d-lg-flex align-items-center justify-content-between">
-						<h1 class="h4 mb-25 mb-lg-0">Showing 1 to 12 of 300 jobs</h1>
-						<div class="subhead-filters">
-							<div class="form-group d-lg-flex align-items-center">
-								<select class="select2" name="state" data-placeholder="Sort by">
-									<option label="Sort by"></option>
-									<option>Newest Jobs</option>
-									<option>Old Jobs</option>
-									<option>Sort by Date</option>
-									<option>Sort by Name</option>
-								</select>
+					<div class="row">
+						<div class="col-12 d-lg-flex align-items-center justify-content-between">
+							<h1 class="h5 mb-25 mb-lg-0">Showing 1–10 of 21 Candidates</h1>
+							<div class="subhead-filters">
+								<div class="form-group d-lg-flex align-items-center">
+									<label class="d-block mb-5 mb-md-0" for="created">Created</label>
+									<select id="created" class="select2 small" name="state" data-placeholder="Created by">
+										<option label="Sort by"></option>
+										<option>Any Time</option>
+										<option>Old Jobs</option>
+										<option>Sort by Date</option>
+										<option>Sort by Name</option>
+									</select>
+								</div>
+								<div class="form-group d-lg-flex align-items-center">
+									<label class="d-block mb-5 mb-md-0" for="sort">Sort&nbsp;by:</label>
+									<select id="sort" class="select2 small" name="state" data-placeholder="Sort by">
+										<option label="Sort by"></option>
+										<option>Newest Jobs</option>
+										<option>Old Jobs</option>
+										<option>Sort by Date</option>
+										<option>Sort by Name</option>
+									</select>
+								</div>
 							</div>
 						</div>
-					</header>
+					</div>
+				</div>
+			</header>
+			<!-- Candidates Section -->
+			<section class="section section-candidate candidate-addition pt-0 pb-35 pb-xl-75">
+				<div class="container">
 					<div class="row justify-content-center">
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">UI/UX Designer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job01.png" width="43" height="43" alt="Creative Hut"></span>
-										<span class="txt">Creative Hut</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate01.jpg" width="102" height="102" alt="Alex Carey">
+									</div>
+									<h2 class="h5"><a href="#">Alex Carey</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">Front End Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job02.png" width="37" height="42" alt="Ever Media Studio"></span>
-										<span class="txt">Ever Media Studio</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate02.jpg" width="102" height="102" alt="James Anderson">
+									</div>
+									<h2 class="h5"><a href="#">James Anderson</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">Social Media Expert</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job03.png" width="41" height="40" alt="Ever Media Studio"></span>
-										<span class="txt">Circle Media</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate03.jpg" width="102" height="102" alt="Mandy Sans">
+									</div>
+									<h2 class="h5"><a href="#">Mandy Sans</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">Django Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job04.png" width="32" height="32" alt="Ever Media Studio"></span>
-										<span class="txt">Nindo Studio</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate04.jpg" width="102" height="102" alt="Kiara Ben">
+									</div>
+									<h2 class="h5"><a href="#">Kiara Ben</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">Python Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job05.png" width="41" height="40" alt="Ever Media Studio"></span>
-										<span class="txt">Star Solution</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate05.jpg" width="102" height="102" alt="Philip Rex">
+									</div>
+									<h2 class="h5"><a href="#">Philip Rex</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">Java Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job06.png" width="50" height="49" alt="Ever Media Studio"></span>
-										<span class="txt">Diamond Media</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate06.jpg" width="102" height="102" alt="Josh Little">
+									</div>
+									<h2 class="h5"><a href="#">Josh Little</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">Graphic Designer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job07.png" width="37" height="30" alt="Ever Media Studio"></span>
-										<span class="txt">Graphic Designer</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate07.jpg" width="102" height="102" alt="John Miller">
+									</div>
+									<h2 class="h5"><a href="#">John Miller</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">SEO Expert</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job08.png" width="37" height="43" alt="Ever Media Studio"></span>
-										<span class="txt">iPrint Solution</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate08.jpg" width="102" height="102" alt="Betty John">
+									</div>
+									<h2 class="h5"><a href="#">Betty John</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+						<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
+							<!-- Candidate Box -->
+							<article class="candidate-box">
 								<div class="textbox">
-									<h3 class="h4"><a href="#">QA Testing</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job09.png" width="40" height="44" alt="Ever Media Studio"></span>
-										<span class="txt">Befol Press</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
+									<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+									<div class="icon-box">
+										<img src="images/img-candidate09.jpg" width="102" height="102" alt="David Mill">
+									</div>
+									<h2 class="h5"><a href="#">David Mill</a></h5>
+									<strong class="subtitle">React Developer</strong>
+									<ul class="social-links">
+										<li><a href="#"><i class="icon-facebook"></i></a></li>
+										<li><a href="#"><i class="icon-twitter"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+									<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">View Resume</span></a>
 								</div>
 							</article>
 						</div>

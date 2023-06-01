@@ -25,6 +25,24 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-linkedin:before {
+  content: "\e928";
+}
+.icon-youtube:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right1:before {
+  content: "\e902";
+}
+.icon-arrow-down:before {
+  content: "\e903";
+}
+.icon-arrow-up:before {
+  content: "\e904";
+}
 .icon-sit:before {
   content: "\e922";
 }
@@ -124,6 +142,9 @@ i {
 .icon-search:before {
   content: "\e919";
 }
+.icon-linkedin1:before {
+  content: "\e929";
+}
 .icon-suitcase1:before {
   content: "\e926";
 }
@@ -177,19 +198,4 @@ i {
 }
 .icon-schedule:before {
   content: "\e906";
-}
-.icon-youtube:before {
-  content: "\e900";
-}
-.icon-arrow-left:before {
-  content: "\e901";
-}
-.icon-arrow-right1:before {
-  content: "\e902";
-}
-.icon-arrow-down:before {
-  content: "\e903";
-}
-.icon-arrow-up:before {
-  content: "\e904";
 }
