@@ -2576,6 +2576,7 @@
 /* Visual Banner Styles */
 .visual-banner {
     overflow: hidden;
+    border-radius: 5px;
 
     .image-holder {
         overflow: hidden;
@@ -2590,14 +2591,23 @@
     }
 
     .details-block {
-        padding: 50px 25px;
-        display: flex;
-        align-items: flex-start;
+        padding: 20px 15px;
+        position: relative;
+
+        @include media-breakpoint-up(md) {
+            padding: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: 50px 25px;
+        }
     }
     
     .icon-box {
-        width: 142px;
-        height: 142px;
+        width: 100px;
+        height: 100px;
         background: #fafafa;
         border: 1px solid #c8c8c8;
         border-radius: 100%;
@@ -2605,34 +2615,87 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 auto 20px;
+
+        @include media-breakpoint-up(md) {
+            width: 142px;
+            height: 142px;
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+        }
     }
 
     .textbox {
-        flex-grow: 1;
-        flex-basis: 0;
-        min-width: 0;
-        padding-left: 30px;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            flex-grow: 1;
+            flex-basis: 0;
+            min-width: 0;
+            padding-left: 30px;
+            text-align: left;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 20px;
+        }
     }
 
     .heading-row {
-        display: flex;
-        align-items: center;
+        margin: 0 0 20px;
+        
+        @include media-breakpoint-up(xl) {
+            padding-right: 170px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            display: flex;
+            align-items: center;
+            flex-flow: row wrap;
+        }
     }
 
     h2 {
-        min-width: 320px;
+        margin: 0 0 20px;
+
+        @include media-breakpoint-up(xl) {
+            min-width: 320px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin: 0;
+        }
     }
 
     .reviews-box {
         display: flex;
         align-items: center;
+        width: 100%;
+
+        @include media-breakpoint-up(xxl) {
+            width: auto;
+        }
     }
 
     .star-ratings {
-        font-size: 28px;
+        font-size: 22px;
         line-height: 1;
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 28px;
+        }
     }
 
     .review-stats {
@@ -2643,35 +2706,297 @@
     .meta-items {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 0 -15px -15px;
         display: flex;
         align-items: center;
         flex-flow: row wrap;
         color: #a7a7a7;
         
         li {
+            padding: 0 15px 15px;
             display: flex;
             align-items: center;
         }
 
         .icon {
-            width: 60px;
-            height: 60px;
+            width: 44px;
+            height: 44px;
             background: $white;
             border-radius: 100%;
-            padding: 10px;
+            padding: 7px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 28px;
+            font-size: 22px;
             line-height: 1;
             color: $body-color;
             margin: 0 15px 0 0;
+
+            @include media-breakpoint-up(xxl) {
+                width: 60px;
+                height: 60px;
+                padding: 10px;
+                font-size: 28px;
+            }
         }
 
         .subtitle {
             font-weight: 500;
         }
+    }
+
+    .buttons-list {
+        margin-top: 30px;
+    }
+}
+
+/* Buttons List Styles */
+.buttons-list {
+    margin: 0 -5px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    @include media-breakpoint-up(xl) {
+        margin: 0 -10px;
+    }
+
+    li {
+        padding: 0 5px;
+
+        @include media-breakpoint-up(xl) {
+            padding: 0 10px;
+        }
+
+        &.btn-follow {
+            @include media-breakpoint-up(xl) {
+                position: absolute;
+                right: 25px;
+                top: 48px;
+            }
+        }
+    }
+}
+
+/* Column Wrapper Styles */
+.column-wrapper {
+    overflow: hidden;
+    
+    h2 {
+        margin: 0 0 16px;
+    }
+
+    p {
+        margin: 0 0 33px;
+    }
+}
+
+/* Column Wrapper Styles */
+.bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 27px;
+
+    li {
+        position: relative;
+        padding: 0 0 0 40px;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            top: 13px;
+            width: 10px;
+            height: 10px;
+            content: '';
+            border-radius: 100%;
+            background: $primary;
+        }
+    }
+}
+
+
+/* Gallery BLock Styles */
+.gallery-block {
+    overflow: hidden;
+    position: relative;
+
+    h2 {
+        margin: 0 0 35px;
+    }
+
+    .slick-dots {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+/* Gallery Slider Styles */
+.gallery-slider {
+    padding: 30px 20px;
+    border-radius: 5px;
+    position: static;
+
+    .gallery-image {
+        width: 100%;
+        overflow: hidden;
+        padding: 0 15px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+/* Slick Dots Styles */
+.slick-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0 -7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    line-height: 0;
+
+    li {
+        font-size: 0;
+        line-height: 0;
+        padding: 0 7px;
+
+        button {
+            font-size: 0;
+            line-height: 0;
+            width: 15px;
+            height: 15px;
+            background: #e5e5e5;
+            color: transparent;
+            padding: 0;
+            display: block;
+            border-radius: 100%;
+            border: 0;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $primary;
+            }
+        }
+
+        &.slick-active {
+            button {
+                background: $primary;
+            }
+        }
+    }
+}
+
+/* Aside Box Styles */
+.aside-box {
+    border-radius: 5px;
+    padding: 32px;
+
+    h4 {
+        margin-bottom: 20px;
+    }
+
+    .map-holder {
+        height: 350px;
+    }
+}
+
+/* About List Styles */
+.about-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        margin: 0 0 30px;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        .icon {
+            width: 70px;
+            height: 70px;
+            background: $white;
+            border-radius: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            line-height: 1;
+            margin: 0 25px 0 0;
+        }
+
+        .textbox {
+            flex-grow: 1;
+            flex-basis: 0;
+            min-width: 0;
+        }
+
+        .subtitle {
+            display: block;
+            font-weight: 600;
+        }
+
+        .subtext {
+            display: block;
+            line-height: 1.5;
+
+            @include media-breakpoint-up(xl) {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* sSocial Networks large Styles */
+.social-networks {
+    &.large {
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid #ababab;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 28px;
+            margin-bottom: -5px;
+        }
+
+        li {
+            a {
+                color: #ababab;
+
+                @include media-breakpoint-up(xl) {
+                    width: 46px;
+                    height: 46px;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+/* Captcha Box Styles */
+.captcha-box {
+    overflow: hidden;
+
+    .captcha-text {
+        display: block;
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0 0 12px;
+        color: $black;
     }
 }
 

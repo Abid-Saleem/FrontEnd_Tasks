@@ -41,30 +41,18 @@ function initSlickCarousel() {
 		centerPadding: '0',
 	});
 
-	jQuery('.slider').slick({
+	jQuery('.gallery-slider').slick({
 		slidesToScroll: 1,
-		slidesToShow: 4,
+		slidesToShow: 3,
 		rows: 0,
 		arrows: false,
-		focusOnSelect: true,
-		infinite: false,
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
 		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 2,
-				},
-			},
 		    {
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2,
-				},
-		    },
-		    {
-				breakpoint: 576,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 2,
