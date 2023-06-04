@@ -2953,6 +2953,16 @@
                 height: 10px;
             }
         }
+
+        &:last-child {
+            .candidate-info-description {
+                p {
+                    &:last-child {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -3011,67 +3021,94 @@
 /* Candidate Details Styles */
 .candidate-details {
     overflow: hidden;
+    margin-bottom: 33px;
+    border-bottom: 1px solid #c4c4c4;
 
     &:not(.candidate-bio) {
         line-height: 1.625;
     }
 
-    + .candidate-details {
-        padding-top: 33px;
-        border-top: 1px solid #c4c4c4;
-    }
-
     .bullet-list {
         li {
-            display: flex;
-            align-items: flex-start;
+            @include media-breakpoint-up(md) {
+                display: flex;
+                align-items: flex-start;
+            }
         }
     }
+}
 
-    .candidate-info-title {
+/* Candidate Info Title Styles */
+.candidate-info-title {
+    width: 100%;
+    margin: 0 0 15px;
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
         width: 230px;
         min-width: 230px;
         text-align: right;
         padding-right: 30px;
+    }
 
-        .title {
-            display: block;
-            font-size: 18px;
-            line-height: 1.5;
-            font-weight: 600;
-            padding-top: 3px;
+    .title {
+        display: block;
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 600;
+        margin: -2px 0 5px;
+
+        @include media-breakpoint-up(md) {
             margin: 0 0 15px;
         }
 
-        .subtitle {
-            font-size: 14px;
-            line-height: 1.5;
-            display: block;
-            font-weight: 500;
+        @include media-breakpoint-up(xl) {
+            padding-top: 3px;
         }
     }
 
-    .candidate-info-description {
-        flex-grow: 1;
-        flex-basis: 0;
-        min-width: 0;
-
-        h3 {
-            margin: 0 0 11px;
-        }
+    .subtitle {
+        font-size: 14px;
+        line-height: 1.5;
+        display: block;
+        font-weight: 500;
     }
+}
 
-    .candidate-info-head {
-        h3 {
-            &.h6 {
-                padding-top: 4px;
+/* Candidate Info Description Styles */
+.candidate-info-description {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+
+    h3 {
+        margin: 0 0 11px;
+    }
+}
+
+/* Candidate Info Head Styles */
+.candidate-info-head {
+    h3 {
+        &.h6 {
+            margin-top: -2px;
+
+            @include media-breakpoint-up(md) {
                 margin-right: 30px;
+                margin-top: 0;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-top: 4px;
             }
         }
+    }
 
-        .duration {
-            font-size: 14px;
-            font-weight: 600;
+    .duration {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        @include media-breakpoint-up(xl) {
             margin-bottom: 5px;
         }
     }
@@ -3085,12 +3122,13 @@
     display: inline-flex;
     flex-flow: row wrap;
     border: 1px solid #c0c0c0;
+    border-bottom: 0;
+    overflow: hidden;
 
     li {
         border-left: 1px solid #c0c0c0;
         border-bottom: 1px solid #c0c0c0;
         margin-left: -1px;
-        margin-bottom: -1px;
         min-width: 140px;
         height: 110px;
         padding: 10px;
@@ -3099,6 +3137,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        overflow: hidden;
+        width: 50%;
+
+        @include media-breakpoint-up(md) {
+            width: auto;
+            flex: 1;
+        }
 
         &:nth-child(odd) {
             background: #f1f2f1;
@@ -3126,16 +3171,25 @@
 .skills-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 33px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 
     li {
-        width: 48%;
-        padding: 10px 0;
+        width: 100%;
+        padding: 5px 0;
         display: flex;
         align-items: center;
+
+        @include media-breakpoint-up(md) {
+            width: 47%;
+            padding: 7px 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 45.5%;
+        }
     }
 
     .subtitle {
