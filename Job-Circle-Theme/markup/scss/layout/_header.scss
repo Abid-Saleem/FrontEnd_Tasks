@@ -314,6 +314,14 @@
             background: transparent;
         }
 
+        li {
+            &.active {
+                > a {
+                    color: $primary;
+                }
+            }
+        }
+
         .dropdown-item {
             padding: 7px 15px;
             

@@ -207,6 +207,18 @@ a {
     color: $black;
     border-color: #c0c0c0;
 
+    @include media-breakpoint-down(xl) {
+        font-size: 18px;
+        padding: 13px 32px;
+        border-width: 1px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        padding: 10px 25px;
+        border-width: 1px;
+    }
+
     &:focus {
         box-shadow: none;
         border-color: #c0c0c0;

@@ -6,6 +6,8 @@ jQuery(function(){
 	initStickyHeader();
 	initMobileNav();
 	initResizeEffect();
+	initPriceRange();
+	initCustomFunctions();
 
 	jQuery(document).click(function(e) {
 		var target = e.target;
@@ -143,11 +145,58 @@ function initMobileNav() {
 	});
 }
 
-// Resiz _Effect function
+// Resize Effect function
 function initResizeEffect() {
 	jQuery(window).resize(function () {
 		if(jQuery(window).width() > 991) {
 			jQuery('body').removeClass('nav-active');
+		}
+	});
+}
+
+
+// Price Range function
+function initPriceRange() {
+	$("#slider-range").slider({
+		range: true,
+		min: 0,
+		max: 100000,
+		step: 5000,
+		values: [0, 100000],
+		slide: function(event, ui) {
+		  $("#amount-start").val("$" + ui.values[0]);
+		  $("#amount-end").val("$" + ui.values[1]);
+		}
+	  });
+	  
+	  $("#amount-start").val("$" + $("#slider-range").slider("values", 0));
+	  $("#amount-end").val("$" + $("#slider-range").slider("values", 1));
+}
+
+
+// Custom Functions
+function initCustomFunctions() {
+	// Checkbox Limit Function
+	jQuery('.buttonShowMore').click(function (e) {
+		e.preventDefault();
+
+		if(jQuery('.checkbox-limit').hasClass('options-active')) {
+			jQuery('.checkbox-limit').removeClass('options-active');
+		}
+		else {
+			jQuery('.checkbox-limit').addClass('options-active');
+		}
+	});
+
+	// Filters Hide Show for Mobile Function
+	jQuery('.filters-opener').click(function (e) {
+		e.preventDefault();
+
+		if(jQuery('.filters-sidebar').hasClass('filters-active')) {
+			jQuery('.filters-sidebar').removeClass('filters-active');
+		}
+		else {
+			jQuery('.filters-sidebar').addClass('filters-active');
 		}
 	});
 }
