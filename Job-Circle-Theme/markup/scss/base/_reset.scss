@@ -92,7 +92,12 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(lg) {
+        font-size: 21px;
+    }
+    
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
     }
 }
 
@@ -104,6 +109,20 @@ p {
 
 a {
 	transition: all 0.3s ease-in-out;
+}
+
+.text-link {
+    color: $primary;
+    font-weight: 600;
+    text-decoration: underline;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
 }
 
 // main container styles
