@@ -1796,6 +1796,9 @@
     .post-author {
         font-size: 13px;
         color: $gray-500;
+        border: 0;
+        padding: 0;
+        margin: 0;
 
         @include media-breakpoint-up(lg) {
             font-size: 16px;
@@ -4151,11 +4154,6 @@
     }
 }
 
-/* Section Services Styles */
-.section-services {
-
-}
-
 /* Service Box Styles */
 .service-box {
     display: flex;
@@ -4222,26 +4220,60 @@
     blockquote {
         margin: 0 0 35px;
         background: #f5f5f5;
-        border-left: 14px solid $primary;
-        padding: 35px 40px 33px 108px;
+        border-left: 6px solid $primary;
+        padding: 15px 15px 15px 45px;
         position: relative;
-        font-size: 20px;
-        line-height: 2.25;
+        font-size: 14px;
+        line-height: 1.5;
         font-style: italic;
+
+        @include media-breakpoint-up(sm) {
+            padding: 20px 20px 20px 60px;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 16px;
+            padding: 25px 25px 25px 108px;
+            border-left-width: 10px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 30px 30px 30px 108px;
+            font-size: 18px;
+            line-height: 1.85;
+            border-left-width: 14px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 35px 40px 33px 108px;
+            font-size: 20px;
+            line-height: 2.25;
+        }
 
         &:before {
             content: '“';
-            font-size: 154px;
+            font-size: 70px;
             line-height: 0.5;
             color: #d4d4d4;
             font-weight: 700;
             position: absolute;
-            left: 13px;
+            left: 5px;
             top: 50%;
             transform: translateY(-50%);
             font-family: Arial, Helvetica, sans-serif;
             font-style: normal;
             margin-top: 2.5%;
+
+            @include media-breakpoint-up(sm) {
+                left: 7px;
+                font-size: 100px;
+            }
+
+            @include media-breakpoint-up(md) {
+                left: 13px;
+                font-size: 154px;
+                margin-top: 2.5%;
+            }
         }
         
         q {
@@ -4272,10 +4304,15 @@
     }
 
     .icon {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1;
         color: $primary;
-        margin: 0 15px 0 0;
+        margin: 0 10px 0 0;
+
+        @include media-breakpoint-up(md) {
+            font-size: 24px;
+            margin: 0 15px 0 0;
+        }
     }
 }
 
@@ -4298,9 +4335,18 @@
 .post-social {
     display: flex;
 
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
     .title {
         display: block;
-        margin: 0 10px 0 0;
+        margin: 4px 10px 0 0;
+
+        @include media-breakpoint-up(md) {
+            margin: 0 10px 0 0;
+        }
 
         @include media-breakpoint-up(xl) {
             font-size: 18px;
@@ -4323,16 +4369,21 @@
     flex-flow: row wrap;
 
     > a {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.5;
         color: #a7a7a7;
         display: inline-block;
         font-weight: 500;
         border: 1px solid #aeaeae;
-        padding: 6px 15px;
+        padding: 4px 10px;
         border-radius: 20px;
         margin: 0 6px 0 0;
         transition: all 0.3s ease-in-out;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 14px;
+            padding: 6px 15px;
+        }
 
         &:hover {
             color: $white;
@@ -4368,20 +4419,32 @@
 
 /* Post Author Styles */
 .post-author {
-    padding: 25px;
+    padding: 15px;
     overflow: hidden;
     border: 1px solid #ccc;
-    display: flex;
-    align-items: flex-start;
     margin: 0 0 35px;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        padding: 25px;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+    }
 
     .author-avatar {
-        width: 110px;
-        height: 110px;
+        width: 65px;
+        height: 65px;
         overflow: hidden;
         border-radius: 100%;
         flex-shrink: 0;
-        margin: 0 25px 0 0;
+        margin: 0 auto 15px;
+
+        @include media-breakpoint-up(md) {
+            width: 110px;
+            height: 110px;
+            margin: 0 25px 0 0;
+        }
 
         img {
             width: 100%;
@@ -4398,15 +4461,23 @@
 
         .title {
             display: block;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.5;
             color: $black;
             font-weight: 700;
             margin: 0 0 7px;
 
+            @include media-breakpoint-up(md) {
+                font-size: 20px;
+            }
+
             span {
                 color: #999;
-                font-size: 16px;
+                font-size: 14px;
+                
+                @include media-breakpoint-up(md) {
+                    font-size: 16px;
+                }
             }
         }
 
@@ -4428,7 +4499,11 @@
         background: transparent;
 
         .slick-slide {
-            padding: 0 15px;
+            padding: 0 5px;
+
+            @include media-breakpoint-up(xxl) {
+                padding: 0 15px;
+            }
         }
     }
 
@@ -4437,6 +4512,11 @@
         border: 1px solid #d8d8d8;
 
         @include media-breakpoint-up(lg) {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        @include media-breakpoint-up(xl) {
             font-size: 16px;
             line-height: 1.688;
         }
@@ -4447,7 +4527,15 @@
 
         .textbox,
         .post-footer {
-            padding: 0 18px;
+            padding: 0 15px;
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 12px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 0 18px;
+            }
         }
 
         h4, .h5 {
@@ -4469,11 +4557,27 @@
 
         .post-meta {
             width: calc(100% + 10px);
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 500;
+            margin-bottom: 10px;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 14px;
+            }
+
+            li {
+                margin: 0 0 5px;
+            }
 
             .icon {
+                margin-right: 7px;
+                font-size: 16px;
+
                 @include media-breakpoint-up(lg) {
+                    font-size: 17px;
+                }
+
+                @include media-breakpoint-up(xxl) {
                     font-size: 20px;
                     margin-right: 10px;
                 }
@@ -4485,7 +4589,10 @@
 /* Commentlist Styles */
 .commentlist {
 	margin: 0 0 35px;
-    line-height: 1.875;
+
+    @include media-breakpoint-up(xl) {
+        line-height: 1.875;
+    }
 
 	.edit-link {
 		margin: 0;
@@ -4493,7 +4600,11 @@
 
 	.avatar-holder {
 		float: left;
-		margin: 0 20px 0 0;
+        margin: 0 15px 0 0;
+
+        @include media-breakpoint-up(xl) {
+		    margin: 0 20px 0 0;
+        }
 	}
 
     .commentlist-holder {
@@ -4512,8 +4623,12 @@
         margin: 0 0 7px;
 
         strong {
-            font-size: 18px;
+            font-size: 16px;
             color: $black;
+
+            @include media-breakpoint-up(md) {
+                font-size: 18px;
+            }
         }
     }
 
@@ -4529,23 +4644,37 @@
     border: 1px solid #d8d8d8;
 
     .comment {
-        padding: 30px;
+        padding: 15px;
         overflow: hidden;
+
+        @include media-breakpoint-up(xl) {
+            padding: 30px;
+        }
     }
 
 	.commentlist-item {
-		padding-left: 10%;
+		padding-left: 6%;
         border-radius: 0;
         border: 0;
         border-top: 1px solid #d8d8d8;
 
 		@include media-breakpoint-up(md) {
+            padding-left: 10%;
 		}
 	}
 
     .avatar-holder {
-        width: 93px;
-        margin-top: 10px;
+        width: 55px;
+        margin-top: 6px;
+
+        @include media-breakpoint-up(md) {
+            width: 75px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 93px;
+            margin-top: 10px;
+        }
 
         img {
             width: 100%;
@@ -4566,6 +4695,15 @@
 
 /* Comment Form Styles */
 .comment-form {
+
+    p {
+        margin: 0 0 15px;
+
+        @include media-breakpoint-up(md) {
+            margin: 0 0 25px;
+        }
+    }
+
 	label {
 		display: block;
 		padding-bottom: 4px;
@@ -4574,9 +4712,17 @@
 	textarea {
 		overflow: auto;
 		margin: 0;
-		height: 330px;
+		height: 150px;
 		min-height: 120px;
         border-radius: 7px;
+
+        @include media-breakpoint-up(md) {
+            height: 250px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            height: 330px;
+        }
 	}
 
 	textarea,
@@ -4597,7 +4743,19 @@
 
 /* Sidebar Widgets Styles */
 .widget {
-	padding: 30px;
+	padding: 25px 20px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 20px 15px 25px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: 25px 20px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        padding: 30px;
+    }
 
     h3, h3, h4, .h4, h5, .h5 {
         margin: 0 0 15px;
@@ -4708,11 +4866,11 @@
     line-height: 1.35;
 
     li {
-        padding: 0 0 25px;
-        border: 0;
+        padding: 0 0 21px !important;
+        border: 0 !important;
 
         &:last-child {
-            padding: 0;
+            padding: 0 !important;
         }
     }
 
@@ -4722,6 +4880,7 @@
         border-radius: 5px;
         overflow: hidden;
         flex-shrink: 0;
+        margin-top: 4px;
 
         img {
             width: 100%;
@@ -4740,14 +4899,20 @@
 
     .title {
         display: block;
-        margin: 0 0 5px;
+        margin: 0 0 7px;
+
+        a {
+            @include media-breakpoint-up(lg) {
+                font-size: 15px;
+            }
+        }
     }
 
     .date {
         display: flex;
         align-items: center;
         color: $black;
-        font-weight: 14px;
+        font-size: 14px;
         font-weight: 400;
 
         i {
@@ -4809,6 +4974,10 @@
         font-weight: 400;
         flex-grow: 1;
         min-width: 0;
+        
+        @include media-breakpoint-up(lg) {
+            font-size: 15px;
+        }
     }
 
     p {
