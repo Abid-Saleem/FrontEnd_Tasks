@@ -4595,11 +4595,13 @@
     border: 1px solid #ccc;
 }
 
+/* Sidebar Widgets Styles */
 .widget {
 	padding: 30px;
 
     h3, h3, h4, .h4, h5, .h5 {
         margin: 0 0 15px;
+        color: $black;
     }
 
     .search-form {
@@ -4695,109 +4697,132 @@
         }
     }
 
-    .recent-posts {
-        padding: 0;
-        line-height: 1.35;
-
-        li {
-            padding: 0 0 25px;
-            border: 0;
-
-            &:last-child {
-                padding: 0;
-            }
-        }
-
-        .thumbnail {
-            width: 66px;
-            height: 66px;
-            border-radius: 5px;
-            overflow: hidden;
-            flex-shrink: 0;
-
-            img {
-                width: 100%;
-                height: 100%;
-                display: block;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-
-        .textbox {
-            flex-grow: 1;
-            min-width: 0;
-            padding-left: 15px;
-        }
-
-        .title {
-            display: block;
-            margin: 0 0 5px;
-        }
-
-        .date {
-            display: flex;
-            align-items: center;
-            color: $black;
-            font-weight: 14px;
-            font-weight: 400;
-
-            i {
-                color: $primary;
-                font-size: 16px;
-                margin: 0 10px 0 0;
-            }
-        }
-
-        p {
-            font-weight: 400;
-            margin: 0;
-            color: $body-color;
-        }
-    }
-
     + .widget {
         border-top: 1px solid #ccc;
     }
 }
 
-.post-password-form {
-	label {
-		display: block;
-		margin-bottom:4px;
-	}
-	input[type='password'] {
-		margin: 0 4px 0 0;
-		max-width: 300px;
-		width:100%;
-	}
+/* Recent Posts Styles */
+.recent-posts {
+    padding: 0;
+    line-height: 1.35;
+
+    li {
+        padding: 0 0 25px;
+        border: 0;
+
+        &:last-child {
+            padding: 0;
+        }
+    }
+
+    .thumbnail {
+        width: 66px;
+        height: 66px;
+        border-radius: 5px;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .textbox {
+        flex-grow: 1;
+        min-width: 0;
+        padding-left: 15px;
+    }
+
+    .title {
+        display: block;
+        margin: 0 0 5px;
+    }
+
+    .date {
+        display: flex;
+        align-items: center;
+        color: $black;
+        font-weight: 14px;
+        font-weight: 400;
+
+        i {
+            color: $primary;
+            font-size: 16px;
+            margin: 0 10px 0 0;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        margin: 0;
+        color: $body-color;
+    }
 }
 
-.post-password-form {
-	p {
-		@extend %clearfix;
-	}
-	input {
-		float: left;
-		height: 2em;
-		&[type='password'] {
-			width: 150px;
-		}
-	}
+/* Recent Tweets Slider Styles */
+.tweets-slider {
+    .slick-dots {
+        li {
+            border: 0 !important;
+            padding: 0 3px !important;
+
+            button {
+                width: 7px;
+                height: 7px;
+                background: #a7a7a7;
+
+                &:hover {
+                    background: $primary;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    background: $primary;
+                }
+            }
+        }
+    }
 }
 
-.post-password-form,
-.search-form {
-	input[type='submit'] {
-		background: $primary;
-		color: $white;
-		height: 2em;
-		border: none;
-		padding: 0 .5em;
-		&:hover {
-			opacity: 0.8;
-		}
-	}
+/* Recent Tweets Styles */
+.recent-tweets {
+    display: flex;
+    align-items: flex-start;
+
+    .icon {
+        color: #28daf4;
+        font-size: 24px;
+        line-height: 1;
+        flex-shrink: 0;
+        width: 25px;
+        margin: 4px 10px 0 0;
+    }
+
+    .textbox {
+        line-height: 1.5;
+        font-weight: 400;
+        flex-grow: 1;
+        min-width: 0;
+    }
+
+    p {
+        margin: 0 0 20px;
+    }
+
+    a {
+        font-weight: 500;
+        color: $black;
+
+        &:hover {
+            color: $primary;
+        }
+    }
 }
 
 
