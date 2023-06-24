@@ -1,19 +1,6 @@
 body {
 	min-width: $base-min-width;
 
-    @include media-breakpoint-down(xl) {
-        line-height: 1.75;
-        font-size: 15px;
-    }
-
-    @include media-breakpoint-down(md) {
-        line-height: 1.5;
-    }
-
-    @include media-breakpoint-down(sm) {
-        font-size: 14px;
-    }
-
     &.nav-active {
         overflow: hidden;
     }
@@ -129,36 +116,33 @@ a {
 #wrapper {
 	width: 100%;
 	position: relative;
+    overflow: hidden;
 }
 
 .btn {
     overflow: hidden;
     position: relative;
-    border: none;
-
-    @include media-breakpoint-down(xxl) {
-        font-size: 20px;
-        padding: 15px 35px;
-    }
-
-    @include media-breakpoint-down(xl) {
-        font-size: 16px;
-    }
+    font-weight: 700;
+    min-width: 160px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
 
     &:before {
         position: absolute;
-        left: 0;
+        left: 50%;
         top: 0;
         bottom: 0;
         width: 0;
+        transform: translateX(-50%);
         content: '';
-        border-radius: 40px;
         transition: all 0.3s ease-in-out;
     }
 
     &:hover {
         &:before {
             width: 100%;
+            background: rgba(255,255,255,0.15);
         }
     }
 
@@ -170,12 +154,10 @@ a {
         &:first-child:active {
             color: $white;
         }
+    }
 
-        &:hover {
-            &:before {
-                background: $info;
-            }
-        }
+    &.btn-secondary {
+        border-color: rgba(255,255,255,0.46);
     }
 
     &.btn-info {
@@ -185,12 +167,6 @@ a {
         &:active,
         &:first-child:active {
             color: $white;
-        }
-
-        &:hover {
-            &:before {
-                background: $primary;
-            }
         }
     }
 

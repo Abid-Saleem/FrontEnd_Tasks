@@ -2,7 +2,7 @@
 jQuery(function(){
 	initSlickCarousel();
 	initSelect2();
-    initFancybox();
+    initCountrySelect();
 	initStickyHeader();
 	initMobileNav();
 	initResizeEffect();
@@ -115,8 +115,13 @@ function initSelect2() {
 }
   
 // Fancybox init
-function initFancybox() {
-	jQuery('a.lightbox, [data-fancybox]').fancybox();
+function initCountrySelect() {
+	jQuery(".country-selector").countrySelect({
+		defaultCountry: "us",
+		// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+		// responsiveDropdown: true,
+		preferredCountries: [/*'ca', 'gb', 'us'*/]
+	});
 }
 
 // StickyHeader init
