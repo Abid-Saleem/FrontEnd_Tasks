@@ -1,0 +1,306 @@
+body {
+	min-width: $base-min-width;
+
+    @include media-breakpoint-down(xl) {
+        line-height: 1.75;
+        font-size: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        line-height: 1.5;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 14px;
+    }
+
+    &.nav-active {
+        overflow: hidden;
+    }
+}
+
+h1, .h1 {
+    @include media-breakpoint-down(xxxl) {
+        font-size: 55px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 48px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 42px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 34px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+    }
+}
+
+h2, .h2 {
+    @include media-breakpoint-down(xxxl) {
+        font-size: 42px;
+    }
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 38px;
+    }
+    
+    @include media-breakpoint-down(xl) {
+        font-size: 34px;
+    }
+    
+    @include media-breakpoint-down(lg) {
+        font-size: 31px;
+    }
+    
+    @include media-breakpoint-down(md) {
+        font-size: 28px;
+    }
+}
+
+h3, .h3 {
+    @include media-breakpoint-down(xxl) {
+        font-size: 32px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 28px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 24px;
+    }
+}
+
+h4, .h4 {
+    @include media-breakpoint-down(xxl) {
+        font-size: 27px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 24px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 21px;
+    }
+}
+
+h5, .h5 {
+    @include media-breakpoint-down(lg) {
+        font-size: 21px;
+    }
+    
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}
+
+p {
+    @include media-breakpoint-down(md) {
+        margin: 0 0 15px;
+    }
+}
+
+a {
+	transition: all 0.3s ease-in-out;
+}
+
+.text-link {
+    color: $primary;
+    font-weight: 600;
+    text-decoration: underline;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+    }
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+// main container styles
+#wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.btn {
+    overflow: hidden;
+    position: relative;
+    border: none;
+
+    @include media-breakpoint-down(xxl) {
+        font-size: 20px;
+        padding: 15px 35px;
+    }
+
+    @include media-breakpoint-down(xl) {
+        font-size: 16px;
+    }
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 0;
+        content: '';
+        border-radius: 40px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &.btn-primary {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:hover {
+            &:before {
+                background: $info;
+            }
+        }
+    }
+
+    &.btn-info {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:hover {
+            &:before {
+                background: $primary;
+            }
+        }
+    }
+
+    &.btn-link {
+        color: $black;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    &.btn-sm {
+        @include media-breakpoint-down(xxl) {
+            padding: 10px 30px;
+            font-size: 17px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+    }
+
+    .btn-text {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.form-control {
+    color: $black;
+    border-color: #c0c0c0;
+
+    @include media-breakpoint-down(xl) {
+        font-size: 18px;
+        padding: 13px 32px;
+        border-width: 1px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        padding: 10px 25px;
+        border-width: 1px;
+    }
+
+    &:focus {
+        box-shadow: none;
+        border-color: #c0c0c0;
+    }
+
+    &::placeholder {
+        color: rgba(0,0,0,0.3);
+        opacity: 1;
+    }
+
+    &.form-control-sm {
+        min-height: inherit;
+        line-height: 24px;
+    }
+
+    &.form-control-lg {
+        border-radius: 55px;
+        border-width: 2px;
+
+        @include media-breakpoint-down(xxl) {
+            font-size: 20px;
+            padding: 15px 40px;
+            min-height: inherit;
+        }
+
+        @include media-breakpoint-down(xl) {
+            font-size: 18px;
+            padding: 13px 32px;
+            border-width: 1px;
+        }
+
+        @include media-breakpoint-down(lg) {
+            font-size: 16px;
+            padding: 10px 25px;
+            border-width: 1px;
+        }
+    }
+}
+
+textarea {
+    resize: none;
+
+    &.form-control {
+        &.form-control-sm {
+            height: 140px;
+            border-radius: 7px;
+        }
+
+        &.form-control-lg {
+            border-radius: 10px;
+            height: 420px;
+
+            @include media-breakpoint-down(xxl) {
+                height: 350px;
+            }
+
+            @include media-breakpoint-down(xl) {
+                height: 280px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                height: 200px;
+            }
+        }
+    }
+}
