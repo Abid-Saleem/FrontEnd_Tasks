@@ -4,7 +4,7 @@
     overflow: hidden;
     font-size: 15px;
     line-height: 1.6;
-    margin-top: 100px;
+    margin-top: 80px;
     color: $white;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     
@@ -18,6 +18,7 @@
 
     @include media-breakpoint-up(xl) {
         font-size: 24px;
+        margin-top: 100px;
     }
 
     @include media-breakpoint-up(xxl) {
@@ -29,18 +30,35 @@
     }
 
     .sticky-header & {
-        margin-top: 80px;
+        margin-top: 65px;
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 80px;
+        }
     }
 
     .visual-textbox {
         overflow: hidden;
         padding-bottom: 26px;
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+            padding-bottom: 50px;
+        }
     }
 
     h1 {
         font-size: 82px;
         margin: 0 0 10px;
         letter-spacing: 2.4px;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 62px;
+        }
+
+        @include media-breakpoint-down(md) {
+            font-size: 36px;
+        }
 
         span {
             color: $primary;
@@ -54,13 +72,26 @@
         margin: 0 0 37px;
         letter-spacing: 3.4px;
         text-transform: uppercase;
+
+        @include media-breakpoint-down(md) {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
     }
 
     .buttons-wrap {
-        margin: 0 -10px;
+        margin: 0 -10px -10px;
+
+        @include media-breakpoint-down(lg) {
+            justify-content: center;
+        }
 
         .btn {
-            margin: 0 10px;
+            margin: 0 10px 10px;
+
+            @include media-breakpoint-down(md) {
+                min-width: 60%;
+            }
         }
     }
 
@@ -70,8 +101,15 @@
 
     .visual-image-wrap {
         overflow: hidden;
-        border-radius: 49% 0 0 49%;
-        margin-right: calc((100vw - 1170px) / -2);
+
+        @include media-breakpoint-up(lg) {
+            border-radius: 49% 0 0 49%;
+            margin-right: calc((100vw - 930px) / -2);
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-right: calc((100vw - 1170px) / -2);
+        }
 
         img {
             width: 100%;
