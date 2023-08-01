@@ -129,6 +129,7 @@ a {
 #wrapper {
 	width: 100%;
 	position: relative;
+    overflow: hidden;
 }
 
 .btn {
@@ -213,6 +214,32 @@ a {
         @include media-breakpoint-down(lg) {
             font-size: 16px;
             padding: 10px 20px;
+        }
+    }
+
+    &.btn-green {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:before {
+            opacity: 0.5;
+        }
+
+        &:hover {
+            &:before {
+                background: $dark-green;
+            }
+        }
+
+        &.btn-sm {
+            font-size: 16px;
+            padding-top: 17px;
+            padding-bottom: 17px;
         }
     }
 

@@ -1,5 +1,5 @@
-/* Visal Block Styles */
-.visal-block {
+/* Visaul Block Styles */
+.visual-block {
     position: relative;
     overflow: hidden;
     font-family: $headings-font-family;
@@ -378,6 +378,53 @@
 
             @include media-breakpoint-up(xxxl) {
                 height: 94px;
+            }
+        }
+    }
+}
+
+/* Popular Searches Styles  */
+.popular-searches {
+    overflow: hidden;
+    padding-bottom: 20px;
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 0;
+    }
+
+    .subtitle {
+        display: block;
+        font-weight: 600;
+        color: #e5e5e5;
+        font-size: 16px;
+        margin: 0 0 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: -5px;
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 14px;
+        font-weight: 400;
+
+        li {
+            padding: 5px;
+
+            a {
+                display: block;
+                color: $black;
+                background: $lt-yellow;
+                border-radius: 25px;
+                padding: 5px 15px;
+                border: 1px solid $lt-yellow;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $lt-yellow;
+                    background: transparent;
+                }
             }
         }
     }
@@ -1934,7 +1981,7 @@
 }
 
 /* Subvisual Block Styles */
-.subvisal-block {
+.subvisual-block {
     position: relative;
     overflow: hidden;
     min-height: 300px;
