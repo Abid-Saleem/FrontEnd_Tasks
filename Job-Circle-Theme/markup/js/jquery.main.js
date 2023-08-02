@@ -104,6 +104,47 @@ function initSlickCarousel() {
 		arrows: false,
 		autoplay: true,
 	});
+
+	jQuery('.trending-categories-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 5,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 1375,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				},
+		    },
+		    {
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+		    },
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+		    },
+		],
+	});
 }
 
 // select2 init

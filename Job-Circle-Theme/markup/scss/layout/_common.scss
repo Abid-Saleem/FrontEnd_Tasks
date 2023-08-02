@@ -5041,6 +5041,308 @@
     }
 }
 
+/* Trending Categories Slider Styles */
+.trending-categories-slider {
+    margin: 0 -10px;
+
+    .slick-slide {
+        padding: 0 10px 20px;
+    }
+}
+
+/* Trending Categories Box Styles */
+.trending-categories-box {
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    display: block;
+    color: #444;
+    padding: 45px 15px 40px;
+    box-shadow: 0 10px 0 rgba(0,0,0,0.05);
+
+    @include media-breakpoint-up(md) {
+        padding: 55px 25px 50px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        border-radius: 45px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+        background: $lt-yellow;
+        margin: 0 auto 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 100% 100% 100%;
+    }
+
+    .textbox {
+        overflow: hidden;
+    }
+
+    .h6 {
+        display: block;
+        color: $black;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background: $dark-green;
+        border-color: $dark-green;
+        color: $white;
+        box-shadow: 0 10px 0 $lt-yellow;
+
+        .h6 {
+            color: $white;
+        }
+    }
+}
+
+/* Popular Jobs Box Styles */
+.popular-jobs-box {
+    height: 100%;
+
+    @include media-breakpoint-up(md) {
+        padding-left: 50px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 80px;
+    }
+
+    .box-holder {
+        background: #f5f5f5;
+        border-radius: 25px;
+        padding: 10px 10px 56px;
+        transition: all 0.3s ease-in-out;
+        height: 100%;
+        position: relative;
+        
+        @include media-breakpoint-up(md) {
+            padding: 15px 15px 70px 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 16px 16px 70px 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            border-radius: 45px;
+        }
+    }
+
+    .job-info {
+        background: $white;
+        border: 1px solid #d5d5d5;
+        border-radius: 25px;
+        padding: 15px;
+        display: flex;
+
+        @include media-breakpoint-up(md) {
+            margin-left: -50px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-left: -80px;
+            border-radius: 45px;
+        }
+
+        @include media-breakpoint-up(xxl) { 
+            padding: 30px;
+        }
+    }
+
+    .img-holder {
+        width: 54px;
+        height: 54px;
+        border-radius: 100%;
+        flex-shrink: 0;
+        border: 1px solid $white;
+        box-shadow: 5px 5px 20px rgba(0,0,0,0.075);
+        margin: 0 15px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media-breakpoint-up(xl) {
+            width: 78px;
+            height: 78px;
+        }
+
+        @include media-breakpoint-up(xxl) { 
+            margin: 0 20px 0 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .textbox {
+        flex-grow: 1;
+        flex-basis: 0;
+        min-width: 0;
+        line-height: 1.5;
+        font-size: 14px;
+        padding-top: 3px;
+    }
+
+    .h5 {
+        margin: 0 0 13px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 22px;
+        }
+    }
+
+    .meta-list {
+        list-style: none;
+        padding: 0 0 20px;
+        margin: -7px;
+        display: flex;
+        flex-flow: row wrap;
+
+        li {
+            display: flex;
+            align-items: center;
+            padding: 7px;
+
+            i {
+                margin: -2px 7px 0 0;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .tags-list {
+        padding: 0;
+        margin: -5px;
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+
+        li {
+            padding: 5px;
+        }
+
+        .tag {
+            text-align: center;
+            background: #edf0ff;
+            display: block;
+            padding: 8px 15px;
+            border-radius: 20px;
+
+            @include media-breakpoint-up(xl) {
+                min-width: 120px;
+            }
+        }
+    }
+
+    .jobs-foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            padding: 15px 16px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-left: 25px;
+        }
+
+        @include media-breakpoint-up(xxl) { 
+            padding-left: 50px;
+        }
+
+        .amount {
+            padding-left: 5px;
+
+            @include media-breakpoint-up(md) {
+                padding-left: 0;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: 18px;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .btn {
+        &.btn-green {
+            font-size: 13px;
+            background: $white;
+            color: $black;
+            font-weight: 700;
+            padding: 8px 15px;
+            min-width: 110px;
+            transition: all 0.3s ease-in-out;
+
+            @include media-breakpoint-up(md) {
+                font-size: 14px;
+                padding: 8px 20px;
+                min-width: 120px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                min-width: 140px;
+            }
+        }
+    }
+
+    &:hover {
+        .box-holder {
+            background: $lt-yellow;
+        }
+
+        .btn {
+            &.btn-green {
+                color: $white;
+                background: $green;
+            }
+        }
+    }
+}
+
+/* Check List Styles */
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: -5px 0;
+
+    li {
+        position: relative;
+        padding-left: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:before {
+            position: absolute;
+            left: 2px;
+            font-family: 'icomoon';
+            content: '\e952';
+            color: #4ab166;
+        }
+    }
+}
 
 /* Select 2 Styles */
 .select2-container--default {
@@ -5103,13 +5405,14 @@
     
     .select2-results__option--highlighted {
         &.select2-results__option--selectable {
-            background: $primary;
+            color: $black;
+            background: #eee;
         }
     }
 
     .select2-results__option--selected {
-        color: $white;
-        background: $info;
+        color: $black;
+        background: #eee;
     }
 }
 
