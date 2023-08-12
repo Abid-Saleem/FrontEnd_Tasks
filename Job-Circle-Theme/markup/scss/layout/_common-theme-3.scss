@@ -1,0 +1,508 @@
+.section-theme-3 {
+    font-family: $font-family-epilogue;
+
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+        font-family: $font-family-epilogue;
+    }
+
+    .section-header {
+        font-family: $font-family-epilogue;
+        color: #444;
+        font-weight: 400;
+        max-width: 730px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 16px;
+        }
+    
+        h2 {
+            color: $black;
+            margin: 0 0 10px;
+            letter-spacing: normal;
+            font-weight: 800;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 50px;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 60px;
+            }
+
+            .text-outlined {
+                position: relative;
+
+                &:before {
+                    width: 100%;
+                    height: 6px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: '';
+                    background: url('../images/outline-yellow.png') no-repeat;
+                    background-size: 100% 100%;
+
+                    @include media-breakpoint-up(md) {
+                        height: 9px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        height: 12px;
+                    }
+
+                    @include media-breakpoint-up(xxl) {
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .seprator {
+            height: 5px;
+            background: $green;
+            width: 80px;
+            background: transparent;
+            margin-top: 0;
+
+            &:after,
+            &:before {
+                height: 5px;
+                background: $green;
+            }
+
+            &:before {
+                width: 52px;
+                left: 0;
+            }
+
+            &:after {
+                width: 24px;
+                right: 0;
+            }
+        }
+    }
+
+    .slick-dots {
+        li {
+            padding: 0 3px;
+
+            button {
+                width: 26px;
+                height: 26px;
+                border: 7px solid $white;
+                background: #888;
+
+                &:hover {
+                    border-color: $green;
+                    background: $white;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    border-color: $green;
+                    background: $white;
+                }
+            }
+        }
+    }
+}
+
+/* Featured Categories Styles */
+.featured-categories {
+    overflow: hidden;
+
+    .btn-block {
+        .btn {
+            min-width: 215px;
+        }
+    }
+}
+
+/* Featured Category Box Styles */
+.featured-category-box {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 14px;
+    background: $white;
+    position: relative;
+    height: 100%;
+    transition: all 0.3s;
+
+    @include media-breakpoint-up(xl) {
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: 30px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        padding: 30px 40px;
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .img-holder {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        overflow: hidden;
+        border: 1px solid #fff;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+        margin: 0 0 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .tag {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        border-radius: 30px;
+        background: #f4f1e9;
+        padding: 8px 15px 6px;
+        line-height: 1.2;
+        color: #333;
+    }
+
+    .textbox {
+        overflow: hidden;
+    }
+
+    .h6 {
+        display: block;
+        color: $black;
+        transition: 0.3s;
+    }
+
+    .subtitle {
+        display: block;
+        margin-top: -5px;
+        font-weight: 500;
+    }
+
+    .location {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0 25px;
+        line-height: 1.5;
+
+        .icon {
+            margin: -2px 7px 0 0;
+        }
+    }
+
+    .job-info {
+        overflow: hidden;
+        line-height: 1.5;
+        margin: 0 0 20px;
+    }
+
+    .subtext {
+        display: block;
+        margin: 0 0 3px;
+    }
+
+    .amount {
+        display: block;
+
+        strong {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+
+    .btn.btn-dark-yellow {
+        font-size: 14px;
+        padding: 12px 15px;
+        transition: 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        .btn-text {
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            max-width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            display: block;
+            transition: 0.3s;
+            padding-right: 0;
+    
+        }
+
+        i {
+            transition: 0.3s;
+            padding: 0 0 0 2px;
+        }
+    }
+
+    &:hover {
+        background: $dark-blue;
+        border-color: $white;
+        color: $white;
+
+        .h6 {
+            color: $white;
+        }
+
+        .btn.btn-dark-yellow {
+            padding: 12px 23px 12px 25px;
+
+            .text {
+                max-width: 150px;
+                padding-right: 5px;
+            }
+
+            i {
+                padding: 1px 0 0 2px;
+            }
+        }
+    }
+}
+
+/* Featured Joblix Block Styles */
+.featured-joblix-block {
+    overflow: hidden;
+
+    .section-header {
+        h2 {
+            margin-bottom: 20px;
+            line-height: 1.2;
+
+            @include media-breakpoint-up(lg) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .video-box-wrap {
+        position: relative;
+
+        @include media-breakpoint-up(xl) {
+            max-width: 98%;
+        }
+
+        &:before,
+        &:after {
+            position: absolute;
+            content: '';
+        }
+
+        &:before {
+            background: url('../images/dots-pattern.png') no-repeat;
+            width: 112px;
+            height: 76px;
+            left: -45px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:after {
+            background: url('../images/bg-video-pattern.png') no-repeat;
+            background-size: 100% 100%;
+            width: 29%;
+            max-width: 209px;
+            right: 0;
+            top: -30px;
+            bottom: 0;
+        }
+    }
+
+    .video-box {
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+        margin: 0;
+        z-index: 1;
+
+        @include media-breakpoint-up(lg) {
+            max-width: 98%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            max-width: 93%;
+        }
+        
+        @include media-breakpoint-up(xxl) {
+            border-radius: 50px;
+        }
+
+        .button-play {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background: $white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include media-breakpoint-up(xxl) {
+                width: 90px;
+                height: 90px;
+            }
+
+            &:before,
+            &:after {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                content: '';
+            }
+
+            &:before {
+                width: 80%;
+                height: 80%;
+                border-radius: 100%;
+                border: 1px solid #909090;
+            }
+
+            &:after {
+                margin-left: 1px;
+                border-style: solid;
+                border-width: 7px 0 7px 7px;
+                border-color: transparent transparent transparent #3e3e3e;
+            }
+        }
+    }
+
+    .joblix-list {
+
+        @include media-breakpoint-up(xl) {
+            max-width: 90%;
+            margin-left: auto;
+        }
+    }
+}
+
+/* Joblix List Styles */
+.joblix-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+
+    li {
+        margin: 0 0 15px;
+        position: relative;
+        left: 0;
+        transition: 0.3s;
+
+        @include media-breakpoint-up(xxl) {
+            margin: 0 0 32px;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            margin: 0 0 45px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            @include media-breakpoint-up(xl) {
+                left: -12%;
+            }
+
+            .box {
+                .icon-box {
+                    color: $white;
+                    background: $dark-yellow;
+                }
+            }
+        }
+    }
+
+    .icon-box {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 2px solid $dark-yellow;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $black;
+        font-size: 40px;
+        line-height: 1;
+        background: $white;
+        transition: 0.3s;
+
+        @include media-breakpoint-up(xxl) {
+            width: 110px;
+            height: 110px;
+            font-size: 60px;
+            border-radius: 25px;
+        }
+
+        .icon-camera1 {
+            font-size: 80%;
+        }
+    }
+
+    .box {
+        border-radius: 25px;
+        background: #f8f8f6;
+        padding: 20px 20px 20px 70px;
+        margin-left: 30px;
+        display: block;
+
+        @include media-breakpoint-up(xxl) {
+            padding: 30px 35px 30px 110px;
+            margin-left: 40px;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            padding: 38px 45px 38px 110px;
+        }
+
+        .h5 {
+            display: block;
+            margin: 0 0 7px;
+            font-weight: 800;
+
+            @include media-breakpoint-up(xxl) {
+                margin: 0 0 10px;
+            }
+        }
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

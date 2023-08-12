@@ -243,6 +243,32 @@ a {
         }
     }
 
+    &.btn-dark-yellow {
+        color: $white;
+
+        &:focus,
+        &:active,
+        &:first-child:active {
+            color: $white;
+        }
+
+        &:before {
+            opacity: 0.5;
+        }
+
+        &:hover {
+            &:before {
+                background: #bf8300;
+            }
+        }
+
+        &.btn-sm {
+            font-size: 16px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+    }
+
     .btn-text {
         position: relative;
         z-index: 1;
