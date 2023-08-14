@@ -65,6 +65,12 @@
             margin: 0 0 35px;
         }
     }
+
+    .number {
+        color: $white;
+        font-weight: 600;
+        border-bottom: 3px solid $dark-yellow;
+    }
 }
 
 /* App Buttons Styles */
@@ -234,6 +240,60 @@
 
             &:hover {
                 background: $primary;
+            }
+        }
+    }
+
+    &.no-bg {
+        @include media-breakpoint-up(xl) {
+            font-size: 20px;
+        }
+
+        li {
+            position: relative;
+
+            &:before {
+                width: 2px;
+                height: 16px;
+                background: rgba(255,255,255,0.2);
+                position: absolute;
+                left: -1px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                display: none;
+            }
+
+            + li {
+                &:before {
+                    display: block;
+                }
+            }
+
+            a {
+                background: transparent;
+
+                &:hover {
+                    color: $dark-yellow;
+                }
+            }
+        }
+    }
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 6px 0;
+
+        a {
+            color: currentColor;
+
+            &:hover {
+                color: $dark-yellow;
             }
         }
     }

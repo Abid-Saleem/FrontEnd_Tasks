@@ -8,6 +8,7 @@ jQuery(function(){
 	initResizeEffect();
 	initPriceRange();
 	initCustomFunctions();
+	new PureCounter();
 
 	jQuery(document).click(function(e) {
 		var target = e.target;
@@ -141,6 +142,37 @@ function initSlickCarousel() {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+				},
+		    },
+		],
+	});
+
+	jQuery('.companies-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
 				},
 		    },
 		],
