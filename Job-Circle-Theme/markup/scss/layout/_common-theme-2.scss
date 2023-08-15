@@ -304,6 +304,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-flow: row wrap;
     background: $dark-green;
     border-radius: 25px;
     color: $white;
@@ -311,6 +312,10 @@
     max-width: 1290px;
     margin: 0 auto;
     position: relative;
+
+    @include media-breakpoint-up(md) {
+        flex-flow: row nowrap;
+    }
 
     @include media-breakpoint-up(lg) {
         padding: 40px;
@@ -342,9 +347,14 @@
     }
 
     .section-header {
-        margin: 0;
-        width: 50%;
+        margin: 0 0 35px;
+        width: 100%;
         color: $white;
+
+        @include media-breakpoint-up(md) {
+            width: 50%;
+            margin: 0;
+        }
 
         @include media-breakpoint-up(lg) {
             font-size: 18px;
@@ -377,24 +387,146 @@
     }
 
     .image-holder {
-        width: 41%;
+        width: 100%;
+        max-width: 220px;
+        margin: 0 auto;
         position: relative;
+
+        @include media-breakpoint-up(sm) {
+            max-width: 280px;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 41%;
+            margin: 0;
+            max-width: inherit;
+        }
 
         &:before {
             position: absolute;
             top: 1%;
-            left: -15%;
+            left: -7%;
             right: -7%;
             bottom: 1%;
             content: '';
             background: url('../images/icons-pattern.png') no-repeat;
             background-size: 100% 100%;
+
+            @include media-breakpoint-up(md) {
+                left: -15%;
+                right: -7%;
+            }
         }
 
         img {
             width: 100%;
             position: relative;
             z-index: 1;
+        }
+    }
+}
+
+/* Section Quotes Styles */
+.section-quotes {
+    overflow: hidden;
+
+    .section-header {
+        max-width: 800px;
+    }
+}
+
+/* Quotes Slider Styles */
+.quotes-slider {
+    margin: -20px -20px 0;
+
+    .slick-list {
+        margin-bottom: 80px;
+    }
+
+    .slick-slide {
+        padding: 20px;
+    }
+}
+
+/* Quotes Box Styles */
+.quotes-box {
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid #d5d5d5;
+    display: block;
+    color: #444;
+    background: $white;
+    padding: 45px 15px 40px;
+    box-shadow: 0 10px 0 $lt-yellow;
+    transition: 0.3s;
+
+    @include media-breakpoint-up(md) {
+        padding: 55px 25px 50px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 45px;
+        border-radius: 45px;
+    }
+
+    .author-box {
+        margin: 0 0 18px;
+        padding: 0 0 12px;
+        position: relative;
+        border-bottom: 1px solid #c0c0c0;
+    }
+
+    .author-avatar {
+        width: 130px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 100%;
+        border: 6px solid $lt-yellow;
+        margin: 0 0 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .social-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $lt-yellow;
+        color: $black;
+        font-weight: 20px;
+        line-height: 1;
+        position: absolute;
+        left: 95px;
+        top: 0;
+    }
+
+    .author-name {
+        display: block;
+        color: $black;
+        transition: 0.3s;
+
+        span {
+            font-weight: 400;
+        }
+    }
+
+    &:hover {
+        background: $dark-green;
+        border-color: $dark-green;
+        color: $white;
+        box-shadow: 0 10px 0 $lt-yellow;
+
+        .author-name {
+            color: $white;
         }
     }
 }
