@@ -36,8 +36,15 @@ $media-expressions: (
 @import 'layout/common';
 @import 'layout/footer';
 
-// Theme Styles
+// Theme 2 Styles
 @import 'layout/header-theme-2';
 @import 'layout/visual-theme-2';
 @import 'layout/common-theme-2';
+
+// Theme 3 Styles
+@import 'layout/header-theme-3';
+@import 'layout/visual-theme-3';
+@import 'layout/common-theme-3';
+@import 'layout/footer-theme-3';
+
 
