@@ -145,6 +145,33 @@ function initSlickCarousel() {
 		    },
 		],
 	});
+
+	jQuery('.quotes-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+		    },
+		],
+	});
 }
 
 // select2 init
