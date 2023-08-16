@@ -89,6 +89,7 @@ $colors: (
   "dark-yellow":  $dark-yellow,
   "dark-blue":    $dark-blue,
   "gray-alt":     $gray-alt,
+  "lt-yellow":   $lt-yellow,
 ) !default;
 // scss-docs-end colors-map
 
@@ -340,6 +341,7 @@ $dark-green:    $dark-green;
 $dark-yellow:   $dark-yellow;
 $dark-blue:     $dark-blue;
 $gray-alt:      $gray-alt;
+$lt-yellow:     $lt-yellow;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -361,6 +363,7 @@ $theme-colors: (
   "dark-yellow": $dark-yellow,
   "dark-blue":   $dark-blue,
   "gray-alt":   $gray-alt,
+  "lt-yellow":  $lt-yellow,
   
 ) !default;
 // scss-docs-end theme-colors-map

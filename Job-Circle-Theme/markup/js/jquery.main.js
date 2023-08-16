@@ -158,14 +158,14 @@ function initSlickCarousel() {
 		autoplay: true,
 		responsive: [
 		    {
-				breakpoint: 768,
+				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 				},
 		    },
 		    {
-				breakpoint: 576,
+				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,

@@ -437,14 +437,47 @@
 
 /* Quotes Slider Styles */
 .quotes-slider {
-    margin: -20px -20px 0;
+    margin: -7px -7px 0;
+
+    @include media-breakpoint-up(xl) {
+        margin: -15px -15px 0;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin: -20px -20px 0;
+    }
 
     .slick-list {
-        margin-bottom: 80px;
+        margin-bottom: 25px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 50px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-bottom: 80px;
+        }
+    }
+
+    .slick-track {
+        display: flex;
     }
 
     .slick-slide {
-        padding: 20px;
+        padding: 7px;
+        height: auto;
+
+        @include media-breakpoint-up(xl) {
+            padding: 15px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 20px;
+        }
+    }
+
+    .quotes-box {
+        height: 100%;
     }
 }
 
@@ -456,17 +489,27 @@
     display: block;
     color: #444;
     background: $white;
-    padding: 45px 15px 40px;
+    padding: 25px 15px;
+    line-height: 1.85;
     box-shadow: 0 10px 0 $lt-yellow;
     transition: 0.3s;
 
     @include media-breakpoint-up(md) {
-        padding: 55px 25px 50px;
+        padding: 30px 20px;
     }
 
     @include media-breakpoint-up(xl) {
-        padding: 45px;
+        padding: 35px 20px;
         border-radius: 45px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: 35px 30px;
+    }
+
+    @include media-breakpoint-up(xxxl) {
+        padding: 45px;
+        font-size: 18px;
     }
 
     .author-box {
@@ -477,12 +520,18 @@
     }
 
     .author-avatar {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
         overflow: hidden;
         border-radius: 100%;
-        border: 6px solid $lt-yellow;
+        border: 3px solid $lt-yellow;
         margin: 0 0 20px;
+
+        @include media-breakpoint-up(xl) {
+            width: 130px;
+            height: 130px;
+            border-width: 6px;
+        }
 
         img {
             width: 100%;
@@ -494,19 +543,26 @@
     }
 
     .social-icon {
-        width: 56px;
-        height: 56px;
+        width: 40px;
+        height: 40px;
         border-radius: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         background: $lt-yellow;
         color: $black;
-        font-weight: 20px;
+        font-size: 16px;
         line-height: 1;
         position: absolute;
-        left: 95px;
+        left: 70px;
         top: 0;
+
+        @include media-breakpoint-up(xl) {
+            left: 95px;
+            width: 56px;
+            height: 56px;
+            font-size: 18px;
+        }
     }
 
     .author-name {
@@ -516,6 +572,7 @@
 
         span {
             font-weight: 400;
+            font-size: 14px;
         }
     }
 
@@ -527,6 +584,267 @@
 
         .author-name {
             color: $white;
+        }
+    }
+}
+
+/* Featured News Block Styles */
+.featured-news-block {
+    overflow: hidden;
+
+    .section-header {
+        max-width: 850px;
+    }
+
+    .btn-all {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        color: $black;
+        margin-top: 6px;
+        transition: 0.3s;
+
+        .icon-chevron-right {
+            width: 44px;
+            height: 44px;
+            border-radius: 100%;
+            border: 3px solid $lt-yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $black;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0 0 0 20px;
+            transition: 0.3s;
+
+            @include media-breakpoint-up(lg) {
+                width: 70px;
+                height: 70px;
+                font-size: 24px;
+                border-width: 5px;
+            }
+        }
+
+        &:hover {
+            .icon-chevron-right {
+                background: $lt-yellow;
+            }
+        }
+    }
+}
+
+/* Article News Styles */
+.article-news {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+
+    @include media-breakpoint-up(sm) {
+        padding: 20px 0;
+    }
+
+    .image-holder {
+        width: 40%;
+        overflow: hidden;
+        flex-shrink: 0;
+        box-shadow: 0 10px 0 #f1f1f1;
+        transition: 0.3s;
+        border-radius: 15px;
+
+        @include media-breakpoint-up(xl) {
+            border-radius: 25px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 50%;
+            max-width: 300px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+
+            @include media-breakpoint-up(xl) {
+                border-radius: 25px;
+            }
+        }
+    }
+
+    .textbox {
+        flex-grow: 1;
+        min-width: 0;
+        padding: 0 0 0 15px;
+
+        @include media-breakpoint-up(xl) {
+            padding: 0 0 0 25px;
+        }
+    }
+
+    .subtitle {
+        color: #8d8d8d;
+        font-size: 12px;
+        line-height: 1.5;
+        display: block;
+        margin: 0 0 5px;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 14px;
+            margin: 0 0 10px;
+        }
+    }
+
+    h5 {
+        font-size: 14px;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 20px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 22px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 26px;
+            margin: 0 0 20px;
+        }
+
+        a {
+            color: $black;
+            display: block;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+
+    .author {
+        color: #555;
+        display: block;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 12px;
+        }
+
+        strong {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        .image-holder {
+            box-shadow: 0 10px 0 #d5fe68;
+        }
+    }
+}
+
+/* Section Downloads Styles */
+.section-downloads {
+    overflow: hidden;
+
+    .container {
+        position: relative;
+    }
+
+    .section-header {
+        max-width: 850px;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 22px;
+            color: $black;
+        }
+    }
+
+    .app-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row nowrap;
+        max-width: inherit;
+
+        a {
+            display: block;
+            margin: 0 5px;
+            max-width: 150px;
+
+            @include media-breakpoint-up(sm) {
+                margin: 0 10px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                max-width: 175px;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                max-width: 218px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .icon {
+        position: absolute;
+        display: none;
+
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+
+        &.ico01 {
+            left: 0;
+            top: 0;
+
+            @include media-breakpoint-up(lg) {
+                left: 2.5%;
+            }
+        }
+
+        &.ico02 {
+            bottom: 0;
+            left: 0;
+
+            @include media-breakpoint-up(lg) {
+                bottom: 1%;
+                left: 6%;
+            }
+        }
+
+        &.ico03 {
+            top: 0;
+            right: 0;
+
+            @include media-breakpoint-up(lg) {
+                right: 6%;
+            }
+        }
+
+        &.ico04 {
+            bottom: 0;
+            right: 0;
+
+            @include media-breakpoint-up(lg) {
+                bottom: 1%;
+                right: 2.5%;
+            }
         }
     }
 }

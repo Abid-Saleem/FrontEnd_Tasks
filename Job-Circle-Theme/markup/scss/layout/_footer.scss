@@ -299,6 +299,30 @@
     }
 }
 
+.pri-footer-top {
+    border-bottom: 3px solid #414f3c;
+}
+
+.form-subscribe {
+    overflow: hidden;
+
+    .form-control {
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 10px 30px;
+    }
+}
+
+.footer-buttons {
+    .btn-outline-lt-yellow {
+        border: 2px solid $lt-yellow;
+        font-size: 16px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-right: 5px;
+    }
+}
+
 /* Secondary Footer Styles */
 .sec-footer {
     font-size: 14px;
