@@ -217,7 +217,8 @@ a {
         }
     }
 
-    &.btn-green {
+    &.btn-green,
+    &.btn-orange {
         color: $white;
 
         &:focus,
@@ -230,16 +231,26 @@ a {
             opacity: 0.5;
         }
 
+        &.btn-sm {
+            font-size: 16px;
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+    }
+
+    &.btn-green {
         &:hover {
             &:before {
                 background: $dark-green;
             }
         }
+    }
 
-        &.btn-sm {
-            font-size: 16px;
-            padding-top: 17px;
-            padding-bottom: 17px;
+    &.btn-orange {
+        &:hover {
+            &:before {
+                background: rgba(0,0,0,0.3);
+            }
         }
     }
 

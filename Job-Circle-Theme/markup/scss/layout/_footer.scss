@@ -300,7 +300,7 @@
 }
 
 .pri-footer-top {
-    border-bottom: 3px solid #414f3c;
+    border-bottom: 3px solid #acacac;
 }
 
 .form-subscribe {
@@ -310,16 +310,30 @@
         width: 100%;
         margin: 0 0 15px;
         padding: 10px 30px;
+        color: $black;
+
+        &::placeholder {
+            color: $black;
+        }
     }
 }
 
 .footer-buttons {
-    .btn-outline-lt-yellow {
+    .btn-outline-lt-yellow,
+    .btn-outline-orange {
         border: 2px solid $lt-yellow;
         font-size: 16px;
         padding-top: 14px;
         padding-bottom: 14px;
         margin-right: 5px;
+    }
+
+    .btn-outline-orange {
+        border-color: $orange;
+
+        &:hover {
+            color: $white;
+        }
     }
 }
 

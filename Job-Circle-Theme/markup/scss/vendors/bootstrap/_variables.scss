@@ -33,6 +33,8 @@ $dark-green: #203818;
 $dark-blue: #251c55;
 $gray-alt: #d6d6d6;
 
+$light-sky: #eff6f3;
+
 
 $dark-yellow: #f9ab00;
 
@@ -58,7 +60,7 @@ $indigo:  #6610f2 !default;
 $purple:  #b16ee5 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$orange:  #fe7420 !default;
 $yellow:  #ffca1d !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
@@ -90,6 +92,7 @@ $colors: (
   "dark-blue":    $dark-blue,
   "gray-alt":     $gray-alt,
   "lt-yellow":   $lt-yellow,
+  "light-sky":   $light-sky,
 ) !default;
 // scss-docs-end colors-map
 
@@ -342,6 +345,8 @@ $dark-yellow:   $dark-yellow;
 $dark-blue:     $dark-blue;
 $gray-alt:      $gray-alt;
 $lt-yellow:     $lt-yellow;
+$light-sky:     $light-sky;
+$orange:        $orange;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -364,7 +369,8 @@ $theme-colors: (
   "dark-blue":   $dark-blue,
   "gray-alt":   $gray-alt,
   "lt-yellow":  $lt-yellow,
-  
+  "light-sky":  $light-sky,
+  "orange":     $orange,
 ) !default;
 // scss-docs-end theme-colors-map
 
