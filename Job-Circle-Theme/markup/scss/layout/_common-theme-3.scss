@@ -167,6 +167,21 @@
             }
         }
     }
+
+    .btn-all {
+        .icon-chevron-right {
+            border-color: $dark-yellow;
+        }
+
+        &:hover {
+            color: $dark-yellow;
+
+            .icon-chevron-right {
+                color: $white;
+                background: $dark-yellow;
+            }
+        }
+    }
 }
 
 /* Featured Categories Styles */
@@ -320,6 +335,85 @@
         }
     }
 
+    .tag-bookmark {
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background: #eff6f3;
+        border-radius: 100%;
+        font-size: 15px;
+        line-height: 1;
+        color: $black;
+
+        &:hover {
+            color: $white;
+            background: $orange;
+        }
+    }
+
+    .box-footer {
+        position: absolute;
+        left: -1px;
+        bottom: -1px;
+        right: -1px;
+        border: 1px solid #ddd;
+        border-radius: 15px;
+        height: 48px;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-up(xl) {
+            border-radius: 25px;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            padding: 5px 40px;
+        }
+
+        .text-note {
+            display: block;
+            
+            strong {
+                color: $orange;
+            }
+        }
+
+        .btn {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            padding: 5px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+            border-radius: 15px;
+
+            @include media-breakpoint-up(xl) {
+                border-radius: 25px;
+            }
+
+            &:before {
+                border-radius: 15px;
+
+                @include media-breakpoint-up(xl) {
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
     &:hover {
         background: $dark-blue;
         border-color: $white;
@@ -339,6 +433,13 @@
 
             i {
                 padding: 1px 0 0 2px;
+            }
+        }
+
+        .box-footer {
+            .btn {
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
@@ -958,50 +1059,6 @@
                     bottom: 15%;
                     right: 4.2%;
                 }
-            }
-        }
-    }
-}
-
-/* Featured Cities Block Styles */
-.featured-cities-block {
-    .btn-all {
-        display: inline-flex;
-        align-items: center;
-        font-weight: 700;
-        color: $black;
-        margin-top: 6px;
-        transition: 0.3s;
-
-        .icon-chevron-right {
-            width: 44px;
-            height: 44px;
-            border-radius: 100%;
-            border: 3px solid $dark-yellow;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $black;
-            font-size: 18px;
-            line-height: 1;
-            font-weight: 700;
-            margin:  0 0 0 20px;
-            transition: 0.3s;
-
-            @include media-breakpoint-up(lg) {
-                width: 70px;
-                height: 70px;
-                font-size: 24px;
-                border-width: 5px;
-            }
-        }
-
-        &:hover {
-            color: $dark-yellow;
-
-            .icon-chevron-right {
-                color: $white;
-                background: $dark-yellow;
             }
         }
     }
