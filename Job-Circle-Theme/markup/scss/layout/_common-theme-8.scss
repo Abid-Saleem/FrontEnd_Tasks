@@ -310,6 +310,81 @@
             }
         }
     }
+
+    .matched-jobs-block {
+        background: $gray-darker;
+        color: $white;
+        max-width: 100%;
+
+        @include media-breakpoint-up(xl) {
+            border-radius: 90px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 60px 100px;
+        }
+
+        &:before {
+            display: none;
+        }
+
+        .section-header {
+            h2 {
+                color: $white;
+                line-height: 1.4;
+                font-weight: 600;
+                margin: 0 0 25px;
+
+                @include media-breakpoint-only(md) {
+                    font-size: 26px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .image-holder {
+            max-width: 300px;
+
+            @include media-breakpoint-up(md) {
+                width: 47%;
+                max-width: inherit;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                width: 43%;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    &.talented-expert-block {
+        .featured-category-box {
+            padding-bottom: 0;
+        }
+    }
+
+    .slick-arrow {
+        background: $white;
+
+        &:hover {
+            background: $orange;
+        }
+    }
+}
+
+/* Featured Jobs Listing Styles */
+.featured-job-listing {
+    .jobs-listing-slider {
+        .slick-arrow {
+            display: none !important;
+        }
+    }
 }
 
 /* Jobs Listing Slider Styles */
@@ -596,6 +671,146 @@
             display: block;
             color: $black;
             margin: 0 0 10px;
+        }
+    }
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+    margin: -10px -10px 35px;
+    display: flex;
+    flex-flow: row wrap;
+    color: $white;
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .icon-check {
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #4ab166;
+            color: $white;
+            font-size: 12px;
+            line-height: 1;
+            flex-shrink: 0;
+            margin: 0 10px 0 0;
+
+            @include media-breakpoint-up(xl) {
+                width: 28px;
+                height: 28px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+/* Talented Expert Block Styles */
+.talented-expert-block {
+    position: relative;
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+    }
+    
+    &:before {
+        left: -130px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 230px;
+        height: 230px;
+        border-radius: 100%;
+        border: 55px solid #f0c44f;
+    }
+
+    &:after {
+        width: 30px;
+        height: 98px;
+        background: url('../images/dots-pattern.png');
+        right: 3%;
+        bottom: 10%;
+    }
+
+    .jobs-listing-slider {
+        z-index: 1;
+
+        &:after {
+            position: absolute;
+            content: '';
+            width: 43px;
+            height: 84px;
+            background: url('../images/pattern-ico.png') no-repeat;
+            background-size: 100% 100%;
+            bottom: 120px;
+            left: -82px;
+        }
+
+        .slick-slide {
+            @include media-breakpoint-up(lg) {
+                padding-bottom: 0;
+            }
+        }
+
+        .slick-arrow {
+            @include media-breakpoint-down(lg) {
+                display: none !important;
+            }
+        }
+
+        .slick-dots {
+            @include media-breakpoint-up(lg) {
+                display: none !important;
+            }
+        }
+    }
+
+    .featured-category-box {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 16px;
+        }
+
+        .amount {
+            strong {
+                @include media-breakpoint-up(xl) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .image-holder {
+            margin: 15px -15px 0;
+            overflow: hidden;
+            border-radius: 50% 50% 0 0;
+
+            @include media-breakpoint-up(xl) {
+                margin: 20px -20px 0;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                margin: 20px -30px 0;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                margin: 20px -40px 0;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
         }
     }
 }

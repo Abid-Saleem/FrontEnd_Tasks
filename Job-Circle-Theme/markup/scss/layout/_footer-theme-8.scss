@@ -28,6 +28,39 @@
         position: relative;
         overflow: visible;
 
+        &:before,
+        &:after {
+            position: absolute;
+            content: '';
+
+            @include media-breakpoint-down(xl) {
+                display: none;
+            }
+        }
+    
+        &:before {
+            background: url('../images/foot-pattern01.png') no-repeat;
+            background-size: 100% 100%;
+            width: 226px;
+            height: 333px;
+            left: -3%;
+            top: 17%;
+        }
+    
+        &:after {
+            background: url('../images/foot-pattern02.png') no-repeat;
+            background-size: 100% 100%;
+            width: 338px;
+            height: 405px;
+            right: -5%;
+            bottom: -70px;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+
         .logo {
             @include media-breakpoint-up(xl) {
                 width: 175px;

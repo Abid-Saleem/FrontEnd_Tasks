@@ -262,6 +262,24 @@
         overflow: hidden;
     }
 
+    .designation {
+        display: block;
+        color: $orange;
+        line-height: 1.5;
+        font-weight: 400;
+        margin: 0 0 8px;
+    }
+
+    .h5 {
+        margin: 0 0 5px;
+        display: block;
+        color: $black;
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 26px;
+        }
+    }
+
     .h6 {
         display: block;
         color: $black;
@@ -474,7 +492,7 @@
         }
 
         &:before {
-            background: url('../images/dots-pattern.png') no-repeat;
+            background: url('../images/dots-pattern.png');
             width: 112px;
             height: 76px;
             left: -45px;
@@ -772,7 +790,7 @@
         }
 
         &:before {
-            background: url('../images/dots-pattern.png') no-repeat;
+            background: url('../images/dots-pattern.png');
             width: 112px;
             height: 76px;
             left: 17%;
@@ -1330,6 +1348,8 @@
     overflow: hidden;
 
     .section-header {
+        margin: 0;
+
         h2 {
             margin: 0 0 15px;
 
@@ -1344,43 +1364,47 @@
     }
 }
 
+.slick-arrow {
+    position: absolute;
+    top: -110px;
+    width: 66px;
+    height: 66px;
+    background: #f4f1e9;
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 100%;
+    font-size: 24px;
+    line-height: 1;
+    z-index: 1;
+    transition: 0.3s;
+
+    @include media-breakpoint-up(xl) {
+        top: -130px;
+    }
+
+    &:hover {
+        color: $white;
+        background: $dark-yellow;
+    }
+
+    &.slick-prev {
+        left: auto;
+        right: 91px;
+    }
+
+    &.slick-next {
+        right: 15px;
+    }
+}
+
 .companies-slider {
     margin: 0 -15px;
 
     .slick-slide {
         padding: 15px;
-    }
-
-    .slick-arrow {
-        position: absolute;
-        top: -130px;
-        width: 66px;
-        height: 66px;
-        background: #f4f1e9;
-        color: $black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 0;
-        border-radius: 100%;
-        font-size: 24px;
-        line-height: 1;
-        z-index: 1;
-        transition: 0.3s;
-
-        &:hover {
-            color: $white;
-            background: $dark-yellow;
-        }
-
-        &.slick-prev {
-            left: auto;
-            right: 91px;
-        }
-
-        &.slick-next {
-            right: 15px;
-        }
     }
 
     .featured-category-box {

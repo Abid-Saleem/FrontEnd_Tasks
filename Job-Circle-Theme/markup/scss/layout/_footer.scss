@@ -326,6 +326,11 @@
         padding-top: 14px;
         padding-bottom: 14px;
         margin-right: 5px;
+
+        @include media-breakpoint-down(md) {
+            padding-top: 9px;
+            padding-bottom: 9px;
+        }
     }
 
     .btn-outline-orange {

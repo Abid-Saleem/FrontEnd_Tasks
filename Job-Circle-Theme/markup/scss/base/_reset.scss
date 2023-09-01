@@ -207,7 +207,7 @@ a {
 
     &.btn-sm {
         @include media-breakpoint-down(xxl) {
-            padding: 10px 30px;
+            padding: 10px 28px;
             font-size: 17px;
         }
 
@@ -235,6 +235,11 @@ a {
             font-size: 16px;
             padding-top: 17px;
             padding-bottom: 17px;
+
+            @include media-breakpoint-down(md) {
+                padding-top: 12px;
+                padding-bottom: 12px;
+            }
         }
     }
 
