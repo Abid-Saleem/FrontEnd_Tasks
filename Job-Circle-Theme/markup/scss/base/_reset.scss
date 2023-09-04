@@ -218,7 +218,8 @@ a {
     }
 
     &.btn-green,
-    &.btn-orange {
+    &.btn-orange,
+    &.btn-brown {
         color: $white;
 
         &:focus,
@@ -251,7 +252,8 @@ a {
         }
     }
 
-    &.btn-orange {
+    &.btn-orange,
+    &.btn-brown {
         &:hover {
             &:before {
                 background: rgba(0,0,0,0.3);

@@ -1,8 +1,8 @@
-.header-theme-2 {
-    font-family: $font-family-epilogue;
+.header-theme-1 {
+    background: $white;
 
     @include media-breakpoint-up(md) {
-        padding: 35px 0;
+        padding: 20px 0;
     }
 
     .sticky-header & {
@@ -20,26 +20,43 @@
         }
     }
 
+    + .visual-block,
+    + .subvisual-block {
+        margin-top: 80px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 91px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 94px;
+        }
+    }
+
     .nav-opener,
     .nav-close {
         &:before,
         &:after,
         span {
-            background: $dark-yellow;
+            background: $green;
         }
 
         &:hover {
             &:before,
             &:after,
             span {
-                background: $dark-yellow;
+                background: $green;
             }
         }
     }
 
     .nav-drop {
         @include media-breakpoint-down(lg) {
-            background: $dark-blue;
+            background: $dark-green;
         }
     }
 
@@ -65,15 +82,15 @@
             > a {
                 &:not(.btn) {
                     @include media-breakpoint-up(lg) {
-                        color: $white;
+                        color: $black;
                     }
 
                     &:hover {
-                        color: $dark-yellow;
+                        color: $green;
                     }
                 }
 
-                &.btn-dark-yellow {
+                &.btn-green {
                     padding-top: 15px;
                     padding-bottom: 15px;
                     font-size: 16px;
@@ -96,7 +113,7 @@
                 &.dropdown-toggle {
                     &.show {
                         @include media-breakpoint-down(lg) {
-                            color: $dark-yellow;
+                            color: $green;
                         }
                     }
                 }
@@ -104,13 +121,13 @@
 
             &:hover {
                 .dropdown-toggle {
-                    color: $dark-yellow;
+                    color: $green;
                 }
             }
 
             &.active {
                 > a {
-                    color: $dark-yellow;
+                    color: $green;
                 }
             }
         }
@@ -121,7 +138,7 @@
             li {
                 &.active {
                     > a {
-                        color: $dark-yellow;
+                        color: $green;
                     }
 
                     &:hover {
@@ -134,7 +151,7 @@
 
             .dropdown-item {
                 &:hover {
-                    background: $dark-yellow;
+                    background: $green;
                 }
             }
         }
@@ -142,7 +159,7 @@
 }
 
 .sticky-header {
-    .header-theme-2 {
+    .header-theme-1 {
         .navigation {
             > li {
                 > a {
@@ -156,14 +173,14 @@
                 &:hover {
                     .dropdown-toggle {
                         @include media-breakpoint-up(lg) {
-                            color: $dark-yellow;
+                            color: $green;
                         }
                     }
                 }
 
                 &.active {
                     > a {
-                        color: $dark-yellow;
+                        color: $green;
                     }
                 }
             }
@@ -174,7 +191,7 @@
                 &:before,
                 &:after,
                 span {
-                    background: $dark-yellow;
+                    background: $green;
                 }
             }
         }

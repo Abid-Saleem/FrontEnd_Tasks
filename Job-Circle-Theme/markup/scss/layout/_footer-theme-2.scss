@@ -21,13 +21,40 @@
             left: 0;
             bottom: 0;
             position: absolute;
-            background: $lt-yellow;
+            background: $dark-yellow;
         }
     }
 
     .pri-footer {
         position: relative;
         overflow: visible;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            z-index: -1;
+            content: '';
+            border-style: solid;
+            border-width: 80px 0 0 100vw;
+            border-color: transparent transparent transparent $dark-blue;
+
+            @include media-breakpoint-up(md) {
+                border-width: 170px 0 0 100vw;
+            }
+
+            @include media-breakpoint-up(xl) {
+                border-width: 240px 0 0 100vw;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                border-width: 340px 0 0 100vw;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                border-width: 375px 0 0 100vw;
+            }
+        }
 
         .logo {
             @include media-breakpoint-up(xl) {
@@ -39,41 +66,11 @@
         .footer-info {
             p {
                 @include media-breakpoint-up(xl) {
-                    margin: 0 0 15px;
+                    margin: 0 0 30px;
                 }
 
                 &:last-child {
                     margin-bottom: 0;
-                }
-            }
-        }
-    }
-
-    .contact-list {
-        font-size: 16px;
-        font-weight: 400;
-
-        @include media-breakpoint-up(lg) {
-            max-width: 240px;
-        }
-
-        li {
-            i {
-                font-size: 20px;
-                margin: 0 12px 0 0;
-            }
-
-            a {
-                font-weight: 400;
-            }
-        }
-    }
-
-    .footer-links {
-        li {
-            a {
-                &:hover {
-                    color: $lt-yellow;
                 }
             }
         }
@@ -98,16 +95,6 @@
 
                 &:hover {
                     color: $dark-yellow;
-                }
-            }
-        }
-    }
-
-    .footer-links {
-        li {
-            a {
-                &:hover {
-                    color: $lt-yellow;
                 }
             }
         }
