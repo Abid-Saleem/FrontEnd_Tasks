@@ -7,13 +7,20 @@
 
     .sticky-header & {
         @include media-breakpoint-up(md) {
-            padding: 15px 0 !important;
+            padding: 7px 0 !important;
         }
     }
 
     .top-bar {
         margin-top: -20px;
         margin-bottom: -15px;
+        transition: all 0.3s ease-in-out;
+        
+        .sticky-header & {
+            opacity: 0;
+            margin-top: -43px;
+        }
+
         .hotline {
             display: flex;
             color: $gray-700;
@@ -64,14 +71,30 @@
         border-radius: 10px;
         @include size(150px, 60px);
         background: rgb(30, 38, 111);
+        transition: height 0.3s ease-in-out;
+
         @include media-breakpoint-up(lg) {
+            position: relative;
+            z-index: 1;
             flex: 0 0 200px;
             @include size(200px, 100px);
         }
+
         @include media-breakpoint-up(xl) {
             flex: 0 0 277px;
             @include size(277px, 120px);
         }
+
+        .sticky-header & {
+            @include media-breakpoint-up(lg) {
+                height: 84px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                height: 90px;
+            }
+        }
+
         a {
             display: flex;
             padding: 0 15px;
@@ -103,7 +126,7 @@
             padding: 0;
             display: flex;
             flex: 0 0 58px;
-            font-size: 18px;
+            font-size: 20px;
             background: none;
             color: $gray-500;
             margin-right: 10px;
@@ -111,6 +134,7 @@
             justify-content: center;
             @include size(58px, 58px);
             border: 1px solid $gray-500;
+
             &:hover {
                 color: $white;
                 background: $green;
@@ -124,20 +148,25 @@
 
     .main-nav {
         display: flex;
+
         @include media-breakpoint-up(md) {
             justify-content: flex-end;
             width: calc(100% - 150px);
             flex: 0 0 calc(100% - 150px);
         }
+
         @include media-breakpoint-up(lg) {
             padding: 10px 0;
             position: relative;
             width: calc(100% - 200px);
             flex: 0 0 calc(100% - 200px);
+            transition: padding 0.3s ease-in-out;
+
             .navigation, .user-box {
                 z-index: 2;
                 position: relative;
             }
+
             &:after {
                 top: 0;
                 bottom: 0;
@@ -150,10 +179,21 @@
                 border-radius: 10px 0 0 10px;
             }
         }
+
         @include media-breakpoint-up(xl) {
             padding: 17px 0;
             width: calc(100% - 277px);
             flex: 0 0 calc(100% - 277px);
+        }
+
+        .sticky-header & {
+            @include media-breakpoint-up(lg) {
+                padding: 7px 0;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 7px 0;
+            }
         }
     }
     .nav-opener,
@@ -253,17 +293,34 @@
     .user-box {
         padding: 0 30px;
         justify-content: space-between;
+
         @include media-breakpoint-up(lg) {
             padding: 0;
+        }
+
+        .btn {
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+
+            &.btn-outline-gray {
+                @include media-breakpoint-down(lg) {
+                    margin: 0 0 15px;
+                }
+            }
         }
     }
 }
 
 .sticky-header {
     .header-theme-5 {
-        .top-bar {
-            display: none!important;
-        }
+        // .top-bar {
+        //     display: none !important;
+        // }
+
         .nav-opener {
             &:not(:hover) {
                 &:before,

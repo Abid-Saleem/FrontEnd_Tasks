@@ -60,6 +60,7 @@
 
 	&.matched-jobs-block {
 		background: $navy-blue;
+		
 		@include media-breakpoint-up(md) {
 			margin-left: 50px;
 		}
@@ -441,6 +442,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
+
 	.image-holder {
 		right: 0;
 		bottom: 0;
@@ -456,6 +458,7 @@
 		}
 	}
 }
+
 .work-content {
 	.process-boxes {
 		z-index: 2;
