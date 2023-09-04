@@ -1,0 +1,102 @@
+/* Footer Theme 3 Styles */
+.footer-theme-3 {
+    font-family: $font-family-epilogue;
+    position: relative;
+    overflow: visible;
+
+    h5 {
+        color: $white;
+        position: relative;
+        padding-top: 0;
+        padding-bottom: 7px;
+
+        @include media-breakpoint-down(xl) {
+            font-size: 20px;
+        }
+
+        &:after {
+            width: 50px;
+            height: 3px;
+            content: '';
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            background: $dark-yellow;
+        }
+    }
+
+    .pri-footer {
+        position: relative;
+        overflow: visible;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            z-index: -1;
+            content: '';
+            border-style: solid;
+            border-width: 80px 0 0 100vw;
+            border-color: transparent transparent transparent $dark-blue;
+
+            @include media-breakpoint-up(md) {
+                border-width: 170px 0 0 100vw;
+            }
+
+            @include media-breakpoint-up(xl) {
+                border-width: 240px 0 0 100vw;
+            }
+
+            @include media-breakpoint-up(xxl) {
+                border-width: 340px 0 0 100vw;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                border-width: 375px 0 0 100vw;
+            }
+        }
+
+        .logo {
+            @include media-breakpoint-up(xl) {
+                width: 175px;
+                margin-bottom: 55px;
+            }
+        }
+
+        .footer-info {
+            p {
+                @include media-breakpoint-up(xl) {
+                    margin: 0 0 30px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .sec-footer {
+        font-weight: 400;
+
+        @include media-breakpoint-up(md) {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 16px;
+        }
+
+        p {
+            .site-link {
+                color: $white;
+                font-weight: 600;
+                border-bottom: 1px solid rgba(255,255,255,0.35);
+
+                &:hover {
+                    color: $dark-yellow;
+                }
+            }
+        }
+    }
+}

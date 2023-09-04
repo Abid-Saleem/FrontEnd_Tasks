@@ -1,0 +1,188 @@
+.visal-theme-5 {
+    font-family: $font-family-epilogue;
+
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+
+    &:after {
+        display: none;
+    }
+
+    .container {
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    .visual-textbox {
+        margin: 0;
+        max-width: inherit;
+        h1, .h1 {
+            font-weight: 800;
+            line-height: 1.2;
+            padding-bottom: 0;
+            font-family: $font-family-epilogue;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 60px;
+            }
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 75px;
+                margin: 0 0 30px;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            
+        }
+    }
+
+    .form-search {
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 40px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: flex;
+            padding: 7px;
+            background: $white;
+            border-radius: 8px;
+            max-width: inherit;
+            border: 1px solid #d5d5d5;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+    
+        .fields-holder {
+            padding: 13px 0;
+            
+            @include media-breakpoint-down(md) {
+                padding: 0;
+                background: transparent !important;
+            }
+    
+            @include media-breakpoint-up(md) {
+                border-radius: 100px;
+                margin: 0 0 20px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin: 0;
+                flex-grow: 1;
+                min-width: 0;
+            }
+        }
+    
+        .form-group {
+            padding: 8px 20px 8px 55px;
+    
+            @include media-breakpoint-up(md) {
+                padding: 0 25px 0 55px;
+                width: 100%;
+            }
+    
+            + .form-group {
+                @include media-breakpoint-up(md) {
+                    border-left: 1px solid #666;
+                }
+            }
+    
+            .icon {
+                left: 20px;
+                font-size: 21px;
+            }
+        }
+    
+        .form-control {
+            font-size: 16px;
+            padding: 8px 0 6px;
+    
+            &::placeholder {
+                color: #666;
+            }
+        }
+    
+        .btn {
+            border-radius: 10px;
+            @include media-breakpoint-up(xxl) {
+                min-width: 140px;
+            }
+
+            &:before {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .users-box {
+        position: static;
+        min-width: inherit;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+
+        &:after {
+            display: none;
+        }
+
+        .title {
+            color: $black;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 0 15px;
+        }
+
+        .users-list {
+             &:after {
+                display: none;
+            }
+            li {
+                border: 0;
+                border-radius: 0;
+                background: none;
+                margin: 0 0 10px;
+                @include size(auto, auto);
+                &:not(:last-child) {
+                    margin: 0 10px 10px 0;
+                }
+                a {
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 7px 18px;
+                    border-radius: 18px;
+                    background: $gun-powder;
+                    &:hover {
+                        background: $green;
+                    }
+                }
+            }
+        }
+    }
+
+    .illustration, .circle {
+        display: none;
+        position: absolute;
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+        img {
+            @include size(100%, auto);
+        }
+    }
+    .circle {
+        width: 60%;
+        right: -15%;
+        bottom: -10%;
+    }
+    .illustration {
+        left: 0;
+        bottom: 30px;
+    }
+}
