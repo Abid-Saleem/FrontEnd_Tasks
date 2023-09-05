@@ -18,6 +18,11 @@
     .visual-textbox {
         margin: 0;
         max-width: inherit;
+
+        @include media-breakpoint-up(xxl) {
+            padding-top: 180px;
+        }
+
         h1, .h1 {
             font-weight: 800;
             line-height: 1.2;
@@ -36,8 +41,14 @@
             &:after {
                 display: none;
             }
+        }
 
-            
+        p {
+            color: $tundora;
+
+            @include media-breakpoint-up(xxxl) {
+                font-size: 22px;
+            }
         }
     }
 
@@ -86,6 +97,16 @@
                 padding: 0 25px 0 55px;
                 width: 100%;
             }
+
+            @include media-breakpoint-up(xxl) {
+                width: 38%;
+            }
+
+            &:first-child {
+                @include media-breakpoint-up(xxl) {
+                    width: 63%;
+                }
+            }
     
             + .form-group {
                 @include media-breakpoint-up(md) {
@@ -100,16 +121,43 @@
         }
     
         .form-control {
-            font-size: 16px;
+            font-size: 14px;
             padding: 8px 0 6px;
     
             &::placeholder {
                 color: #666;
             }
         }
+
+        .select2-container--default {
+            min-width: 180px;
+        }
+    
+        .select2 {
+            font-size: 14px;
+    
+            .select2-selection {
+                padding: 5px 0;
+            }
+        }
+    
+        .select2-container--default {
+            .select2-selection--single {    
+                .select2-selection__placeholder {
+                    color: #666;
+                }
+    
+                .select2-selection__arrow {
+                    &:before {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
     
         .btn {
             border-radius: 10px;
+
             @include media-breakpoint-up(xxl) {
                 min-width: 140px;
             }
@@ -120,69 +168,49 @@
         }
     }
 
-    .users-box {
-        position: static;
-        min-width: inherit;
-        background: transparent;
-        box-shadow: none;
-        padding: 0;
-
-        &:after {
-            display: none;
-        }
-
-        .title {
+    .popular-searches {
+        .subtitle {
             color: $black;
-            font-size: 16px;
-            font-weight: 400;
-            margin: 0 0 15px;
         }
 
-        .users-list {
-             &:after {
-                display: none;
-            }
+        ul {
             li {
-                border: 0;
-                border-radius: 0;
-                background: none;
-                margin: 0 0 10px;
-                @include size(auto, auto);
-                &:not(:last-child) {
-                    margin: 0 10px 10px 0;
-                }
                 a {
                     color: $white;
-                    font-size: 14px;
-                    font-weight: 400;
-                    padding: 7px 18px;
-                    border-radius: 18px;
                     background: $gun-powder;
+                    border-color: $gun-powder;
+
                     &:hover {
-                        background: $green;
+                        color: $gun-powder;
+                        background: $white;
                     }
                 }
             }
         }
     }
 
-    .illustration, .circle {
+    .illustration, 
+    .circle {
         display: none;
         position: absolute;
+
         @include media-breakpoint-up(lg) {
             display: block;
         }
+
         img {
             @include size(100%, auto);
         }
     }
+
     .circle {
         width: 60%;
         right: -15%;
         bottom: -10%;
     }
+
     .illustration {
-        left: 0;
-        bottom: 30px;
+        left: -5%;
+        bottom: 0;
     }
 }
