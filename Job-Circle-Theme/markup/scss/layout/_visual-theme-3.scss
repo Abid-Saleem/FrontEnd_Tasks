@@ -126,10 +126,6 @@
                 font-size: 21px;
             }
         }
-
-        .select2-container--default {
-            min-width: 180px;
-        }
     
         .form-control {
             font-size: 14px;
@@ -138,6 +134,10 @@
             &::placeholder {
                 color: #666;
             }
+        }
+
+        .select2-container--default {
+            min-width: 180px;
         }
     
         .select2 {
