@@ -38,6 +38,18 @@ $light-sky: #eff6f3;
 $dark-yellow: #f9ab00;
 $brown: #e66f3b;
 $lt-brown: #fee0ab;
+$light-yellow: #fff09d;
+
+$grayish: #d2d2d2;
+$tundora: #444;
+$gun-powder: #434660;
+$navy-blue: #1e266f;
+$mercury: #e3e3e3;
+$dusty-gray: #999;
+$alto: #e0e0e0;
+$alabaster: #f8f8f8;
+$gray: #d5d5d5;
+$mperor: #555;
 
 // fusv-disable
 // scss-docs-start gray-colors-map
@@ -96,6 +108,7 @@ $colors: (
   "light-sky":   $light-sky,
   "gray-darker": $gray-darker,
   "brown":       $brown,
+  "light-yellow": $light-yellow,
 ) !default;
 // scss-docs-end colors-map
 
@@ -352,6 +365,7 @@ $light-sky:     $light-sky;
 $orange:        $orange;
 $gray-darker:   $gray-darker;
 $brown:         $brown;
+$light-yellow:  $light-yellow;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -378,6 +392,7 @@ $theme-colors: (
   "orange":     $orange,
   "gray-darker": $gray-darker,
   "brown":       $brown,
+  "light-yellow": $light-yellow,
 ) !default;
 // scss-docs-end theme-colors-map
 

@@ -24,7 +24,15 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-facebook-with-circle:before {
+  content: "\e962";
+}
+.icon-hotline:before {
+  content: "\e961";
+}
+.icon-google-plus:before {
+  content: "\e960";
+}
 .icon-upload1:before {
   content: "\e95f";
 }
