@@ -177,31 +177,147 @@
             }
         }
     }
+
+    &.explore-jobs-block {
+        .section-header {
+            @include media-breakpoint-up(xxl) {
+                font-size: 18px;
+            }
+
+            h2 {
+                font-weight: 800;
+            }
+        }
+
+        .explore-list {
+            li {
+                &:nth-child(2n) {
+                    padding-left: 0;
+                }
+            }
+
+            .box {
+                .icon-box {
+                    width: 80px;
+                    height: 80px;
+                    box-shadow: inset 0 0 0 3px #fff;
+                    border: 2px solid $brown;
+                    background: $lt-brown;
+
+                    @include media-breakpoint-down(sm) {
+                        margin-right: 15px;
+                    }
+                }
+
+                .textbox {
+                    max-width: 100%;
+                    line-height: 1.5;
+                }
+
+                .h5 {
+                    display: block;
+                    margin: 0 0 8px;
+                }
+
+                p {
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .image-holder {
+            position: relative;
+            padding: 32px 0 0;
+
+            .image-pattern {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    max-width: 100%;
+                }
+            }
+
+            .image-wrap {
+                position: relative;
+                z-index: 1;
+
+                img {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
 }
 
 .trending-list {
     list-style: none;
     padding: 0;
-    margin: -15px;
+    margin: -7px;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+
+    @include media-breakpoint-up(xl) {
+        margin: -10px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        margin: -15px;
+    }
 
     li {
-        width: 20%;
-        padding: 15px;
+        width: 100%;
+        padding: 7px;
+
+        @include media-breakpoint-up(sm) {
+            width: 50%;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 33.333%;
+        }
+
+        @include media-breakpoint-up(lg) {
+            width: 25%;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 20%;
+            padding: 10px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 15px;
+        }
     }
 
     .trending-box {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        border-radius: 50px;
         height: 100%;
         border-color: $white;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
 
+        @include media-breakpoint-up(xxl) {
+            padding: 30px;
+            border-radius: 40px;
+        }
+
         @include media-breakpoint-up(xxxl) {
             padding: 40px;
+            border-radius: 50px;
         }
 
         .icon {
@@ -210,17 +326,30 @@
             display: flex;
             align-items: center;
             margin: 0 0 25px;
+
+            @include media-breakpoint-down(sm) {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
         .text-holder {
             width: 100%;
             padding: 0;
             margin: 0 0 25px;
+
+            @include media-breakpoint-down(sm) {
+                text-align: center;
+            }
         }
 
         .btn {
             border: 2px solid #dedede;
             background: $white;
+
+            @include media-breakpoint-down(sm) {
+                margin: 0 auto;
+            }
         }
 
         &:hover { 
@@ -234,6 +363,37 @@
 
         &.more-box {
             align-items: center;
+            justify-content: center;
+
+            .btn {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $lt-brown;
+                border-color: $lt-brown;
+                border-radius: 100%;
+                font-size: 26px;
+                margin-bottom: 15px;
+                padding-top: 2px;
+
+                .btn-text {
+                    line-height: 1;
+                }
+            }
+
+            .subtitle {
+                display: block;
+                font-size: 16px;
+                color: $black;
+            }
+
+            &:hover {
+                .btn {
+                    background: $brown;
+                }
+            }
         }
     }
 }
