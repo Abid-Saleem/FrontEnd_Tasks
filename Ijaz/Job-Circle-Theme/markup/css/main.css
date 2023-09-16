@@ -13520,6 +13520,12 @@ textarea.form-control.form-control-lg {
     width: calc(100% - 190px);
   }
 }
+@media (min-width: 1200px) {
+  .footer-theme-4 .subscription-form .form-control {
+    width: calc(100% - 215px);
+    padding: 13px 30px;
+  }
+}
 @media (min-width: 768px) {
   .footer-theme-4 .subscription-form {
     -webkit-box-orient: horizontal;

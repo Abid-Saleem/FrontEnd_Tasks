@@ -49,6 +49,10 @@
 			@include media-breakpoint-up(lg) {
 				width: calc(100% - 190px);
 			}
+			@include media-breakpoint-up(xl) {
+				width: calc(100% - 215px);
+				padding: 13px 30px;
+			}
 		}
 		@include media-breakpoint-up(md) {
 			flex-direction: row;
