@@ -1068,11 +1068,12 @@
 	.article-slide {
 		padding: 0 10px;
 		@include media-breakpoint-up(lg) {
-			padding: 0;
+			padding: 0 0;
 		}
 	}
 	.acticle {
 		overflow: hidden;
+		padding: 0 0 15px;
 	}
 	.image-holder {
 		z-index: 1;
@@ -1143,6 +1144,9 @@
 				margin-right: 30px;
 				@include media-breakpoint-up(sm) {
 					margin: 0 0 15px;
+				}
+				@include media-breakpoint-up(xl) {
+					margin: 0;
 				}
 			}
 			&:first-child {

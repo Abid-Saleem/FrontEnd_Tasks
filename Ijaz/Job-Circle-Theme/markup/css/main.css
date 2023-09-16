@@ -13250,11 +13250,12 @@ textarea.form-control.form-control-lg {
 }
 @media (min-width: 992px) {
   .acticles-carousel .article-slide {
-    padding: 0;
+    padding: 0 0;
   }
 }
 .acticles-carousel .acticle {
   overflow: hidden;
+  padding: 0 0 15px;
 }
 .acticles-carousel .image-holder {
   z-index: 1;
@@ -13355,6 +13356,11 @@ textarea.form-control.form-control-lg {
 @media (min-width: 576px) {
   .acticles-carousel .meta-list li:not(:last-child) {
     margin: 0 0 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .acticles-carousel .meta-list li:not(:last-child) {
+    margin: 0;
   }
 }
 @media (min-width: 1200px) {
