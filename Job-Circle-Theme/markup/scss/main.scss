@@ -51,6 +51,13 @@ $media-expressions: (
 // Theme 3 Styles
 @import 'layout/header-theme-3';
 @import 'layout/visual-theme-3';
+@import 'layout/common-theme-3';
+
+// Theme 5 Styles
+@import 'layout/header-theme-5';
+@import 'layout/visual-theme-5';
+@import 'layout/common-theme-5';
+@import 'layout/footer-theme-5';
 
 // Theme 8 Styles
 @import 'layout/header-theme-8';

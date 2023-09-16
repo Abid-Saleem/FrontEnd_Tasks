@@ -240,6 +240,129 @@ function initSlickCarousel() {
 		    },
 		],
 	});
+	
+	jQuery('.jobs-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		focusOnSelect: false,
+		mobileFirst: true,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: false
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: false
+				},
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+			},
+		]
+	});
+	jQuery('.slick-prev').click(function(e) {
+		//e.preventDefault(); 
+		jQuery('.jobs-carousel').slick('slickPrev');
+	});
+
+	jQuery('.slick-next').click(function(e) {
+		//e.preventDefault(); 
+		jQuery('.jobs-carousel').slick('slickNext');
+	});
+
+	jQuery('.carousel-nav').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: true,
+		dots: false,
+		centerMode: true,
+		centerPadding: '0px',
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		focusOnSelect: false,
+		asNavFor: '.quotes-main',
+		mobileFirst: true,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					dots: false
+				},
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					dots: false
+				},
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				},
+			},
+		]
+	});
+	$('.quotes-main').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.carousel-nav'
+	});
+
+	jQuery('.news-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+	});
 }
 
 // select2 init
