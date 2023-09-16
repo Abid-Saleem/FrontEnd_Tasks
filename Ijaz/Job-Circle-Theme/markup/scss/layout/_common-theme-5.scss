@@ -64,6 +64,9 @@
 		@include media-breakpoint-up(md) {
 			margin-left: 50px;
 		}
+		@include media-breakpoint-up(lg) {
+			margin-left: auto;
+		}
 		&:before {
 			display: none;
 		}
@@ -793,7 +796,7 @@
 .news-block {
 	overflow: hidden;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center bottom;
 }
 .news-carousel {
