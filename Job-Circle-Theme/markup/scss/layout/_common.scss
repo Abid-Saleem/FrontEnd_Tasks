@@ -5237,8 +5237,10 @@
             text-align: center;
             background: #edf0ff;
             display: block;
-            padding: 8px 15px;
+            padding: 8px 15px 7px;
             border-radius: 20px;
+            border: 0;
+            color: $tundora;
 
             @include media-breakpoint-up(xl) {
                 min-width: 120px;

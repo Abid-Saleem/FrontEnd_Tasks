@@ -280,12 +280,10 @@ function initSlickCarousel() {
 		]
 	});
 	jQuery('.slick-prev').click(function(e) {
-		//e.preventDefault(); 
 		jQuery('.jobs-carousel').slick('slickPrev');
 	});
 
 	jQuery('.slick-next').click(function(e) {
-		//e.preventDefault(); 
 		jQuery('.jobs-carousel').slick('slickNext');
 	});
 
@@ -329,7 +327,7 @@ function initSlickCarousel() {
 			},
 		]
 	});
-	$('.quotes-main').slick({
+	jQuery('.quotes-main').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
@@ -362,6 +360,22 @@ function initSlickCarousel() {
 				}
 			},
 		],
+	});
+
+	jQuery('.customers-reviews-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		rows: 0,
+		arrows: false,
+		autoplay: false,
+	});
+
+	jQuery('.slick-prev').click(function(e) {
+		jQuery('.customers-reviews-slider').slick('slickPrev');
+	});
+
+	jQuery('.slick-next').click(function(e) {
+		jQuery('.customers-reviews-slider').slick('slickNext');
 	});
 }
 
@@ -420,7 +434,6 @@ function initResizeEffect() {
 		}
 	});
 }
-
 
 // Price Range function
 function initPriceRange() {

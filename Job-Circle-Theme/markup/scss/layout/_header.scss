@@ -295,6 +295,11 @@
         border: 0;
 
         @include media-breakpoint-up(lg) {
+            max-height: 400px;
+            overflow: auto;
+        }
+
+        @include media-breakpoint-up(lg) {
             display: block;
             min-width: 220px;
             box-shadow: 0 0 10px rgba(0,0,0,0.15);
