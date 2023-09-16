@@ -13624,6 +13624,11 @@ textarea.form-control.form-control-lg {
   color: #fff;
   position: absolute;
 }
+@media (min-width: 992px) {
+  .footer-theme-4 .footer-links li:before {
+    top: 10px;
+  }
+}
 .footer-theme-4 .sec-footer {
   font-weight: 400;
   background: #0a0026;

@@ -135,6 +135,9 @@
 				content: ">";
 				color: $white;
 				position: absolute;
+				@include media-breakpoint-up(lg) {
+					top: 10px;
+				}
 			}
 		}
 	}
