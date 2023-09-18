@@ -3,6 +3,8 @@
     font-size: 14px;
     overflow: hidden;
     font-family: $headings-font-family;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media-breakpoint-up(xl) {
         font-size: 15px;
@@ -17,6 +19,8 @@
 .pri-footer {
     overflow: hidden;
     line-height: 1.583;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media-breakpoint-up(xxxl) {
         line-height: 1.875;

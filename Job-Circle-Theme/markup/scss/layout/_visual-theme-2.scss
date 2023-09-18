@@ -1,5 +1,8 @@
 .visal-theme-2 {
     font-family: $font-family-epilogue;
+    background-image: url('../images/bg-visual-blue.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media-breakpoint-up(md) {
         font-size: 18px;

@@ -362,6 +362,40 @@ function initSlickCarousel() {
 		],
 	});
 
+	jQuery('.client-reviews-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+	});
+	jQuery('.slick-prev').click(function(e) {
+		jQuery('.client-reviews-carousel').slick('slickPrev');
+	});
+
+	jQuery('.slick-next').click(function(e) {
+		jQuery('.client-reviews-carousel').slick('slickNext');
+	});
+
 	jQuery('.customers-reviews-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,

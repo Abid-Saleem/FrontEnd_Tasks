@@ -102,6 +102,17 @@
             }
         }
     }
+
+    .matched-jobs-block {
+        background: url('../images/bg-matched.jpg') no-repeat;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.section-explores {
+        background: url('../images/bg-secion-explore.jpg') no-repeat;
+        background-size: cover;
+    }
 }
 
 /* Section Explores Styles */
@@ -122,10 +133,26 @@
         position: relative;
         max-width: 600px;
         margin: 0 auto;
+        
+        .img-pattern {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -8%;
+            right: -8%;
+            left: -15%;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
 
         .image-holder {
             overflow: hidden;
             border-radius: 25px;
+            position: relative;
 
             @include media-breakpoint-up(xl) {
                 border-radius: 45px;
@@ -420,6 +447,7 @@
 
         img {
             width: 100%;
+            height: auto;
             position: relative;
             z-index: 1;
         }

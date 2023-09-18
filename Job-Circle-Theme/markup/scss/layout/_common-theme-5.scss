@@ -58,6 +58,77 @@
 		}
 	}
 
+	.cats-block {
+		gap: 20px;
+		row-gap: 30px;
+		display: grid;
+		grid-template-columns: auto;
+	
+		@include media-breakpoint-up(md) {
+			grid-template-columns: auto auto;
+		}
+	
+		@include media-breakpoint-up(lg) {
+			gap: 28px;
+			row-gap: 50px;
+			grid-template-columns: auto auto auto;
+		}
+		
+		.cat-box {
+			a {
+				display: block;
+				border-radius: 8px;
+				position: relative;
+				background: $light-gray;
+				border: 1px solid $light-gray;
+				padding: 15px 15px 15px 120px;
+				.title {
+					color: $black;
+					display: block;
+					font-size: 20px;
+					line-height: normal;
+					text-transform: capitalize;
+				}
+				p {
+					margin: 0;
+					font-size: 14px;
+					color: $gray-700;
+				}
+				&:hover {
+					background: $white;
+					border-color: $gray;
+					box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
+					.icon-box {
+						background: $green;
+						img {
+							filter: brightness(0) invert(1);
+						}
+					}
+				}
+			}
+			.icon-box {
+				top: -15px;
+				left: 15px;
+				padding: 10px;
+				display: flex;
+				position: absolute;
+				background: $white;
+				border-radius: 8px;
+				align-items: center;
+				justify-content: center;
+				border: 2px solid $green;
+				@include size(80px, 80px);
+				transition: background ease-in-out 0.25s;
+				img {
+					flex: 0 0 50px;
+					display: block;
+					@include size(50px, auto);
+					transition: all ease-in-out 0.25s;
+				}
+			}
+		}
+	}
+
 	&.matched-jobs-block {
 		background: $navy-blue;
 		
@@ -117,75 +188,6 @@
 	&.testimonials-block {
 		border: 0;
 		border-bottom: 1px solid #cbcbcb;
-	}
-}
-
-/* Cats Block */
-.cats-block {
-	gap: 20px;
-	row-gap: 30px;
-	display: grid;
-	grid-template-columns: auto;
-	@include media-breakpoint-up(md) {
-		grid-template-columns: auto auto;
-	}
-	@include media-breakpoint-up(lg) {
-		gap: 28px;
-		row-gap: 50px;
-		grid-template-columns: auto auto auto;
-	}
-	.cat-box {
-		a {
-			display: block;
-			border-radius: 8px;
-			position: relative;
-			background: $light-gray;
-			border: 1px solid $light-gray;
-			padding: 15px 15px 15px 120px;
-			.title {
-				color: $black;
-				display: block;
-				font-size: 20px;
-				line-height: normal;
-				text-transform: capitalize;
-			}
-			p {
-				margin: 0;
-				font-size: 14px;
-				color: $gray-700;
-			}
-			&:hover {
-				background: $white;
-				border-color: $gray;
-				box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
-				.icon-box {
-					background: $green;
-					img {
-						filter: brightness(0) invert(1);
-					}
-				}
-			}
-		}
-		.icon-box {
-			top: -15px;
-			left: 15px;
-			padding: 10px;
-			display: flex;
-			position: absolute;
-			background: $white;
-			border-radius: 8px;
-			align-items: center;
-			justify-content: center;
-			border: 2px solid $green;
-			@include size(80px, 80px);
-			transition: background ease-in-out 0.25s;
-			img {
-				flex: 0 0 50px;
-				display: block;
-				@include size(50px, auto);
-				transition: all ease-in-out 0.25s;
-			}
-		}
 	}
 }
 

@@ -6,6 +6,10 @@
     }
 
     &.bg-dark-green {
+        background-image: url("../images/bg-visual2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
         @include media-breakpoint-up(lg) {
             background: transparent !important;
         }
@@ -27,7 +31,8 @@
         top: 0;
         bottom: 40px;
         width: 85%;
-        background: $dark-green;
+        background: $dark-green url('../images/bg-visual2.jpg') no-repeat;
+        background-size: cover;
         border-radius: 0 80px 80px 0;
     }
 

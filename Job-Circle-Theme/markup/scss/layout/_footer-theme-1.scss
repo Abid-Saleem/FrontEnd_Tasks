@@ -3,6 +3,8 @@
     font-family: $font-family-epilogue;
     position: relative;
     overflow: visible;
+    background: url('../images/bg-footer-green.jpg') no-repeat;
+    background-size: cover;
 
     h5 {
         color: $white;
@@ -28,6 +30,10 @@
     .pri-footer {
         position: relative;
         overflow: visible;
+
+        &.bg-dark-green {
+            background: none !important;
+        }
 
         .logo {
             @include media-breakpoint-up(xl) {
@@ -88,6 +94,10 @@
 
         @include media-breakpoint-up(lg) {
             font-size: 16px;
+        }
+        
+        &.bg-dark-green {
+            background: none !important;
         }
 
         p {
