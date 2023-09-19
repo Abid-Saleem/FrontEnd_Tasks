@@ -312,7 +312,8 @@
     }
 
     .matched-jobs-block {
-        background: $gray-darker;
+        background: $gray-darker url('../images/bg-vactor.jpg') no-repeat;
+        background-size: cover;
         color: $white;
         max-width: 100%;
 
@@ -375,6 +376,10 @@
         &:hover {
             background: $orange;
         }
+    }
+
+    &.explore-jobs-block {
+        background-image: url('../images/bg-tranding.jpg');
     }
 }
 
@@ -558,6 +563,9 @@
 
 /* Explore Jobs Block Styles */
 .explore-jobs-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+
     .section-header {
         h2 {
             font-weight: 700;

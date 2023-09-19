@@ -130,11 +130,13 @@
 	}
 
 	&.matched-jobs-block {
-		background: $navy-blue;
-		
-		@include media-breakpoint-up(md) {
-			margin-left: 50px;
+		background: $navy-blue url('../images/bg-pattern-blue-lt.jpg') no-repeat;
+		background-size: cover;
+
+		@include media-breakpoint-up(xxl) {
+			padding: 80px;
 		}
+
 		&:before {
 			display: none;
 		}
@@ -148,6 +150,10 @@
 			}
 			h2 {
 				color: $white;
+
+				@include media-breakpoint-up(xxl) {
+					font-size: 50px;
+				}
 			}
 		}
 		.btn {
@@ -174,6 +180,7 @@
 			}
 			@include media-breakpoint-up(xl) {
 				margin: 0 0 -110px -110px;
+				border-radius: 45px;
 			}
 			img {
 				top: 0;
@@ -373,11 +380,20 @@
 	border-radius: 15px;
 	border: 1px solid rgb(213, 213, 213);
 
+	@include media-breakpoint-up(xl) {
+		border-radius: 30px;
+	}
+
 	.inner-box {
 		overflow: hidden;
 		padding: 20px 10px 50px;
+
 		@include media-breakpoint-up(xl) {
-			padding: 20px 20px 50px;
+			padding: 30px 20px 50px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			padding: 30px 30px 50px;
 		}
 	}
 
@@ -416,8 +432,16 @@
 		position: relative;
 		border-radius: 15px;
 		margin: 0 -1px -1px;
-		padding: 30px 15px 15px;
+		padding: 35px 15px 15px;
 		background: $light-gray;
+
+		@include media-breakpoint-up(xl) {
+			border-radius: 30px;
+		}
+
+		@include media-breakpoint-up(xxl) {
+			padding: 40px 30px 25px;
+		}
 	}
 
 	.btn {
@@ -449,6 +473,8 @@
 		img {
 			width: 40px;
 			margin-right: 10px;
+			border-radius: 50%;
+
 			@include media-breakpoint-up(xl) {
 				width: 52px;
 				margin-right: 15px;
@@ -801,6 +827,14 @@
 			display: block;
 			@include size(100%, auto);
 		}
+
+		.star-ratings {
+			font-size: 15px;
+
+			.filled {
+				color: #ffb017;
+			}
+		}
 	}
 }
 
@@ -1111,12 +1145,22 @@
 	  			transition: all ease-in-out 0.3s;
 	  			box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
 	  			.image-holder {
+					overflow: hidden;
 	  				border-radius: 50%;
 	  				background: $mperor;
 	  				margin: -45px 0 15px;
 	  				@include size(150px, 150px);
 	  				@include media-breakpoint-up(lg) {
 						@include size(190px, 190px);
+					}
+
+					img {
+						width: 100%;
+						height: 100%;
+						display: block;
+						border-radius: 100%;
+						object-fit: cover;
+						object-position: center;
 					}
 	  			}
 	  			.title, .designation {

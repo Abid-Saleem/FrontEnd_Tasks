@@ -200,6 +200,22 @@
             }
         }
     }
+
+    .dream-visual-box {
+        background-image: url('../images/bg-pattern-blue.jpg');
+    }
+
+    &.trending-block {
+        background-image: url('../images/bg-trending.jpg');
+    }
+
+    &.recent-news-block {
+        background-image: url('../images/bg-secion-explore.jpg');
+    }
+
+    &.section-newsletter {
+        z-index: 2;
+    }
 }
 
 /* Featured Categories Styles */
@@ -707,6 +723,9 @@
 
 /* Trending Block Styles */
 .trending-block {
+    background-repeat: no-repeat;
+    background-size: cover;
+
     .section-header {
         h2 {
             margin: 0 0 15px;
@@ -926,6 +945,8 @@
     justify-content: center;
     position: relative;
     padding: 45px 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @include media-breakpoint-up(md) {
         min-height: 425px;
@@ -1122,6 +1143,17 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                background: rgba(0,0,0,0.2);
+            }
 
             img {
                 width: 100%;
@@ -1138,6 +1170,7 @@
             bottom: 0;
             width: 100%;
             padding: 15px;
+            z-index: 1;
 
             @include media-breakpoint-up(xxl) {
                 padding: 25px 30px;
@@ -1177,6 +1210,8 @@
 /* Recent News Block */
 .recent-news-block {
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .btn-block {
         .btn {

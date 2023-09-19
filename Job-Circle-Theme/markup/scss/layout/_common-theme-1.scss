@@ -104,19 +104,19 @@
     }
 
     .matched-jobs-block {
-        background: url('../images/bg-matched.jpg') no-repeat;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('../images/bg-matched.jpg');
     }
 
     &.section-explores {
-        background: url('../images/bg-secion-explore.jpg') no-repeat;
-        background-size: cover;
+        background-image: url('../images/bg-secion-explore.jpg');
     }
 }
 
 /* Section Explores Styles */
 .section-explores {
+    background-repeat: no-repeat;
+    background-size: cover;
+
     .section-header {
         @include media-breakpoint-up(lg) {
             font-size: 18px;
@@ -333,6 +333,8 @@
     justify-content: space-between;
     flex-flow: row wrap;
     background: $dark-green;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 25px;
     color: $white;
     padding: 35px 25px;

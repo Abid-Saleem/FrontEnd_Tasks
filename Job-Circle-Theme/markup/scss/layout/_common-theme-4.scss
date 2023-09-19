@@ -3,10 +3,13 @@
 	--purple-heart: #7d29e6;
 	--golden: #ffca63;
  }
+
 .section-theme-4 {
 	font-family: $font-family-epilogue;
 
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+		color: $black;
+		font-weight: 800;
 		font-family: $font-family-epilogue;
 	}
 
@@ -407,6 +410,10 @@
 				@include media-breakpoint-up(md) {
 					text-align: left;
 				}
+
+				@include media-breakpoint-up(xl) {
+					font-size: 28px;
+				}
 			}
 			.meta {
 				display: block;
@@ -536,6 +543,7 @@
 					color: $black;
 					display: flex;
 					font-size: 16px;
+					font-weight: 700;
 					position: absolute;
 					align-items: center;
 					@include size(67px);
@@ -606,8 +614,9 @@
 		}
 		p {
 			color: $tundora;
-			font-size: 14px;
-			line-height: 28px;
+			line-height: 1.9;
+			// font-size: 14px;
+			// line-height: 28px;
 		}
 	}
 	&.apps-block {
@@ -699,7 +708,16 @@
 		background-size: contain;
 		background-position: center 90%;
 	}
+
+	&.browse-jobs-block {
+		background-color: #f7f7f7 !important;
+		background-image: url('../images/bg-browse.jpg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: bottom center;
+	}
 }
+
 .candidate-block {
 	.candidate-carousel {
 		margin: 0 0 20px;
@@ -807,6 +825,11 @@
 				margin: 3px 0 0;
 			}
 		}
+
+		p {
+			font-size: 14px;
+			color: #888;
+		}
 	}
 	h3 {
 		color: $black;
@@ -816,13 +839,8 @@
 		}
 	}
 	p {
-		color: $gray;
-		font-size: 13px;
 		@include media-breakpoint-up(md) {
 			margin: 0 0 30px;
-		}
-		@include media-breakpoint-up(xxl) {
-			font-size: 14px;
 		}
 	}
 	.price {
@@ -869,6 +887,7 @@
 		justify-content: center;
 		@include size(60px);
 		background: $light-gray;
+		position: static;
 		&:hover {
 			color: $white;
 			background: $purple-heart;
@@ -911,6 +930,8 @@
 			}
 			@include media-breakpoint-up(xl) {
 				padding: 60px;
+				font-size: 20px;
+				line-height: 1.6;
 			}
 			p {
 				line-height: 1.6;
@@ -940,10 +961,14 @@
 					font-size: 18px;
 					font-weight: 700;
 					line-height: normal;
+
+					@include media-breakpoint-up(xl) {
+						font-size: 24px;
+					}
 				}
 				span {
 					font-size: 14px;
-					@include media-breakpoint-up(lg) {
+					@include media-breakpoint-up(xl) {
 						font-size: 16px;
 					}
 				}
@@ -999,10 +1024,11 @@
 		padding: 40px;
 		margin: -120px 0 50px;
 		border-radius: 0 60px 60px 60px;
+		justify-content: space-around;
 	}
 	@include media-breakpoint-up(xl) {
-		padding: 40px;
-		margin: -160px 0 80px;
+		padding: 60px 40px;
+		margin: -180px 0 80px;
 		border-radius: 0 60px 60px 60px;
 	}
 	.counter {
@@ -1016,6 +1042,11 @@
 			flex-direction: row;
 			align-items: flex-start;
 		}
+
+		@include media-breakpoint-up(lg) {
+			width: auto;
+			flex: inherit;
+		}
 	}
 	.icon {
 		padding: 15px;
@@ -1027,6 +1058,14 @@
 		@include media-breakpoint-up(md) {
 			margin: 0 15px 0 0;
 		}
+
+		@include media-breakpoint-up(xl) {
+			padding: 25px;
+			flex: 0 0 85px;
+			@include size(85px);
+			border-radius: 0 50px 50px 50px;
+		}
+
 		img {
 			display: block;
 			@include size(100%, auto);
@@ -1040,6 +1079,10 @@
 		@include media-breakpoint-up(md) {
 			text-align: left;
 		}
+		@include media-breakpoint-up(xxl) {
+			font-size: 18px;
+		}
+
 		strong {
 			display: block;
 			line-height: 1;
@@ -1051,6 +1094,9 @@
 			}
 			@include media-breakpoint-up(lg) {
 				font-size: 50px;
+			}
+			@include media-breakpoint-up(xxl) {
+				font-size: 70px;
 			}
 		}
 	}
@@ -1193,6 +1239,7 @@
 			margin-right: 10px;
 			border-radius: 50%;
 			@include size(40px);
+			overflow: hidden;
 			background: $silver;
 			border: 1px solid $gray;
 			box-shadow: 0 3px 40px 0 rgba(35, 72, 255, 0.1);
@@ -1203,6 +1250,11 @@
 			}
 			img {
 				display: block;
+				border-radius: 100%;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center;
 			}
 		}
 		i {
