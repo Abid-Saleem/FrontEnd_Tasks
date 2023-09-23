@@ -5,6 +5,8 @@
     font-family: $headings-font-family;
     font-size: 15px;
     line-height: 1.6;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     @include media-breakpoint-up(md) {
         font-size: 18px;
@@ -5167,6 +5169,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         @include media-breakpoint-up(xl) {
             width: 78px;
@@ -5178,7 +5181,10 @@
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 100%;
         }
     }
 
@@ -5237,8 +5243,10 @@
             text-align: center;
             background: #edf0ff;
             display: block;
-            padding: 8px 15px;
+            padding: 8px 15px 7px;
             border-radius: 20px;
+            border: 0;
+            color: $tundora;
 
             @include media-breakpoint-up(xl) {
                 min-width: 120px;

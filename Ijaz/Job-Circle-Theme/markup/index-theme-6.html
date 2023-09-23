@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.png">
+	<title>Job Circle</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header class="header header-theme-6">
+			<div class="container">
+				<strong class="logo d-block">
+					<a href="index.html">
+						<img src="images/logo-theme-6.svg" alt="Job Lix">
+					</a>
+				</strong>
+				<!-- main menu -->
+				<div class="main-nav">
+					<a href="#" class="nav-opener d-flex d-lg-none"><span></span></a>
+					<div class="nav-drop">
+						<a href="#" class="nav-close d-flex d-lg-none"><span></span></a>
+						<!-- navigation -->
+						<ul class="navigation">
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Browse Jobs</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">Job 1</a></li>
+									<li><a class="dropdown-item" href="#">Job 2</a></li>
+									<li><a class="dropdown-item" href="#">Job 3</a></li>
+									<li><a class="dropdown-item" href="#">Job 4</a></li>
+									<li><a class="dropdown-item" href="#">Job 5</a></li>
+									<li><a class="dropdown-item" href="#">Job 6</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html">Pricing</a></li>
+							<li>
+								<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="index.html">Home</a></li>
+									<li><a class="dropdown-item" href="about.html">About</a></li>
+									<li><a class="dropdown-item" href="blog.html">Blog</a></li>
+									<li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
+									<li><a class="dropdown-item" href="candidate.html">Candidate</a></li>
+									<li><a class="dropdown-item" href="candidate-detail.html">Candidate Detail</a></li>
+									<li><a class="dropdown-item" href="company-list.html">Company List</a></li>
+									<li><a class="dropdown-item" href="company-detail.html">Company Detail</a></li>
+									<li><a class="dropdown-item" href="job-list.html">Job List</a></li>
+									<li><a class="dropdown-item" href="job-list2.html">Job List 2</a></li>
+									<li><a class="dropdown-item" href="job-list3.html">Job List 3</a></li>
+									<li class="active"><a class="dropdown-item" href="job-list4.html">Job List Grid</a></li>
+									<li><a class="dropdown-item" href="job-detail.html">Job Detail</a></li>
+									<li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+								</ul>
+							</li>
+							<li><a href="#">News</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+						<div class="user-box d-lg-flex">
+							<a class="login-link" href="#"><i class="icon-user"></i> Login</a>
+							<button class="btn btn-sm" type="submit">
+								<span class="btn-text">+ Post a Job</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Visual of the page -->
+		<div class="visual-block visal-theme-6 pt-120 pt-md-140 pt-xl-160 pb-20 pb-md-70" style="background-image: url('images/bg-visual-6.png');">
+			<div class="container position-relative">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-12 col-lg-7 col-xl-6">
+						<!-- visual textbox -->
+						<div class="visual-textbox text-black">
+							<h1>Hire the best <br>freelancers for <br>any job, online.</h1>
+							<p>We delivered blazing fast & striking work solution</p>
+							<div class="buttons-block pt-10 pb-30 pt-lg-50">
+								<button class="btn"><span>Find Work</span></button>
+								<button class="btn btn-gray"><span>Find Telent</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-5 col-xl-6">
+						<div class="image-holder"><img src="images/visual-image-6.png" alt="image"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- contain main informative part of the site -->
+		<main class="main">
+			
+			<!-- Counter -->
+			<div class="section section-theme-6">
+				<div class="counters-block pb-30 pb-lg-60 pb-xl-85">
+					<div class="container">
+						<div class="row justify-content-center justify-content-md-between">
+							<div class="counter-box">
+								<div class="counter-stats">
+									<strong class="numbers h2">
+										<span data-purecounter-duration="1" data-purecounter-start="0" data-purecounter-end="100" data-purecounter-once="true" class="purecounter">100</span>%
+									</strong>
+									<span class="subtext">customers are satisfied</span>
+								</div>
+							</div>
+							<div class="counter-box">
+								<div class="counter-stats">
+									<strong class="numbers h2">
+										<span data-purecounter-duration="1" data-purecounter-start="0" data-purecounter-end="5" data-purecounter-once="true" class="purecounter">5</span>.0
+									</strong>
+									<span class="subtext">Clients rate professionals</span>
+								</div>
+							</div>
+							<div class="counter-box">
+								<div class="counter-stats">
+									<strong class="numbers h2">
+										<span data-purecounter-duration="1" data-purecounter-start="0" data-purecounter-end="44" data-purecounter-once="true" class="purecounter">44</span>M
+									</strong>
+									<span class="subtext">Total Freelancer</span>
+								</div>
+							</div>
+							<div class="counter-box">
+								<div class="counter-stats">
+									<strong class="numbers h2">
+										<span data-purecounter-duration="1" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-once="true" class="purecounter">12</span>+
+									</strong>
+									<span class="subtext">Winning Best Award</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Trending Services -->
+			<section class="section section-theme-6 bg-white pt-20 pt-md-50 pt-lg-75 pt-xxl-120 pb-35 pb-md-50 pb-lg-65 pb-xxl-100">
+				<div class="container">
+					<!-- Section header -->
+					<header class="section-header d-flex flex-column text-center mb-30 mb-lg-45">
+						<h2>Trending Services</h2>
+						<p>Most viewed and all-time top-selling services</p>
+					</header>
+
+					<div class="services-carousel">
+						<div class="service-slide">
+							<div class="inner-frame">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/service-01.jpg" alt="image">
+									</div>
+									<div class="service-info-box">
+										<strong class="sub-heading">Web & App Design</strong>
+										<h2>I will create modern flat design illustration</h2>
+										<div class="service-footer">
+											<div class="img"><img src="images/avatar-01.jpg" alt="image"></div>
+											<div class="text">
+												<strong class="title">Thomas Willimes</strong>
+												<p class="m-0 price">Starting at  <strong>$1000</strong></p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="service-slide">
+							<div class="inner-frame">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/service-02.jpg" alt="image">
+									</div>
+									<div class="service-info-box">
+										<strong class="sub-heading">Web & App Design</strong>
+										<h2>Admin & Customer Support</h2>
+										<div class="service-footer">
+											<div class="img"><img src="images/avatar-02.jpg" alt="image"></div>
+											<div class="text">
+												<strong class="title">Romina Jamson</strong>
+												<p class="m-0 price">Starting at  <strong>$1000</strong></p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="service-slide">
+							<div class="inner-frame">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/service-03.jpg" alt="image">
+									</div>
+									<div class="service-info-box">
+										<strong class="sub-heading">Web & App Design</strong>
+										<h2>I will build a fully responsive design</h2>
+										<div class="service-footer">
+											<div class="img"><img src="images/avatar-01.jpg" alt="image"></div>
+											<div class="text">
+												<strong class="title">Wanda Rano</strong>
+												<p class="m-0 price">Starting at  <strong>$1000</strong></p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="service-slide">
+							<div class="inner-frame">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/service-04.jpg" alt="image">
+									</div>
+									<div class="service-info-box">
+										<strong class="sub-heading">Web & App Design</strong>
+										<h2>I will do mobile app development</h2>
+										<div class="service-footer">
+											<div class="img"><img src="images/avatar-04.jpg" alt="image"></div>
+											<div class="text">
+												<strong class="title">Jakki Thomas</strong>
+												<p class="m-0 price">Starting at  <strong>$1000</strong></p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="service-slide">
+							<div class="inner-frame">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/service-02.jpg" alt="image">
+									</div>
+									<div class="service-info-box">
+										<strong class="sub-heading">Web & App Design</strong>
+										<h2>Admin & Customer Support</h2>
+										<div class="service-footer">
+											<div class="img"><img src="images/avatar-02.jpg" alt="image"></div>
+											<div class="text">
+												<strong class="title">Romina Jamson</strong>
+												<p class="m-0 price">Starting at  <strong>$1000</strong></p>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Marktplace Block -->
+			<section class="section section-theme-6 marktplace-block bg-white pt-20 pt-md-40 pt-lg-65 pt-xxl-100 pb-50 pb-md-40 pb-lg-50 pb-xxl-90">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-6 order-2 order-md-1">
+							<div class="image-holder"><img src="images/marktplace-img.png" alt="image"></div>
+						</div>
+						<div class="col-12 col-md-6 order-1 order-md-2">
+							<div class="text-box">
+								<h2>Join World's Best Marketplace for Experts Workers</h2>
+								<p>Velit officia consequat duis enim velit mollit. Exercitation veniam conse quat sunt nostrud amet.</p>
+								<ul class="list-unstyled list">
+									<li>
+										<strong>Connect to freelancers</strong>
+										<p>Sit amet, consectetur adipiscing elit, sed do ei usmod tempor incididunt. Labore et.</p>
+									</li>
+									<li>
+										<strong>Get matched with the perfect talent </strong>
+										<p>Sit amet, consectetur adipiscing elit, sed do ei usmod tempor incididunt. Labore et.</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Talent Block -->
+			<section class="section section-theme-6 talent-block pt-30 pt-md-50 pt-lg-75 pt-xxl-120 pb-35 pb-md-80 pb-lg-100 pb-xxl-120" style="background-image: url(images/bg-talent.png)">
+				<div class="container">
+					<!-- Section header -->
+					<header class="section-header d-flex flex-column text-center mb-30 mb-lg-45">
+						<h2>Browse talent by category</h2>
+						<p>Get some Inspirations from 1800+ skills</p>
+					</header>
+					<div class="talent-categories">
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon1.svg" alt="icon"></div>
+								<h3>Writing & Translation</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon2.svg" alt="icon"></div>
+								<h3>Automotive</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon3.svg" alt="icon"></div>
+								<h3>Marketing</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon4.svg" alt="icon"></div>
+								<h3>Design & Multimedia</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon5.svg" alt="icon"></div>
+								<h3>Accounting / Finance</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon6.svg" alt="icon"></div>
+								<h3>IT Contractor</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon7.svg" alt="icon"></div>
+								<h3>Accountancy</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+						<div class="cat-info-box">
+							<a href="#">
+								<div class="icon"><img src="images/talen-icon8.svg" alt="icon"></div>
+								<h3>Construction / Facilities</h3>
+								<p>1.853 skills</p>
+							</a>
+						</div>
+					</div>
+					<div class="row pt-30 pt-md-40 pt-lg-45">
+						<div class="col-12 d-flex justify-content-center">
+							<button class="btn"><span>View All Categories</span></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Most Viewed Block -->
+			<section class="section section-theme-6 most-viewed-block bg-white pt-30 pt-md-50 pt-lg-75 pt-xxl-120 pb-35 pb-md-50 pb-lg-65 pb-xxl-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<header class="section-header d-flex flex-column mb-30 mb-md-40 mb-lg-45 mb-xl-65">
+								<h2>Most viewed and all-time top-selling services</h2>
+								<p>Velit officia consequat duis enim velit mollit. Exercitation veniam conse quat sunt nostrud amet.</p>
+							</header>
+						</div>	
+					</div>
+					<div class="row align-items-center">
+						<div class="col-12 col-md-6">
+							<div class="text">
+								<div class="step-box">
+									<h3>Post a job</h3>
+									<p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+								</div>
+								<div class="step-box">
+									<h3>Choose freelancers</h3>
+									<p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+								</div>
+								<div class="step-box">
+									<h3>Pay safely</h3>
+									<p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+								</div>
+								<div class="step-box">
+									<h3>We’re here to help</h3>
+									<p>It’s free and easy to post a job. Simply fill in a title, description.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="image-holder">
+								<img src="images/most-viewed-img.jpg" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Latest Jobs Block -->
+			<section class="section section-theme-6 latest-jobs-block pt-20 pt-md-20 pt-lg-10 pb-35 pb-md-80 pb-lg-100 pb-xxl-120">
+				<div class="container">
+					<!-- Section header -->
+					<header class="section-header d-flex flex-column text-center mb-30 mb-lg-45">
+						<h2>Our Latest Jobs</h2>
+						<p>Most viewed and all-time top-selling services</p>
+					</header>
+					<div class="latest-jobs-carousel">
+						<div class="job-slide">
+							<div class="inner-frame">
+								<a href="#" class="fav-tag"><img src="images/icon-heart.svg" alt="icon"></a>
+								<a href="#">
+									<div class="slide-top">
+										<div class="icon"><img src="images/company-logo01.jpg" alt="icon"></div>
+										<h3>Need senior rolling stock technician</h3>
+										<span class="post-by">By WebTechnology</span>
+									</div>
+									<div class="slide-bottom">
+										<strong class="price">$100 - $120<sub>/hourly</sub></strong>
+										<ul class="tags-list">
+											<li><span class="tag">Full Time</span></li>
+											<li><span class="tag">Remote</span></li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="job-slide">
+							<div class="inner-frame">
+								<a href="#" class="fav-tag"><img src="images/icon-heart.svg" alt="icon"></a>
+								<a href="#">
+									<div class="slide-top">
+										<div class="icon"><img src="images/company-logo02.jpg" alt="icon"></div>
+										<h3>Office assistant/Social media assistant</h3>
+										<span class="post-by">By Websikon</span>
+									</div>
+									<div class="slide-bottom">
+										<strong class="price">$100 - $120<sub>/hourly</sub></strong>
+										<ul class="tags-list">
+											<li><span class="tag">Full Time</span></li>
+											<li><span class="tag">Remote</span></li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="job-slide">
+							<div class="inner-frame">
+								<a href="#" class="fav-tag"><img src="images/icon-heart.svg" alt="icon"></a>
+								<a href="#">
+									<div class="slide-top">
+										<div class="icon"><img src="images/company-logo03.jpg" alt="icon"></div>
+										<h3>Website Designer Required For Directory Theme</h3>
+										<span class="post-by">By Geniouslab</span>
+									</div>
+									<div class="slide-bottom">
+										<strong class="price">$100 - $120<sub>/hourly</sub></strong>
+										<ul class="tags-list">
+											<li><span class="tag">Full Time</span></li>
+											<li><span class="tag">Remote</span></li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="job-slide">
+							<div class="inner-frame">
+								<a href="#" class="fav-tag"><img src="images/icon-heart.svg" alt="icon"></a>
+								<a href="#">
+									<div class="slide-top">
+										<div class="icon"><img src="images/company-logo04.jpg" alt="icon"></div>
+										<h3>Marketing and Communications Manager</h3>
+										<span class="post-by">By Develpersoft</span>
+									</div>
+									<div class="slide-bottom">
+										<strong class="price">$100 - $120<sub>/hourly</sub></strong>
+										<ul class="tags-list">
+											<li><span class="tag">Full Time</span></li>
+											<li><span class="tag">Remote</span></li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="job-slide">
+							<div class="inner-frame">
+								<a href="#" class="fav-tag"><img src="images/icon-heart.svg" alt="icon"></a>
+								<a href="#">
+									<div class="slide-top">
+										<div class="icon"><img src="images/company-logo05.jpg" alt="icon"></div>
+										<h3>Website Designer Required For Directory Theme</h3>
+										<span class="post-by">By WebTechnology</span>
+									</div>
+									<div class="slide-bottom">
+										<strong class="price">$100 - $120<sub>/hourly</sub></strong>
+										<ul class="tags-list">
+											<li><span class="tag">Full Time</span></li>
+											<li><span class="tag">Remote</span></li>
+										</ul>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Learning Block -->
+			<section class="section section-theme-6 learning-block pt-30 pt-md-50 pt-lg-75 pt-xxl-120 pb-10 pb-md-50 pb-lg-40 pb-xxl-60">
+				<div class="container">
+					<div class="row mb-10 mb-lg-60">
+						<div class="col-12 col-md-8">
+							<h2>People Love To Learn</h2>
+							<p>The most comprehensive search engine for jobs.</p>
+						</div>
+						<div class="col-12 col-md-4 d-flex justify-content-md-end align-items-start">
+							<a href="#" class="reviews-link">
+								<div class="ratings-info">
+									<i class="icon-star"></i>
+									<span>4.9</span>
+								</div>
+								<span class="txt">494 Reviews</span>
+							</a>
+						</div>
+					</div>
+					<div class="row mb-30 mb-md-50 mb-lg-80">
+						<div class="col-12 learning-sliders">
+							<div class="thumbs-list">
+								<div class="thumbnail"><img src="images/people-img-01.jpg" alt="image"></div>
+								<div class="thumbnail"><img src="images/people-img-02.jpg" alt="image"></div>
+								<div class="thumbnail"><img src="images/people-img-03.jpg" alt="image"></div>
+								<div class="thumbnail"><img src="images/people-img-04.jpg" alt="image"></div>
+								<div class="thumbnail"><img src="images/people-img-05.jpg" alt="image"></div>
+								<div class="thumbnail"><img src="images/people-img-06.jpg" alt="image"></div>
+							</div>
+							<div class="text-info-slider">
+								<div class="slick-box">
+									<blockquote class="text-info-frm">
+										<h3>Great Quality!</h3>
+										<p>"Vestibulum orci felis, ullamcorper non conu m non, ultrices ac nunc. Mauris non ligscipit, vulpu tate mi accumsan, dapibus fe lam sed sapien duiem non porta."</p>
+										<cite class="d-flex align-items-center">
+											<strong class="title">Courtney Henry</strong>
+											<span class="designation">- Web Designer</span>
+										</cite>
+									</blockquote>
+								</div>
+								<div class="slick-box">
+									<blockquote class="text-info-frm">
+										<h3>Great Quality Info!</h3>
+										<p>" Vestibulum orci felis, ullamcorper non conu m non, ultrices ac nunc. Mauris non ligscipit, vulpu tate mi accumsan, dapibus fe lam sed sapien duiem non porta. "</p>
+										<cite class="d-flex align-items-center">
+											<strong class="title">Courtney Henry</strong>
+											<span class="designation">- Web Designer</span>
+										</cite>
+									</blockquote>
+								</div>
+								<div class="slick-box">
+									<blockquote class="text-info-frm">
+										<h3>Great Quality!</h3>
+										<p>" Vestibulum orci felis, ullamcorper non conu m non, ultrices ac nunc. Mauris non ligscipit, vulpu tate mi accumsan, dapibus fe lam sed sapien duiem non porta. "</p>
+										<cite class="d-flex align-items-center">
+											<strong class="title">Courtney Henry</strong>
+											<span class="designation">- Web Designer</span>
+										</cite>
+									</blockquote>
+								</div>
+								<div class="slick-box">
+									<blockquote class="text-info-frm">
+										<h3>Great Quality Info!</h3>
+										<p>" Vestibulum orci felis, ullamcorper non conu m non, ultrices ac nunc. Mauris non ligscipit, vulpu tate mi accumsan, dapibus fe lam sed sapien duiem non porta. "</p>
+										<cite class="d-flex align-items-center">
+											<strong class="title">Courtney Henry</strong>
+											<span class="designation">- Web Designer</span>
+										</cite>
+									</blockquote>
+								</div>
+								<div class="slick-box">
+									<blockquote class="text-info-frm">
+										<h3>Great Quality!</h3>
+										<p>" Vestibulum orci felis, ullamcorper non conu m non, ultrices ac nunc. Mauris non ligscipit, vulpu tate mi accumsan, dapibus fe lam sed sapien duiem non porta. "</p>
+										<cite class="d-flex align-items-center">
+											<strong class="title">Courtney Henry</strong>
+											<span class="designation">- Web Designer</span>
+										</cite>
+									</blockquote>
+								</div>
+								<div class="slick-box">
+									<blockquote class="text-info-frm">
+										<h3>Great Quality Info!</h3>
+										<p>" Vestibulum orci felis, ullamcorper non conu m non, ultrices ac nunc. Mauris non ligscipit, vulpu tate mi accumsan, dapibus fe lam sed sapien duiem non porta. "</p>
+										<cite class="d-flex align-items-center">
+											<strong class="title">Courtney Henry</strong>
+											<span class="designation">- Web Designer</span>
+										</cite>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 d-flex justify-content-center">
+							<ul class="list-inline logos-list">
+								<li class="list-inline-item">
+									<img src="images/com-logo01.png" alt="logo">
+								</li>
+								<li class="list-inline-item">
+									<img src="images/com-logo02.png" alt="logo">
+								</li>
+								<li class="list-inline-item">
+									<img src="images/com-logo03.png" alt="logo">
+								</li>
+								<li class="list-inline-item">
+									<img src="images/com-logo04.png" alt="logo">
+								</li>
+								<li class="list-inline-item">
+									<img src="images/com-logo05.png" alt="logo">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Latest News Block -->
+			<section class="section section-theme-6 latest-news-block pt-30 pt-md-50 pt-lg-80 pb-15 pb-md-10">
+				<div class="container">
+					<!-- Section header -->
+					<header class="section-header d-flex flex-column text-center mb-30 mb-lg-45">
+						<h2>Our Latest News</h2>
+						<p>Most viewed and all-time top-selling services</p>
+					</header>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="news-post">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/image-news11.jpg" alt="image"></div>
+									<time class="date" datetime="2023-12-02">December 2, 2023</time>
+									<h3>Start an online business and work from home</h3>
+									<span class="post-by">By <strong>Thomas Smith</strong></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="news-post">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/image-news10.jpg" alt="image">
+									</div>
+									<time class="date" datetime="2023-12-02">December 2, 2023</time>
+									<h3>Engendering a culture of professional development</h3>
+									<span class="post-by">By <strong>Thomas Smith</strong></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="news-post">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/image-news03.jpg" alt="image">
+									</div>
+									<time class="date" datetime="2023-12-02">December 2, 2023</time>
+									<h3>Front becomes an official Instagram Marketing Partner</h3>
+									<span class="post-by">By <strong>Thomas Smith</strong></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3">
+							<div class="news-post">
+								<a href="#">
+									<div class="image-holder">
+										<img src="images/image-news04.jpg" alt="image">
+									</div>
+									<time class="date" datetime="2023-12-02">December 2, 2023</time>
+									<h3>Collaboration: Best Practices, Challenges, and Tools</h3>
+									<span class="post-by">By <strong>Thomas Smith</strong></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Apps Block -->
+			<section class="section section-theme-4 apps-block bg-white pt-0 pt-md-30 pt-lg-60 pt-xxl-100 pb-35 pb-md-50 pb-lg-65 pb-xxl-100">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-6">
+							<div class="text">
+								<h2>Download the App</h2>
+								<p>Aliquam lorem ante, dapibus in, viverra quis, feu Aliquam lorem ante, dapibus orem ante, dapibus in, viverra.</p>
+								<ul class="list-unstyled list">
+									<li>Duis aute irure dolor in reprehenderit</li>
+									<li>Voluptate velit esse cillum dolore</li>
+									<li>Fugiat nulla pariatur. Excepteur sint occaecat</li>
+								</ul>
+								<div class="download-btns">
+									<a href="#"><img src="images/google-playstore-orange.svg" alt="google"></a>
+									<a href="#"><img src="images/apple-store.svg" alt="apple"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<div class="image-holder">
+								<img src="images/apps-image.png" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer of the page -->
+		<footer class="footer footer-theme-6">
+			<div class="pri-footer text-black pt-35 pt-lg-90 pb-35 pb-md-20" style="background-image: url('images/bg-footer-6.png');">
+				<div class="container">
+					<div class="row flex-md-row-reverse justify-content-between pb-lg-65 pb-xl-80">
+						<div class="col-12 col-lg-4 mb-35 mb-md-45 mb-lg-0">
+							<h5>Join Our Newsletter</h5>
+							<!-- Form Subscribe -->
+							<div class="footer-info">
+								<div class="form-subscribe">
+									<p>Get Recent News and Updates. We don’t send spam so don’t worry.</p>
+									<form action="#">
+										<input class="form-control" type="text" placeholder="Enter your email address....">
+										<button class="btn btn-sm" type="submit"><span class="btn-text">Subscribe Now</span></button>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-8">
+							<div class="row justify-content-between">
+								<div class="col-12 col-md-5 mb-15 mb-md-0">
+									<h5>Information</h5>
+									<div class="contact-info-box">
+										<span class="text">Phone no 24/7 support</span>
+										<strong class="phone">
+											<a href="tel:1234567890">(123) 456-7890</a>
+										</strong>
+										<strong class="email">
+											<a href="mailto:username@domain.com">username@domain.com</a>
+										</strong>
+										<address>329 New Town Street, North Melbourne VIC 3051, United State.</address>
+									</div>
+								</div>
+								<div class="col-12 col-md-7">
+									<h5>Helpful Resources</h5>
+									<div class="row">
+										<div class="col-6">
+											<ul class="footer-links">
+												<li><a href="#">Browse Jobs</a></li>
+												<li><a href="#">Companies</a></li>
+												<li><a href="#">Candidate Dashboard</a></li>
+												<li><a href="#">Pricing Packages</a></li>
+											</ul>
+										</div>
+										<div class="col-6">
+											<ul class="footer-links">
+												<li><a href="#">Terms of use</a></li>
+												<li><a href="#">Terms &amp; conditions</a></li>
+												<li><a href="#">Privacy</a></li>
+												<li><a href="#">Cookie policy</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sec-footer text-black pt-35 pt-lg-50 pb-25 py-md-20 py-lg-45">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-8 mb-15 mb-md-0">
+							<p>Copyright © 2023 by <a class="site-link" href="#">MiracleSoftSolutions</a> All Rights Reserved.</p>
+						</div>
+						<div class="col-12 col-md-4">
+							<ul class="social-networks no-bg d-flex flex-wrap justify-content-md-end">
+								<li><a href="#"><i class="icon-google-plus"></i></a></li>
+								<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="js/vendor.js"></script>
+	<script src="js/jquery.main.js"></script>
+</body>
+
+</html>

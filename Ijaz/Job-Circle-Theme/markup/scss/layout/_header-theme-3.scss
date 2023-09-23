@@ -1,8 +1,8 @@
 .header-theme-3 {
-    font-family: $font-family-epilogue;
+    background: $white;
 
     @include media-breakpoint-up(md) {
-        padding: 35px 0;
+        padding: 20px 0;
     }
 
     .sticky-header & {
@@ -20,26 +20,60 @@
         }
     }
 
+    + .visual-block,
+    + .subvisual-block {
+        margin-top: 80px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 91px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 94px;
+        }
+    }
+
     .nav-opener,
     .nav-close {
         &:before,
         &:after,
         span {
-            background: $dark-yellow;
+            background: $brown;
         }
 
         &:hover {
             &:before,
             &:after,
             span {
-                background: $dark-yellow;
+                background: $brown;
             }
         }
     }
 
     .nav-drop {
         @include media-breakpoint-down(lg) {
-            background: $dark-blue;
+            background: $brown;
+        }
+
+        .nav-opener,
+        .nav-close {
+            &:before,
+            &:after,
+            span {
+                background: $lt-brown;
+            }
+
+            &:hover {
+                &:before,
+                &:after,
+                span {
+                    background: $lt-brown;
+                }
+            }
         }
     }
 
@@ -65,15 +99,19 @@
             > a {
                 &:not(.btn) {
                     @include media-breakpoint-up(lg) {
-                        color: $white;
+                        color: $black;
                     }
 
                     &:hover {
-                        color: $dark-yellow;
+                        color: $brown;
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
                     }
                 }
 
-                &.btn-dark-yellow {
+                &.btn-brown {
                     padding-top: 15px;
                     padding-bottom: 15px;
                     font-size: 16px;
@@ -96,21 +134,35 @@
                 &.dropdown-toggle {
                     &.show {
                         @include media-breakpoint-down(lg) {
-                            color: $dark-yellow;
+                            color: $lt-brown;
                         }
+                    }
+                }
+
+                &.btn {
+                    @include media-breakpoint-down(lg) {
+                        border: 2px solid $lt-brown;
                     }
                 }
             }
 
             &:hover {
                 .dropdown-toggle {
-                    color: $dark-yellow;
+                    color: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
                 }
             }
 
             &.active {
                 > a {
-                    color: $dark-yellow;
+                    color: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
                 }
             }
         }
@@ -121,12 +173,20 @@
             li {
                 &.active {
                     > a {
-                        color: $dark-yellow;
+                        color: $brown;
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
                     }
 
                     &:hover {
                         > a {
                             color: $white;
+
+                            @include media-breakpoint-down(lg) {
+                                color: $lt-brown;
+                            }
                         }
                     }
                 }
@@ -134,7 +194,11 @@
 
             .dropdown-item {
                 &:hover {
-                    background: $dark-yellow;
+                    background: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
                 }
             }
         }
@@ -156,14 +220,22 @@
                 &:hover {
                     .dropdown-toggle {
                         @include media-breakpoint-up(lg) {
-                            color: $dark-yellow;
+                            color: $brown;
+                        }
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
                         }
                     }
                 }
 
                 &.active {
                     > a {
-                        color: $dark-yellow;
+                        color: $brown;
+
+                        @include media-breakpoint-down(lg) {
+                            color: $lt-brown;
+                        }
                     }
                 }
             }
@@ -174,7 +246,11 @@
                 &:before,
                 &:after,
                 span {
-                    background: $dark-yellow;
+                    background: $brown;
+
+                    @include media-breakpoint-down(lg) {
+                        color: $lt-brown;
+                    }
                 }
             }
         }
