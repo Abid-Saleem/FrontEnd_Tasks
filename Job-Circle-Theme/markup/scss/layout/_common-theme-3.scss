@@ -936,6 +936,7 @@
     h3 {
         line-height: 1;
         font-size: 35px;
+        font-weight: 800;
 
         @include media-breakpoint-up(xl) {
             font-size: 45px;
