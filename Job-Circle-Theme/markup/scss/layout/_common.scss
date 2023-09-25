@@ -3605,6 +3605,10 @@
     padding-bottom: 15px;
     border-bottom: 1px solid $gray-border;
 
+    h2 {
+        margin: 0 !important;
+    }
+
     .filters-opener {
         position: relative;
         width: 36px;
@@ -3844,7 +3848,7 @@
 
     &.options-active {
         .checkbox-list {
-            height: auto;
+            max-height: inherit !important;
         }
 
         .btn-primary {
@@ -3864,12 +3868,12 @@
     list-style: none;
     padding: 15px 0 0;
     margin:  10px 0 25px;
-    height: 175px;
+    max-height: 175px;
     overflow: hidden;
 
     @include media-breakpoint-up(md) {
         padding-top: 0;
-        height: 230px;
+        max-height: 230px;
     }
 
     li {
