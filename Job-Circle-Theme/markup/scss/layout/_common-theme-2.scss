@@ -366,6 +366,11 @@
         align-items: center;
         justify-content: center;
 
+        &:not(:hover) {
+            color: $black;
+            background: #f4f1e9;
+        }
+
         .btn-text {
             display: flex;
             align-items: center;
@@ -492,6 +497,63 @@
             .btn {
                 opacity: 1;
                 visibility: visible;
+            }
+        }
+    }
+
+    .fav-tag {
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: #ffe1bd;
+    }
+
+    &.alt {
+        border: 1px solid #ddd;
+
+        > a {
+            display: block;
+            color: $black;
+        }
+
+        .fav-tag {
+            display: flex;
+        }
+
+        .img-holder {
+            width: 90px;
+            height: 90px;
+        }
+
+        .subtitle {
+            margin: 0 0 30px;
+        }
+
+        .tags-list {
+            .tag {
+                font-size: 14px;
+                line-height: 20px;
+                color: $mine-shaft;
+                position: static;
+                padding: 8px 12px 6px;
+                background: #f5f5f5;
+                border-color: #f5f5f5;
+            }
+        }
+
+        &:hover {
+            color: $black;
+            background: $white;
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.075);
+
+            .h6 {
+                color: $black;
             }
         }
     }

@@ -5199,6 +5199,47 @@
         line-height: 1.5;
         font-size: 14px;
         padding-top: 3px;
+        position: relative;
+    }
+
+    .btn-bookmark {
+        width: 34px;
+        height: 34px;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $black;
+        font-size: 16px;
+        line-height: 1;
+        position: absolute;
+        right: -7px;
+        top: -7px;
+        border-radius: 100%;
+
+        @include media-breakpoint-up(md) {
+            width: 40px;
+            height: 40px;
+            right: -5px;
+            top: -5px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            right: 0;
+            top: 0;
+        }
+
+        @include media-breakpoint-up(xxl) { 
+            right: -10px;
+            top: -10px;
+        }
+
+        &:hover,
+        &.active {
+            color: $white;
+            background: $green;
+            border-color: $green;
+        }
     }
 
     .h5 {
