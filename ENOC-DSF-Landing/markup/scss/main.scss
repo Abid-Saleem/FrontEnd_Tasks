@@ -27,6 +27,12 @@ p {
     margin: 0 0 20px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
 .container {
     max-width: 1640px;
     padding-left: 20px;
@@ -59,6 +65,12 @@ p {
     flex-shrink: 0;
     display: block;
     width: 201px;
+    font-size: 0;
+    line-height: 0;
+
+    @media (max-width: $tablet) {
+        width: 140px;
+    }
 
     a {
         display: inline-block;
@@ -77,22 +89,30 @@ p {
 .lang-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 -15px 0 0;
     display: flex;
     align-items: center;
     font-size: 22px;
     line-height: 1;
 
+    @media (max-width: $tablet) {
+        font-size: 16px;
+    }
+
     li {
         padding: 0 15px;
 
         a {
-            color: #707070;
+            color: $text-color;
             text-decoration: none;
+
+            &:hover {
+                color: #c4163b;
+            }
         }
 
         + li {
-            border-left: 1px solid #707070;
+            border-left: 1px solid $text-color;
         }
     }
 }
@@ -107,6 +127,18 @@ p {
     background-size: cover;
     text-align: center;
     padding: 150px 0 240px;
+
+    @media (max-width: $widescreen-x) {
+        padding: 100px 0 200px;
+    }
+
+    @media (max-width: $widescreen) {
+        padding: 100px 0 140px;
+    }
+
+    @media (max-width: $tablet) {
+        padding: 50px 0;
+    }
 
     .container {
         width: 100%;
@@ -123,6 +155,44 @@ p {
         -webkit-text-fill-color: #402f66;
         -webkit-text-stroke-color: #Fff;
         -webkit-text-stroke-width: 4px; 
+
+        @media (max-width: $widescreen-x) {
+            font-size: 80px;
+        }
+
+        @media (max-width: $widescreen) {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: $desktop) {
+            font-size: 45px;
+            -webkit-text-stroke-width: 2px; 
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 35px;
+            margin: 0 0 20px;
+        }
+    }
+
+    .img-text {
+        @media (max-width: $widescreen-x) {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: $widescreen) {
+            max-width: 600px;
+        }
+
+        @media (max-width: $desktop) {
+            max-width: 400px;
+        }
+
+        @media (max-width: $tablet) {
+            max-width: 280px;
+        }
     }
 }
 
@@ -130,6 +200,10 @@ p {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom,  #fefefc 0%,#ffe202 100%);
+
+    @media (max-width: $tablet) {
+        padding-top: 15px;
+    }
 
     .container {
         width: 100%;
@@ -144,10 +218,31 @@ p {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-flow: row wrap;
+
+    @media (max-width: $widescreen) {
+        margin: 0 -10px 60px;
+    }
+
+    @media (max-width: $desktop) {
+        margin: 0 -5px 45px;
+    }
 
     li {
         width: 33.333%;
         padding: 0 25px;
+
+        @media (max-width: $widescreen) {
+            padding: 0 10px;
+        }
+
+        @media (max-width: $desktop) {
+            padding: 0 5px;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
     }
 }
 
@@ -157,12 +252,26 @@ p {
     padding: 0 0 20px;
     text-align: center;
 
+    @media (max-width: $desktop) {
+        border-radius: 0 0 30px 30px;
+        padding: 0 0 15px;
+    }
+
+    @media (max-width: $tablet) {
+        margin-top: 75px;
+    }
+
     .textbox {
         background: #FF0016;
         border-radius: 0 0 70px 70px;
         margin: 0 0 25px;
         padding: 120px 20px 20px;
         position: relative;
+
+        @media (max-width: $desktop) {
+            padding: 80px 15px 15px;
+            border-radius: 0 0 30px 30px;
+        }
     }
 
     .emoji-box {
@@ -171,18 +280,37 @@ p {
         left: 50%;
         transform: translateX(-50%);
 
-        img {
+        @media (max-width: $widescreen-x) {
+            top: -80px;
+        }
+
+        @media (max-width: $desktop) {
+            top: -50px;
+        }
+
+        > img {
             display: block;
             margin: 0 auto;
+            position: relative;
+            z-index: 2;
 
-            &.img-shadow {
-                mix-blend-mode: multiply;
+            @media (max-width: $widescreen-x) {
+                max-width: 140px;
             }
+
+            @media (max-width: $desktop) {
+                max-width: 100px;
+            }
+
         }
 
         .shadow {
             margin-top: -15px;
             background: #FF0016;
+
+            .img-shadow {
+                mix-blend-mode: multiply;
+            }
         }
     }
 
@@ -190,6 +318,16 @@ p {
         overflow: hidden;
         text-align: center;
         margin: 0 0 -3px;
+
+        img {
+            @media (max-width: $widescreen) {
+                transform: scale(0.8);
+            }
+
+            @media (max-width: $desktop) {
+                transform: scale(0.65);
+            }
+        }
     }
 
     .price-box {
@@ -204,6 +342,10 @@ p {
             color: #fff;
             font-weight: 700;
             transform: rotate(-90deg);
+
+            @media (max-width: $desktop) {
+                font-size: 20px;
+            }
         }
 
         .amount {
@@ -211,6 +353,18 @@ p {
             font-size: 90px;
             line-height: 1;
             font-weight: 700;
+
+            @media (max-width: $widescreen-x) {
+                font-size: 70px;
+            }
+
+            @media (max-width: $widescreen) {
+                font-size: 60px;
+            }
+
+            @media (max-width: $desktop) {
+                font-size: 50px;
+            }
         }
     }
 
@@ -227,6 +381,10 @@ p {
         line-height: 1;
         font-weight: 500;
         text-transform: uppercase;
+
+        @media (max-width: $widescreen) {
+            font-size: 16px;
+        }
     }
 
     .date {
@@ -236,6 +394,14 @@ p {
     .text {
         font-size: 30px;
         font-weight: 700;
+
+        @media (max-width: $widescreen) {
+            font-size: 25px;
+        }
+
+        @media (max-width: $desktop) {
+            font-size: 20px;
+        }
     }
 
     .winners {
@@ -246,6 +412,14 @@ p {
         color: #F6EE20;
         text-transform: uppercase;
         margin: 0 0 7px;
+
+        @media (max-width: $widescreen) {
+            font-size: 35px;
+        }
+
+        @media (max-width: $desktop) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -265,8 +439,31 @@ p {
         letter-spacing: 2px;
         margin: 0 0 15px;
 
+        @media (max-width: $desktop) {
+            font-size: 100px;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 65px;
+        }
+
         .win-text {
             display: block;
+            padding-top: 10px;
+
+            @media (max-width: $tablet) {
+                padding-top: 20px;
+            }
+
+            img {
+                @media (max-width: $desktop) {
+                    max-width: 450px;
+                }
+
+                @media (max-width: $tablet) {
+                    max-width: 270px;
+                }
+            }
         }
     }
 
@@ -276,6 +473,16 @@ p {
         line-height: 1.35;
         font-weight: 700;
         margin: 0 0 150px;
+
+        @media (max-width: $desktop) {
+            margin: 0 0 110px;
+            font-size: 25px;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 20px;
+            margin: 0;
+        }
     }
 }
 
@@ -287,9 +494,21 @@ p {
     display: flex;
     flex-flow: row wrap;
 
+    @media (max-width: $widescreen) {
+        margin: 0 -10px;
+    }
+
     li {
         width: 33.333%;
         padding: 0 25px;
+
+        @media (max-width: $widescreen) {
+            padding: 0 10px;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
     }
 }
 
@@ -297,6 +516,13 @@ p {
     position: relative;
     width: 100%;
     max-width: 310px;
+
+    @media (max-width: $tablet) {
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
 
     .prize-image {
         position: absolute;
@@ -307,6 +533,16 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+
+        @media (max-width: $desktop) {
+            max-width: 200px;
+        }
+
+        @media (max-width: $tablet) {
+            max-width: 150px;
+            top: -140px;
+        }
     }
 
     .prize-box-frame {
@@ -315,6 +551,10 @@ p {
         border-radius: 200px 200px 20px 20px;
         width: 100%;
         padding: 175px 20px 30px;
+
+        @media (max-width: $desktop) {
+            padding: 135px 15px 25px;
+        }
     }
 
     .img-logo {
@@ -394,6 +634,10 @@ p {
     background: url('../images/bg-deals.jpg') no-repeat;
     background-size: cover;
 
+    @media (max-width: $desktop) {
+        padding-top: 250px;
+    }
+
     .container {
         width: 100%;
     }
@@ -403,14 +647,51 @@ p {
         align-items: center;
         justify-content: center;
         color: #fff;
-        font-size: 80px;
+        font-size: 84px;
         line-height: 0.85;
         text-transform: uppercase;
         margin: 0 0 30px;
 
+        @media (max-width: $widescreen) {
+            font-size: 65px;
+        }
+
+        @media (max-width: $desktop) {
+            font-size: 55px;
+            margin: 0 0 -20px;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 35px;
+            flex-direction: column;
+            text-align: center;
+            line-height: 1;
+            margin: 0 0 40px;
+        }
+
         .text-img {
             display: flex;
             align-items: center;
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
+
+            img {
+                @media (max-width: $widescreen) {
+                    transform: scale(0.8);
+                }
+
+                @media (max-width: $desktop) {
+                    transform: scale(0.6);
+                    margin: 0 -40px;
+                }
+
+                @media (max-width: $tablet) {
+                    display: block;
+                    margin: -20px auto;
+                }
+            }
         }
     }
 
@@ -424,20 +705,68 @@ p {
         text-transform: uppercase;
         margin: 0 0 60px;
 
+        @media (max-width: $desktop) {
+            margin: 0 0 20px;
+        }
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        .img {
+            @media (max-width: $desktop) {
+                margin: 0 -50px;
+            }
+
+            @media (max-width: $tablet) {
+                margin: -20px 0;
+            }
+
+            img {
+                @media (max-width: $widescreen) {
+                    transform: scale(0.8);
+                }
+
+                @media (max-width: $desktop) {
+                    transform: scale(0.7);
+                }
+
+                @media (max-width: $tablet) {
+                    margin: 0 auto;
+                }
+            }
+        }
+
         .text {
-            padding-left: 10px;
-            font-size: 100px;
+            padding-left: 20px;
+            font-size: 110px;
             line-height: 0.85;
             font-family: Arial, Helvetica, sans-serif;
             -webkit-text-fill-color: #a6116b;
             -webkit-text-stroke-color: #Fff;
-            -webkit-text-stroke-width: 4px; 
+            -webkit-text-stroke-width: 4px;
+
+            @media (max-width: $widescreen) {
+                padding-left: 10px;
+                font-size: 80px;
+            }
+
+            @media (max-width: $desktop) {
+                font-size: 60px;
+            }
+
+            @media (max-width: $tablet) {
+                text-align: center;
+                width: 100%;
+                -webkit-text-stroke-width: 2px;
+                line-height: 1;
+            }
         }
 
         .info {
             background: #F6EE20;
             border-radius: 10px;
-            font-size: 40px;
+            font-size: 44px;
             line-height: 0.85;
             font-weight: 600;
             padding: 10px 15px;
@@ -448,6 +777,120 @@ p {
             -webkit-text-stroke-color: #FF0016;
             -webkit-text-stroke-width: 0;
             font-family: $Source-Sans-Font;
+
+            @media (max-width: $widescreen) {
+                font-size: 38px;
+
+                @media (max-width: $desktop) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .columns-list {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto -190px;
+        max-width: 1300px;
+        list-style: none;
+        padding: 0;
+
+        @media (max-width: $widescreen) {
+            margin: 0 -10px -190px;
+        }
+
+        @media (max-width: $desktop) {
+            margin: 0 -5px -190px;
+        }
+
+        li {
+            width: 33.333%;
+            padding: 0 25px;
+
+            @media (max-width: $widescreen) {
+                padding: 0 10px;
+            }
+
+            @media (max-width: $desktop) {
+                padding: 0 5px;
+            }
+
+            @media (max-width: $tablet) {
+                width: 100%;
+                margin: 20px 0 0;
+            }
+        }
+    }
+
+    &.pack-block {
+        background: url('../images/bg-pack.png') no-repeat;
+        background-size: cover;
+        padding-top: 120px;
+
+        @media (max-width: $desktop) {
+            padding-top: 75px;
+        }
+
+        h3 {
+            .text {
+                -webkit-text-fill-color: #ee5f1d;
+            }
+        }
+    }
+}
+
+.pack-box {
+    background: #fff;
+    border: 1px solid #707070;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #2C2A6C;
+    text-transform: uppercase;
+
+    @media (max-width: $widescreen) {
+        font-size: 18px;
+        padding: 25px 15px;
+    }
+
+    .img-box {
+        width: 100%;
+        height: 127px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 20px;
+    }
+
+    .price {
+        display: block;
+        font-size: 53px;
+        line-height: 1;
+        color: #2C2A6C;
+        margin: 0 0 20px;
+
+        @media (max-width: $widescreen) {
+            font-size: 45px;
+        }
+
+        span {
+            font-size: 75px;
+
+            @media (max-width: $widescreen) {
+                font-size: 65px;
+            }
+        }
+    }
+
+    p {
+        margin: 0 auto;
+        max-width: 300px;
+
+        @media (max-width: $widescreen) {
+            max-width: 100%;
         }
     }
 }
@@ -475,6 +918,17 @@ p {
         justify-content: center;
         text-align: center;
 
+        @media (max-width: $desktop) {
+            width: 50%;
+            height: 230px;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+        }
+
         .subtitle {
             transform: rotate(-11deg);
             display: block;
@@ -492,6 +946,11 @@ p {
     flex-direction: column;
     padding-top: 25px;
 
+    @media (max-width: $tablet) {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
     .container {
         width: 100%;
         max-width: 1600px;
@@ -504,12 +963,29 @@ p {
         justify-content: center;
         position: relative;
         z-index: 1;
+        margin: 0 0 30px;
+
+        @media (max-width: $widescreen) {
+            margin: 10px 0 50px;
+        }
+
+        @media (max-width: $desktop) {
+            margin: 20px 0 50px;
+        }
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
 
         img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
+
+            @media (max-width: $desktop) {
+                max-width: 500px;
+            }
         }
     }
 }
@@ -517,11 +993,35 @@ p {
 .winners-list {
     list-style: none;
     padding: 0;
-    margin: 0 -25px;
+    margin: 0 auto;
+    max-width: 1610px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    @media (max-width: $widescreen-x) {
+        margin: 0 -10px;
+    }
+
+    @media (max-width: $desktop) {
+        margin: 0 -5px;
+    }
 
     li {
         width: 33.333%;
         padding: 0 25px;
+
+        @media (max-width: $widescreen-x) {
+            padding: 0 10px;
+        }
+
+        @media (max-width: $desktop) {
+            padding: 0 5px;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+        }
     }
 }
 
@@ -533,6 +1033,14 @@ p {
     justify-content: space-between;
     border-radius: 25px 25px 0 0;
     text-align: center;
+    height: 100%;
+
+    @media (max-width: $tablet) {
+        height: auto;
+        border-bottom: 1px solid #362f36;
+        border-radius: 20px;
+        margin: 60px 0 0;
+    }
 
     .logo-box {
         background: #fff;
@@ -542,23 +1050,661 @@ p {
         align-items: center;
         justify-content: center;
         border-radius: 25px;
-        margin: -46px auto 0;
+        margin: -50px auto 15px;
+
+        @media (max-width: $desktop) {
+            width: 180px;
+            height: 76px;
+            margin-top: -38px;
+        }
+
+        img {
+            @media (max-width: $desktop) {
+                transform: scale(0.8);
+            }
+        }
     }
 
     .textbox {
         min-height: 450px;
         padding: 0 20px 20px;
+
+        @media (max-width: $widescreen-x) {
+            padding: 0 15px 20px;
+        }
+
+        @media (max-width: $desktop) {
+            padding: 0 10px 20px;
+        }
+    }
+
+    .image-holder {
+        overflow: hidden;
+        font-size: 0;
+        line-height: 0;
+        margin: 0 0 20px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .text-note {
+        font-size: 33px;
+        line-height: 1.2;
+        color: #2C2A6C;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 0 10px;
+
+        @media (max-width: $desktop) {
+            font-size: 26px;
+        }
+
+        span {
+            font-weight: 400;
+        }
     }
 
     .box-footer {
         padding: 20px;
+        border-top: 1px solid #362f36;
+
+        @media (max-width: $widescreen-x) {
+            padding: 20px 15px;
+        }
+
+        @media (max-width: $desktop) {
+            padding: 10px;
+        }
+
+        .winners {
+            text-transform: uppercase;
+            font-size: 60px;
+            color: #FF0016;
+            font-weight: 400;
+            line-height: 1.1;
+
+            @media (max-width: $widescreen-x) {
+                font-size: 45px;
+            }
+
+            @media (max-width: $widescreen) {
+                font-size: 35px;
+            }
+
+            @media (max-width: $desktop) {
+                font-size: 25px;
+            }
+
+            strong {
+                font-weight: 700;
+                font-size: 75px;
+
+                @media (max-width: $widescreen-x) {
+                    font-size: 60px;
+                }
+
+                @media (max-width: $widescreen) {
+                    font-size: 50px;
+                }
+
+                @media (max-width: $desktop) {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+
+    .price-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 20px;
+
+        .currency {
+            font-size: 35px;
+            line-height: 1;
+            color: #2C2A6C;
+            font-weight: 700;
+            transform: rotate(-90deg);
+
+            @media (max-width: $widescreen-x) {
+                font-size: 30px;
+            }
+
+            @media (max-width: $desktop) {
+                font-size: 22px;
+            }
+        }
+
+        .amount {
+            color: #2C2A6C;
+            font-size: 105px;
+            line-height: 1;
+            font-weight: 700;
+
+            @media (max-width: $widescreen-x) {
+                font-size: 80px;
+            }
+
+            @media (max-width: $widescreen) {
+                font-size: 70px;
+            }
+
+            @media (max-width: $desktop) {
+                font-size: 50px;
+            }
+        }
+    }
+
+    .text-foot {
+        .subtext,
+        .date,
+        .text {
+            display: block;
+            color: #454545;
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            @media (max-width: $desktop) {
+                font-size: 16px;
+            }
+        }
+
+        .date {
+            margin: 0 0 8px;
+        }
+
+        .text {
+            font-size: 30px;
+            font-weight: 500;
+
+            @media (max-width: $desktop) {
+                font-size: 24px;
+            }
+        }
+
+        .winners {
+            color: #454545;
+            font-size: 40px;
+            line-height: 1;
+            display: block;
+            margin: 0 0 10px;
+
+            @media (max-width: $desktop) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .items-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 -20px;
+
+        @media (max-width: $widescreen-x) {
+            margin: 0 -15px;
+        }
+
+        @media (max-width: $desktop) {
+            margin: 0 -10px;
+        }
+
+        li {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 30px 20px;
+
+            @media (max-width: $widescreen) {
+                flex-wrap: wrap;
+                padding: 15px;
+            }
+
+            + li {
+                border-top: 1px solid #362f36;
+            }
+
+            &:last-child {
+                padding-bottom: 10px;
+
+                @media (max-width: $desktop) {
+                    padding-top: 0;
+                }
+            }
+        }
+
+        .icon-box {
+            width: 130px;
+            flex-shrink: 0;
+            font-size: 0;
+            line-height: 0;
+
+            @media (max-width: $widescreen-x) {
+                width: 110px;
+            }
+
+            @media (max-width: $widescreen) {
+                width: 100%;
+                margin: 0 0 5px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+
+                @media (max-width: $desktop) {
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+        .textholder {
+            flex-grow: 1;
+            min-width: 0;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+            text-align: left;
+        }
+
+        .number {
+            font-size: 75px;
+            line-height: 1;
+            color: #2C2A6C;
+            display: block;
+
+            @media (max-width: $widescreen-x) {
+                font-size: 60px;
+            }
+
+            @media (max-width: $widescreen) {
+                font-size: 50px;
+            }
+        }
+
+        .text {
+            font-size: 30px;
+            line-height: 1;
+            color: #2C2A6C;
+            font-weight: 500;
+            padding: 0 0 0 15px;
+
+            @media (max-width: $widescreen-x) {
+                font-size: 25px;
+            }
+
+            @media (max-width: $desktop) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.brands-block {
+    overflow: hidden;
+    padding: 260px 0 80px;
+    
+    .container {
+        max-width: 1750px;
+    }
+
+    h2 {
+        font-size: 44px;
+        line-height: 1;
+        text-transform: uppercase;
+        max-width: 600px;
+        margin: 0 auto 40px;
+        background: #7549AD;
+        color: #fff;
+        border-radius: 0 0 35px 35px;
+        padding: 25px 50px;
+        text-align: center;
+
+        @media (max-width: $desktop) {
+            font-size: 35px;
+        }
+
+        @media (max-width: $tablet) {
+            padding: 15px;
+            font-size: 30px;
+        }
+    }
+
+    .subhead {
+        overflow: hidden;
+        text-align: center;
+        font-size: 40px;
+        line-height: 1.3;
+        color: #EE2085;
+        font-weight: 500;
+
+        @media (max-width: $desktop) {
+            font-size: 35px;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 24px;
+        }
+    }
+
+    p {
+        margin: 0 0 5px;
+    }
+
+    .price {
+        display: block;
+        color: #EE2085;
+        font-size: 80px;
+        line-height: 1.3;
+        font-weight: 700;
+        margin: 0 0 40px;
+
+        @media (max-width: $desktop) {
+            font-size: 60px;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 50px;
+            margin: 0 0 30px;
+        }
+    }
+}
+
+.brands-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 -10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    @media (max-width: $widescreen-x) {
+        margin: 0 -5px;
+    }
+
+    li {
+        padding: 10px;
+        width: 14.285%;
+
+        @media (max-width: $widescreen-x) {
+            padding: 5px;
+        }
+
+        @media (max-width: $desktop) {
+            width: 20%;
+        }
+
+        @media (max-width: $tablet) {
+            width: 33.333%;
+        }
+
+        @media (max-width: $sm-phone) {
+            width: 50%;
+        }
+    }
+
+    .logo-box {
+        border: 1px solid #CECBCB;
+        border-radius: 18px;
+        width: 100%;
+        padding: 10px;
+        height: 114px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.announcement-block {
+    background: url('../images/bg-announcements.png') no-repeat;
+    background-size: cover;
+    padding: 0 0 120px;
+    text-align: center;
+
+    @media (max-width: $desktop) {
+        padding: 0 0 70px;
+    }
+
+    @media (max-width: $tablet) {
+        padding: 0 0 30px;
+    }
+
+    .container {
+        max-width: 1160px;
+    }
+
+    h2 {
+        font-size: 44px;
+        line-height: 1;
+        text-transform: uppercase;
+        max-width: 600px;
+        margin: 0 auto 90px;
+        background: #fff;
+        border-radius: 0 0 35px 35px;
+        padding: 25px 50px;
+        text-align: center;
+
+        @media (max-width: $desktop) {
+            padding: 35px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: $tablet) {
+            padding: 15px;
+            font-size: 30px;
+        }
+    }
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    @media (max-width: $desktop) {
+        margin: 0 -5px;
+    }
+
+    li {
+        width: 33.333%;
+
+        @media (max-width: $desktop) {
+            padding: 0 10px;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            margin: 0 0 35px;
+        }
+    }
+
+    h3 {
+        font-size: 40px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 0 0 45px;
+
+        @media (max-width: $desktop) {
+            font-size: 35px;
+        }
+
+        @media (max-width: $tablet) {
+            margin: 0 0 15px;
+        }
+    }
+
+    .btn {
+        background: #fff;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #000;
+        font-weight: 500;
+        padding: 8px 30px;
+        border-radius: 30px;
+        text-transform: uppercase;
+        display: inline-block;
+
+        @media (max-width: $desktop) {
+            font-size: 15px;
+        }
+
+        &:hover {
+            opacity: 0.85;
+        }
+    }
+
+    .purple {
+        h3,
+        .btn {
+            color: #7549AD;
+        }
+    }
+
+    .pink {
+        h3,
+        .btn {
+            color: #EE2085;
+        }
+    }
+
+    .blue {
+        h3,
+        .btn {
+            color: #2C2A6C;
+        }
     }
 }
 
 .terms-block {
     overflow: hidden;
+    background: #f4f4f4;
+    padding: 60px 0;
+
+    @media (max-width: $tablet) {
+        padding: 50px 0;
+    }
 
     .container {
         max-width: 1200px;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 1.35;
+        color: $text-color;
+        margin: 0 0 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @media (max-width: $tablet) {
+            font-size: 25px;
+            margin: 0 0 30px;
+        }
+    }
+
+    .terms-list {
+        @media (max-width: $tablet) {
+            padding: 0 0 0 15px;
+            margin: 0;
+        }
+
+        li {
+            span {
+                padding-left: 30px;
+                display: block;
+
+                @media (max-width: $tablet) {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: #e4e4e4;
+    padding: 70px 0;
+
+    @media (max-width: $desktop) {
+        padding: 50px 0;
+    }
+
+    @media (max-width: $tablet) {
+        padding: 40px 0;
+    }
+
+    .pre-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 50px;
+
+        @media (max-width: $tablet) {
+            flex-flow: row wrap;
+            margin: 0 0 15px;
+        }
+    }
+
+    .copyrights {
+        font-size: 20px;
+        line-height: 1.5;
+        color: $text-color;
+        font-weight: 500;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 0 15px;
+
+        @media (max-width: $tablet) {
+            order: 1;
+            text-align: center;
+            font-size: 16px;
+            text-align: center;
+            padding: 0;
+            width: 100%;
+            margin: 0 0 25px;
+        }
+    }
+
+    .foot-img {
+        @media (max-width: $tablet) {
+            order: 2;
+            padding: 0 5px 0;
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    .sec-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        .link {
+            font-size: 30px;
+            line-height: 1.5;
+            color: $text-color;
+            font-weight: 600;
+
+            @media (max-width: $tablet) {
+                font-size: 20px;
+            }
+
+            &:hover {
+                color: #c4163b;
+            }
+        }
     }
 }
