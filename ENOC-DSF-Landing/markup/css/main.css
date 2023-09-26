@@ -500,3 +500,10 @@ p {
 .winner-box .box-footer {
   padding: 20px;
 }
+
+.terms-block {
+  overflow: hidden;
+}
+.terms-block .container {
+  max-width: 1200px;
+}

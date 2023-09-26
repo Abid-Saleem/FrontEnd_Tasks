@@ -554,3 +554,11 @@ p {
         padding: 20px;
     }
 }
+
+.terms-block {
+    overflow: hidden;
+
+    .container {
+        max-width: 1200px;
+    }
+}
