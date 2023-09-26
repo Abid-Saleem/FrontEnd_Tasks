@@ -284,11 +284,20 @@
                 }
             }
         }
+        
+        &.text-login {
+            font-weight: 700;
+        }
     }
 
     .dropdown-menu {
         background: $white;
         border: 0;
+
+        @include media-breakpoint-up(lg) {
+            max-height: 400px;
+            overflow: auto;
+        }
 
         @include media-breakpoint-up(lg) {
             display: block;

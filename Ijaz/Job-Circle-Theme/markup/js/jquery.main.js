@@ -358,6 +358,146 @@ function initSlickCarousel() {
 		//e.preventDefault(); 
 		jQuery('.client-reviews-carousel').slick('slickNext');
 	});
+
+	// services carousel
+	jQuery('.services-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+	});
+
+	jQuery('.latest-jobs-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		centerMode: true,
+		centerPadding: '0px',
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+	});
+
+	jQuery('.thumbs-list').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		arrows: false,
+		dots: false,
+		focusOnSelect: true,
+		asNavFor: '.text-info-slider',
+		mobileFirst: true,
+		infinite: true,
+		autoplay: true,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+	$('.text-info-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		autoplay: false,
+		asNavFor: '.thumbs-list',
+		vertical: false
+	});
 }
 
 // select2 init

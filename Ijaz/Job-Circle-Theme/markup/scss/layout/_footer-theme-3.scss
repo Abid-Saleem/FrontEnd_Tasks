@@ -1,72 +1,81 @@
-/* Footer Theme 3 Styles */
+/* Footer Theme 5 Styles */
 .footer-theme-3 {
     font-family: $font-family-epilogue;
-    position: relative;
-    overflow: visible;
-
-    h5 {
-        color: $white;
-        position: relative;
-        padding-top: 0;
-        padding-bottom: 7px;
-
-        @include media-breakpoint-down(xl) {
-            font-size: 20px;
-        }
-
-        &:after {
-            width: 50px;
-            height: 3px;
-            content: '';
-            left: 0;
-            bottom: 0;
-            position: absolute;
-            background: $dark-yellow;
-        }
-    }
+    color: $black;
 
     .pri-footer {
         position: relative;
         overflow: visible;
+        border-top: 1px solid #eaeaea;
 
-        &:before {
-            position: absolute;
-            left: 0;
-            bottom: 100%;
-            z-index: -1;
-            content: '';
-            border-style: solid;
-            border-width: 80px 0 0 100vw;
-            border-color: transparent transparent transparent $dark-blue;
+        .logo {
+            width: 175px;
+            display: block;
+            margin: 0;
 
-            @include media-breakpoint-up(md) {
-                border-width: 170px 0 0 100vw;
-            }
-
-            @include media-breakpoint-up(xl) {
-                border-width: 240px 0 0 100vw;
-            }
-
-            @include media-breakpoint-up(xxl) {
-                border-width: 340px 0 0 100vw;
-            }
-
-            @include media-breakpoint-up(xxxl) {
-                border-width: 375px 0 0 100vw;
+            img {
+                @include size(100%, auto);
+                
+                display: block;
             }
         }
 
-        .logo {
-            @include media-breakpoint-up(xl) {
-                width: 175px;
-                margin-bottom: 55px;
+        .btn {
+            width: 100%;
+            min-width: 206px;
+            border-radius: 10px;
+
+            @include media-breakpoint-up(md) {
+                width: inherit;
+            }
+
+            &:before {
+                border-radius: 10px;
+            }
+        }
+
+        .contact-info {
+            max-width: 370px;
+            width: 100%;
+            line-height: 1.5;
+
+            @include media-breakpoint-up(md) {
+                margin-left: auto;
+            }
+        }
+
+        .phone-number {
+            margin: 0 0 20px;
+
+            .number {
+                color: $black;
+                display: inline-block;
+                border-bottom: 2px solid $brown;
+                line-height: 1;
+
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+
+        .address-info {
+            display: flex;
+            align-items: center;
+
+            i {
+                margin: 0 10px 0 0;
+                font-size: 20px;
+                line-height: 1;
+                position: relative;
+                top: -2px;
             }
         }
 
         .footer-info {
             p {
                 @include media-breakpoint-up(xl) {
-                    margin: 0 0 30px;
+                    margin: 0 0 15px;
                 }
 
                 &:last-child {
@@ -78,6 +87,7 @@
 
     .sec-footer {
         font-weight: 400;
+        color: $black;
 
         @include media-breakpoint-up(md) {
             font-size: 14px;
@@ -89,14 +99,35 @@
 
         p {
             .site-link {
-                color: $white;
                 font-weight: 600;
-                border-bottom: 1px solid rgba(255,255,255,0.35);
+                color: currentColor;
+                border-bottom: 1px solid rgba(0,0,0,0.55);
 
                 &:hover {
-                    color: $dark-yellow;
+                    color: $brown;
                 }
             }
         }
     }
+
+    .social-networks {
+        li {
+            a {
+                color: currentColor;
+
+                &:hover {
+                    color: $brown;
+                }
+            }
+        }
+
+        &.no-bg {
+            li {
+                &:before {
+                    background: currentColor;
+                }
+            }
+        }
+    }
+    
 }

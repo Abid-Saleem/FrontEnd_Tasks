@@ -1,42 +1,35 @@
 .visal-theme-2 {
+    font-family: $font-family-epilogue;
+    background-image: url('../images/bg-visual-blue.jpg');
+
     @include media-breakpoint-up(md) {
         font-size: 18px;
     }
 
-    &.bg-dark-green {
-        @include media-breakpoint-up(lg) {
-            background: transparent !important;
-        }
-    }
-
-    &:before,
     &:after {
-        position: absolute;
-        content: '';
-        display: none;
-
-        @include media-breakpoint-up(lg) {
-            display: block;
-        }
-    }
-
-    &:before {
-        left: 0;
-        top: 0;
-        bottom: 40px;
-        width: 85%;
-        background: $dark-green;
-        border-radius: 0 80px 80px 0;
-    }
-
-    &:after {
-        background: $lt-yellow;
-        width: 30%;
-        top: 40px;
-        right: 0;
-        bottom: 0;
+        background: transparent;
         transform: none;
-        border-radius: 80px 0 0 80px;
+        right: 0;
+        width: auto;
+        border-style: solid;
+        border-width: 0 0 80px 100vw;
+        border-color: transparent transparent $white transparent;
+
+        @include media-breakpoint-up(md) {
+            border-width: 0 0 170px 100vw;
+        }
+
+        @include media-breakpoint-up(xl) {
+            border-width: 0 0 240px 100vw;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            border-width: 0 0 340px 100vw;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            border-width: 0 0 375px 100vw;
+        }
     }
 
     .container {
@@ -50,13 +43,47 @@
             font-weight: 800;
             line-height: 1.2;
             padding-bottom: 0;
+            font-family: $font-family-epilogue;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 60px;
+            }
 
             @include media-breakpoint-up(xxxl) {
                 font-size: 65px;
+                margin: 0 0 30px;
             }
 
             &:after {
                 display: none;
+            }
+
+            .text-outlined {
+                position: relative;
+                color: $dark-yellow;
+
+                &:before {
+                    width: 100%;
+                    height: 6px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -7px;
+                    content: '';
+                    background: url('../images/outline-yellow.png') no-repeat;
+                    background-size: 100% 100%;
+
+                    @include media-breakpoint-up(md) {
+                        height: 9px;
+                    }
+
+                    @include media-breakpoint-up(lg) {
+                        height: 12px;
+                    }
+
+                    @include media-breakpoint-up(xxl) {
+                        height: 15px;
+                    }
+                }
             }
         }
 
@@ -86,11 +113,15 @@
         }
 
         @include media-breakpoint-up(xl) {
-            margin-bottom: 80px;
+            margin-bottom: 50px;
         }
 
         @include media-breakpoint-up(xxl) {
             display: flex;
+            background: $white;
+            padding: 4px;
+            border-radius: 40px;
+            max-width: 705px;
         }
     
         .fields-holder {
@@ -169,6 +200,36 @@
             @include media-breakpoint-up(xxl) {
                 margin-left: 10px;
                 min-width: 140px;
+            }
+        }
+    }
+
+    .users-box {
+        position: static;
+        min-width: inherit;
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+
+        &:after {
+            display: none;
+        }
+
+        .title {
+            color: $white;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .users-list {
+            li {
+                width: 41px;
+                height: 41px;
+                margin: 0 4px 0 0;
+                border: 1px solid $white;
+                font-size: 20px;
+                color: $black;
+                font-weight: 700;
             }
         }
     }

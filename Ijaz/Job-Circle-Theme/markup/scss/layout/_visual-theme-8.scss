@@ -5,17 +5,55 @@
         font-size: 18px;
     }
 
+    &:before {
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 73px;
+        height: 73px;
+        content: '';
+        background: url('../images/pattern-circle.png') no-repeat;
+        background-size: 100% 100%;
+        display: none;
+
+        @include media-breakpoint-up(xxxl) {
+            display: block;
+        }
+    }
+
     &:after {
         display: none;
     }
 
-    .container {
-        @include media-breakpoint-up(lg) {
-            margin-bottom: 40px;
-        }
-    }
-
     .visual-textbox {
+        @include media-breakpoint-up(lg) {
+            max-width: 600px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: 0;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            max-width: 715px;
+        }
+
+        @include media-breakpoint-up(xxxl) {
+            max-width: 790px;
+        }
+
+        &:after {
+            position: absolute;
+            left: -150px;
+            bottom: 18%;
+            width: 84px;
+            height: 16px;
+            background: url('../images/line-zigzag.png') no-repeat;
+            background-size: 100% 100%;
+            content: '';
+        }
+
         h1, .h1 {
             font-weight: 800;
             line-height: 1.2;
@@ -65,6 +103,10 @@
                 }
             }
         }
+
+        p {
+            color: #444;
+        }
     }
 
     .form-search {
@@ -80,9 +122,10 @@
             background: $white;
             padding: 7px;
             border-radius: 8px;
-            max-width: 705px;
             border: 1px solid #d5d5d5;
             box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-right: -185px;
+            max-width: inherit;
         }
     
         .fields-holder {
@@ -139,14 +182,14 @@
                 width: 100%;
             }
 
-            @include media-breakpoint-up(xxl) {
+            @include media-breakpoint-up(lg) {
                 margin-left: 10px;
                 min-width: 140px;
                 border-radius: 8px;
             }
 
             &:before {
-                @include media-breakpoint-up(xxl) {
+                @include media-breakpoint-up(lg) {
                     border-radius: 8px;
                 }
             }
@@ -168,6 +211,10 @@
             color: currentColor;
             font-size: 14px;
             font-weight: 600;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 18px;
+            }
         }
 
         .users-list {
@@ -179,55 +226,90 @@
                 font-size: 20px;
                 color: $black;
                 font-weight: 700;
+                background: #ebebeb;
+                box-shadow: 2px 2px 7px rgba(0,0,0,0.15);
             }
         }
     }
 
     .visual-image {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
         margin-right: 0;
+        width: 100%;
 
         @include media-breakpoint-up(lg) {
-            margin-left: -8%;
+            margin-bottom: 40px;
         }
-
-        @include media-breakpoint-up(xl) {
-            margin-left: 0;
-        }
-
-        .icons-black {
+        
+        &:before,
+        &:after {
             position: absolute;
-            right: -100px;
-            top: 0;
-            width: 200px;
-            z-index: -1;
-            display: none;
-
-            @include media-breakpoint-up(lg) {
-                display: block;
-            }
-
-            @include media-breakpoint-up(xl) {
-                width: 306px;
-                right: -140px;
-                top: 37px;
-            }
+            content: '';
         }
 
-        .icon-circle {
-            width: 65px;
-            position: absolute;
-            left: 20%;
-            bottom: -15%;
-            z-index: -1;
-            display: none;
+        &:before {
+            right: -88px;
+            bottom: 60px;
+            width: 175px;
+            height: 175px;
+            border-radius: 100%;
+            border: 45px solid #f0c44f;
+        }
 
-            @include media-breakpoint-up(lg) {
-                display: block;
+        &:after {
+            width: 43px;
+            height: 84px;
+            background: url('../images/pattern-ico.png') no-repeat;
+            background-size: 100% 100%;
+            bottom: -43px;
+            right: 30%;
+        }
+
+        .image-holder {
+            width: 47.5%;
+            position: relative;
+
+            &:before {
+                width: 88px;
+                height: 136px;
+                background: url('../images/dot-pattern.png');
+                position: absolute;
+                content: '';
+                left: -20px;
+                top: 100px;
+
+                @include media-breakpoint-up(xl) {
+                    left: -43px;
+                }
             }
 
-            @include media-breakpoint-up(xl) {
-                width: 95px;
-                bottom: -9%;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                position: relative;
+                border-radius: 25px;
+
+                @include media-breakpoint-up(xl) {
+                    border-radius: 45px;
+                }
+            }
+
+            &:nth-child(2) {
+                margin-top: 50px;
+
+                &:before {
+                    left: auto;
+                    right: -20px;
+                    top: -20px;
+
+                    @include media-breakpoint-up(xl) {
+                        right: -30px;
+                        top: -30px;
+                    }
+                }
             }
         }
     }

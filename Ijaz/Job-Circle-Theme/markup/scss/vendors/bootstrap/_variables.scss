@@ -7,14 +7,6 @@
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
-$grayish: #d2d2d2;
-$gray: #d5d5d5;
-$dusty-gray: #999;
-$tundora: #444;
-$gray: #888;
-$alto: #e0e0e0;
-$alabaster: #f8f8f8;
-$mercury: #e3e3e3;
 $gray-100: #f1f1f1 !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -29,30 +21,44 @@ $black:    #000 !default;
 
 
 // custom color
-$gallery: #ebebeb;
-$mperor: #555;
-$mine-shaft: #333;
-$silver: #aeaeae;
-$zircon: #edf0ff;
-$purple-heart: #7d29e6;
 $green-alt: #78b258;
 $light-gray: #f5f5f5;
 $blue-dark: #0d0035;
-$navy-blue: #1e266f;
 $blue-darker: #0a0026;
 $gray-border: #c0c0c0;
+$gray-darker: #181818;
 
 $lt-yellow: #d5fe68;
 $light-green: #20ca6f;
 $dark-green: #203818;
 $dark-blue: #251c55;
 $gray-alt: #d6d6d6;
-$gun-powder: #434660;
 
 $light-sky: #eff6f3;
-
-
 $dark-yellow: #f9ab00;
+$brown: #e66f3b;
+$lt-brown: #fee0ab;
+$light-yellow: #fff09d;
+
+$grayish: #d2d2d2;
+$tundora: #444;
+$gun-powder: #434660;
+$navy-blue: #1e266f;
+$mercury: #e3e3e3;
+$dusty-gray: #999;
+$alto: #e0e0e0;
+$alabaster: #f8f8f8;
+$gray: #d5d5d5;
+$mperor: #555;
+
+$silver: #aeaeae;
+$zircon: #edf0ff;
+$purple-heart: #7d29e6;
+$mine-shaft: #333;
+$gallery: #ebebeb;
+$merino: #f9f6ef;
+$texas-rose: #feb559;
+$concrete: #f2f2f2;
 
 // fusv-disable
 // scss-docs-start gray-colors-map
@@ -109,6 +115,9 @@ $colors: (
   "gray-alt":     $gray-alt,
   "lt-yellow":   $lt-yellow,
   "light-sky":   $light-sky,
+  "gray-darker": $gray-darker,
+  "brown":       $brown,
+  "light-yellow": $light-yellow,
 ) !default;
 // scss-docs-end colors-map
 
@@ -363,6 +372,9 @@ $gray-alt:      $gray-alt;
 $lt-yellow:     $lt-yellow;
 $light-sky:     $light-sky;
 $orange:        $orange;
+$gray-darker:   $gray-darker;
+$brown:         $brown;
+$light-yellow:  $light-yellow;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -387,6 +399,9 @@ $theme-colors: (
   "lt-yellow":  $lt-yellow,
   "light-sky":  $light-sky,
   "orange":     $orange,
+  "gray-darker": $gray-darker,
+  "brown":       $brown,
+  "light-yellow": $light-yellow,
 ) !default;
 // scss-docs-end theme-colors-map
 

@@ -36,6 +36,12 @@ $media-expressions: (
 @import 'layout/common';
 @import 'layout/footer';
 
+// Theme 1 Styles
+@import 'layout/header-theme-1';
+@import 'layout/visual-theme-1';
+@import 'layout/common-theme-1';
+@import 'layout/footer-theme-1';
+
 // Theme 2 Styles
 @import 'layout/header-theme-2';
 @import 'layout/visual-theme-2';
@@ -48,12 +54,6 @@ $media-expressions: (
 @import 'layout/common-theme-3';
 @import 'layout/footer-theme-3';
 
-// Theme 8 Styles
-@import 'layout/header-theme-8';
-@import 'layout/visual-theme-8';
-@import 'layout/common-theme-8';
-@import 'layout/footer-theme-8';
-
 // Theme 4 Styles
 @import 'layout/header-theme-4';
 @import 'layout/visual-theme-4';
@@ -65,3 +65,16 @@ $media-expressions: (
 @import 'layout/visual-theme-5';
 @import 'layout/common-theme-5';
 @import 'layout/footer-theme-5';
+
+// Theme 6 Styles
+@import 'layout/header-theme-6';
+@import 'layout/visual-theme-6';
+@import 'layout/common-theme-6';
+@import 'layout/footer-theme-6';
+
+// Theme 8 Styles
+@import 'layout/header-theme-8';
+@import 'layout/visual-theme-8';
+@import 'layout/common-theme-8';
+@import 'layout/footer-theme-8';
+
