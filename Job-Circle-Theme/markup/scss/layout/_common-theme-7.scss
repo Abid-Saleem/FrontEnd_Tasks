@@ -78,6 +78,8 @@
 			padding: 48px 20px 30px;
 			border-radius: 25px;
 			text-align: center;
+			display: block;
+			color: $body-color;
 
 			@include media-breakpoint-up(xl) {
 				padding: 48px 48px 30px;
@@ -100,6 +102,10 @@
 			.subtitle {
 				display: block;
 			}
+
+			&:hover {
+				color: $body-color;
+			}
 		}
 	}
 
@@ -109,16 +115,19 @@
 		}
 
 		.featured-category-box {
-			padding: 27px 10px 32px;
+			padding: 25px 10px;
 
 			@include media-breakpoint-up(xl) {
-				padding: 27px 30px 32px;
+				padding: 30px;
 			}
 
 			.wrap {
 				display: flex;
-				align-items: center;
-				margin: 0 0 14px;
+				align-items: flex-start;
+				
+				@include media-breakpoint-up(xl) {
+					padding: 7px 0;
+				}
 			}
 
 			.img-holder {
@@ -136,9 +145,10 @@
 
 			.textbox {
 				flex-grow: 1;
+				min-width: 0;
 
 				p {
-					padding: 0 0 0 23px;
+					padding: 0 0 0 25px;
 					position: relative;
 					font-size: 14px;
 				}
@@ -153,12 +163,12 @@
 			}
 
 			.h6 {
-				margin: 0 0 4px;
+				margin: 0 0 8px;
 			}
 
 			.tag-wrap {
 				display: flex;
-				justify-content: center;
+				justify-content: flex-start;
 			}
 
 			.tag {
@@ -352,13 +362,20 @@
 }
 
 .jobs_info_holder {
-	padding: 40px 10px 29px;
+	padding: 45px 10px 25px;
 	border: 1px solid #cecece;
 	position: relative;
 	border-radius: 30px;
 	transition: all 0.4s ease;
+	display: block;
+	color: $body-color;
+
+	@include media-breakpoint-up(lg) {
+		padding: 40px 10px 30px;
+	}
 
 	&:hover {
+		color: $body-color;
 		box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 	}
 
@@ -414,23 +431,34 @@
 		flex-grow: 1;
 
 		p {
-			margin-bottom: 0;
+			margin-bottom: 5px;
+
+			@include media-breakpoint-up(xl) {
+				margin-bottom: 0;
+			}
 		}
 
 		.h5 {
-			margin: 0;
+			margin: 0 0 10px;
+			color: $black;
+			display: block;
+
+			@include media-breakpoint-up(xl) {
+				margin: 5px;
+			}
 		}
 	}
 
 	.location_info{
 		padding: 0;
-		margin: 0 -11px 13px;
+		margin: 0 -11px 6px;
 		list-style: none;
 		display: flex;
 		align-items: center;
+		flex-flow: row wrap;
 
 		li {
-			padding: 0 11px;
+			padding: 0 11px 7px;
 			display: inline-flex;
 			align-items: center;
 			font-size: 14px;
