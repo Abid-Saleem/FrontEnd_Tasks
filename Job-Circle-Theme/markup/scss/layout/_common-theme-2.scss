@@ -557,6 +557,78 @@
             }
         }
     }
+
+    &.alt2 {
+        padding: 25px 10px;
+        display: block;
+        color: $body-color;
+        font-size: 16px;
+        line-height: 1.75;
+
+        @include media-breakpoint-up(xl) {
+            padding: 30px;
+        }
+
+        .wrap {
+            display: flex;
+            align-items: flex-start;
+            
+            @include media-breakpoint-up(xl) {
+                padding: 7px 0;
+            }
+        }
+
+        .img-holder {
+            width: 60px;
+            height: 60px;
+            flex-shrink: 0;
+            margin: 0 4% 0 0;
+
+            @include media-breakpoint-up(xl) {
+                width: 80px;
+                height: 80px;
+                margin: 0 6.9% 0 0;
+            }
+        }
+
+        .textbox {
+            flex-grow: 1;
+            min-width: 0;
+
+            .location {
+                font-size: 14px;
+                padding-top: 5px;
+            }
+        }
+
+        .h6 {
+            margin: 0 0 8px;
+        }
+
+        .tag-wrap {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .tag {
+            position: relative;
+            top: 0;
+            right: 0;
+            background: #edf0ff;
+            font-size: 14px;
+        }
+
+        &:hover {
+            background: $white;
+            border-color: #ddd;
+            color: $body-color;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+
+            .h6 {
+                color: $black;
+            }
+        }
+    }
 }
 
 /* Featured Joblix Block Styles */
