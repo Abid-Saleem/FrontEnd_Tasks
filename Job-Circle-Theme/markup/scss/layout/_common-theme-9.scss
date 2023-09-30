@@ -1,5 +1,6 @@
 .page-theme-9 {
     font-family: 'DM Sans', sans-serif;
+
     .btn {
         padding: 15px 25px;
         font-size: 16px;
@@ -34,11 +35,11 @@
             }
         }
     }
-    @include media-breakpoint-up(xxxl) {
-		.container {
-			max-width: 1322px;
-		} 
-	}
+    // @include media-breakpoint-up(xxxl) {
+	// 	.container {
+	// 		max-width: 1322px;
+	// 	} 
+	// }
 }
 
 .section-theme-9 {
@@ -337,6 +338,46 @@
                     background: #3f71ef;
                 }
             }
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: -20px;
+        width: 66px;
+        height: 66px;
+        background: #f4f1e9;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 100%;
+        font-size: 24px;
+        line-height: 1;
+        z-index: 1;
+        transition: 0.3s;
+
+        @include media-breakpoint-up(md) {
+            top: -110px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            top: -130px;
+        }
+
+        &:hover {
+            color: $white;
+            background: $dark-yellow;
+        }
+
+        &.slick-prev {
+            left: auto;
+            right: 91px;
+        }
+
+        &.slick-next {
+            right: 15px;
         }
     }
 
@@ -1054,45 +1095,5 @@
             margin-right: 10px;
             border: 1px solid #cfcfcf;
         }
-    }
-}
-
-.slick-arrow {
-    position: absolute;
-    top: -20px;
-    width: 66px;
-    height: 66px;
-    background: #f4f1e9;
-    color: $black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0;
-    border-radius: 100%;
-    font-size: 24px;
-    line-height: 1;
-    z-index: 1;
-    transition: 0.3s;
-
-    @include media-breakpoint-up(md) {
-        top: -110px;
-    }
-
-    @include media-breakpoint-up(xl) {
-        top: -130px;
-    }
-
-    &:hover {
-        color: $white;
-        background: $dark-yellow;
-    }
-
-    &.slick-prev {
-        left: auto;
-        right: 91px;
-    }
-
-    &.slick-next {
-        right: 15px;
     }
 }

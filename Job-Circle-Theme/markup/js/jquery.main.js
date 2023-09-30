@@ -605,6 +605,45 @@ function initSlickCarousel() {
 		asNavFor: '.thumbs-list',
 		vertical: false
 	});
+
+	jQuery('.companies-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: true,
+		dots: true,
+		centerMode: true,
+		centerPadding: '0px',
+		focusOnSelect: false,
+		mobileFirst: true,
+		infinite: true,
+		autoplay: true,
+		responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+			}
+		],
+	});
 }
 
 // select2 init
@@ -765,7 +804,7 @@ jQuery(window).on('resize', function() {
 	}
 });
 
-$articles_slider = jQuery('.acticles-carousel');
+$articles_slider = jQuery('.acticles-carousel, .acticles-slider');
 settings = {
 	slidesToScroll: 1,
 	slidesToShow: 1,

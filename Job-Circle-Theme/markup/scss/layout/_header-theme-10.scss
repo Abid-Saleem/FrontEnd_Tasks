@@ -1,5 +1,6 @@
-.header-theme-6 {
-	background: $white;
+.header-theme-10 {
+	background: var(--navy-dark);
+	font-family: $font-family-DMSans;
 
 	@include media-breakpoint-up(md) {
 		padding: 20px 0;
@@ -12,8 +13,8 @@
 	}
 	.logo {
 		display: block;
-		flex: 0 0 179px;
-		@include size(179px, 61px);
+		flex: 0 0 175px;
+		@include size(175px, 45px);
 		transition: height 0.3s ease-in-out;
 
 		a {
@@ -25,21 +26,23 @@
 		}
 	}
 	.btn {
-		color: $black;
+		color: $white;
+		padding: 8px 15px;
 		border-radius: 32px;
-		background: $texas-rose;
+		background: $burning-orange;
+		font-family: $font-family-DMSans;
 		@include media-breakpoint-up(lg) {
-			padding: 16px 22px;
+			padding: 8px 15px;
 		}
 		@include media-breakpoint-up(xl) {
-			padding: 16px 38px;
+			padding: 15px 40px;
 		}
 		&:before {
 			border-radius: 32px;
 		}
 		&:hover:before {
 			opacity: 0.5;
-			background: darken($texas-rose, 10%);
+			background: darken($burning-orange, 10%);
 		}
 	}
 
@@ -47,7 +50,7 @@
 		display: flex;
 
 		@include media-breakpoint-up(lg) {
-			width: calc(100% - 220px);
+			width: 100%;
 			.nav-drop {
 				width: 100%;
 				display: flex;
@@ -73,19 +76,22 @@
 		&:after,
 		span {
 			background: $black;
+			.nav-active & {
+				background: $white;
+			}
 		}
 
 		&:hover {
 			&:before,
 			&:after,
 			span {
-				background: $texas-rose;
+				background: $burning-orange;
 			}
 		}
 	}
 
 	.nav-drop {
-		background: $white;
+		background: $meteorite;
 		@include media-breakpoint-up(lg) {
 			width: 100%;
 		}
@@ -93,36 +99,41 @@
 
 	.navigation {
 		padding-bottom: 30px;
+		font-family: $font-family-DMSans;
 		@include media-breakpoint-up(lg) {
+			font-size: 16px;
 			padding-bottom: 0;
-			font-size: 14px;
 		}
 		@include media-breakpoint-up(xl) {
-			font-size: 16px;
+			width: 480px;
 		}
 		> li {
 			@include media-breakpoint-up(lg) {
-				padding: 0 12px;
+				padding: 0;
 			}
-			@include media-breakpoint-up(xl) {
-				padding: 0 23px;
+			&:not(:last-child) {
+				margin-right: 10px;
+				@include media-breakpoint-up(xl) {
+					margin-right: 18px;
+				}
+				@include media-breakpoint-up(xxl) {
+					margin-right: 22px;
+				}
 			}
-
 			> a {
-				color: $black;
 				&:not(.btn) {
 					@include media-breakpoint-up(lg) {
 						color: $black;
 					}
 
 					&:hover {
-						color: $texas-rose;
+						color: $burning-orange;
 					}
 				}
 				&.dropdown-toggle {
 					&.show {
 						@include media-breakpoint-down(lg) {
-							color: $texas-rose;
+							color: $burning-orange;
 						}
 					}
 				}
@@ -130,13 +141,13 @@
 
 			&:hover {
 				.dropdown-toggle {
-					color: $texas-rose;
+					color: $burning-orange;
 				}
 			}
 
 			&.active {
 				> a {
-					color: $texas-rose;
+					color: $burning-orange;
 				}
 			}
 		}
@@ -147,21 +158,20 @@
 			li {
 				&.active {
 					> a {
-						color: $texas-rose;
+						color: $burning-orange;
 					}
 
 					&:hover {
 						> a {
-							color: $texas-rose;
+							color: $burning-orange;
 						}
 					}
 				}
 			}
 
 			.dropdown-item {
-				color: $black;
 				&:hover {
-					background: $texas-rose;
+					background: $burning-orange;
 				}
 			}
 		}
@@ -174,43 +184,84 @@
 
 		@include media-breakpoint-up(lg) {
 			padding: 0;
+			width: 300px;
+			justify-content: flex-end;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 480px;
 		}
 
-		.login-link {
-			display: flex;
+		.user-link {
 			color: $black;
-			margin-right: 20px;
-			align-items: center;
-
-			.icon-user {
-				margin-right: 7px;
+			display: block;
+			font-weight: 700;
+			margin-right: 15px;
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				align-items: center;
+			}
+			@include media-breakpoint-up(xl) {
+				margin-right: 38px;
+			}
+			&:hover {
+				color: $burning-orange;
+				i {
+					color: $white;
+					background: $burning-orange;
+				}
+			}
+			i {
+				display: flex;
+				font-size: 18px;
+				border-radius: 50%;
+				@include size(40px);
+				align-items: center;
+				background: $gallery;
+				justify-content: center;
+				transition: all ease-in-out 0.3s;
+				@include media-breakpoint-up(lg) {
+					margin-right: 10px;
+				}
+				@include media-breakpoint-up(xl) {
+					margin-right: 12px;
+				}
 			}
 		}
-
 		.btn {
-			@include media-breakpoint-down(xxl) {
+			font-size: 16px;
+			@include media-breakpoint-down(lg) {
 				width: 100%;
 				display: flex;
 				text-align: center;
-				padding: 18px 25px;
 				justify-content: center;
 			}
-
-			@include media-breakpoint-down(xl) {
-				padding: 12px 20px;
-				font-size: 14px;
+		}
+	}
+	.menu-link {
+		display: flex;
+		font-size: 18px;
+		border-radius: 50%;
+		@include size(40px);
+		align-items: center;
+		background: $gallery;
+		justify-content: center;
+		transition: all ease-in-out 0.3s;
+		&:hover {
+			background: $burning-orange;
+			img {
+				filter: grayscale(0) invert(0);
 			}
-
-			@include media-breakpoint-down(lg) {
-				padding: 12px 15px;
-				font-size: 14px;
-			}
+		}
+		img {
+			width: 15px;
+			filter: grayscale(1) invert(1);
+			transition: all ease-in-out 0.3s;
 		}
 	}
 }
 
 .sticky-header {
-	.header-theme-6 {
+	.header-theme-10 {
 		.nav-opener {
 			&:not(:hover) {
 				&:before,
@@ -223,20 +274,19 @@
 		.navigation {
 			> li {
 				> a {
-					color: $black;
 					&:not(.btn) {
 						@include media-breakpoint-up(lg) {
 							color: $black;
 						}
 
 						&:hover {
-							color: $texas-rose;
+							color: $burning-orange;
 						}
 					}
 					&.dropdown-toggle {
 						&.show {
 							@include media-breakpoint-down(lg) {
-								color: $texas-rose;
+								color: $burning-orange;
 							}
 						}
 					}
@@ -244,13 +294,13 @@
 
 				&:hover {
 					.dropdown-toggle {
-						color: $texas-rose;
+						color: $burning-orange;
 					}
 				}
 
 				&.active {
 					> a {
-						color: $texas-rose;
+						color: $burning-orange;
 					}
 				}
 			}
