@@ -240,6 +240,60 @@ function initSlickCarousel() {
 		    },
 		],
 	});
+
+	jQuery('.client_testimonials_slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: false,
+		centerMode:true,
+		centerPadding:0,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
+
+	jQuery('.featured_candidate_slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 2,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
 	
 	jQuery('.jobs-carousel').slick({
 		slidesToScroll: 1,
