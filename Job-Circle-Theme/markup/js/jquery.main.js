@@ -741,9 +741,11 @@ function initCustomFunctions() {
 
 		if(jQuery('.filters-sidebar').hasClass('filters-active')) {
 			jQuery('.filters-sidebar').removeClass('filters-active');
+			jQuery(this).removeClass('opener-active');
 		}
 		else {
 			jQuery('.filters-sidebar').addClass('filters-active');
+			jQuery(this).addClass('opener-active');
 		}
 	});
 }

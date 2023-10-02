@@ -345,6 +345,43 @@
         .filter-buttons {
             padding-top: 5px;
         }
+
+        &.custom-filters {
+            margin-top: 0;
+            padding: 25px;
+            border: 1px solid #e6e6e6;
+
+            .filter-box-head {
+                h2 {
+                    font-size: 16px;
+                }
+            }
+
+            .filter-box {
+                @include media-breakpoint-up(md) {
+                    border: 0;
+                }
+
+                .range-box {
+                    padding-top: 20px;
+                }
+            }
+
+            .checkbox-list {
+                max-height: inherit;
+                margin: 0 -5px;
+            }
+
+            .filter-buttons {
+                .btn {
+                    &.btn-text {
+                        &:hover {
+                            color: $green;;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .filter-box {
@@ -352,58 +389,9 @@
         border-bottom: 1px solid #b0b0b0;
 
         .filter-box-head {
-            display: flex;
-            align-items: center;
-            position: relative;
-            padding-right: 40px;
-            cursor: pointer;
-            padding-top: 1px;
-            margin: 0 0 20px;
-
             h2 {
-                margin: 0;
-                color: $black;
-                line-height: 30px;
-
                 @include media-breakpoint-up(md) {
                     font-size: 20px;
-                }
-            }
-
-            .collapse-icon {
-                width: 30px;
-                height: 30px;
-                border-radius: 100%;
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                background: #eaeaea;
-
-                &:before,
-                &:after {
-                    width: 10px;
-                    height: 2px;
-                    background: $black;
-                    content: '';
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
-
-                &:after {
-                    width: 2px;
-                    height: 10px;
-                    display: none;
-                }
-            }
-
-            &.collapsed {
-                .collapse-icon {
-                    &:after {
-                        display: block;
-                    }
                 }
             }
         }
@@ -563,11 +551,6 @@
             font-weight: 600;
         }
 
-        .subhead-filters {
-            flex-flow: row wrap;
-            justify-content: space-between;
-        }
-
         .select2-container--default {
             font-size: 14px;
 
@@ -578,49 +561,18 @@
             }
         }
 
-        .subhead-filters-item {
-            display: flex;
-            align-items: center;
-
-            label {
-                @include media-breakpoint-down(sm) {
-                    display: none;
-                }
-            }
-        }
-
         .grid-buttons {
-            display: flex;
-            align-items: center;
-            padding-right: 10px;
-
-            @include media-breakpoint-up(xl) {
-                padding-left: 15px;
-            }
-
             .btn {
-                width: 52px;
-                height: 52px;
-                padding: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 100%;
-                border: 1px solid #ccc;
-                margin: 0 0 0 5px;
-                transition: all ease-in-out 0.25s;
-
-                img {
-					transition: all ease-in-out 0.25s;
-                }
-
                 &:hover,
                 &.active {
                     background: $green;
                     border-color: $green;
+                }
 
-                    img {
-                        filter: invert(100%);
+                &.btn-filters {
+                    &.opener-active {
+                        background: $green;
+                        border-color: $green;
                     }
                 }
             }
