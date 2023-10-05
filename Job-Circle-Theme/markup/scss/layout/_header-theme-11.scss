@@ -1,0 +1,335 @@
+.header-theme-11 {
+	background: transparent;
+	font-family: $font-family-DMSans;
+
+	@include media-breakpoint-up(md) {
+		padding: 20px 0;
+	}
+
+	.sticky-header & {
+		@include media-breakpoint-up(md) {
+			padding: 7px 0 !important;
+		} 
+	}
+	.logo {
+		display: block;
+		flex: 0 0 175px;
+		@include size(175px, 45px);
+		transition: height 0.3s ease-in-out;
+
+		a {
+			display: block;
+			@include size(100%);
+			img {
+				@include size(100%, auto);
+			}
+		}
+	}
+	.btn {
+		color: $white;
+		padding: 8px 15px;
+		border-radius: 32px; 
+		background: $dark-yellow;
+		font-family: $font-family-DMSans;
+		@include media-breakpoint-up(lg) {
+			padding: 8px 15px;
+		}
+		@include media-breakpoint-up(xl) {
+			padding: 15px 40px;
+		}
+		&:before {
+			border-radius: 32px;
+		}
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($burning-orange, 10%);
+		}
+	}
+
+	.main-nav {
+		display: flex;
+
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+			.nav-drop {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				background: transparent;
+				justify-content: space-between;
+			}
+		}
+
+		.sticky-header & {
+			@include media-breakpoint-up(lg) {
+				padding: 7px 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 7px 0;
+			}
+		}
+	}
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $dark-yellow;
+			.nav-active & {
+				background: $white;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $dark-yellow;
+			}
+		}
+	}
+
+	.nav-drop {
+		background: $meteorite;
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+		}
+	}
+
+	.navigation {
+		padding-bottom: 30px;
+		font-family: $font-family-DMSans;
+		@include media-breakpoint-up(lg) {
+			font-size: 16px;
+			padding-bottom: 0;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 480px;
+		}
+		> li {
+			@include media-breakpoint-up(lg) {
+				padding: 0;
+			}
+			&:not(:last-child) {
+				margin-right: 10px;
+				@include media-breakpoint-up(xl) {
+					margin-right: 18px;
+				}
+				@include media-breakpoint-up(xxl) {
+					margin-right: 22px;
+				}
+			}
+			> a {
+				&:not(.btn) {
+					@include media-breakpoint-up(lg) {
+						color: $white;
+					}
+
+					&:hover {
+						color: $dark-yellow;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $burning-orange;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $dark-yellow;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $dark-yellow;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			font-size: 14px;
+
+			li {
+				&.active {
+					> a {
+						color: $dark-yellow;
+					}
+
+					&:hover {
+						> a {
+							color: $dark-yellow;
+						}
+					}
+				}
+			}
+
+			.dropdown-item {
+				&:hover {
+					background: $dark-yellow;
+				}
+			}
+		}
+	}
+	.user-box {
+		display: flex;
+		padding: 0 30px;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;
+			width: 300px;
+			justify-content: flex-end;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 480px;
+		}
+
+		.user-link {
+			color: $white;
+			display: block;
+			padding: 10px;
+			font-weight: 700;
+			margin-right: 15px;
+			border: 1px solid $white;
+			border-radius: 40px;
+			@include media-breakpoint-up(lg) {
+				display: flex;
+				align-items: center;
+			}
+			@include media-breakpoint-up(xl) {
+				margin-right: 38px;
+			}
+			&:hover {
+				color: $dark-yellow;
+				border-color: $dark-yellow;
+				i {
+					color: $white;
+					background:$dark-yellow;
+				}
+			}
+			i {
+				display: flex;
+				font-size: 18px;
+				border-radius: 50%;
+				@include size(40px);
+				align-items: center;
+				background: rgba(255,255,255,.3);
+				justify-content: center;
+				transition: all ease-in-out 0.3s;
+				@include media-breakpoint-up(lg) {
+					margin-right: 10px;
+				}
+				@include media-breakpoint-up(xl) {
+					margin-right: 12px;
+				}
+			}
+		}
+		.btn {
+			font-size: 16px;
+			@include media-breakpoint-up(lg){
+				font-size: 14px;
+			}
+			@include media-breakpoint-down(lg) {
+				width: 100%;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+			}
+		}
+	}
+	.menu-link {
+		display: flex;
+		font-size: 18px;
+		border-radius: 50%;
+		@include size(40px);
+		align-items: center;
+		background: rgba(255,255,255,.3);
+		justify-content: center;
+		transition: all ease-in-out 0.3s;
+		&:hover {
+			background: $burning-orange;
+			img {
+				filter: grayscale(0) invert(0);
+			}
+		}
+		img {
+			width: 15px;
+			filter: grayscale(1) invert(1);
+			transition: all ease-in-out 0.3s;
+		}
+	}
+	.sticky-logo{
+		display: none;
+	}
+}
+
+.sticky-header { 
+	.header-theme-11 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $burning-orange;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $burning-orange;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $burning-orange;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $burning-orange;
+					}
+				}
+			}
+
+		}
+		.user-link{
+			color:$dark-yellow;
+			border-color: $dark-yellow;
+			& i{
+				background: $dark-yellow;
+				color: $white; 
+			}
+		}
+	}
+	.normal-logo{
+		display: none;
+	}
+	.sticky-logo{
+		display: block;
+	}
+
+}
