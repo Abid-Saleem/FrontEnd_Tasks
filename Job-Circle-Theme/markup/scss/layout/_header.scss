@@ -34,6 +34,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: relative;
     }
 
     .logo {
@@ -288,6 +289,10 @@
         &.text-login {
             font-weight: 700;
         }
+
+        &.mega-menu {
+            position: static;
+        }
     }
 
     .dropdown-menu {
@@ -342,6 +347,45 @@
             &:hover {
                 color: $white;
                 background: $primary;
+            }
+        }
+
+        &.mega {
+            width: 100%;
+            max-width: 1000px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            @include media-breakpoint-down(lg) {
+                padding-top: 0;
+                padding-bottom: 0;
+                max-width: inherit;
+                width: calc(100% + 30px);
+                margin-left: -15px !important;
+                margin-right: -15px !important;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .title {
+                display: block;
+                padding: 0 15px;
+                margin: 0 0 10px;
+
+                @include media-breakpoint-down(lg) {
+                    margin: 5px 0;
+                    color: $white;
+                }
+            }
+
+            ul {
+                padding-bottom: 10px;
+            }
+
+            .dropdown-item {
+                border-radius: 7px;
             }
         }
     }
