@@ -370,6 +370,10 @@
 	&.learning-block {
 		background: $merino;
 	}
+
+	.slick-arrow {
+		background: $white;
+	}
 }
 
 .services-carousel {
@@ -388,6 +392,10 @@
 			height: 100%;
 		}
 	}
+	.slick-arrow {
+		display: none !important;
+	}
+
 	.service-slide {
 		height: 100%;
 		padding: 0 10px;
