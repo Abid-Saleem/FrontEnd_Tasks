@@ -1,0 +1,240 @@
+.header-theme-14 {
+    font-family: 'DM Sans', sans-serif;
+
+    @include media-breakpoint-up(md) {
+        padding: 40px 0;
+    }
+
+    .sticky-header & {
+        background: #01140f;
+        @include media-breakpoint-up(md) {
+            padding: 15px 0 !important;
+        }
+    }
+
+    .logo {
+        width: 165px;
+        display: block;
+
+        @include media-breakpoint-up(md) {
+            width: 174px;
+        }
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $green;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $green;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $dark-blue;
+        }
+    }
+
+    .navigation {
+        font-size: 16px;
+        font-family: 'DM Sans', sans-serif;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 16px;
+        }
+
+        > li {
+            &:not(:last-child) {
+                @include media-breakpoint-up(lg) {
+                    padding: 0 6px;
+                }
+                @include media-breakpoint-up(xxxl) {
+                    padding: 0 15px;
+                }
+            }
+
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $white;
+                    }
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+
+                &.btn-blue {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-size: 16px;
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 14px;
+                    }
+                
+                    @include media-breakpoint-up(xl) {
+                        font-size: 16px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $green;
+                        }
+                    }
+                }
+            }
+
+            .user-link {
+                width: 13px;
+                display: block;
+                margin-right: 20px;
+
+                img {
+                    display: block;
+                    height: auto;
+                    width: 100%;
+                }
+            }
+
+            &.text-login {
+                display: inline-flex;
+                align-items: center;
+
+                @include media-breakpoint-up(xl) {
+                    margin: 0 21px;
+                }
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    background: #14352d;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                    display: none;
+                    flex-shrink: 0;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include media-breakpoint-up(xl) {
+                        display: flex;
+                    }
+
+                    img {
+                        display: inline-block;
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+
+                .text {
+                    flex-grow: 1;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+
+                    @include media-breakpoint-up(xl) {
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $green;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $green;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            font-size: 14px;
+
+            li {
+                &.active {
+                    > a {
+                        color: $green;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $green;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-14 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $green;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $green;
+                }
+            }
+        }
+    }
+}
