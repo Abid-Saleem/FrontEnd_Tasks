@@ -472,35 +472,37 @@ function initSlickCarousel() {
 	jQuery('.services-carousel').slick({
 		slidesToScroll: 1,
 		slidesToShow: 1,
-		arrows: false,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
 		dots: true,
 		mobileFirst: true,
 		focusOnSelect: false,
 		infinite: true,
 		autoplay: true,
 		responsive: [{
-				breakpoint: 1024,
+				breakpoint: 1199,
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 992,
+				breakpoint: 991,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 576,
+				breakpoint: 575,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 449,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
