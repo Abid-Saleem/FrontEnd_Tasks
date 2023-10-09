@@ -21,8 +21,8 @@
         }
     }
 
-    .nav-opener,
     .nav-close {
+        right: 35px;
         &:before,
         &:after,
         span {
@@ -38,14 +38,95 @@
         }
     }
 
+    .nav-opener {
+        width: auto;
+        height: auto;
+        top: 0;
+        right: 0;
+        position: relative;
+
+        &:after,
+        &:before {
+            display: none;
+        }
+
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
     .nav-drop {
-        @include media-breakpoint-down(lg) {
-            background: $dark-blue;
+        background: #01140f;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9;
+        width: 280px;
+        overflow: auto;
+        transform: translateX(105%);
+        transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    
+        .nav-active & {
+            transform: none;
+        }
+    }
+
+    .text-login {
+        display: inline-flex;
+        align-items: center;
+        margin: 0 0 10px;
+        color: #fff;
+
+        &.space {
+            margin: 0 25px 0 20px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: #14352d;
+            border-radius: 100%;
+            margin-right: 10px;
+            display: none;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+
+            @include media-breakpoint-up(xl) {
+                display: flex;
+            }
+
+            img {
+                display: inline-block;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        .text {
+            flex-grow: 1;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+
+            @include media-breakpoint-up(xl) {
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+
+        &:hover {
+            color: $green;
         }
     }
 
     .navigation {
+        display: block;
         font-size: 16px;
+        padding: 70px 30px;
         font-family: 'DM Sans', sans-serif;
 
         @include media-breakpoint-up(lg) {
@@ -103,6 +184,12 @@
                         }
                     }
                 }
+
+                &.dropdown-toggle {
+                    &:after {
+                        margin-left: auto;
+                    }
+                }
             }
 
             .user-link {
@@ -114,49 +201,6 @@
                     display: block;
                     height: auto;
                     width: 100%;
-                }
-            }
-
-            &.text-login {
-                display: inline-flex;
-                align-items: center;
-
-                @include media-breakpoint-up(xl) {
-                    margin: 0 21px;
-                }
-
-                .icon {
-                    width: 40px;
-                    height: 40px;
-                    background: #14352d;
-                    border-radius: 100%;
-                    margin-right: 10px;
-                    display: none;
-                    flex-shrink: 0;
-                    align-items: center;
-                    justify-content: center;
-
-                    @include media-breakpoint-up(xl) {
-                        display: flex;
-                    }
-
-                    img {
-                        display: inline-block;
-                        height: auto;
-                        max-width: 100%;
-                    }
-                }
-
-                .text {
-                    flex-grow: 1;
-                    font-size: 14px;
-                    line-height: 18px;
-                    font-weight: 400;
-
-                    @include media-breakpoint-up(xl) {
-                        font-size: 15px;
-                        font-weight: 700;
-                    }
                 }
             }
 
@@ -175,8 +219,23 @@
 
         .dropdown-menu {
             font-size: 14px;
+            position: static !important;
+            transform: none !important;
+            border-radius: 0;
+            background: transparent;
+            display: none;
+            opacity: 1;
+            visibility: visible;
+
+            &.show {
+                display: block;
+            }
 
             li {
+                > a {
+                    color: $white
+                }
+
                 &.active {
                     > a {
                         color: $green;
