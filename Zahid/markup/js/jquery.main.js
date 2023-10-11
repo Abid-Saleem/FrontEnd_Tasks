@@ -691,6 +691,53 @@ function initSlickCarousel() {
 			}
 		],
 	});
+
+	jQuery('.trending-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon icon-arrow-right1"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon icon-arrow-right1"></i></button>',
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: false,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		],
+	});
 }
 
 // select2 init
