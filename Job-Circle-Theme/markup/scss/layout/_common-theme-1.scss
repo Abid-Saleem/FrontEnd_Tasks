@@ -752,6 +752,103 @@
             background: $green;
         }
     }
+
+    &.section-about {
+        color: $black;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 18px;
+        }
+
+        .section-header {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 1200px;
+        }
+
+        .about-image {
+            border-radius: 45px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .about-author {
+            display: flex;
+            align-items: center;
+            padding-top: 30px;
+
+            .author-image {
+                width: 65px;
+                height: 65px;
+                flex-shrink: 0;
+                margin: 0 15px 0 0;
+                overflow: hidden;
+                border-radius: 100%;
+                border: 1px solid $white;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .author-info {
+                flex-grow: 1;
+                min-width: 0;
+            }
+
+            .subtext {
+                display: block;
+                font-size: 14px;
+                line-height: 1.5;
+                color: $tundora;
+                margin: 0 0 8px;
+            }
+
+            .author-name {
+                display: block;
+                font-size: 24px;
+                line-height: 1.2;
+                color: $black;
+            }
+        }
+
+        .counters-block {
+            margin: 0 -15px;
+            border: 0;
+
+            .counter-box {
+                background: $light-yellow;
+                border-radius: 45px;
+                width: calc(25% - 30px);
+                margin: 0 15px;
+                text-align: center;
+                min-height: 220px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .numbers {
+                font-size: 70px;
+                font-weight: 800;
+            }
+
+            .subtext {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 /* Section Explores Styles */
@@ -3462,6 +3559,142 @@
 
         .btn {
             min-width: 230px;
+        }
+    }
+}
+
+
+/* Tabs With Line Styles */
+.nav-tabs {
+    &.nav-tabs-line {
+        padding: 0;
+        margin: 0 -15px;
+        list-style: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 -20px;
+        }
+
+        li {
+            padding: 0 15px;
+            margin: 0 0 15px;
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 20px;
+            }
+
+            .nav-link {
+                display: block;
+                font-size: 16px;
+                font-weight: 700;
+                color: $black;
+                padding: 0;
+                position: relative;
+                border: none;
+
+                &:after {
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    content: "";
+                    height: 4px;
+                    position: absolute;
+                    background: #ccc;
+                }
+
+                &.active {
+                    &:after {
+                        background: $green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-leadership {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.leadership-box {
+    background: $white;
+    border: 1px solid $gray;
+    border-radius: 45px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    .image-holder {
+        overflow: hidden;
+        border-radius: 45px;
+        width: 37.6%;
+        margin-bottom: -60px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .textbox {
+        flex-grow: 1;
+        min-width: 0;
+        padding-left: 40px;
+        color: $black;
+        line-height: 1.5;
+    }
+
+    .h4 {
+        color: $black;
+        margin: 0 0 10px;
+        line-height: 1.15;
+    }
+
+    .subtitle {
+        display: block;
+        margin: 0 0 15px;
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        margin: 0 0 30px;
+
+        .icon-phone {
+            margin: 0 10px 0 0;
+            flex-shrink: 0;
+        }
+
+        a {
+            color: $black;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+
+    .social-networks {
+        font-size: 16px;
+
+        li {
+            a {
+                color: $black;
+                border: 1px solid $gray;
+
+                &:hover {
+                    border-color: $green;
+                    background: $green;
+                    color: $white;
+                }
+            }
         }
     }
 }

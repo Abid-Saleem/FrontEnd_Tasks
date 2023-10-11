@@ -734,9 +734,13 @@
 		width: 100%;
 		padding: 10px 15px 0;
 		color: $black;
-		border-radius: 30px;
+		border-radius: 15px;
 		display: flex;
 		margin: 0 0 30px;
+		
+		@include media-breakpoint-up(lg) {
+			border-radius: 30px;
+		}
 
 		@include media-breakpoint-up(xl) {
 			padding: 10px 29px 0 55px;
@@ -768,15 +772,16 @@
 		.text_wrap {
 			width: 190px;
 			flex-shrink: 0;
-			margin: 20px 1% 10px 0;
+			margin: 15px 1% 25px 0;
 
 			@include media-breakpoint-up(md) {
 				width: 240px;
+				margin: 20px 1% 10px 0;
 			}
 
 			@include media-breakpoint-up(xl) {
 				width: 282px;
-				margin: 40px 2% 15px 0;
+				margin: 35px 2% 25px 0;
 			}
 		}
 
