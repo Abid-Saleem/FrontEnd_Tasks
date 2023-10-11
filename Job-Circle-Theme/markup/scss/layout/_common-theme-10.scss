@@ -1156,28 +1156,29 @@
 			}
 		}
 	}
-}
-.slick-dots {
-	@include media-breakpoint-up(lg) {
-		margin: 40px 0 0;
-	}
-	@include media-breakpoint-up(xl) {
-		margin: 58px 0 0;
-	}
-	li {
-		padding: 0 4px;
-		button {
-			border-radius: 1px;
-			@include size(60px, 3px);
-			border-color: $burning-orange;
-			@include media-breakpoint-up(lg) {
-				width: 71px;
-			}
+	
+	.slick-dots {
+		@include media-breakpoint-up(lg) {
+			margin: 40px 0 0;
 		}
-		&:hover, &.slick-active {
+		@include media-breakpoint-up(xl) {
+			margin: 58px 0 0;
+		}
+		li {
+			padding: 0 4px;
 			button {
+				border-radius: 1px;
+				@include size(60px, 3px);
 				border-color: $burning-orange;
-				background: $burning-orange;
+				@include media-breakpoint-up(lg) {
+					width: 71px;
+				}
+			}
+			&:hover, &.slick-active {
+				button {
+					border-color: $burning-orange;
+					background: $burning-orange;
+				}
 			}
 		}
 	}
