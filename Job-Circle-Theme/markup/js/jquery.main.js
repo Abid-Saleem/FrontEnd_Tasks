@@ -242,6 +242,53 @@ function initSlickCarousel() {
 		    },
 		],
 	});
+	
+	jQuery('.expert-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: false,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		],
+	});
 
 	jQuery('.client_testimonials_slider').slick({
 		slidesToScroll: 1,
@@ -646,6 +693,55 @@ function initSlickCarousel() {
 					arrows: false,
 				}
 			}
+		],
+	});
+
+	
+
+	jQuery('.trending-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon icon-arrow-right1"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon icon-arrow-right1"></i></button>',
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: false,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
 		],
 	});
 }
