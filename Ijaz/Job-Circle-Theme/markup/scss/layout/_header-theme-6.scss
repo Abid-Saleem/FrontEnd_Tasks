@@ -95,6 +95,7 @@
 		padding-bottom: 30px;
 		@include media-breakpoint-up(lg) {
 			padding-bottom: 0;
+			font-size: 14px;
 		}
 		@include media-breakpoint-up(xl) {
 			font-size: 16px;
@@ -180,14 +181,29 @@
 			color: $black;
 			margin-right: 20px;
 			align-items: center;
+
+			.icon-user {
+				margin-right: 7px;
+			}
 		}
+
 		.btn {
-			@include media-breakpoint-down(lg) {
+			@include media-breakpoint-down(xxl) {
 				width: 100%;
 				display: flex;
 				text-align: center;
 				padding: 18px 25px;
 				justify-content: center;
+			}
+
+			@include media-breakpoint-down(xl) {
+				padding: 12px 20px;
+				font-size: 14px;
+			}
+
+			@include media-breakpoint-down(lg) {
+				padding: 12px 15px;
+				font-size: 14px;
 			}
 		}
 	}

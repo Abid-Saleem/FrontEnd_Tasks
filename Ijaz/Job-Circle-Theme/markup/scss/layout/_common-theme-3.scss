@@ -640,7 +640,7 @@
             border-radius: 30px;
             font-size: 12px;
             line-height: 1;
-            margin: 0 0 25px;
+            margin: 0 0 30px;
             color: #333;
 
             @include media-breakpoint-up(lg) {
@@ -936,6 +936,7 @@
     h3 {
         line-height: 1;
         font-size: 35px;
+        font-weight: 800;
 
         @include media-breakpoint-up(xl) {
             font-size: 45px;
