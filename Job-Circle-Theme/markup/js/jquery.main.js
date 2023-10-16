@@ -697,7 +697,6 @@ function initSlickCarousel() {
 	});
 
 	
-
 	jQuery('.trending-slider').slick({
 		slidesToScroll: 1,
 		slidesToShow: 4,
@@ -743,6 +742,93 @@ function initSlickCarousel() {
 				},
 		    },
 		],
+	});
+
+	// featured jobs carousel
+	jQuery('.featured-jobs-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [{
+				breakpoint: 1199,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 449,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+	});
+
+	// companies remote slider
+	jQuery('.companies-remote-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: true,
+		centerMode: true,
+		centerPadding: '0px',
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		],
+	});
+
+	// Quotes carousel
+	jQuery('.quotes-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		fade: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true
 	});
 }
 

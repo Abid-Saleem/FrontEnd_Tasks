@@ -76,6 +76,11 @@
 		.icon{
 			border-radius: 100%;
 			background: $white;
+			transition: 0.3s;
+
+			img {
+				transition: 0.3s;
+			}
 		}
 		.trending-categories-box{
 			border: 0;
@@ -255,9 +260,11 @@
 		position: relative;
 		border-radius: 0 40px 40px 0;
 		justify-content: space-between;
-			@include media-breakpoint-down(md) {
-				flex-wrap:wrap;
-			}
+
+		@include media-breakpoint-down(md) {
+			flex-wrap:wrap;
+			padding-left: 0;
+		}
 
 		&:after{
 			top:0;
@@ -268,6 +275,16 @@
 			position: absolute;
 			background: #f1fcfa;
 		}
+		
+		.apply_bar-links {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+		}
 
 		a{
 			font-size: 16px;
@@ -277,6 +294,7 @@
 			color: $white;
 			font-size: 14px;
 			text-decoration: none;
+			margin-left: 25px;
 			&:before{
 				display: none;
 			}
@@ -285,6 +303,7 @@
 			@include media-breakpoint-down(md) {
 				width: 100%;
 				display: block;
+				margin: 0 0 7px;
 			}
 			strong{
 				font-size: 16px;
