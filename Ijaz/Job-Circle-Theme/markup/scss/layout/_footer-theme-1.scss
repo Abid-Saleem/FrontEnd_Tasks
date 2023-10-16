@@ -71,6 +71,10 @@
 
             a {
                 font-weight: 400;
+
+                &:hover {
+                    color: $lt-yellow;
+                }
             }
         }
     }
@@ -107,13 +111,14 @@
                 border-bottom: 1px solid rgba(255,255,255,0.35);
 
                 &:hover {
-                    color: $dark-yellow;
+                    color: $lt-yellow;
                 }
             }
         }
     }
 
-    .footer-links {
+    .footer-links,
+    .social-networks {
         li {
             a {
                 &:hover {

@@ -1,8 +1,8 @@
 // page init
-jQuery(function() {
+jQuery(function(){
 	initSlickCarousel();
 	initSelect2();
-	initFancybox();
+    initFancybox();
 	initStickyHeader();
 	initMobileNav();
 	initResizeEffect();
@@ -12,7 +12,7 @@ jQuery(function() {
 
 	jQuery(document).click(function(e) {
 		var target = e.target;
-		if (jQuery('body').hasClass('nav-active')) {
+		if(jQuery('body').hasClass('nav-active')) {
 			if (!jQuery(target).hasClass('nav-opener') && !jQuery(target).parents('.main-nav').length) {
 				jQuery('body').removeClass('nav-active');
 			}
@@ -22,7 +22,7 @@ jQuery(function() {
 
 // slick init
 function initSlickCarousel() {
-	jQuery('.testimonials-slider').slick({
+		jQuery('.testimonials-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
@@ -53,20 +53,21 @@ function initSlickCarousel() {
 		focusOnSelect: false,
 		infinite: true,
 		autoplay: true,
-		responsive: [{
+		responsive: [
+		    {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 				},
-			},
-			{
+		    },
+		    {
 				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 				},
-			},
+		    },
 		],
 	});
 
@@ -79,20 +80,21 @@ function initSlickCarousel() {
 		focusOnSelect: false,
 		infinite: true,
 		autoplay: true,
-		responsive: [{
+		responsive: [
+		    {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 				},
-			},
-			{
+		    },
+		    {
 				breakpoint: 768,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 				},
-			},
+		    },
 		],
 	});
 
@@ -113,34 +115,35 @@ function initSlickCarousel() {
 		focusOnSelect: false,
 		infinite: true,
 		autoplay: true,
-		responsive: [{
+		responsive: [
+			{
 				breakpoint: 1375,
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 1,
 				},
-			},
-			{
+		    },
+		    {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
 				},
-			},
-			{
+		    },
+		    {
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 				},
-			},
-			{
+		    },
+		    {
 				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
 				},
-			},
+		    },
 		],
 	});
 
@@ -148,11 +151,110 @@ function initSlickCarousel() {
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		rows: 0,
-		arrows: false,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
 		dots: true,
 		focusOnSelect: false,
 		infinite: true,
 		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+		    },
+		],
+	});
+
+	jQuery('.jobs-listing-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+		    },
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+		    },
+		],
+	});
+
+	jQuery('.companies-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		],
+	});
+
+	jQuery('.client_testimonials_slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: false,
+		centerMode:true,
+		centerPadding:0,
+		infinite: true,
+		autoplay: false,
 		responsive: [{
 				breakpoint: 992,
 				settings: {
@@ -170,23 +272,19 @@ function initSlickCarousel() {
 		],
 	});
 
-	jQuery('.companies-slider').slick({
+	jQuery('.featured_candidate_slider').slick({
 		slidesToScroll: 1,
-		slidesToShow: 3,
+		slidesToShow: 2,
 		rows: 0,
-		arrows: true,
-		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
-		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		arrows: false,
 		dots: true,
-		focusOnSelect: false,
 		infinite: true,
-		autoplay: true,
+		autoplay: false,
 		responsive: [{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 					slidesToScroll: 1,
-					arrows: false,
 				},
 			},
 			{
@@ -194,12 +292,11 @@ function initSlickCarousel() {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
-					arrows: false,
 				},
 			},
 		],
 	});
-
+	
 	jQuery('.jobs-carousel').slick({
 		slidesToScroll: 1,
 		slidesToShow: 1,
@@ -239,12 +336,10 @@ function initSlickCarousel() {
 		]
 	});
 	jQuery('.slick-prev').click(function(e) {
-		//e.preventDefault(); 
 		jQuery('.jobs-carousel').slick('slickPrev');
 	});
 
 	jQuery('.slick-next').click(function(e) {
-		//e.preventDefault(); 
 		jQuery('.jobs-carousel').slick('slickNext');
 	});
 
@@ -288,7 +383,7 @@ function initSlickCarousel() {
 			},
 		]
 	});
-	$('.quotes-main').slick({
+	jQuery('.quotes-main').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
@@ -350,48 +445,64 @@ function initSlickCarousel() {
 		],
 	});
 	jQuery('.slick-prev').click(function(e) {
-		//e.preventDefault(); 
 		jQuery('.client-reviews-carousel').slick('slickPrev');
 	});
 
 	jQuery('.slick-next').click(function(e) {
-		//e.preventDefault(); 
 		jQuery('.client-reviews-carousel').slick('slickNext');
+	});
+
+	jQuery('.customers-reviews-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		rows: 0,
+		arrows: false,
+		autoplay: false,
+	});
+
+	jQuery('.slick-prev').click(function(e) {
+		jQuery('.customers-reviews-slider').slick('slickPrev');
+	});
+
+	jQuery('.slick-next').click(function(e) {
+		jQuery('.customers-reviews-slider').slick('slickNext');
 	});
 
 	// services carousel
 	jQuery('.services-carousel').slick({
 		slidesToScroll: 1,
 		slidesToShow: 1,
-		arrows: false,
+		arrows: true,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
 		dots: true,
 		mobileFirst: true,
 		focusOnSelect: false,
 		infinite: true,
 		autoplay: true,
 		responsive: [{
-				breakpoint: 1024,
+				breakpoint: 1199,
 				settings: {
 					slidesToShow: 4,
 					slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 992,
+				breakpoint: 991,
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 576,
+				breakpoint: 575,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 1,
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 449,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -489,7 +600,7 @@ function initSlickCarousel() {
 			}
 		]
 	});
-	$('.text-info-slider').slick({
+	jQuery('.text-info-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
@@ -537,6 +648,93 @@ function initSlickCarousel() {
 			}
 		],
 	});
+
+	// featured jobs carousel
+	jQuery('.featured-jobs-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [{
+				breakpoint: 1199,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 575,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 449,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+	});
+
+	// companies remote slider
+	jQuery('.companies-remote-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: false,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: true,
+		centerMode: true,
+		centerPadding: '0px',
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				},
+		    },
+		],
+	});
+
+	// Quotes carousel
+	jQuery('.quotes-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		arrows: false,
+		dots: true,
+		fade: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true
+	});
 }
 
 // select2 init
@@ -546,7 +744,7 @@ function initSelect2() {
 		// placeholder: 'Select an option'
 	});
 }
-
+  
 // Fancybox init
 function initFancybox() {
 	jQuery('a.lightbox, [data-fancybox]').fancybox();
@@ -554,7 +752,7 @@ function initFancybox() {
 
 // StickyHeader init
 function initStickyHeader() {
-	jQuery(window).scroll(function() {
+	jQuery(window).scroll(function () {
 		var scroll = jQuery(window).scrollTop();
 		if (scroll >= 1) {
 			jQuery("body").addClass("sticky-header");
@@ -566,20 +764,21 @@ function initStickyHeader() {
 
 // MobileNav init
 function initMobileNav() {
-	jQuery('.nav-opener').click(function(e) {
+	jQuery('.nav-opener').click(function (e) {
 		e.preventDefault();
 
-		if (jQuery('body').hasClass('nav-active')) {
+		if(jQuery('body').hasClass('nav-active')) {
 			jQuery('body').removeClass('nav-active');
-		} else {
+		}
+		else {
 			jQuery('body').addClass('nav-active');
 		}
 	});
 
-	jQuery('.nav-close').click(function(e) {
+	jQuery('.nav-close').click(function (e) {
 		e.preventDefault();
 
-		if (jQuery('body').hasClass('nav-active')) {
+		if(jQuery('body').hasClass('nav-active')) {
 			jQuery('body').removeClass('nav-active');
 		}
 	});
@@ -587,13 +786,12 @@ function initMobileNav() {
 
 // Resize Effect function
 function initResizeEffect() {
-	jQuery(window).resize(function() {
-		if (jQuery(window).width() > 991) {
+	jQuery(window).resize(function () {
+		if(jQuery(window).width() > 991) {
 			jQuery('body').removeClass('nav-active');
 		}
 	});
 }
-
 
 // Price Range function
 function initPriceRange() {
@@ -604,42 +802,44 @@ function initPriceRange() {
 		step: 5000,
 		values: [0, 100000],
 		slide: function(event, ui) {
-			$("#amount-start").val("$" + ui.values[0]);
-			$("#amount-end").val("$" + ui.values[1]);
+		  $("#amount-start").val("$ " + ui.values[0]);
+		  $("#amount-end").val("$ " + ui.values[1]);
 		}
-	});
-
-	$("#amount-start").val("$" + $("#slider-range").slider("values", 0));
-	$("#amount-end").val("$" + $("#slider-range").slider("values", 1));
+	  });
+	  
+	  $("#amount-start").val("$ " + $("#slider-range").slider("values", 0));
+	  $("#amount-end").val("$ " + $("#slider-range").slider("values", 1));
 }
 
 
 // Custom Functions
 function initCustomFunctions() {
 	// Checkbox Limit Function
-	jQuery('.buttonShowMore').click(function(e) {
+	jQuery('.buttonShowMore').click(function (e) {
 		e.preventDefault();
 
-		if (jQuery('.checkbox-limit').hasClass('options-active')) {
+		if(jQuery('.checkbox-limit').hasClass('options-active')) {
 			jQuery('.checkbox-limit').removeClass('options-active');
-		} else {
+		}
+		else {
 			jQuery('.checkbox-limit').addClass('options-active');
 		}
 	});
 
 	// Filters Hide Show for Mobile Function
-	jQuery('.filters-opener').click(function(e) {
+	jQuery('.filters-opener').click(function (e) {
 		e.preventDefault();
 
-		if (jQuery('.filters-sidebar').hasClass('filters-active')) {
+		if(jQuery('.filters-sidebar').hasClass('filters-active')) {
 			jQuery('.filters-sidebar').removeClass('filters-active');
-		} else {
+			jQuery(this).removeClass('opener-active');
+		}
+		else {
 			jQuery('.filters-sidebar').addClass('filters-active');
+			jQuery(this).addClass('opener-active');
 		}
 	});
 }
-
-jQuery(window).bind("load resize scroll", function() {});
 
 $window = jQuery(window);
 $slick_slider = jQuery('.candidate-carousel');
@@ -707,7 +907,7 @@ settings = {
 	focusOnSelect: false,
 	mobileFirst: true,
 	infinite: true,
-	autoplay: false,
+	autoplay: true,
 	responsive: [{
 			breakpoint: 1024,
 			settings: "unslick"
