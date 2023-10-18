@@ -455,11 +455,13 @@
     .section-header {
         max-width: 100%;
         text-align: center;
+
         @include media-breakpoint-up(lg) {
             width: 40.7%;
             flex-shrink: 0;
             margin: 29px 0 0;
             text-align: left;
+            align-self: center;
         }
 
         p {
@@ -467,8 +469,12 @@
         }
 
         h2 {
-            margin: 0 0 33px;
+            margin: 0 0 15px;
             line-height: 1.20;
+
+            @include media-breakpoint-up(lg) {
+                margin: 0 0 33px;
+            }
         }
 
         .title-explore {
@@ -487,31 +493,56 @@
         margin: 0;
         list-style: none;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
             margin: 0 -10px;
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
         }
 
         li {
             width: 100%;
-            margin: 0 0 25px;
+            margin: 0 0 15px;
+
+            @include media-breakpoint-up(sm) {
+                width: 50%;
+                padding: 0 10px;
+                margin: 0 0 25px;
+            }
 
             @include media-breakpoint-up(md) {
                 width: 33.333333333%;
-                padding: 0 10px;
-                margin: 0;
             }
 
             @include media-breakpoint-up(lg) {
                 width: 20%;
+                margin: 0 0 32px;
+            }
+
+            &.section-header {
+                max-width: 100%;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 40px;
+
+                @include media-breakpoint-up(md) {
+                    width: 100%;
+                }
+                
+                @include media-breakpoint-up(lg) {
+                    width: 39.7%;
+                    max-width: inherit;
+                    flex-shrink: 0;
+                    margin: 0;
+                    padding-bottom: 25px;
+                    text-align: left;
+                }
             }
 
             .wrap-link {
                 display: block;
                 width: 100%;
+                height: 100%;
                 padding: 50px 10px 42px;
                 border: 1px solid #d5d5d5;
                 border-radius: 60px;
@@ -519,11 +550,12 @@
                 transition: all 0.3s linear;
 
                 @include media-breakpoint-up(md) {
-                    border-radius: 120px;
+                    border-radius: 140px;
                 }
 
                 &:hover {
                     background: #0b183a;
+
                     @include media-breakpoint-up(xxl) {
                         background: url(../images/bg_img15.png) no-repeat;
                         background-size:100% 100%;
@@ -591,7 +623,7 @@
         margin: 0 0 50px;
 
         @include media-breakpoint-up(lg) {
-            margin: 0 0 130px;
+            margin: 0 0 100px;
         }
 
         .info_row {
@@ -623,11 +655,21 @@
     }
 
     .left_align {
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 10px;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 0 25px;
+        }
+
         @include media-breakpoint-up(lg) {
             width: 27.4%;
             flex-shrink: 0;
             margin-right: 4%;
+            display: block;
+            margin: 0;
         }
     }
 
@@ -636,10 +678,16 @@
         overflow: hidden;
 
         &.first {
-            width: 350px;
-            height: 350px;
-            border-radius: 100%;
-            margin: 0 auto 25px;
+            width: 150px;
+            height: 180px;
+            border-radius: 180px;
+            margin: 0 5px 25px;
+
+            @include media-breakpoint-up(md) {
+                margin: 0 15px 25px;
+                width: 200px;
+                height: 350px;
+            }
 
             @include media-breakpoint-up(lg) {
                 height: 420px;
@@ -650,10 +698,16 @@
         }
 
         &.second {
-            width: 350px;
-            height: 350px;
-            margin: 0 auto 25px;
-            border-radius: 100%;
+            width: 150px;
+            height: 180px;
+            margin: 0 5px 25px;
+            border-radius: 180px;
+
+            @include media-breakpoint-up(md) {
+                width: 200px;
+                height: 350px;
+                margin: 0 15px 25px;
+            }
 
             @include media-breakpoint-up(lg) {
                 width: 100%;
@@ -661,17 +715,19 @@
             }
 
             img {
-                border-radius: 100%;
+                border-radius: 180px;
             }
         }
 
         &.third {
             height: 350px;
             border-radius: 100%;
+            display: none;
 
             @include media-breakpoint-up(lg) {
                 height: 450px;
                 border-radius: 180px;
+                display: block;
             }
 
             @include media-breakpoint-up(xxl) {

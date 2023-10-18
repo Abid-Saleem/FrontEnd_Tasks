@@ -20,6 +20,16 @@ jQuery(function(){
 	})
 });
 
+// loaded state script
+(function(w) {
+	w.addEventListener('load', function() {
+		var loader = document.querySelector('html');
+		if (loader) {
+			loader.classList.add('loaded');
+		}
+	});
+}(window));
+
 // slick init
 function initSlickCarousel() {
 		jQuery('.testimonials-slider').slick({
