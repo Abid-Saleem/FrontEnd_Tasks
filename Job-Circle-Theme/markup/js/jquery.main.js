@@ -222,6 +222,43 @@ function initSlickCarousel() {
 		],
 	});
 
+	jQuery('.usa-jobs-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 4,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		variableWidth: true,
+		infinite: true,
+		autoplay: false,
+		responsive: [
+		    {
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					variableWidth: false,
+				},
+		    },
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					variableWidth: false,
+				},
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					variableWidth: false,
+				},
+		    },
+		],
+	});
+
 	jQuery('.companies-slider').slick({
 		slidesToScroll: 1,
 		slidesToShow: 3,
@@ -366,6 +403,32 @@ function initSlickCarousel() {
 			},
 			{
 				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
+
+	jQuery('.leading_brands_slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 2,
+		rows: 0,
+		prevArrow: '<button class="slick-prev"><i class="icon-chevron-left"></i></button>',
+		nextArrow: '<button class="slick-next"><i class="icon-chevron-right"></i></button>',
+		dots: false,
+		infinite: true,
+		autoplay: false,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 576,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
