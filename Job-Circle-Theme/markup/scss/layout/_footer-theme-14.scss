@@ -1,4 +1,4 @@
-/* Footer Theme 9 Styles */
+/* Footer Theme 14 Styles */
 .footer-theme-14 {
 	padding: 40px 0;
 	font-family: 'DM Sans', sans-serif;
@@ -112,38 +112,38 @@
 			}
 		}
 	}
-}
 
-.social_links {
-	padding: 0;
-	margin: 0 -5px 26px;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	list-style: none;
-	justify-content: center;
-
-	li {
-		padding: 0 5px;
-		margin: 0 0 10px;
-
-		a {
-			display: inline-flex;
-			align-items: center;
-			justify-content: center;
-			width: 46px;
-			height: 46px;
-			border: 1px solid #fff;
-			border-radius: 100%;
-
-			&:hover {
-				background: #20ca6f;
-			}
-
-			.icon {
-				font-size: 15px;
-				color: #fff;
-				margin: 0;
+	.social_links {
+		padding: 0;
+		margin: 0 -5px 26px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		list-style: none;
+		justify-content: center;
+	
+		li {
+			padding: 0 5px;
+			margin: 0 0 10px;
+	
+			a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 46px;
+				height: 46px;
+				border: 1px solid #fff;
+				border-radius: 100%;
+	
+				&:hover {
+					background: #20ca6f;
+				}
+	
+				.icon {
+					font-size: 15px;
+					color: #fff;
+					margin: 0;
+				}
 			}
 		}
 	}
