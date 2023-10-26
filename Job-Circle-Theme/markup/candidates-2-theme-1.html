@@ -4,18 +4,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.png">
+	<!-- Page Title -->
 	<title>Job Circle</title>
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!-- Additional Plugins Styles -->
+	<link rel="stylesheet" href="css/vendors.css">
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/select2.min.css">
-	<link rel="stylesheet" href="css/fancybox.css">
+	<!-- Site main stylesheet-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
+		<div class="page-loader">
+			<div class="loader-animmte"></div>
+			<div class="loader-logo">
+				<img src="images/favicon.png" alt="Crypto Assassin">
+			</div>
+		</div>
 		<!-- header of the page -->
 		<header class="header header-theme-1">
 			<div class="container">
@@ -32,37 +45,110 @@
 						<a href="#" class="nav-close d-flex d-lg-none"><span></span></a>
 						<!-- navigation -->
 						<ul class="navigation">
-							<li class="active"><a href="index.html">Home</a></li>
+							<li class="mega-menu">
+								<a class="dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+								<div class="dropdown-menu mega">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index.html">Theme 1</a></li>
+													<li><a class="dropdown-item" href="index-theme-2.html">Theme 2</a></li>
+													<li><a class="dropdown-item" href="index-theme-3.html">Theme 3</a></li>
+													<li><a class="dropdown-item" href="index-theme-4.html">Theme 4</a></li>
+													<li><a class="dropdown-item" href="index-theme-5.html">Theme 5</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index-theme-6.html">Theme 6</a></li>
+													<li><a class="dropdown-item" href="index-theme-7.html">Theme 7</a></li>
+													<li><a class="dropdown-item" href="index-theme-8.html">Theme 8</a></li>
+													<li><a class="dropdown-item" href="index-theme-9.html">Theme 9</a></li>
+													<li><a class="dropdown-item" href="index-theme-10.html">Theme 10</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index-theme-11.html">Theme 11</a></li>
+													<li><a class="dropdown-item" href="index-theme-12.html">Theme 12</a></li>
+													<li><a class="dropdown-item" href="index-theme-13.html">Theme 13</a></li>
+													<li><a class="dropdown-item" href="index-theme-14.html">Theme 14</a></li>
+													<li><a class="dropdown-item" href="index-theme-15.html">Theme 15</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index-theme-16.html">Theme 16</a></li>
+													<li><a class="dropdown-item" href="index-theme-17.html">Theme 17</a></li>
+													<li><a class="dropdown-item" href="index-1.html">Theme 18</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
 							<li><a href="#">Browse Jobs</a></li>
 							<li><a href="#">Pricing</a></li>
-							<li>
+							<li class="mega-menu">
 								<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+								<div class="dropdown-menu mega">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="about-theme-1.html">About</a></li>
+													<li><a class="dropdown-item" href="account-theme-1.html">Account</a></li>
+													<li><a class="dropdown-item" href="blog-1-theme-1.html">Blog layout 1</a></li>
+													<li><a class="dropdown-item" href="blog-2-theme-1.html">Blog layout 2</a></li>
+													<li><a class="dropdown-item" href="blog-detail-theme-1.html">Blog Detail</a></li>
+													<li><a class="dropdown-item" href="candidates-1-theme-1.html">Candidates Layout 1</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li class="active"><a class="dropdown-item" href="candidates-2-theme-1.html">Candidates Layout 2</a></li>
+													<li><a class="dropdown-item" href="candidate-profile-detail-1-theme-1.html">Candidate Profile</a></li>
+													<li><a class="dropdown-item" href="company-theme-1.html">Company List</a></li>
+													<li><a class="dropdown-item" href="company-detail-1-theme-1.html">Company Detail</a></li>
+													<li><a class="dropdown-item" href="faq-theme-1.html">FAQ</a></li>
+													<li><a class="dropdown-item" href="job-grid-1-theme-1.html">job Grid Layout 1</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="job-grid-2-theme-1.html">job Grid Layout 2</a></li>
+													<li><a class="dropdown-item" href="job-grid-3-theme-1.html">job Grid Layout 3</a></li>
+													<li><a class="dropdown-item" href="job-list-1-theme-1.html">Job List Layout 1</a></li>
+													<li><a class="dropdown-item" href="job-list-2-theme-1.html">Job List Layout 2</a></li>
+													<li><a class="dropdown-item" href="job-list-3-theme-1.html">Job List Layout 3</a></li>
+													<li><a class="dropdown-item" href="job-detail-1-theme-1.html">Job Detail Layout 1</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="job-detail-2-theme-1.html">Job Detail Layout 2</a></li>
+													<li><a class="dropdown-item" href="pricing-plans-theme-1.html">Pricing Plans</a></li>
+													<li><a class="dropdown-item" href="contact-theme-1.html">Contact Us</a></li>
+													<li><a class="dropdown-item" href="404-theme-1.html">Page 404</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
 								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="index.html">Home</a></li>
-									<li class="active"><a class="dropdown-item" href="index-thame-1.html">Home Theme 1</a></li>
-									<li><a class="dropdown-item" href="index-thame-2.html">Home Theme 2</a></li>
-									<li><a class="dropdown-item" href="index-thame-3.html">Home Theme 3</a></li>
-									<li><a class="dropdown-item" href="index-thame-4.html">Home Theme 4</a></li>
-									<li><a class="dropdown-item" href="index-thame-5.html">Home Theme 5</a></li>
-									<li><a class="dropdown-item" href="index-thame-6.html">Home Theme 6</a></li>
-									<li><a class="dropdown-item" href="index-thame-7.html">Home Theme 7</a></li>
-									<li><a class="dropdown-item" href="index-thame-8.html">Home Theme 8</a></li>
-									<li><a class="dropdown-item" href="about.html">About</a></li>
-									<li><a class="dropdown-item" href="blog.html">Blog</a></li>
-									<li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
-									<li><a class="dropdown-item" href="candidate.html">Candidate</a></li>
-									<li><a class="dropdown-item" href="candidate-detail.html">Candidate Detail</a></li>
-									<li><a class="dropdown-item" href="company-list.html">Company List</a></li>
-									<li><a class="dropdown-item" href="company-detail.html">Company Detail</a></li>
-									<li><a class="dropdown-item" href="job-list.html">Job List</a></li>
-									<li><a class="dropdown-item" href="job-list2.html">Job List 2</a></li>
-									<li><a class="dropdown-item" href="job-list3.html">Job List 3</a></li>
-									<li><a class="dropdown-item" href="job-list4.html">Job List Grid</a></li>
-									<li><a class="dropdown-item" href="job-detail.html">Job Detail</a></li>
-									<li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+									<li><a class="dropdown-item" href="about-theme-1.html">About</a></li>
+									<li><a class="dropdown-item" href="account-theme-1.html">Account</a></li>
+									<li><a class="dropdown-item" href="contact-theme-1.html">Contact Us</a></li>
 								</ul>
 							</li>
-							<li><a href="#">News</a></li>
 							<li><a href="contact.html">Contact</a></li>
 							<li class="text-login"><a href="#">Login</a></li>
 							<li><a class="btn btn-green btn-sm" href="#"><span class="btn-text">Post a Job</span></a></li>
@@ -719,10 +805,14 @@
 			</div>
 		</footer>
 	</div>
+	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<!-- jQuery Library -->
 	<script src="js/jquery-3.6.4.min.js"></script>
+	<!-- jQuery Plugins -->
 	<script src="js/vendor.js"></script>
+	<!-- jQuery Main -->
 	<script src="js/jquery.main.js"></script>
 </body>
 </html>

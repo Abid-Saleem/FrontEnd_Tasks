@@ -4,25 +4,38 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="images/favicon.png">
+	<!-- Page Title -->
 	<title>Job Circle</title>
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!-- Additional Plugins Styles -->
+	<link rel="stylesheet" href="css/vendors.css">
+	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/select2.min.css">
-	<link rel="stylesheet" href="css/fancybox.css">
+	<!-- Site main stylesheet-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
+		<div class="page-loader">
+			<div class="loader-animmte"></div>
+			<div class="loader-logo">
+				<img src="images/favicon.png" alt="Crypto Assassin">
+			</div>
+		</div>
 		<!-- header of the page -->
-		<header class="header">
+		<header class="header header-theme-1">
 			<div class="container">
 				<strong class="logo">
 					<a href="index.html">
-						<img class="normal-logo" src="images/logo.webp" width="224" height="62" alt="Job Circle">
-						<img class="sticky-logo" src="images/sticky-logo.webp" width="224" height="62" alt="Job Circle">
+						<img class="normal-logo" src="images/logo-theme-2.png" width="175" height="43" alt="Job Circle">
+						<img class="sticky-logo" src="images/logo-theme-2.png" width="175" height="43" alt="Job Circle">
 					</a>
 				</strong>
 				<!-- main menu -->
@@ -32,48 +45,127 @@
 						<a href="#" class="nav-close d-flex d-lg-none"><span></span></a>
 						<!-- navigation -->
 						<ul class="navigation">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li>
+							<li class="mega-menu active">
+								<a class="dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+								<div class="dropdown-menu mega">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index.html">Theme 1</a></li>
+													<li><a class="dropdown-item" href="index-theme-2.html">Theme 2</a></li>
+													<li><a class="dropdown-item" href="index-theme-3.html">Theme 3</a></li>
+													<li><a class="dropdown-item" href="index-theme-4.html">Theme 4</a></li>
+													<li><a class="dropdown-item" href="index-theme-5.html">Theme 5</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index-theme-6.html">Theme 6</a></li>
+													<li><a class="dropdown-item" href="index-theme-7.html">Theme 7</a></li>
+													<li><a class="dropdown-item" href="index-theme-8.html">Theme 8</a></li>
+													<li><a class="dropdown-item" href="index-theme-9.html">Theme 9</a></li>
+													<li><a class="dropdown-item" href="index-theme-10.html">Theme 10</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index-theme-11.html">Theme 11</a></li>
+													<li><a class="dropdown-item" href="index-theme-12.html">Theme 12</a></li>
+													<li><a class="dropdown-item" href="index-theme-13.html">Theme 13</a></li>
+													<li><a class="dropdown-item" href="index-theme-14.html">Theme 14</a></li>
+													<li><a class="dropdown-item" href="index-theme-15.html">Theme 15</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<!-- <strong class="title">Column Heading</strong> -->
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="index-theme-16.html">Theme 16</a></li>
+													<li><a class="dropdown-item" href="index-theme-17.html">Theme 17</a></li>
+													<li><a class="dropdown-item" href="index-1.html">Theme 18</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">Browse Jobs</a></li>
+							<li><a href="#">Pricing</a></li>
+							<li class="mega-menu">
 								<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+								<div class="dropdown-menu mega">
+									<div class="container">
+										<div class="row">
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="about-theme-1.html">About</a></li>
+													<li><a class="dropdown-item" href="account-theme-1.html">Account</a></li>
+													<li><a class="dropdown-item" href="blog-1-theme-1.html">Blog layout 1</a></li>
+													<li><a class="dropdown-item" href="blog-2-theme-1.html">Blog layout 2</a></li>
+													<li><a class="dropdown-item" href="blog-detail-theme-1.html">Blog Detail</a></li>
+													<li><a class="dropdown-item" href="candidates-1-theme-1.html">Candidates Layout 1</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="candidates-2-theme-1.html">Candidates Layout 2</a></li>
+													<li><a class="dropdown-item" href="candidate-profile-detail-1-theme-1.html">Candidate Profile</a></li>
+													<li><a class="dropdown-item" href="company-theme-1.html">Company List</a></li>
+													<li><a class="dropdown-item" href="company-detail-1-theme-1.html">Company Detail</a></li>
+													<li><a class="dropdown-item" href="faq-theme-1.html">FAQ</a></li>
+													<li><a class="dropdown-item" href="job-grid-1-theme-1.html">job Grid Layout 1</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="job-grid-2-theme-1.html">job Grid Layout 2</a></li>
+													<li><a class="dropdown-item" href="job-grid-3-theme-1.html">job Grid Layout 3</a></li>
+													<li><a class="dropdown-item" href="job-list-1-theme-1.html">Job List Layout 1</a></li>
+													<li><a class="dropdown-item" href="job-list-2-theme-1.html">Job List Layout 2</a></li>
+													<li><a class="dropdown-item" href="job-list-3-theme-1.html">Job List Layout 3</a></li>
+													<li><a class="dropdown-item" href="job-detail-1-theme-1.html">Job Detail Layout 1</a></li>
+												</ul>
+											</div>
+											<div class="col-12 col-lg-3">
+												<ul class="list-unstyled m-0">
+													<li><a class="dropdown-item" href="job-detail-2-theme-1.html">Job Detail Layout 2</a></li>
+													<li><a class="dropdown-item" href="pricing-plans-theme-1.html">Pricing Plans</a></li>
+													<li><a class="dropdown-item" href="contact-theme-1.html">Contact Us</a></li>
+													<li><a class="dropdown-item" href="404-theme-1.html">Page 404</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
 								<ul class="dropdown-menu">
-									<li class="active"><a class="dropdown-item" href="index.html">Home</a></li>
-									<li><a class="dropdown-item" href="index-thame-2.html">Home Theme 2</a></li>
-									<li><a class="dropdown-item" href="about.html">About</a></li>
-									<li><a class="dropdown-item" href="blog.html">Blog</a></li>
-									<li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
-									<li><a class="dropdown-item" href="candidate.html">Candidate</a></li>
-									<li><a class="dropdown-item" href="candidate-detail.html">Candidate Detail</a></li>
-									<li><a class="dropdown-item" href="company-list.html">Company List</a></li>
-									<li><a class="dropdown-item" href="company-detail.html">Company Detail</a></li>
-									<li><a class="dropdown-item" href="job-list.html">Job List</a></li>
-									<li><a class="dropdown-item" href="job-list2.html">Job List 2</a></li>
-									<li><a class="dropdown-item" href="job-list3.html">Job List 3</a></li>
-									<li><a class="dropdown-item" href="job-list4.html">Job List Grid</a></li>
-									<li><a class="dropdown-item" href="job-detail.html">Job Detail</a></li>
-									<li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+									<li><a class="dropdown-item" href="about-theme-1.html">About</a></li>
+									<li><a class="dropdown-item" href="account-theme-1.html">Account</a></li>
+									<li><a class="dropdown-item" href="contact-theme-1.html">Contact Us</a></li>
 								</ul>
 							</li>
 							<li><a href="contact.html">Contact</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#"><i class="icon-user"></i> Login/Register</a></li>
-							<li><a class="btn btn-info" href="#"><span class="btn-text">Post a Job</span></a></li>
+							<li class="text-login"><a href="#">Login</a></li>
+							<li><a class="btn btn-green btn-sm" href="#"><span class="btn-text">Post a Job</span></a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</header>
 		<!-- Visual of the page -->
-		<div class="visual-block bg-blue pt-100 pt-md-140 pt-xl-180 pt-xxl-230 pb-25 pb-md-45 text-white">
-			<span class="shape top"><img src="images/banner-shape-top.webp" width="93" height="241" alt="Banner Shape Top"></span>
-			<span class="shape bottom"><img src="images/banner-shape-bottom.webp" width="1115" height="347" alt="Banner Shape Bottom"></span>
+		<div class="visual-block visual-theme-1 bg-dark-green pt-40 pt-md-65 pb-40 pb-md-65 pb-xl-85 text-white">
 			<div class="container position-relative">
 				<div class="row justify-content-between">
-					<div class="col-12 col-lg-7 position-relative">
-						<div class="icons-image"><img src="images/banner-icons.webp" width="446" height="638" alt="Icons"></div>
+					<div class="col-12 col-lg-7 col-xl-6 position-relative">
 						<!-- visual textbox -->
 						<div class="visual-textbox">
-							<h1>Finding a Job Has Never Been This Easy</h1>
-							<p>Create, Build, Collaborate and Grow with Us More faster Now</p>
+							<h1>Find The Perfect Job For You</h1>
+							<p>Fill your job in hours, not weeks. Search for free.</p>
 							<!-- search form -->
 							<form class="form-search" action="#">
 								<div class="fields-holder bg-white text-black d-flex flex-wrap flex-md-nowrap">
@@ -340,47 +432,30 @@
 										</select>
 									</div>
 								</div>
-								<button class="btn btn-primary" type="submit"><span class="btn-text">Search Now</span></button>
+								<button class="btn btn-green btn-sm" type="submit"><span class="btn-text">Find Job</span></button>
 							</form>
+							<div class="popular-searches">
+								<strong class="subtitle">Popular Searches:</strong>
+								<ul>
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Business</a></li>
+									<li><a href="#">Video</a></li>
+								</ul>
+							</div>
+							<div class="bg-patterns">
+								<img src="images/bg-pattern.png" width="242" height="423" alt="Icons">
+							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end">
+					<div class="col-12 col-lg-5 col-xl-6 d-flex justify-content-center align-items-center">
 						<!-- visual Image -->
 						<div class="visual-image position-relative">
-							<img src="images/image-banner.webp" width="563" height="733" alt="Finding a Job Has Never Been This Easy">
-							<!-- recruiter box -->
-							<div class="recruiter-box">
-								<div class="recruiter-image">
-									<img src="images/img-recruiter.webp" alt="Recruiter">
-								</div>
-								<strong class="title">Recruiter</strong>
+							<img src="images/image-banner2.png" width="642" height="494" alt="Find The Perfect Job For You">
+							<div class="icons-black">
+								<img src="images/icon-pattern01.png" width="306" height="321" alt="Icons">
 							</div>
-							<!-- users box -->
-							<div class="users-box">
-								<strong class="title">20000+ User</strong>
-								<ul class="users-list">
-									<li><img src="images/img-thumb01.webp" width="60" height="60" alt="User"></li>
-									<li><img src="images/img-thumb02.webp" width="60" height="60" alt="User"></li>
-									<li><img src="images/img-thumb03.webp" width="60" height="60" alt="User"></li>
-									<li><img src="images/img-thumb04.webp" width="60" height="60" alt="User"></li>
-									<li><i class="icon-plus"></i></li>
-								</ul>
-							</div>
-							<!-- Vacancy Box -->
-							<div class="vacancy-box">
-								<div class="vacancy-wrap d-flex align-items-end justify-content-between position-relative">
-									<strong class="title"><span>Afiniti Studio</span> Django Developer</strong>
-									<a href="#" class="btn btn-info"><span class="btn-text">Apply</span></a>
-									<div class="cursor"><img src="images/cursor.webp" alt="Cursor"></div>
-								</div>
-								<!-- Star Ratings -->
-								<ul class="star-ratings">
-									<li><i class="icon-star filled"></i></li>
-									<li><i class="icon-star filled"></i></li>
-									<li><i class="icon-star filled"></i></li>
-									<li><i class="icon-star filled"></i></li>
-									<li><i class="icon-star"></i></li>
-								</ul>
+							<div class="icon-circle">
+								<img src="images/icon-pattern02.png" width="95" height="95" alt="Icons">
 							</div>
 						</div>
 					</div>
@@ -389,700 +464,599 @@
 		</div>
 		<!-- contain main informative part of the site -->
 		<main class="main">
-			<!-- Popular Categories Section -->
-			<section class="section section-categories pt-35 pt-md-50 pt-lg-65 pb-0">
+			<!-- Trending Categories Section -->
+			<section class="section section-theme-1 section-trending-categories pt-35 pt-md-50 pt-lg-65 pb-35px pb-md-50 pb-lg-65">
 				<div class="container">
 					<!-- Section header -->
 					<header class="section-header text-center mb-30 mb-md-45 mb-xl-60">
-						<h2>Popular <span class="text-primary">Categories</span></h2>
 						<div class="seprator"></div>
-						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
+						<h2>Trending Categories</h2>
+						<p>Beneath each of these categories, you can find its most popular</p>
 					</header>
-					<div class="row">
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Category Box -->
-							<a href="#" class="category-box">
-								<div class="textbox">
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-									<h3 class="h5">Software<br> Development</h3>
-									<p>Mauris sit amet enim at nunc cursus finibus vel eget odio. Phasellus vitae metus leo.</p>
+					<div class="trending-categories-slider">
+						<div class="slick-slide">
+							<a href="#" class="trending-categories-box">
+								<div class="icon">
+									<img src="images/line-icon01.png" width="49" height="49" alt="UI/UX Design">
 								</div>
-								<footer class="post-footer">
-									<strong class="num-jobs">1200+ Jobs</strong>
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-								</footer>
+								<div class="textbox">
+									<strong class="h6">UI/UX Design</strong>
+									<span class="subtext">12k+ Jobs</span>
+								</div>
 							</a>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Category Box -->
-							<a href="#" class="category-box">
-								<div class="textbox">
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-									<h3 class="h5">Business<br> Development</h3>
-									<p>Mauris sit amet enim at nunc cursus finibus vel eget odio. Phasellus vitae metus leo.</p>
+						<div class="slick-slide">
+							<a href="#" class="trending-categories-box">
+								<div class="icon">
+									<img src="images/line-icon02.png" width="56" height="56" alt="Marketing">
 								</div>
-								<footer class="post-footer">
-									<strong class="num-jobs">1200+ Jobs</strong>
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-								</footer>
+								<div class="textbox">
+									<strong class="h6">Marketing</strong>
+									<span class="subtext">12k+ Jobs</span>
+								</div>
 							</a>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Category Box -->
-							<a href="#" class="category-box">
-								<div class="textbox">
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-									<h3 class="h5">Project<br> Managment</h3>
-									<p>Mauris sit amet enim at nunc cursus finibus vel eget odio. Phasellus vitae metus leo.</p>
+						<div class="slick-slide">
+							<a href="#" class="trending-categories-box">
+								<div class="icon">
+									<img src="images/line-icon03.png" width="51" height="51" alt="Development">
 								</div>
-								<footer class="post-footer">
-									<strong class="num-jobs">1200+ Jobs</strong>
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-								</footer>
+								<div class="textbox">
+									<strong class="h6">Development</strong>
+									<span class="subtext">12k+ Jobs</span>
+								</div>
 							</a>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Category Box -->
-							<a href="#" class="category-box">
-								<div class="textbox">
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-									<h3 class="h5">Web<br> Designer</h3>
-									<p>Mauris sit amet enim at nunc cursus finibus vel eget odio. Phasellus vitae metus leo.</p>
+						<div class="slick-slide">
+							<a href="#" class="trending-categories-box">
+								<div class="icon">
+									<img src="images/line-icon04.png" width="52" height="52" alt="Health and Care">
 								</div>
-								<footer class="post-footer">
-									<strong class="num-jobs">1200+ Jobs</strong>
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-								</footer>
+								<div class="textbox">
+									<strong class="h6">Health and Care</strong>
+									<span class="subtext">12k+ Jobs</span>
+								</div>
 							</a>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Category Box -->
-							<a href="#" class="category-box">
-								<div class="textbox">
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-									<h3 class="h5">Customer<br> Service</h3>
-									<p>Mauris sit amet enim at nunc cursus finibus vel eget odio. Phasellus vitae metus leo.</p>
+						<div class="slick-slide">
+							<a href="#" class="trending-categories-box">
+								<div class="icon">
+									<img src="images/line-icon05.png" width="55" height="55" alt="Automotive">
 								</div>
-								<footer class="post-footer">
-									<strong class="num-jobs">1200+ Jobs</strong>
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-								</footer>
+								<div class="textbox">
+									<strong class="h6">Automotive</strong>
+									<span class="subtext">12k+ Jobs</span>
+								</div>
 							</a>
 						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Category Box -->
-							<a href="#" class="category-box">
-								<div class="textbox">
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-									<h3 class="h5">Product<br> Development</h3>
-									<p>Mauris sit amet enim at nunc cursus finibus vel eget odio. Phasellus vitae metus leo.</p>
+						<div class="slick-slide">
+							<a href="#" class="trending-categories-box">
+								<div class="icon">
+									<img src="images/line-icon03.png" width="51" height="51" alt="Development">
 								</div>
-								<footer class="post-footer">
-									<strong class="num-jobs">1200+ Jobs</strong>
-									<div class="icon">
-										<i class="icon-document-code"></i>
-									</div>
-								</footer>
+								<div class="textbox">
+									<strong class="h6">Development</strong>
+									<span class="subtext">12k+ Jobs</span>
+								</div>
 							</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- Featured Jobs Section -->
-			<section class="section section-categories pt-35 pb-35 pb-md-50 pb-xl-75 pb-xxl-105">
+			<!-- Popular Jobs Section -->
+			<section class="section section-theme-1 section-popular-jobs pt-35 pt-md-50 pt-lg-65 pb-35 pb-md-50 pb-lg-65">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-45 mb-xl-55">
-						<h2>Featured <span class="text-primary">Jobs</span></h2>
+					<header class="section-header text-center mb-30 mb-md-45 mb-xl-60">
 						<div class="seprator"></div>
-						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
+						<h2>Most Popular Jobs</h2>
+						<p>Beneath each of these categories, you can find its most popular</p>
 					</header>
 					<div class="row">
-						<div class="col-12 col-md-6 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="icon-box">
-									<img src="images/icon-feature01.webp" width="77" height="85" alt="Metronic Media Solution">
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Senior Front End Developer</a></h3>
-									<strong class="subtitle"><span class="txt">Metronic Media Solution</span></strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-bookmark"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
+						<div class="col-12 col-lg-6 mb-15 mb-md-25 mb-lg-35">
+							<article class="popular-jobs-box">
+								<div class="box-holder">
+									<div class="job-info">
+										<div class="img-holder">
+											<img src="images/company-logo01.jpg" width="78" height="78" alt="Image Description">
+										</div>
+										<div class="textbox">
+											<h3 class="h5">Product Marketing Manager</h3>
+											<ul class="meta-list">
+												<li><span class="text">By WebTechnology</span></li>
+												<li><i class="icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
+										</div>
+									</div>
+									<footer class="jobs-foot">
+										<strong class="amount">$1000 - $1200<span>/month</span></strong>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Now</span></a>
+									</footer>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="icon-box">
-									<img src="images/icon-feature02.webp" width="71" height="72" alt="Circle Media">
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">UI/UX Developer</a></h3>
-									<strong class="subtitle"><span class="txt">Circle Media</span></strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-bookmark"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
+						<div class="col-12 col-lg-6 mb-15 mb-md-25 mb-lg-35">
+							<article class="popular-jobs-box">
+								<div class="box-holder">
+									<div class="job-info">
+										<div class="img-holder">
+											<img src="images/company-logo02.jpg" width="78" height="78" alt="Image Description">
+										</div>
+										<div class="textbox">
+											<h3 class="h5">Junior Graphic Designer</h3>
+											<ul class="meta-list">
+												<li><span class="text">By Websikon</span></li>
+												<li><i class="icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
+										</div>
+									</div>
+									<footer class="jobs-foot">
+										<strong class="amount">$1000 - $1200<span>/month</span></strong>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Now</span></a>
+									</footer>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="icon-box">
-									<img src="images/icon-feature03.webp" width="57" height="82" alt="Bear Media">
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Django Developer</a></h3>
-									<strong class="subtitle"><span class="txt">Bear Media</span></strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-bookmark"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
+						<div class="col-12 col-lg-6 mb-15 mb-md-25 mb-lg-35">
+							<article class="popular-jobs-box">
+								<div class="box-holder">
+									<div class="job-info">
+										<div class="img-holder">
+											<img src="images/company-logo05.jpg" width="78" height="78" alt="Image Description">
+										</div>
+										<div class="textbox">
+											<h3 class="h5">Marketing Manager</h3>
+											<ul class="meta-list">
+												<li><span class="text">By Muxcorp</span></li>
+												<li><i class="icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
+										</div>
+									</div>
+									<footer class="jobs-foot">
+										<strong class="amount">$1000 - $1200<span>/month</span></strong>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Now</span></a>
+									</footer>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="icon-box">
-									<img src="images/icon-feature04.webp" width="54" height="76" alt="Idea Media">
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Social Media Manager</a></h3>
-									<strong class="subtitle"><span class="txt">Idea Media</span></strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-bookmark"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
+						<div class="col-12 col-lg-6 mb-15 mb-md-25 mb-lg-35">
+							<article class="popular-jobs-box">
+								<div class="box-holder">
+									<div class="job-info">
+										<div class="img-holder">
+											<img src="images/company-logo04.jpg" width="78" height="78" alt="Image Description">
+										</div>
+										<div class="textbox">
+											<h3 class="h5">Finance Manager</h3>
+											<ul class="meta-list">
+												<li><span class="text">By Rokwebs</span></li>
+												<li><i class="icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
+										</div>
+									</div>
+									<footer class="jobs-foot">
+										<strong class="amount">$1000 - $1200<span>/month</span></strong>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Now</span></a>
+									</footer>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="icon-box">
-									<img src="images/icon-feature05.webp" width="84" height="84" alt="Fossil Wood">
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Laravel Developer</a></h3>
-									<strong class="subtitle"><span class="txt">Fossil Wood</span></strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-bookmark"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
+						<div class="col-12 col-lg-6 mb-15 mb-md-25 mb-lg-35">
+							<article class="popular-jobs-box">
+								<div class="box-holder">
+									<div class="job-info">
+										<div class="img-holder">
+											<img src="images/company-logo06.jpg" width="78" height="78" alt="Image Description">
+										</div>
+										<div class="textbox">
+											<h3 class="h5">Restaurant Team</h3>
+											<ul class="meta-list">
+												<li><span class="text">By Develpersoft</span></li>
+												<li><i class="icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
+										</div>
+									</div>
+									<footer class="jobs-foot">
+										<strong class="amount">$1000 - $1200<span>/month</span></strong>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Now</span></a>
+									</footer>
 								</div>
 							</article>
 						</div>
-						<div class="col-12 col-md-6 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="icon-box">
-									<img src="images/icon-feature06.webp" width="87" height="41" alt="Fossil Wood">
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Mern Stack Developer</a></h3>
-									<strong class="subtitle"><span class="txt">Fossil Wood</span></strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-bookmark"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
+						<div class="col-12 col-lg-6 mb-15 mb-md-25 mb-lg-35">
+							<article class="popular-jobs-box">
+								<div class="box-holder">
+									<div class="job-info">
+										<div class="img-holder">
+											<img src="images/company-logo07.jpg" width="78" height="78" alt="Image Description">
+										</div>
+										<div class="textbox">
+											<h3 class="h5">Software Engineer</h3>
+											<ul class="meta-list">
+												<li><span class="text">By Geniouslab</span></li>
+												<li><i class="icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
+										</div>
+									</div>
+									<footer class="jobs-foot">
+										<strong class="amount">$1000 - $1200<span>/month</span></strong>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Now</span></a>
+									</footer>
 								</div>
 							</article>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-12 text-center pt-15 pt-md-25">
+							<a href="#" class="btn btn-green btn-sm"><span class="btn-text">View All Jobs</span></a>
+						</div>
+					</div>
 				</div>
 			</section>
-			<!-- Profile Notified Section -->
-			<section class="section bg-overlay section-notified pt-35 pt-md-50 pt-lg-80 pb-35 pb-md-50 pb-lg-80" style="background-image: url('images/bg-notified.webp');">
+			<!-- Explores Section -->
+			<section class="section section-theme-1 section-explores bg-light-gray pt-35 pt-md-50 pt-lg-65 pt-xl-125 pb-35 pb-md-50 pb-lg-65 pb-xl-125">
 				<div class="container">
-					<div class="row align-items-center align-items-xxxl-start">
+					<div class="row flex-column-reverse flex-lg-row align-items-center">
+						<div class="col-12 col-lg-6 mb-15 mb-lg-0">
+							<div class="explores-image-box">
+								<div class="img-pattern"><img src="images/explore-pattern.png" width="723" height="461" alt="Image Description"></div>
+								<div class="image-holder">
+									<img src="images/img-explore.jpg" width="560" height="570" alt="Image Description">
+								</div>
+							</div>
+						</div>
 						<div class="col-12 col-lg-6">
-							<div class="image-holder">
-								<img src="images/image-notified.webp" width="748" height="678" alt="Get Your Profile to Get Noticed All Around The World">
+							<div class="section-header">
+								<h2>Explore a faster, easier, and better job <span class="text-outlined">search</span></h2>
+								<p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide. The right job is out there.</p>
+								<ul class="check-list">
+									<li>Duis aute irure dolor in reprehenderit</li>
+									<li>Voluptate velit esse cillum dolore</li>
+									<li>Fugiat nulla pariatur. Excepteur sint occaecat</li>
+								</ul>
 							</div>
 						</div>
-						<div class="col-12 col-lg-6 pt-lg-10">
-							<div class="textbox">
-								<h2 class="h1">Get Your <span class="text-primary">Profile to</span> Get Noticed All <span class="text-primary">Around The World</span></h2>
-								<p>Pellentesque porta, ex non posuere consequat, lacus nulla lobortis mi, nec imperdiet nulla lorem in mauris. Morbi interdum quam ac augue . Integer eu efficitur mauris. </p>
-								<p>Etiam ut ante vel dolor mattis fermentum id vel lorem. Proin tincidunt pretium augue, at blandit felirem in maus convallis non.</p>
-								<a href="#" class="btn btn-primary"><span class="btn-text">Find More</span></a>
+					</div>
+					<div class="row align-items-center pt-35 pt-md-60 pt-lg-100">
+						<div class="col-12 col-lg-6 col-xl-5 mb-30 mb-lg-0">
+							<div class="section-header mb-0">
+								<h2>Find a Job You'll Love with The <span class="text-outlined">#1&nbsp;Job</span> Site</h2>
+								<p>Your next role could be with one of these leading companies.</p>
 							</div>
+						</div>
+						<div class="col-12 col-lg-6 col-xl-7">
+							<ul class="sites-list">
+								<li><a href="#"><img src="images/com-logo01.png" alt="Image Description"></a></li>
+								<li><a href="#"><img src="images/com-logo02.png" alt="Image Description"></a></li>
+								<li><a href="#"><img src="images/com-logo03.png" alt="Image Description"></a></li>
+								<li><a href="#"><img src="images/com-logo04.png" alt="Image Description"></a></li>
+								<li><a href="#"><img src="images/com-logo05.png" alt="Image Description"></a></li>
+								<li><a class="btn-more" href="#"><i class="icon-chevron-right"></i></a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- Featured Testimonials Section -->
-			<section class="section section-testimonials pt-35 pt-md-50 pt-lg-60 pb-20 pb-md-40">
+			<!-- How Works Section -->
+			<section class="section section-theme-1 section-how-works pt-45 pt-md-50 pt-lg-65 pt-xl-85 pt-xxl-110 pb-60 pb-md-80 pb-xl-85 pb-xxl-110 pb-xxxl-150">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-45 mb-lg-50">
-						<h2>Featured <span class="text-primary">Testimony</span></h2>
+					<header class="section-header text-center mb-30 mb-md-45 mb-xl-60">
 						<div class="seprator"></div>
-						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
+						<h2>How it’s work?</h2>
+						<p>Beneath each of these categories, you can find its most popular</p>
 					</header>
-					<!-- Testimonials Block -->
-					<div class="testimonials-block">
-						<div class="map-image"><img src="images/bg-map.webp" width="1004" height="599" alt="Featured Testimony"></div>
-						<span class="quote-icon">“</span>
-						<!-- Thumbnail Slider -->
-						<div class="thumbnail-slider">
-							<div class="slick-slide">
-								<div class="thumbnail"><img src="images/image-thumb01.webp" width="115" height="115" alt="Tom Affleck"></div>
-							</div>
-							<div class="slick-slide">
-								<div class="thumbnail"><img src="images/image-thumb02.webp" width="115" height="115" alt="Tom Affleck"></div>
-							</div>
-							<div class="slick-slide">
-								<div class="thumbnail"><img src="images/image-thumb03.webp" width="115" height="115" alt="Tom Affleck"></div>
-							</div>
-							<div class="slick-slide">
-								<div class="thumbnail"><img src="images/image-thumb01.webp" width="115" height="115" alt="Tom Affleck"></div>
-							</div>
-							<div class="slick-slide">
-								<div class="thumbnail"><img src="images/image-thumb02.webp" width="115" height="115" alt="Tom Affleck"></div>
-							</div>
-							<div class="slick-slide">
-								<div class="thumbnail"><img src="images/image-thumb03.webp" width="115" height="115" alt="Tom Affleck"></div>
+					<div class="row mb-35 mb-lg-60 mb-xl-90">
+						<div class="col-12 col-md-4 text-center mb-30 mb-md-0">
+							<div class="how-work-box">
+								<div class="icon">
+									<img src="images/line-icon06.png" alt="Image Description">
+								</div>
+								<strong class="num">01</strong>
+								<strong class="h5">Create Account</strong>
+								<p>It’s very easy to open an account and start your journey.</p>
 							</div>
 						</div>
-						<!-- Testimonials Slider -->
-						<div class="testimonials-slider">
-							<div class="slick-slide">
-								<blockquote>
-									<q>Sed ante nunc, pretium nec euismod et, pulvinar quis velit. Sed commodo lectus eu eros suscipit, eget auctor velit condimentum. Nulla auctor orci nisi, eget dignissim nisi porttitor a. Quisque tristique placerat pulvinar. Quisque tristique molestie ante, nec suscipit elit faucibus non.</q>
-									<cite class="author-info">
-										<strong class="author-name">Tom Affleck</strong>
-										CEO At Dragons Club
-									</cite>
-								</blockquote>
+						<div class="col-12 col-md-4 text-center mb-30 mb-md-0">
+							<div class="how-work-box">
+								<div class="icon">
+									<img src="images/line-icon07.png" alt="Image Description">
+								</div>
+								<strong class="num">02</strong>
+								<strong class="h5">Complete your profile</strong>
+								<p>Complete your profile with all the info to get attention of client.</p>
 							</div>
-							<div class="slick-slide">
-								<blockquote>
-									<q>Quisque tristique placerat pulvinar. Quisque tristique molestie ante, nec suscipit elit faucibus non. Sed ante nunc, pretium nec euismod et, pulvinar quis velit. Sed commodo lectus eu eros suscipit, eget auctor velit condimentum. Nulla auctor orci nisi, eget dignissim nisi porttitor a.</q>
-									<cite class="author-info">
-										<strong class="author-name">Tom Affleck</strong>
-										CEO At Dragons Club
-									</cite>
-								</blockquote>
+						</div>
+						<div class="col-12 col-md-4 text-center mb-30 mb-md-0">
+							<div class="how-work-box">
+								<div class="icon">
+									<img src="images/line-icon08.png" alt="Image Description">
+								</div>
+								<strong class="num">03</strong>
+								<strong class="h5">Apply job or hire</strong>
+								<p>Apply &amp; get your preferable jobs with all the requirements and get it.</p>
 							</div>
-							<div class="slick-slide">
-								<blockquote>
-									<q>Sed ante nunc, pretium nec euismod et, pulvinar quis velit. Sed commodo lectus eu eros suscipit, eget auctor velit condimentum. Nulla auctor orci nisi, eget dignissim nisi porttitor a. Quisque tristique placerat pulvinar. Quisque tristique molestie ante, nec suscipit elit faucibus non.</q>
-									<cite class="author-info">
-										<strong class="author-name">Tom Affleck</strong>
-										CEO At Dragons Club
-									</cite>
-								</blockquote>
-							</div>
-							<div class="slick-slide">
-								<blockquote>
-									<q>Nulla auctor orci nisi, eget dignissim nisi porttitor a. Quisque tristique placerat pulvinar. Quisque tristique molestie ante, nec suscipit elit faucibus non. Sed ante nunc, pretium nec euismod et, pulvinar quis velit. Sed commodo lectus eu eros suscipit, eget auctor velit condimentum.</q>
-									<cite class="author-info">
-										<strong class="author-name">Tom Affleck</strong>
-										CEO At Dragons Club
-									</cite>
-								</blockquote>
-							</div>
-							<div class="slick-slide">
-								<blockquote>
-									<q>Uisque tristique molestie ante, nec suscipit elit faucibus non. Sed ante nunc, pretium nec euismod et, pulvinar quis velit. Sed commodo lectus eu eros suscipit, eget auctor velit condimentum. Nulla auctor orci nisi, eget dignissim nisi porttitor a. Quisque tristique placerat pulvinar. Q</q>
-									<cite class="author-info">
-										<strong class="author-name">Tom Affleck</strong>
-										CEO At Dragons Club
-									</cite>
-								</blockquote>
-							</div>
-							<div class="slick-slide">
-								<blockquote>
-									<q>Quisque tristique placerat pulvinar. Sed ante nunc, pretium nec euismod et, pulvinar quis velit. Sed commodo lectus eu eros suscipit, eget auctor velit condimentum. Nulla auctor orci nisi, eget dignissim nisi porttitor a. Quisque tristique molestie ante, nec suscipit elit faucibus non.</q>
-									<cite class="author-info">
-										<strong class="author-name">Tom Affleck</strong>
-										CEO At Dragons Club
-									</cite>
-								</blockquote>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="matched-jobs-block">
+								<div class="section-header">
+									<h2>Get your Matched Jobs in a few <span class="text-outlined">minutes</span>.</h2>
+									<p>Find your dream job & earn from world leading brands. </p>
+									<a href="#" class="btn btn-green btn-sm"><span class="btn-text"><i class="icon-upload-cloud"></i> Upload Your CV</span></a>
+								</div>
+								<div class="image-holder">
+									<img src="images/image-circle.png" width="462" height="436" alt="Image Description">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- Our Team Section -->
-			<section class="section section-team pt-25 pb-20 pb-md-35 pb-lg-40">
+			<!-- Popular Blockquotes -->
+			<section class="section section-theme-1 bg-light-gray section-quotes pt-35 pt-md-50 pt-lg-65 pt-xl-90 pt-xxl-120 pb-35px pb-md-50 pb-lg-65 pb-xl-90 pb-xxl-120">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-45 mb-lg-50">
-						<h2>Meet our <span class="text-primary">Talented Team</span></h2>
+					<header class="section-header text-center mb-30 mb-md-45 mb-xl-60">
 						<div class="seprator"></div>
-						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
+						<h2>What Our Customers Say About Us</h2>
+						<p>Beneath each of these categories, you can find its most popular</p>
 					</header>
-					<div class="row">
-						<div class="col-12 col-sm-6 col-lg-3 mb-30">
-							<!-- Team Member Box -->
-							<article class="team-box">
-								<div class="image-holder">
-									<img src="images/img-team01.webp" width="352" height="386" alt="Alex Johnson">
-									<div class="button-overplay">
-										<a href="#" class="btn btn-primary"><span class="btn-text">View Profile</span></a>
+					<div class="quotes-slider">
+						<div class="slick-slide">
+							<div class="quotes-box">
+								<div class="author-box">
+									<div class="social-icon"><i class="icon-facebook"></i></div>
+									<div class="author-avatar">
+										<img src="images/img-client01.jpg" width="119" height="119" alt="Linda Romania">
 									</div>
+									<strong class="author-name h6">Linda Romania, <span>Lead Designer</span></strong>
 								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Alex Johnson</a></h3>
-									<span class="subtext">SEO Expert</span>
-								</div>
-							</article>
+								<blockquote>
+									<q>Vestibulum orci felis, ullamc lie orper non conum non, ultrices a ac nunc. Mauris non ligscipit, uie vulputate mi accumsan, dapi olv bus fe lam sed sapien dc nuncm uiem non porta.</q>
+								</blockquote>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-3 mb-30">
-							<!-- Team Member Box -->
-							<article class="team-box">
-								<div class="image-holder">
-									<img src="images/img-team02.webp" width="352" height="386" alt="Jessica Adams">
-									<div class="button-overplay">
-										<a href="#" class="btn btn-primary"><span class="btn-text">View Profile</span></a>
+						<div class="slick-slide">
+							<div class="quotes-box">
+								<div class="author-box">
+									<div class="social-icon"><i class="icon-facebook"></i></div>
+									<div class="author-avatar">
+										<img src="images/img-client03.jpg" width="119" height="119" alt="Romi Roki">
 									</div>
+									<strong class="author-name h6">Romi Roki, <span>Lead Designer</span></strong>
 								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Jessica Adams</a></h3>
-									<span class="subtext">Content Writer</span>
-								</div>
-							</article>
+								<blockquote>
+									<q>Vestibulum orci felis, ullamc lie orper non conum non, ultrices a ac nunc. Mauris non ligscipit, uie vulputate mi accumsan, dapi olv bus fe lam sed sapien dc nuncm uiem non porta.</q>
+								</blockquote>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-3 mb-30">
-							<!-- Team Member Box -->
-							<article class="team-box">
-								<div class="image-holder">
-									<img src="images/img-team03.webp" width="352" height="386" alt="David Ben">
-									<div class="button-overplay">
-										<a href="#" class="btn btn-primary"><span class="btn-text">View Profile</span></a>
+						<div class="slick-slide">
+							<div class="quotes-box">
+								<div class="author-box">
+									<div class="social-icon"><i class="icon-facebook"></i></div>
+									<div class="author-avatar">
+										<img src="images/img-client02.jpg" width="119" height="119" alt="Janson Ilmoni">
 									</div>
+									<strong class="author-name h6">Janson Ilmoni, <span>Lead Designer</span></strong>
 								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">David Ben</a></h3>
-									<span class="subtext">Project Manager</span>
-								</div>
-							</article>
+								<blockquote>
+									<q>Vestibulum orci felis, ullamc lie orper non conum non, ultrices a ac nunc. Mauris non ligscipit, uie vulputate mi accumsan, dapi olv bus fe lam sed sapien dc nuncm uiem non porta.</q>
+								</blockquote>
+							</div>
 						</div>
-						<div class="col-12 col-sm-6 col-lg-3 mb-30">
-							<!-- Team Member Box -->
-							<article class="team-box">
-								<div class="image-holder">
-									<img src="images/img-team04.webp" width="352" height="386" alt="Jason Roy">
-									<div class="button-overplay">
-										<a href="#" class="btn btn-primary"><span class="btn-text">View Profile</span></a>
+						<div class="slick-slide">
+							<div class="quotes-box">
+								<div class="author-box">
+									<div class="social-icon"><i class="icon-facebook"></i></div>
+									<div class="author-avatar">
+										<img src="images/img-client03.jpg" width="119" height="119" alt="Linda Romania">
 									</div>
+									<strong class="author-name h6">Linda Romania, <span>Lead Designer</span></strong>
 								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Jason Roy</a></h3>
-									<span class="subtext">UI/UX Designer</span>
-								</div>
-							</article>
+								<blockquote>
+									<q>Vestibulum orci felis, ullamc lie orper non conum non, ultrices a ac nunc. Mauris non ligscipit, uie vulputate mi accumsan, dapi olv bus fe lam sed sapien dc nuncm uiem non porta.</q>
+								</blockquote>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- Workspace Section -->
-			<section class="section bg-overlay section-workspace pt-35 pb-0 pt-md-40" style="background-image: url('images/image-linked.webp');">
+			<!-- Featured News Block -->
+			<section class="section section-theme-1 featured-news-block pt-35 pt-md-50 pt-lg-65 pt-xl-90 pt-xxl-120 pb-35px pb-md-50 pb-lg-65 pb-xl-90 pb-xxl-120">
 				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<div class="d-flex align-items-center h-100 pb-35 pb-md-45 pb-lg-55">
-								<div class="textbox">
-									<strong class="h3 subtitle">Always Stay Linked</strong>
-									<h2 class="h1">You Can Now Get Your Desired <span class="text-primary">Workspace</span> with Us</h2>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Upload Resume</span></a>
-								</div>
-							</div>
+					<div class="row justify-content-between mb-35 mb-lg-55">
+						<div class="col-12 col-lg-8">
+							<!-- Section Header -->
+							<header class="section-header text-center text-lg-start mb-30 m-lg-0">
+								<h2>Get interesting insights, articles, and news</h2>
+								<p>Beneath each of these categories, you can find its most popular</p>
+							</header>
 						</div>
-						<div class="col-12 col-md-6 d-flex justify-content-end">
-							<div class="d-flex align-items-end h-100">
+						<div class="col-12 col-lg-4 text-center text-lg-end">
+							<a href="#" class="btn-all"><span class="btn-text">View All News</span><i class="icon-chevron-right"></i></a>
+						</div>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-12 col-lg-6">
+							<!-- Article News -->
+							<article class="article-news">
 								<div class="image-holder">
-									<img src="images/image-user.webp" width="649" height="680" alt="Always Stay Linked">
+									<img src="images/image-news01.jpg" width="300" height="240" alt="Image Description">
 								</div>
-							</div>
+								<div class="textbox">
+									<strong class="subtitle">Developer, Code</strong>
+									<h5><a href="#">How to convince recruiters and get your dream job</a></h5>
+									<span class="author">By <strong>Thomas Smith</strong></span>
+								</div>
+							</article>
+						</div>
+						<div class="col-12 col-lg-6">
+							<!-- Article News -->
+							<article class="article-news">
+								<div class="image-holder">
+									<img src="images/image-news02.jpg" width="300" height="240" alt="Image Description">
+								</div>
+								<div class="textbox">
+									<strong class="subtitle">Developer, Code</strong>
+									<h5><a href="#">Collaboration: Best Practices, Challenges, and Tools</a></h5>
+									<span class="author">By <strong>Thomas Smith</strong></span>
+								</div>
+							</article>
+						</div>
+						<div class="col-12 col-lg-6">
+							<!-- Article News -->
+							<article class="article-news">
+								<div class="image-holder">
+									<img src="images/image-news03.jpg" width="300" height="240" alt="Image Description">
+								</div>
+								<div class="textbox">
+									<strong class="subtitle">Developer, Code</strong>
+									<h5><a href="#">How to Work From Home: Tips and Companies Hiring</a></h5>
+									<span class="author">By <strong>Thomas Smith</strong></span>
+								</div>
+							</article>
+						</div>
+						<div class="col-12 col-lg-6">
+							<!-- Article News -->
+							<article class="article-news">
+								<div class="image-holder">
+									<img src="images/image-news04.jpg" width="300" height="240" alt="Image Description">
+								</div>
+								<div class="textbox">
+									<strong class="subtitle">Developer, Code</strong>
+									<h5><a href="#">How to convince recruiters and get your dream job</a></h5>
+									<span class="author">By <strong>Thomas Smith</strong></span>
+								</div>
+							</article>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- News Section -->
-			<section class="section section-news pt-35 pb-25 pt-md-50 pb-md-30 pt-lg-65 pb-lg-70">
+			<!-- Downloads Section -->
+			<section class="section section-theme-1 section-downloads pt-35 pt-md-0 pb-50 pb-md-75 pb-lg-75 pb-xl-110 pb-xxl-150">
 				<div class="container">
 					<!-- Section header -->
-					<header class="section-header text-center mb-30 mb-md-45 mb-lg-50">
-						<h2>Latest <span class="text-primary">News</span></h2>
-						<div class="seprator"></div>
-						<p>Consecteture adipiscing elit, sed diam nonumm nibh sfer euismod tincidunt</p>
+					<header class="section-header text-center mb-30 mb-md-40 mb-lg-50">
+						<h2>Download our mobile app</h2>
+						<p>Search through millions of jobs and find the right fit.<br> Simply swipe right to apply.</p>
 					</header>
-					<div class="row">
-						<div class="col-12 col-md-4 mb-35 mb-md-30">
-							<!-- News Post -->
-							<article class="news-post">
-								<div class="image-holder">
-									<a href="#"><img src="images/img-news01.webp" width="470" height="315" alt="Image Description"></a>
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">How to overcome economic crisis instantly</a></h3>
-									<ul class="post-meta">
-										<li><i class="icon icon-calendar1"></i> <time class="text" datetime="2023-03-20">20 March 2023</time></li>
-										<li><i class="icon icon-comments"></i> <span class="text">12 Comments</span></li>
-									</ul>
-									<p>Lorem ipsum dolor sit amet, consecte dipi sacing elit, sed do eiusmod ...</p>
-								</div>
-								<footer class="post-footer">
-									<a href="#" class="read-more">Read More <i class="icon icon-arrow-right1"></i></a>
-									<span class="post-author">By: Alex Dex</span>
-								</footer>
-							</article>
-						</div>
-						<div class="col-12 col-md-4 mb-35 mb-md-30">
-							<!-- News Post -->
-							<article class="news-post">
-								<div class="image-holder">
-									<a href="#"><img src="images/img-news02.webp" width="470" height="315" alt="Image Description"></a>
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">How to overcome economic crisis instantly</a></h3>
-									<ul class="post-meta">
-										<li><i class="icon icon-calendar1"></i> <time class="text" datetime="2023-03-20">20 March 2023</time></li>
-										<li><i class="icon icon-comments"></i> <span class="text">12 Comments</span></li>
-									</ul>
-									<p>Lorem ipsum dolor sit amet, consecte dipi sacing elit, sed do eiusmod ...</p>
-								</div>
-								<footer class="post-footer">
-									<a href="#" class="read-more">Read More <i class="icon icon-arrow-right1"></i></a>
-									<span class="post-author">By: Alex Dex</span>
-								</footer>
-							</article>
-						</div>
-						<div class="col-12 col-md-4 mb-35 mb-md-30">
-							<!-- News Post -->
-							<article class="news-post">
-								<div class="image-holder">
-									<a href="#"><img src="images/img-news03.webp" width="470" height="315" alt="Image Description"></a>
-								</div>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">How to overcome economic crisis instantly</a></h3>
-									<ul class="post-meta">
-										<li><i class="icon icon-calendar1"></i> <time class="text" datetime="2023-03-20">20 March 2023</time></li>
-										<li><i class="icon icon-comments"></i> <span class="text">12 Comments</span></li>
-									</ul>
-									<p>Lorem ipsum dolor sit amet, consecte dipi sacing elit, sed do eiusmod ...</p>
-								</div>
-								<footer class="post-footer">
-									<a href="#" class="read-more">Read More <i class="icon icon-arrow-right1"></i></a>
-									<span class="post-author">By: Alex Dex</span>
-								</footer>
-							</article>
-						</div>
+					<div class="app-buttons">
+						<a href="#"><img src="images/img-play-app.png" alt="Google Play"></a>
+						<a href="#"><img src="images/img-play-store.png" alt="App Store"></a>
 					</div>
-				</div>
-			</section>
-			<!-- Workspace Section -->
-			<section class="section bg-overlay bg-primary section-newsletter py-0" style="background-image: url('images/image-newsletter.webp');">
-				<div class="container">
-					<div class="row flex-md-row-reverse pt-35 pt-md-0">
-						<div class="col-12 col-md-7 col-lg-6">
-							<div class="d-flex align-items-center h-100 py-md-35 py-lg-25 mb-35 mb-md-0">
-								<div class="textbox">
-									<strong class="h4 subtitle">Support</strong>
-									<h2>Subscribe Newsletter & get Job Updates</h2>
-									<form class="form-newsletter" action="#">
-										<input type="text" class="form-control" placeholder="Enter your email address">
-										<button type="submit" class="btn btn-primary btn-sm"><span class="btn-text">Subscribe</span></button>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-md-5 col-lg-6 d-flex justify-content-center">
-							<div class="d-flex align-items-end h-100">
-								<div class="image-holder">
-									<img src="images/image-girl.webp" width="517" height="496" alt="Support">
-								</div>
-							</div>
-						</div>
-					</div>
+					<div class="icon ico01"><img src="images/ico-app01.png" alt="Image Description"></div>
+					<div class="icon ico02"><img src="images/ico-app02.png" alt="Image Description"></div>
+					<div class="icon ico03"><img src="images/ico-app03.png" alt="Image Description"></div>
+					<div class="icon ico04"><img src="images/ico-app04.png" alt="Image Description"></div>
 				</div>
 			</section>
 		</main>
 		<!-- footer of the page -->
-		<footer class="footer">
-			<div class="pri-footer bg-blue-dark text-white pt-35 pt-lg-50 pb-35 pb-md-35">
+		<footer class="footer footer-theme-1">
+			<div class="pri-footer bg-dark-green text-white pt-35 pt-lg-50 pt-xxl-80 pb-35 pb-md-20">
 				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-4">
-							<!-- Footer Information -->
-							<div class="footer-info">
+					<div class="pri-footer-top pb-30 pb-md-35 mb-35 mb-lg-50 mb-xxl-80">
+						<div class="row">
+							<div class="col-12 col-lg-3 mb-md-15 mb-lg-0">
 								<strong class="logo">
-									<a href="index.html"><img src="images/logo.webp" width="224" height="62" alt="Job Circle"></a>
+									<a href="index.html"><img src="images/logo-theme-2-white.png" width="174" height="43" alt="Job Circle"></a>
 								</strong>
-								<p>Duis molestie lobors nibh ut consectetur. In iaculis suscipit ante vel egestas. Intr quis ul id tempor risus.Quisque auctor neque et lacus finibus.</p>
-								<p>Etiam eu elit sollicitudin, ultricies enim quis, pharetra tortor. Vivamus at diam eget dui scelerisque . Quisque es nequea et lacus finibus, et fringilla diam mattis. </p>
-								<!-- App Buttons -->
-								<ul class="app-buttons">
-									<li><a href="#"><img src="images/icon-play.webp" width="218" height="67" alt="Google Play"></a></li>
-									<li><a href="#"><img src="images/icon-app.webp" width="218" height="67" alt="App Store"></a></li>
-								</ul>
+							</div>
+							<div class="col-12 col-lg-9">
+								<div class="row">
+									<div class="col-12 col-md-6 textbox mb-15 mb-md-0">
+										<strong class="h4">Most complete job portal.</strong>
+										<p>Signup and start find your job or talents.</p>
+									</div>
+									<div class="col-12 col-md-6 footer-buttons text-md-end">
+										<a href="#" class="btn btn-outline-lt-yellow btn-sm"><span class="btn-text">Looking for job?</span></a>
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">for job?</span></a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-7 col-lg-5 pe-xl-70 mb-25 mb-md-0">
-							<!-- Images Gallery -->
-							<h5 class="h4">Gallery</h5>
-							<ul class="gallery-list">
-								<li><a href="images/image-gallery01.webp" data-fancybox="gallery"><img src="images/image-gallery01.webp" width="166" height="125" alt="Image Gallery"></a></li>
-								<li><a href="images/image-gallery02.webp" data-fancybox="gallery"><img src="images/image-gallery02.webp" width="166" height="125" alt="Image Gallery"></a></li>
-								<li><a href="images/image-gallery03.webp" data-fancybox="gallery"><img src="images/image-gallery03.webp" width="166" height="125" alt="Image Gallery"></a></li>
-								<li><a href="images/image-gallery04.webp" data-fancybox="gallery"><img src="images/image-gallery04.webp" width="166" height="125" alt="Image Gallery"></a></li>
-								<li><a href="images/image-gallery05.webp" data-fancybox="gallery"><img src="images/image-gallery05.webp" width="166" height="125" alt="Image Gallery"></a></li>
-								<li><a href="images/image-gallery06.webp" data-fancybox="gallery"><img src="images/image-gallery06.webp" width="166" height="125" alt="Image Gallery"></a></li>
-							</ul>
+					</div>
+					<div class="row flex-md-row-reverse">
+						<div class="col-12 col-lg-3 mb-35 mb-md-45 mb-lg-0">
+							<h5>Newsletter</h5>
+							<!-- Form Subscribe -->
+							<div class="footer-info">
+								<div class="form-subscribe">
+									<p>Get updates on new jobs.</p>
+									<form action="#">
+										<input class="form-control" type="text" placeholder="Email Address.">
+										<button class="btn btn-green btn-sm" type="submit"><span class="btn-text">Subscribe</span></button>
+									</form>
+								</div>
+							</div>
 						</div>
-						<div class="col-12 col-md-5 col-lg-3">
-							<div class="ms-xl-n50">
-								<!-- Contact Information -->
-								<h5 class="h4">Contact Us</h5>
-								<ul class="contact-list">
-									<li>
-										<i class="icon-map-pin"></i>
-										<span class="text">2612th Street New York, 10342, USA</span>
-									</li>
-									<li>
-										<i class="icon-mail"></i>
-										<span class="text"><a href="mailto:example@mail.com">example@mail.com</a></span>
-									</li>
-									<li>
-										<i class="icon-phone"></i>
-										<span class="text"><a href="tel:111222333444">111-222-333-444</a></span>
-									</li>
-								</ul>
-								<!-- Social Networks -->
-								<div class="social-box">
-									<strong class="title">Social Media</strong>
-									<ul class="social-networks">
-										<li><a href="#"><i class="icon-facebook"></i></a></li>
-										<li><a href="#"><i class="icon-instagram"></i></a></li>
-										<li><a href="#"><i class="icon-twitter"></i></a></li>
-										<li><a href="#"><i class="icon-youtube-play"></i></a></li>
+						<div class="col-12 col-lg-9">
+							<div class="row">
+								<div class="col-12 col-md-5 col-lg-4 mb-15 mb-md-0">
+									<h5>Contact</h5>
+									<ul class="contact-list">
+										<li>
+											<i class="icon-map-pin"></i>
+											<span class="text">Cromwell Road New Town London SW7 2RL</span>
+										</li>
+										<li>
+											<i class="icon-phone"></i>
+											<span class="text"><a href="tel:4402079422000">+44 (0)20 7942 2000</a></span>
+										</li>
+										<li>
+											<i class="icon-mail"></i>
+											<span class="text"><a href="mailto:hello@username.ac.uk">hello@username.ac.uk</a></span>
+										</li>
+									</ul>
+								</div>
+								<div class="col-6 col-md-4 col-lg-4">
+									<h5>Services​</h5>
+									<ul class="footer-links">
+										<li><a href="#">Browse Jobs</a></li>
+										<li><a href="#">Companies</a></li>
+										<li><a href="#">Candidate Dashboard</a></li>
+										<li><a href="#">Pricing Packages</a></li>
+									</ul>
+								</div>
+								<div class="col-6 col-md-3 col-lg-4">
+									<h5>Support</h5>
+									<ul class="footer-links">
+										<li><a href="#">Terms of use</a></li>
+										<li><a href="#">Terms &amp; conditions</a></li>
+										<li><a href="#">Privacy</a></li>
+										<li><a href="#">Cookie policy</a></li>
 									</ul>
 								</div>
 							</div>
@@ -1090,15 +1064,33 @@
 					</div>
 				</div>
 			</div>
-			<div class="sec-footer bg-blue-darker text-center text-white py-15 py-md-20">
-				<p>All Rights Reserved © Jobcircle.com</p>
+			<div class="sec-footer bg-dark-green text-white pt-0 pb-25 py-md-20 py-lg-45">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-8 mb-15 mb-md-0">
+							<p>Copyright © 2023 by <a class="site-link" href="#">MiracleSoftSolutions</a> All Rights Reserved.</p>
+						</div>
+						<div class="col-12 col-md-4">
+							<ul class="social-networks no-bg d-flex flex-wrap justify-content-md-end">
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+								<li><a href="#"><i class="icon-instagram"></i></a></li>
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-youtube-play"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</div>
+	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+	<!-- jQuery Library -->
 	<script src="js/jquery-3.6.4.min.js"></script>
+	<!-- jQuery Plugins -->
 	<script src="js/vendor.js"></script>
+	<!-- jQuery Main -->
 	<script src="js/jquery.main.js"></script>
 </body>
 </html>

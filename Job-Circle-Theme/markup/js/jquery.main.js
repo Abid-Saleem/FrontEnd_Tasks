@@ -228,7 +228,7 @@ function initSlickCarousel() {
 		rows: 0,
 		arrows: false,
 		dots: true,
-		variableWidth: true,
+		variableWidth: false,
 		infinite: true,
 		autoplay: false,
 		responsive: [
@@ -948,6 +948,94 @@ function initSlickCarousel() {
 		infinite: true,
 		autoplay: true
 	});
+
+	// trending jobs slider
+	jQuery('.trending-jobs-carousel').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		centerMode: true,
+		centerPadding: '0px',
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    },
+		    {
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    },
+		    {
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    },
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    },
+		    {
+				breakpoint: 486,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    }
+		]
+	});
+
+	// clients testimonials slider
+	jQuery('.clients-testimonials-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		mobileFirst: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: true,
+		responsive: [
+		    {
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    },
+		    {
+				breakpoint: 486,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+				}
+		    }
+		]
+	});
 }
 
 // select2 init
@@ -1162,5 +1250,61 @@ jQuery(window).on('resize', function() {
 	}
 	if (!$articles_slider.hasClass('slick-initialized')) {
 		return $articles_slider.slick(settings);
+	}
+});
+
+
+$news_articles_slider = jQuery('.news-acticles-carousel');
+settings = {
+	slidesToScroll: 1,
+	slidesToShow: 1,
+	rows: 0,
+	arrows: false,
+	dots: true,
+	focusOnSelect: false,
+	mobileFirst: true,
+	infinite: true,
+	autoplay: true,
+	responsive: [{
+			breakpoint: 1024,
+			settings: "unslick"
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				arrows: false
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				arrows: false
+			}
+		},
+		{
+			breakpoint: 375,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false
+			}
+		}
+	]
+};
+$news_articles_slider.slick(settings);
+
+jQuery(window).on('resize', function() {
+	if (jQuery(window).width() > 991) {
+		if ($news_articles_slider.hasClass('slick-initialized')) {
+			$news_articles_slider.slick('unslick');
+		}
+		return
+	}
+	if (!$news_articles_slider.hasClass('slick-initialized')) {
+		return $news_articles_slider.slick(settings);
 	}
 });
