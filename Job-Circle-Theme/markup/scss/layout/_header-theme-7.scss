@@ -266,6 +266,11 @@
         .dropdown-menu {
             font-size: 14px;
 
+            @include media-breakpoint-up(lg) {
+                margin-right: -150px;
+                width: calc(100% + 150px);
+            }
+
             li {
                 &.active {
                     > a {
@@ -293,6 +298,10 @@
 
         @include media-breakpoint-up(lg) {
             padding: 0;
+        }
+
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 45px;
         }
 
         .btn {

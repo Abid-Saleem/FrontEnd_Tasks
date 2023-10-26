@@ -155,6 +155,11 @@
 		.dropdown-menu {
 			font-size: 14px;
 
+			&.mega {
+				left: 0;
+				transform: none;
+			}
+
 			li {
 				&.active {
 					> a {
@@ -163,7 +168,7 @@
 
 					&:hover {
 						> a {
-							color: $dark-yellow;
+							color: $white;
 						}
 					}
 				}
