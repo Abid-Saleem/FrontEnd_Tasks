@@ -3977,6 +3977,10 @@
                 padding: 0 15px;
             }
 
+            @include media-breakpoint-up(lg) {
+                margin: 0;
+            }
+
             @include media-breakpoint-up(xl) {
                 width: 33.333%;
             }
@@ -4042,6 +4046,23 @@
             li {
                 margin: 0;
                 padding: 5px;
+                width: 50%;
+
+                @include media-breakpoint-up(sm) {
+                    width: 155px;
+                }
+
+                @include media-breakpoint-up(lg) {
+                    width: 33.333%;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    width: 175px;
+                }
+
+                @include media-breakpoint-up(xxl) {
+                    width: 33.333%;
+                }
             }
         }
 
@@ -4053,6 +4074,7 @@
                 height: 18px;
                 border-radius: 4px;
                 margin: 0 7px 0 0;
+                flex-shrink: 0;
 
                 &:before {
                     width: 10px;
@@ -4248,6 +4270,31 @@
             color: $primary;
         }
     }
+
+    .checkbox-list {
+        display: flex;
+        flex-flow: row wrap;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
+
+        li {
+            width: 50%;
+
+            @include media-breakpoint-up(sm) {
+                width: 158px;
+            }
+
+            @include media-breakpoint-up(md) {
+                width: 33.333%;
+            }
+
+            @include media-breakpoint-up(lg) {
+                width: auto;
+            }
+        }
+    }
 }
 
 /* Checkbox Limit Styles */
@@ -4342,6 +4389,7 @@
         margin: 0 15px 0 0;
         background: #fff;
         border-radius: 5px;
+        flex-shrink: 0;
         border: 1px solid $gray-border;
         position: relative;
         transition: all 0.3s ease-in-out;

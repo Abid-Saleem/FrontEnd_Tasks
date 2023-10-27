@@ -103,9 +103,10 @@
 		@include media-breakpoint-up(lg) {
 			font-size: 16px;
 			padding-bottom: 0;
+			padding-left: 20px;
 		}
 		@include media-breakpoint-up(xl) {
-			width: 480px;
+			// width: 480px;
 			padding-left:60px;
 		}
 		> li {
@@ -167,7 +168,7 @@
 
 					&:hover {
 						> a {
-							color: $light-green;
+							color: $white;
 						}
 					}
 				}
@@ -176,6 +177,12 @@
 			.dropdown-item {
 				&:hover {
 					background: $light-green;
+				}
+			}
+
+			&.mega {
+				@include media-breakpoint-up(xxxl) {
+					margin-left: -100px;
 				}
 			}
 		}
@@ -264,6 +271,8 @@
 		margin: 0 10px 0 0;
 		justify-content: center;
 		transition: all ease-in-out 0.3s;
+		flex-shrink: 0;
+		
 		@include media-breakpoint-down(lg) {
 			display: none;
 		}

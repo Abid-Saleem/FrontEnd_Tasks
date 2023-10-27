@@ -208,9 +208,254 @@
 										<button class="btn btn-grid active" type="button">
 											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
 										</button>
+										<button class="btn btn-filters filters-opener" type="button">
+											<span></span>
+										</button>
 									</div>
 								</div>
 							</header>
+							<!-- Filters Sidebar -->
+							<aside class="filters-sidebar custom-filters">
+								<form action="#">
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseCategory">
+											<h2 class="h5">Category</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseCategory">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Management</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Retail</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Marketing</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Translation</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Ux Designer</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">UI/UX</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Web Design</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Graphic Design</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Website Development</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Programming</span>
+															</label>
+														</li>
+													</ul>
+													<a href="#" class="btn btn-primary btn-sm buttonShowMore">
+														<span class="btn-text">Show 
+															<span class="show">More</span>
+															<span class="hide">Less</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseExperience">
+											<h2 class="h5">Experience</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseExperience">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Fresher</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Intermediate</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">No-Experience</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Internship</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Expert</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseType">
+											<h2 class="h5">Job Type</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseType">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Full Time</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Part Time</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Remote</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseLocation">
+											<h2 class="h5">Location</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseLocation">
+											<div class="form-group">
+												<select class="select2 medium" name="state" data-placeholder="Location">
+													<option label="Select Category"></option>
+													<option>Indonesia</option>
+													<option>Indonesia</option>
+													<option>Indonesia</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseTags">
+											<h2 class="h5">Tags</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseTags">
+											<div class="form-group">
+												<ul class="tags-list">
+													<li><a href="#" class="tag">Design</a></li>
+													<li><a href="#" class="tag">Business</a></li>
+													<li><a href="#" class="tag">Video</a></li>
+													<li><a href="#" class="tag">Design & Art</a></li>
+													<li><a href="#" class="tag">Sales</a></li>
+													<li><a href="#" class="tag">Banking</a></li>
+													<li><a href="#" class="tag">Real Estate</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseSalary">
+											<h2 class="h5">Salary</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseSalary">
+											<div class="form-group">
+												<div class="price-inputs">
+													<input type="text" id="amount-start" class="form-control" readonly placeholder="Form" value="">
+													<input type="text" id="amount-end" class="form-control" readonly placeholder="To" value="">
+												</div>
+												<div class="range-box">
+													<div id="slider-range"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Buttons -->
+									<div class="filter-buttons">
+										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Filter</span></a>
+										<a href="#" class="btn btn-text btn-sm">Reset all filters</a>
+									</div>
+								</form>
+							</aside>
 							<div class="row justify-content-center">
 								<div class="col-12 col-md-6 col-lg-4 mb-15 mb-md-30">
 									<!-- Featured Category Box -->

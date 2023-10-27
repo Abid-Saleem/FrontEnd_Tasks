@@ -227,6 +227,10 @@
             opacity: 1;
             visibility: visible;
 
+            @include media-breakpoint-up(lg) {
+                max-height: inherit;
+            }
+
             &.show {
                 display: block;
             }

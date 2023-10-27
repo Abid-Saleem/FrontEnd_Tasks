@@ -93,9 +93,12 @@
 
 	.navigation {
 		padding-bottom: 30px;
+		
 		@include media-breakpoint-up(lg) {
 			padding-bottom: 0;
+			font-size: 14px;
 		}
+
 		@include media-breakpoint-up(xl) {
 			font-size: 16px;
 		}
@@ -103,7 +106,12 @@
 			@include media-breakpoint-up(lg) {
 				padding: 0 12px;
 			}
+
 			@include media-breakpoint-up(xl) {
+				padding: 0 20px;
+			}
+
+			@include media-breakpoint-up(xxl) {
 				padding: 0 25px;
 			}
 
@@ -159,6 +167,12 @@
 			.dropdown-item {
 				&:hover {
 					background: var(--purple-heart);
+				}
+			}
+
+			&.mega {
+				@include media-breakpoint-up(xxxl) {
+					margin-left: -100px;
 				}
 			}
 		}

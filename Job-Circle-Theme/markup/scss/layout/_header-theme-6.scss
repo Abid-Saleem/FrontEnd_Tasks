@@ -152,7 +152,7 @@
 
 					&:hover {
 						> a {
-							color: $texas-rose;
+							color: $white;
 						}
 					}
 				}
@@ -162,6 +162,12 @@
 				color: $black;
 				&:hover {
 					background: $texas-rose;
+				}
+			}
+
+			&.mega {
+				@include media-breakpoint-up(xxxl) {
+					margin-left: -100px;
 				}
 			}
 		}
