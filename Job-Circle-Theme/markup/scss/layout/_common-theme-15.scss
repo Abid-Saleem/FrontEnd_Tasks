@@ -334,7 +334,7 @@
 			flex-direction: column;
 			@include media-breakpoint-up(md) {
 				flex-direction: row;
-				align-items: centerl
+				align-items: center;
 			}
 			.img-frame {
 				flex: 0 0 100%;

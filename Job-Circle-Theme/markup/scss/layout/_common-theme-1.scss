@@ -347,36 +347,11 @@
         }
 
         &.custom-filters {
-            margin-top: 0;
-            padding: 25px;
-            border: 1px solid #e6e6e6;
-
-            .filter-box-head {
-                h2 {
-                    font-size: 16px;
-                }
-            }
-
-            .filter-box {
-                @include media-breakpoint-up(md) {
-                    border: 0;
-                }
-
-                .range-box {
-                    padding-top: 20px;
-                }
-            }
-
-            .checkbox-list {
-                max-height: inherit;
-                margin: 0 -5px;
-            }
-
             .filter-buttons {
                 .btn {
                     &.btn-text {
                         &:hover {
-                            color: $green;;
+                            color: $green;
                         }
                     }
                 }

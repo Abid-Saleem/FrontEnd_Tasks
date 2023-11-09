@@ -1133,11 +1133,13 @@ function initCustomFunctions() {
 
 		if(jQuery('.filters-sidebar').hasClass('filters-active')) {
 			jQuery('.filters-sidebar').removeClass('filters-active');
-			jQuery(this).removeClass('opener-active');
+			jQuery('body').removeClass('filters-show');
+			jQuery('.filters-opener').removeClass('opener-active');
 		}
 		else {
 			jQuery('.filters-sidebar').addClass('filters-active');
-			jQuery(this).addClass('opener-active');
+			jQuery('body').addClass('filters-show');
+			jQuery('.filters-opener').addClass('opener-active');
 		}
 	});
 }
