@@ -20,7 +20,7 @@
 	<!-- Site main stylesheet-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body class="sticky-map">
+<body>
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
 		<div class="page-loader">
@@ -116,12 +116,12 @@
 													<li><a class="dropdown-item" href="company-theme-1.html">Company List</a></li>
 													<li><a class="dropdown-item" href="company-detail-1-theme-1.html">Company Detail</a></li>
 													<li><a class="dropdown-item" href="faq-theme-1.html">FAQ</a></li>
-													<li class="active"><a class="dropdown-item" href="job-grid-1-theme-1.html">job Grid Layout 1</a></li>
+													<li><a class="dropdown-item" href="job-grid-1-theme-1.html">job Grid Layout 1</a></li>
 												</ul>
 											</div>
 											<div class="col-12 col-lg-3">
 												<ul class="list-unstyled m-0">
-													<li><a class="dropdown-item" href="job-grid-2-theme-1.html">job Grid Layout 2</a></li>
+													<li class="active"><a class="dropdown-item" href="job-grid-2-theme-1.html">job Grid Layout 2</a></li>
 													<li><a class="dropdown-item" href="job-grid-3-theme-1.html">job Grid Layout 3</a></li>
 													<li><a class="dropdown-item" href="job-list-1-theme-1.html">Job List Layout 1</a></li>
 													<li><a class="dropdown-item" href="job-list-2-theme-1.html">Job List Layout 2</a></li>
@@ -157,61 +157,55 @@
 				</div>
 			</div>
 		</header>
-		<!-- Sub Visual of the page -->
-		<div class="subvisual-block subvisual-theme-1 bg-dark-green d-flex pt-60 pt-md-90 pt-lg-150 pb-30 text-white">
-			<div class="pattern-image"><img src="images/visual-pattern-1.png" width="1920" height="570" alt="Pattern"></div>
-			<div class="container position-relative text-center">
-				<div class="row">
-					<div class="col-12">
-						<div class="subvisual-textbox">
-							<h1>Job Grid</h1>
-							<p>job duties, job responsibilities, and skills required</p>
-						</div>
-						<!-- search form -->
-						<form class="form-search form-inline" action="#">
-							<div class="fields-holder bg-white text-black d-flex flex-wrap flex-md-nowrap">
-								<div class="form-group">
-									<label for="rel01">What are you looking for?</label>
-									<div class="form-input">
-										<select id="rel01" class="select2" name="state" data-placeholder="What are you looking for?">
-											<option label="Placeholder"></option>
-											<option>Web Developer</option>
-											<option>Web Developer</option>
-											<option>Web Developer</option>
-											<option>Web Developer</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="rel02">Category</label>
-									<div class="form-input">
-										<select id="rel02" class="select2" name="state" data-placeholder="Category">
-											<option label="Placeholder"></option>
-											<option>Web Design</option>
-											<option>Web Design</option>
-											<option>Web Design</option>
-											<option>Web Design</option>
-										</select>
-									</div>
+		<!-- Visual Map of the page -->
+		<div class="visual-map subvisual-theme-1">
+			<div id="map"></div>
+			<!-- search form -->
+			<div class="visual-map-filters">
+				<div class="container">
+					<form class="form-search form-inline" action="#">
+						<div class="fields-holder bg-white text-black d-flex flex-wrap flex-md-nowrap">
+							<div class="form-group">
+								<label for="rel01">What are you looking for?</label>
+								<div class="form-input">
+									<select id="rel01" class="select2" name="state" data-placeholder="What are you looking for?">
+										<option label="Placeholder"></option>
+										<option>Web Developer</option>
+										<option>Web Developer</option>
+										<option>Web Developer</option>
+										<option>Web Developer</option>
+									</select>
 								</div>
 							</div>
-							<button class="btn btn-green btn-sm" type="submit"><span class="btn-text">Find Job</span></button>
-						</form>
-					</div>
+							<div class="form-group">
+								<label for="rel02">Category</label>
+								<div class="form-input">
+									<select id="rel02" class="select2" name="state" data-placeholder="Category">
+										<option label="Placeholder"></option>
+										<option>Web Design</option>
+										<option>Web Design</option>
+										<option>Web Design</option>
+										<option>Web Design</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-green btn-sm" type="submit"><span class="btn-text">Find Job</span></button>
+					</form>
 				</div>
 			</div>
 		</div>
 		<!-- contain main informative part of the site -->
 		<main class="main">
 			<!-- Featured Jobs Section -->
-			<section class="section section-categories section-theme-1 pb-35 pb-lg-0 pt-0">
+			<section class="section section-categories section-theme-1 pt-35 pt-md-50 pt-lg-75 pt-xl-95 pb-35 pb-md-50 pb-xl-75">
 				<div class="container-fluid">
-					<div class="row flex-lg-row-reverse">
-						<div class="col-12 col-lg-7 pt-35 pt-md-50 pt-lg-75 pb-35 pb-md-50 pb-xl-75">
+					<div class="row">
+						<div class="col-12">
 							<!-- Page subheader -->
-							<header class="page-subheader mb-30 mb-md-40 d-xxl-flex align-items-center justify-content-between">
-								<h3 class="h6 mb-25 mb-xxl-0">All 7,096 jobs found</h3>
-								<div class="subhead-filters d-xxl-flex align-items-center justify-content-between">
+							<header class="page-subheader mb-30 mb-md-40 d-lg-flex align-items-center justify-content-between">
+								<h3 class="h6 mb-25 mb-lg-0">All 7,096 jobs found</h3>
+								<div class="subhead-filters">
 									<div class="subhead-filters-item">
 										<label>Sort By</label>
 										<div class="form-group d-lg-flex align-items-center">
@@ -483,268 +477,161 @@
 								</form>
 							</aside>
 							<div class="row justify-content-center">
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Intership
-											</span>
-											<h3>Backend Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Intership</span>
+										<div class="img-holder">
+											<img src="images/company-logo01.jpg" width="78" height="78" alt="Financial Analyst">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo01.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By WebTechnology</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Financial Analyst</strong>
+											<span class="subtitle">By WebTechnology</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Part Time
-											</span>
-											<h3>Javascript Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Part Time</span>
+										<div class="img-holder">
+											<img src="images/company-logo02.jpg" width="78" height="78" alt="Javascript Developer">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo02.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Websikon</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Javascript Developer</strong>
+											<span class="subtitle">By Websikon</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Full Time
-											</span>
-											<h3>Product Manager</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Intership</span>
+										<div class="img-holder">
+											<img src="images/company-logo03.jpg" width="78" height="78" alt="Technical Writer">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo03.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Softy</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Technical Writer</strong>
+											<span class="subtitle">By Softy</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Financial Analyst
-											</span>
-											<h3>Backend Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Full Time</span>
+										<div class="img-holder">
+											<img src="images/company-logo04.jpg" width="78" height="78" alt="Product Manager">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo04.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Rokwebs</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Product Manager</strong>
+											<span class="subtitle">By Geniouslab</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Intership
-											</span>
-											<h3>Backend Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Full Time</span>
+										<div class="img-holder">
+											<img src="images/company-logo05.jpg" width="78" height="78" alt="Human Resources">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo05.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By WebTechnology</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Human Resources</strong>
+											<span class="subtitle">By Develpersoft</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia
+											</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Part Time
-											</span>
-											<h3>Javascript Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Intership</span>
+										<div class="img-holder">
+											<img src="images/company-logo06.jpg" width="78" height="78" alt="Technical Support">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo06.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Websikon</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Technical Support</strong>
+											<span class="subtitle">By Muxcorp</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia
+											</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Full Time
-											</span>
-											<h3>Product Manager</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Full Time</span>
+										<div class="img-holder">
+											<img src="images/company-logo07.jpg" width="78" height="78" alt="Financial Analyst">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo07.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Softy</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Financial Analyst</strong>
+											<span class="subtitle">By Rokwebs</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia
+											</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
+									</article>
 								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Financial Analyst
-											</span>
-											<h3>Backend Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
+								<div class="col-12 col-sm-6 col-lg-4 col-xl-3 mb-15 mb-md-30">
+									<!-- Featured Category Box -->
+									<article class="featured-category-box">
+										<span class="tag">Part Time</span>
+										<div class="img-holder">
+											<img src="images/company-logo08.jpg" width="78" height="78" alt="Fullstack Developer">
 										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo08.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Rokwebs</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
+										<div class="textbox">
+											<strong class="h6">Fullstack Developer</strong>
+											<span class="subtitle">Pekanbaru, Indonesia</span>
+											<address class="location"><i class="icon icon-map-pin"></i><span class="text">Pekanbaru, Indonesia
+											</span></address>
+											<div class="job-info">
+												<span class="subtext">11 hours ago</span>
+												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
 											</div>
+											<a href="#" class="btn btn-dark-yellow btn-sm"><span class="btn-text"><span class="text">Apple Now</span><i class="icon-chevron-right"></i></span></a>
 										</div>
-									</a>
-								</div><div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Intership
-											</span>
-											<h3>Backend Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
-										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo01.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By WebTechnology</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Part Time
-											</span>
-											<h3>Javascript Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
-										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo02.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Websikon</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Full Time
-											</span>
-											<h3>Product Manager</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
-										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo03.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Softy</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-								<div class="col-12 col-md-6 col-xxxl-4 mb-15 mb-md-20">
-									<!-- Job Card -->
-									<a href="#" class="job-card alt">
-										<div class="inner-box">
-											<span class="job-type">
-												<img src="images/clock-icon.svg" width="20" height="22" alt="Duration">
-												Financial Analyst
-											</span>
-											<h3>Backend Developer</h3>
-											<strong class="salary-range">$1000 - $1200<sub>/month</sub></strong>
-										</div>
-										<div class="card-footer">
-											<div class="img"><img src="images/company-logo04.jpg" width="68" height="68" alt="image"></div>
-											<div class="bottom-box">
-												<div class="info-row">
-													<strong>By Rokwebs</strong>
-													<p><i class="icon-map-pin"></i> Pekanbaru, Indonesia</p>
-												</div>
-											</div>
-										</div>
-									</a>
+									</article>
 								</div>
 							</div>
 							<!-- Pagination Block -->
@@ -760,12 +647,25 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-5">
-							<div class="aside-map">
-								<div id="map"></div>
-							</div>
-						</div>
 					</div>
+				</div>
+			</section>
+			<!-- Downloads Section -->
+			<section class="section section-theme-1 section-downloads pt-35 pt-md-60 pb-50 pb-md-75 pb-lg-75 pb-xl-110 pb-xxl-140">
+				<div class="container">
+					<!-- Section header -->
+					<header class="section-header text-center mb-30 mb-md-40 mb-lg-50">
+						<h2>Download our mobile app</h2>
+						<p>Search through millions of jobs and find the right fit.<br> Simply swipe right to apply.</p>
+					</header>
+					<div class="app-buttons">
+						<a href="#"><img src="images/img-play-app.png" alt="Google Play"></a>
+						<a href="#"><img src="images/img-play-store.png" alt="App Store"></a>
+					</div>
+					<div class="icon ico01"><img src="images/ico-app01.png" alt="Image Description"></div>
+					<div class="icon ico02"><img src="images/ico-app02.png" alt="Image Description"></div>
+					<div class="icon ico03"><img src="images/ico-app03.png" alt="Image Description"></div>
+					<div class="icon ico04"><img src="images/ico-app04.png" alt="Image Description"></div>
 				</div>
 			</section>
 		</main>

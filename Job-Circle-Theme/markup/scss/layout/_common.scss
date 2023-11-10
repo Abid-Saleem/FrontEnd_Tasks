@@ -3865,7 +3865,6 @@
     border-radius: 3px;
     padding: 20px 15px;
     margin-bottom: 35px;
-    display: none;
 
     @include media-breakpoint-up(md) {
         padding: 30px 15px;
@@ -3882,6 +3881,35 @@
 
     @include media-breakpoint-up(xxl) {
         padding: 50px 30px;
+    }
+
+    @include media-breakpoint-down(lg) {
+        padding: 25px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 380px;
+        z-index: 100;
+        background: #f5f7fc;
+        transform: translateX(-105%);
+        display: block;
+        transition: transform 0.3s ease-in-out;
+        overflow: auto;
+        border: 0 !important;
+        margin: 0 !important;
+        padding: 25px !important;
+        border-radius: 0 !important;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 320px;
+    }
+
+    &.filters-active {
+        @include media-breakpoint-down(lg) {
+            transform: none;
+        }
     }
 
     .filter-box-head {
@@ -4022,9 +4050,32 @@
     .filter-buttons {
         overflow: hidden;
 
+        @include media-breakpoint-down(lg) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            width: 100%;
+        }
+
         .btn {
+            @include media-breakpoint-down(lg) {
+                width: auto;
+            }
+
             + .btn {
                 margin-top: 20px;
+
+                @include media-breakpoint-down(lg) {
+                    margin-top: 0;
+                }
+            }
+
+            &.btn-text {
+                @include media-breakpoint-down(lg) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         }
     }
@@ -4288,6 +4339,12 @@
             margin: 0 0 25px;
         }
 
+        @include media-breakpoint-down(lg) {
+            background: transparent;
+            border-radius: 0;
+            margin: 0 0 5px !important;
+        }
+
         .form-control {
             border: 0;
             width: 50%;
@@ -4297,10 +4354,21 @@
             border-radius: 0;
             font-weight: 500;
 
+            @include media-breakpoint-down(lg) {
+                background: $white;
+            }
+
             + .form-control {
                 border-left: 1px solid $gray-border;
             }
         }
+    }
+
+    .range-box {
+        padding: 20px 20px 15px !important;
+        background: transparent;
+        border-radius: 0;
+        border: 0 !important;
     }
 
     .buttonShowMore {
@@ -4359,20 +4427,27 @@
             display: block;
         }
 
+        @include media-breakpoint-down(lg) {
+            margin: 0 -5px !important;
+        }
+
         li {
             width: 50%;
-
-            @include media-breakpoint-up(sm) {
-                width: 158px;
-            }
-
-            @include media-breakpoint-up(md) {
-                width: 33.333%;
-            }
 
             @include media-breakpoint-up(lg) {
                 width: auto;
             }
+
+            @include media-breakpoint-down(lg) {
+                margin: 0;
+                padding: 7px 5px;
+            }
+        }
+    }
+
+    .custom-checkbox {
+        @include media-breakpoint-down(lg) {
+            font-size: 13px;
         }
     }
 }

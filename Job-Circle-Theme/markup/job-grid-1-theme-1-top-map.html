@@ -168,13 +168,16 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-lg-4 col-xxl-3">
-							<div class="d-flex align-items-center justify-content-between d-lg-none mb-25 filters-head">
+							<!-- <div class="d-flex align-items-center justify-content-between d-lg-none mb-25 filters-head">
 								<h2 class="h5">Filters</h2>
 								<a href="#" class="filters-opener"><span></span></a>
-							</div>
+							</div> -->
 							<!-- Filters Sidebar -->
 							<aside class="filters-sidebar">
-								<div class="filters-sidebar-Head">
+								<button class="btn btn-filters filters-opener d-lg-none" type="button">
+									<span></span>
+								</button>
+								<div class="filters-sidebar-Head d-none d-lg-flex">
 									<strong class="title">Filter By</strong>
 									<a href="#" class="btn-clear"><i class="icon-plus"></i></a>
 								</div>
@@ -415,6 +418,7 @@
 									<!-- Filter Buttons -->
 									<div class="filter-buttons">
 										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Filter</span></a>
+										<a href="#" class="btn btn-text btn-sm d-lg-none">Reset all filters</a>
 									</div>
 								</form>
 							</aside>
@@ -442,6 +446,9 @@
 										</button>
 										<button class="btn btn-grid active" type="button">
 											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
+										</button>
+										<button class="btn btn-filters filters-opener d-lg-none" type="button">
+											<span></span>
 										</button>
 									</div>
 								</div>
