@@ -490,6 +490,14 @@
 	}
 }
 
+.jobs_info_holder {
+	height: 100%;
+
+	@include media-breakpoint-up(xxl) {
+		padding-right: 40px;
+	}
+}
+
 /*How It Works*/
 
 .works_info_wrap {

@@ -20,7 +20,7 @@
 	<!-- Site main stylesheet-->
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="sticky-map">
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
 		<div class="page-loader">
@@ -116,7 +116,7 @@
 													<li><a class="dropdown-item" href="company-theme-1.html">Company List</a></li>
 													<li><a class="dropdown-item" href="company-detail-1-theme-1.html">Company Detail</a></li>
 													<li><a class="dropdown-item" href="faq-theme-1.html">FAQ</a></li>
-													<li><a class="dropdown-item" href="job-grid-1-theme-1.html">job Grid Layout 1</a></li>
+													<li class="active"><a class="dropdown-item" href="job-grid-1-theme-1.html">job Grid Layout 1</a></li>
 												</ul>
 											</div>
 											<div class="col-12 col-lg-3">
@@ -125,7 +125,7 @@
 													<li><a class="dropdown-item" href="job-grid-3-theme-1.html">job Grid Layout 3</a></li>
 													<li><a class="dropdown-item" href="job-list-1-theme-1.html">Job List Layout 1</a></li>
 													<li><a class="dropdown-item" href="job-list-2-theme-1.html">Job List Layout 2</a></li>
-													<li class="active"><a class="dropdown-item" href="job-list-3-theme-1.html">Job List Layout 3</a></li>
+													<li><a class="dropdown-item" href="job-list-3-theme-1.html">Job List Layout 3</a></li>
 													<li><a class="dropdown-item" href="job-detail-1-theme-1.html">Job Detail Layout 1</a></li>
 												</ul>
 											</div>
@@ -204,14 +204,14 @@
 		<!-- contain main informative part of the site -->
 		<main class="main">
 			<!-- Featured Jobs Section -->
-			<section class="section section-categories section-theme-1 pt-35 pt-md-50 pt-lg-75 pt-xl-95 pb-35 pb-md-50 pb-xl-75">
-				<div class="container">
+			<section class="section section-categories section-theme-1 pb-35 pb-lg-0 pt-0">
+				<div class="container-fluid">
 					<div class="row">
-						<div class="col-12">
+						<div class="col-12 col-lg-7 pt-35 pt-md-50 pt-lg-75 pb-35 pb-md-50 pb-xl-75">
 							<!-- Page subheader -->
-							<header class="page-subheader mb-30 mb-md-40 d-lg-flex align-items-center justify-content-between">
-								<h3 class="h6 mb-25 mb-lg-0">All 7,096 jobs found</h3>
-								<div class="subhead-filters">
+							<header class="page-subheader mb-30 mb-md-40 d-xxl-flex align-items-center justify-content-between">
+								<h3 class="h6 mb-25 mb-xxl-0">All 7,096 jobs found</h3>
+								<div class="subhead-filters d-xxl-flex align-items-center justify-content-between">
 									<div class="subhead-filters-item">
 										<label>Sort By</label>
 										<div class="form-group d-lg-flex align-items-center">
@@ -225,10 +225,10 @@
 										</div>
 									</div>
 									<div class="grid-buttons">
-										<button class="btn btn-list active" type="button">
+										<button class="btn btn-list" type="button">
 											<img src="images/list-icon.svg" width="20" height="20" alt="List">
 										</button>
-										<button class="btn btn-grid" type="button">
+										<button class="btn btn-grid active" type="button">
 											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
 										</button>
 										<button class="btn btn-filters filters-opener" type="button">
@@ -483,201 +483,184 @@
 								</form>
 							</aside>
 							<div class="row justify-content-center">
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo01.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo01.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Fullstack Developer</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By WebTechnology</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Fullstack Developer</h3>
+											<span class="meta">By <a href="#">WebTechnology</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo02.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo02.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Javascript Developer</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Websikon</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Junior Graphic Designer</h3>
+											<span class="meta">By <a href="#">Websikon</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo07.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo07.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Product Manager</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Geniouslab</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Finance Manager & Health</h3>
+											<span class="meta">By <a href="#">Geniouslab</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo06.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo06.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Human Resources</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Develpersoft</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Group Marketing Manager</h3>
+											<span class="meta">By <a href="#">Develpersoft</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo05.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo01.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Technical Support</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Muxcorp</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Fullstack Developer</h3>
+											<span class="meta">By <a href="#">WebTechnology</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo04.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo02.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Financial Analyst</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Rokwebs</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Junior Graphic Designer</h3>
+											<span class="meta">By <a href="#">Websikon</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo03.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo07.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Product Manager</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Geniouslab</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Finance Manager & Health</h3>
+											<span class="meta">By <a href="#">Geniouslab</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
-								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo08.jpg" alt="img">
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Human Resources</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Develpersoft</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 							<!-- Pagination Block -->
-							<div class="pagination-block pt-20 pt-lg-30 pb-0">
+							<div class="pagination-block pt-20 pt-lg-30 pt-xl-50 pb-0">
 								<div class="container d-flex align-items-center justify-content-center">
 									<ul class="pagination">
 										<li class="page-item disabled"><a class="page-link" href="#"><i class="icon-arrow-left1"></i></a></li>
@@ -687,6 +670,11 @@
 										<li class="page-item"><a class="page-link" href="#"><i class="icon-arrow-right"></i></a></li>
 									</ul>
 								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5">
+							<div class="aside-map">
+								<div id="map"></div>
 							</div>
 						</div>
 					</div>
@@ -802,5 +790,13 @@
 	<script src="js/vendor.js"></script>
 	<!-- jQuery Main -->
 	<script src="js/jquery.main.js"></script>
+	<!-- jQuery Map Function -->
+	<script src="js/jquery.map.js"></script>
+	<!-- jQuery Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGVKwYyakjeU8FQour1ZEwN8eEMWIj88k&callback=initMap"></script>
+	<!-- Call the initMap function to initialize the map -->
+	<script>
+		initMap();
+	</script>
 </body>
 </html>

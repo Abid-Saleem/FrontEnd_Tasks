@@ -124,8 +124,8 @@
 													<li><a class="dropdown-item" href="job-grid-2-theme-1.html">job Grid Layout 2</a></li>
 													<li><a class="dropdown-item" href="job-grid-3-theme-1.html">job Grid Layout 3</a></li>
 													<li><a class="dropdown-item" href="job-list-1-theme-1.html">Job List Layout 1</a></li>
-													<li><a class="dropdown-item" href="job-list-2-theme-1.html">Job List Layout 2</a></li>
-													<li class="active"><a class="dropdown-item" href="job-list-3-theme-1.html">Job List Layout 3</a></li>
+													<li class="active"><a class="dropdown-item" href="job-list-2-theme-1.html">Job List Layout 2</a></li>
+													<li><a class="dropdown-item" href="job-list-3-theme-1.html">Job List Layout 3</a></li>
 													<li><a class="dropdown-item" href="job-detail-1-theme-1.html">Job Detail Layout 1</a></li>
 												</ul>
 											</div>
@@ -157,47 +157,41 @@
 				</div>
 			</div>
 		</header>
-		<!-- Sub Visual of the page -->
-		<div class="subvisual-block subvisual-theme-1 bg-dark-green d-flex pt-60 pt-md-90 pt-lg-150 pb-30 text-white">
-			<div class="pattern-image"><img src="images/visual-pattern-1.png" width="1920" height="570" alt="Pattern"></div>
-			<div class="container position-relative text-center">
-				<div class="row">
-					<div class="col-12">
-						<div class="subvisual-textbox">
-							<h1>Job List</h1>
-							<p>job duties, job responsibilities, and skills required</p>
-						</div>
-						<!-- search form -->
-						<form class="form-search form-inline" action="#">
-							<div class="fields-holder bg-white text-black d-flex flex-wrap flex-md-nowrap">
-								<div class="form-group">
-									<label for="rel01">What are you looking for?</label>
-									<div class="form-input">
-										<select id="rel01" class="select2" name="state" data-placeholder="What are you looking for?">
-											<option label="Placeholder"></option>
-											<option>Web Developer</option>
-											<option>Web Developer</option>
-											<option>Web Developer</option>
-											<option>Web Developer</option>
-										</select>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="rel02">Category</label>
-									<div class="form-input">
-										<select id="rel02" class="select2" name="state" data-placeholder="Category">
-											<option label="Placeholder"></option>
-											<option>Web Design</option>
-											<option>Web Design</option>
-											<option>Web Design</option>
-											<option>Web Design</option>
-										</select>
-									</div>
+		<!-- Visual Map of the page -->
+		<div class="visual-map subvisual-theme-1">
+			<div id="map"></div>
+			<!-- search form -->
+			<div class="visual-map-filters">
+				<div class="container">
+					<form class="form-search form-inline" action="#">
+						<div class="fields-holder bg-white text-black d-flex flex-wrap flex-md-nowrap">
+							<div class="form-group">
+								<label for="rel01">What are you looking for?</label>
+								<div class="form-input">
+									<select id="rel01" class="select2" name="state" data-placeholder="What are you looking for?">
+										<option label="Placeholder"></option>
+										<option>Web Developer</option>
+										<option>Web Developer</option>
+										<option>Web Developer</option>
+										<option>Web Developer</option>
+									</select>
 								</div>
 							</div>
-							<button class="btn btn-green btn-sm" type="submit"><span class="btn-text">Find Job</span></button>
-						</form>
-					</div>
+							<div class="form-group">
+								<label for="rel02">Category</label>
+								<div class="form-input">
+									<select id="rel02" class="select2" name="state" data-placeholder="Category">
+										<option label="Placeholder"></option>
+										<option>Web Design</option>
+										<option>Web Design</option>
+										<option>Web Design</option>
+										<option>Web Design</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-green btn-sm" type="submit"><span class="btn-text">Find Job</span></button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -207,42 +201,124 @@
 			<section class="section section-categories section-theme-1 pt-35 pt-md-50 pt-lg-75 pt-xl-95 pb-35 pb-md-50 pb-xl-75">
 				<div class="container">
 					<div class="row">
-						<div class="col-12">
-							<!-- Page subheader -->
-							<header class="page-subheader mb-30 mb-md-40 d-lg-flex align-items-center justify-content-between">
-								<h3 class="h6 mb-25 mb-lg-0">All 7,096 jobs found</h3>
-								<div class="subhead-filters">
-									<div class="subhead-filters-item">
-										<label>Sort By</label>
-										<div class="form-group d-lg-flex align-items-center">
-											<select class="select2" name="state" data-placeholder="Sort by">
-												<option label="Sort by"></option>
-												<option>Newest Jobs</option>
-												<option>Old Jobs</option>
-												<option>Sort by Date</option>
-												<option>Sort by Name</option>
-											</select>
-										</div>
-									</div>
-									<div class="grid-buttons">
-										<button class="btn btn-list active" type="button">
-											<img src="images/list-icon.svg" width="20" height="20" alt="List">
-										</button>
-										<button class="btn btn-grid" type="button">
-											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
-										</button>
-										<button class="btn btn-filters filters-opener" type="button">
-											<span></span>
-										</button>
-									</div>
-								</div>
-							</header>
+						<div class="col-12 col-lg-4 col-xxl-3">
+							<!-- <div class="d-flex align-items-center justify-content-between d-lg-none mb-25 filters-head">
+								<h2 class="h5">Filters</h2>
+								<a href="#" class="filters-opener"><span></span></a>
+							</div> -->
 							<!-- Filters Sidebar -->
-							<aside class="filters-sidebar custom-filters">
-								<button class="btn btn-filters filters-opener" type="button">
+							<aside class="filters-sidebar">
+								<button class="btn btn-filters filters-opener d-lg-none" type="button">
 									<span></span>
 								</button>
+								<div class="filters-sidebar-Head d-none d-lg-flex">
+									<strong class="title">Filter By</strong>
+									<a href="#" class="btn-clear"><i class="icon-plus"></i></a>
+								</div>
 								<form action="#">
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseLocation">
+											<h2 class="h5">Location</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseLocation">
+												<div class="form-group">
+												<select class="select2 medium" name="state" data-placeholder="Location">
+													<option label="Select Category"></option>
+													<option>Indonesia</option>
+													<option>Indonesia</option>
+													<option>Indonesia</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseType">
+											<h2 class="h5">Job Type</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseType">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Full Time</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Part Time</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Remote</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseExperience">
+											<h2 class="h5">Experience</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseExperience">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Fresher</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Intermediate</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">No-Experience</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Internship</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Expert</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 									<!-- Filter Box -->
 									<div class="filter-box">
 										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseCategory">
@@ -336,109 +412,6 @@
 									</div>
 									<!-- Filter Box -->
 									<div class="filter-box">
-										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseExperience">
-											<h2 class="h5">Experience</h2>
-											<span class="collapse-icon"></span>
-										</a>
-										<div class="collapse show" id="collapseExperience">
-											<div class="form-group">
-												<div class="checkbox-limit">
-													<ul class="checkbox-list">
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Fresher</span>
-															</label>
-														</li>
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Intermediate</span>
-															</label>
-														</li>
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">No-Experience</span>
-															</label>
-														</li>
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Internship</span>
-															</label>
-														</li>
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Expert</span>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Filter Box -->
-									<div class="filter-box">
-										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseType">
-											<h2 class="h5">Job Type</h2>
-											<span class="collapse-icon"></span>
-										</a>
-										<div class="collapse show" id="collapseType">
-											<div class="form-group">
-												<div class="checkbox-limit">
-													<ul class="checkbox-list">
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Full Time</span>
-															</label>
-														</li>
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Part Time</span>
-															</label>
-														</li>
-														<li>
-															<label class="custom-checkbox">
-																<input type="checkbox">
-																<span class="fake-checkbox"></span>
-																<span class="label-text">Remote</span>
-															</label>
-														</li>
-													</ul>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- Filter Box -->
-									<div class="filter-box">
-										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseLocation">
-											<h2 class="h5">Location</h2>
-											<span class="collapse-icon"></span>
-										</a>
-										<div class="collapse show" id="collapseLocation">
-											<div class="form-group">
-												<select class="select2 medium" name="state" data-placeholder="Location">
-													<option label="Select Category"></option>
-													<option>Indonesia</option>
-													<option>Indonesia</option>
-													<option>Indonesia</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									<!-- Filter Box -->
-									<div class="filter-box">
 										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseTags">
 											<h2 class="h5">Tags</h2>
 											<span class="collapse-icon"></span>
@@ -467,6 +440,7 @@
 											<div class="form-group">
 												<div class="price-inputs">
 													<input type="text" id="amount-start" class="form-control" readonly placeholder="Form" value="">
+													-
 													<input type="text" id="amount-end" class="form-control" readonly placeholder="To" value="">
 												</div>
 												<div class="range-box">
@@ -478,202 +452,216 @@
 									<!-- Filter Buttons -->
 									<div class="filter-buttons">
 										<a href="#" class="btn btn-green btn-sm"><span class="btn-text">Apply Filter</span></a>
-										<a href="#" class="btn btn-text btn-sm">Reset all filters</a>
+										<a href="#" class="btn btn-text btn-sm d-lg-none">Reset all filters</a>
 									</div>
 								</form>
 							</aside>
+						</div>
+						<div class="col-12 col-lg-8 col-xxl-9">
+							<!-- Page subheader -->
+							<header class="page-subheader mb-30 mb-md-40 d-lg-flex align-items-center justify-content-between">
+								<h3 class="h6 mb-25 mb-lg-0">All 7,096 jobs found</h3>
+								<div class="subhead-filters">
+									<div class="subhead-filters-item">
+										<label>Sort By</label>
+										<div class="form-group d-lg-flex align-items-center">
+											<select class="select2" name="state" data-placeholder="Sort by">
+												<option label="Sort by"></option>
+												<option>Newest Jobs</option>
+												<option>Old Jobs</option>
+												<option>Sort by Date</option>
+												<option>Sort by Name</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid-buttons">
+										<button class="btn btn-list active" type="button">
+											<img src="images/list-icon.svg" width="20" height="20" alt="List">
+										</button>
+										<button class="btn btn-grid" type="button">
+											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
+										</button>
+										<button class="btn btn-filters filters-opener d-lg-none" type="button">
+											<span></span>
+										</button>
+									</div>
+								</div>
+							</header>
 							<div class="row justify-content-center">
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo01.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo01.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Fullstack Developer</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By WebTechnology</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Fullstack Developer</h3>
+											<span class="meta">By <a href="#">WebTechnology</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo02.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo02.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Javascript Developer</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Websikon</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Junior Graphic Designer</h3>
+											<span class="meta">By <a href="#">Websikon</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo07.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo07.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Product Manager</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Geniouslab</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Finance Manager & Health</h3>
+											<span class="meta">By <a href="#">Geniouslab</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo06.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo06.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Human Resources</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Develpersoft</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Group Marketing Manager</h3>
+											<span class="meta">By <a href="#">Develpersoft</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo05.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo01.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Technical Support</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Muxcorp</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Fullstack Developer</h3>
+											<span class="meta">By <a href="#">WebTechnology</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo04.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo02.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Financial Analyst</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Rokwebs</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Junior Graphic Designer</h3>
+											<span class="meta">By <a href="#">Websikon</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
+											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
+										</div>
+									</div>
 								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo03.jpg" alt="img">
+								<div class="col-12 mb-15 mb-md-30">
+									<!-- Jobs Card -->
+									<div class="jobs-card">
+										<div class="job-content-left">
+											<div class="icon-box">
+												<img src="images/company-logo07.jpg" alt="image">
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Product Manager</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Geniouslab</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<h3>Finance Manager & Health</h3>
+											<span class="meta">By <a href="#">Geniouslab</a></span>
+											<strong class="location-txt"><i class="icon icon-map-pin"></i> Pekanbaru, Indonesia</strong>
+											<ul class="tags-list">
+												<li><span class="tag">Remote</span></li>
+												<li><span class="tag">Full Time</span></li>
+												<li><span class="tag">Part Time</span></li>
+											</ul>
 										</div>
-									</a>
-								</div>
-								<div class="col-12 col-lg-6 mb-15 mb-xl-30">
-									<a href="#" class="jobs_info_holder">
-										<span class="note">Full Time</span>
-										<div class="wrap_holder">
-											<div class="icon_holder">
-												<img src="images/company-logo08.jpg" alt="img">
+										<div class="job-content-right">
+											<div class="price-box">
+												<strong class="price">$1000 - $1200<sub>/month</sub></strong>
+												<span class="txt">Experience : 1 - 2 years</span>
 											</div>
-											<div class="info_holder">
-												<p>Design, Development</p>
-												<strong class="h5">Human Resources</strong>
-												<ul class="location_info">
-													<li>
-														<span class="text">By Develpersoft</span>
-													</li>
-													<li>
-														<i class="icon icon-map-pin"></i>
-														<span class="text">Pekanbaru, Indonesia</span>
-													</li>
-												</ul>
-												<span class="amount"><strong>$1000 - $1200</strong>/month</span>
-											</div>
+											<button class="btn btn-green"><span>Apply Now</span></button>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 							<!-- Pagination Block -->
@@ -802,5 +790,13 @@
 	<script src="js/vendor.js"></script>
 	<!-- jQuery Main -->
 	<script src="js/jquery.main.js"></script>
+	<!-- jQuery Map Function -->
+	<script src="js/jquery.map.js"></script>
+	<!-- jQuery Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGVKwYyakjeU8FQour1ZEwN8eEMWIj88k&callback=initMap"></script>
+	<!-- Call the initMap function to initialize the map -->
+	<script>
+		initMap();
+	</script>
 </body>
 </html>

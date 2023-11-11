@@ -570,7 +570,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	@include media-breakpoint-up(lg) {
+	@include media-breakpoint-up(xxl) {
 		margin: 0 0 30px;
 		border-radius: 30px;
 	}
@@ -589,12 +589,12 @@
 			position: absolute;
 		}
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xxl) {
 			top: 30px;
 			left: 30px;
 		}
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxxl) {
 			top: 40px;
 			left: 40px;
 		}
@@ -618,14 +618,14 @@
 			padding-left: 120px;
 		}
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xxl) {
 			padding: 30px;
 			padding-left: 135px;
 			width: calc(100% - 280px);
 			flex: 0 0 calc(100% - 280px);
 		}
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxxl) {
 			padding: 40px;
 			padding-left: 150px;
 		}
@@ -680,14 +680,14 @@
 			padding: 20px;
 			justify-content: space-between;
 		}
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(xxl) {
 			flex: 280px;
 			flex: 0 0 280px;
 			padding: 30px;
 			border-radius: 30px;
 		}
 
-		@include media-breakpoint-up(xl) {
+		@include media-breakpoint-up(xxxl) {
 			padding: 40px;
 		}
 	}
@@ -753,6 +753,16 @@
 		&:before {
 			background: $green !important;
 			opacity: 1;
+		}
+	}
+}
+
+.section-categories {
+	.jobs-card {
+		h3 {
+			@include media-breakpoint-between(lg, xl) {
+				font-size: 24px;
+			}
 		}
 	}
 }
