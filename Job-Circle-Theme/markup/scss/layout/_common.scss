@@ -2004,6 +2004,11 @@
         min-height: 651px;
     }
 
+    &:empty {
+        min-height: 1px !important;
+        box-shadow: 5px 0 5px rgba(0,0,0,0.5);
+    }
+
     .shape {
         position: absolute;
         width: 60%;
@@ -6280,7 +6285,18 @@
 /* Map Tooltip Styles */
 .map-tooltip {
     width: 100%;
-    padding: 5px;
+    padding: 0;
+
+    .tooltip-image {
+        width: 100%;
+        margin: 0 0 15px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
 
     .tooltip-title {
         display: block;
@@ -6294,10 +6310,6 @@
     p {
         margin: 0 0 10px;
 
-        &:last-child {
-            margin: 0;
-        }
-
         a {
             color: currentColor;
             text-decoration: underline;
@@ -6307,6 +6319,22 @@
             }
         }
     }
+
+    .location-address {
+        display: flex;
+        align-items: center;
+
+        .address-pin {
+            font-size: 16px;
+            margin: -2px 8px 0 0;
+            flex-shrink: 0;
+        }
+
+        .address-text {
+            flex-grow: 1;
+            min-width: 0;
+        }
+    }
 }
 
 .gm-style {
@@ -6314,9 +6342,16 @@
     font-size: 12px;
     line-height: 1.5;
 
+    .gm-style-iw-c {
+        width: 300px;
+    }
+
     .gm-ui-hover-effect {
-        top: 0 !important;
-        right: 0 !important;
+        top: 15px !important;
+        right: 15px !important;
+        background: $white !important;
+        border-radius: 100%;
+        opacity: 1;
     }
 }
 
