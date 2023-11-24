@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification Code</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #verificationCode input {
+      width: 30px;
+      text-align: center;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Enter 6-Digit Verification Code:</h2>
+  <div id="verificationCode">
+    <input type="text" maxlength="1" class="digitInput">
+    <input type="text" maxlength="1" class="digitInput">
+    <input type="text" maxlength="1" class="digitInput">
+    <input type="text" maxlength="1" class="digitInput">
+    <input type="text" maxlength="1" class="digitInput">
+    <input type="text" maxlength="1" class="digitInput">
+  </div>
+  <button id="verifyButton" class="disabled">Verify</button>
+  <p id="verificationResult"></p>
+
+  <script>
+    $(document).ready(function() {
+      $('.digitInput').on('input', function() {
+        var enteredCode = '';
+        $('.digitInput').each(function() {
+          enteredCode += $(this).val();
+        });
+
+        if (/^\d{6}$/.test(enteredCode)) {
+          // Verification code is 6 digits and contains only digits
+          // You can add your verification logic here, for example, checking against a stored code
+          // For now, let's just display a success message
+          $('#verificationResult').text('Verification successful!');
+          $('#verifyButton').removeClass('disabled');
+        } else {
+          // Invalid verification code
+          $('#verificationResult').text('Invalid verification code. Please enter a 6-digit numeric code.');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

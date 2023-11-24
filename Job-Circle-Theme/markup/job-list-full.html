@@ -439,622 +439,518 @@
 		<main class="main">
 			<!-- Featured Jobs Section -->
 			<section class="section section-categories pt-35 pt-md-50 pt-lg-75 pt-xl-95 pb-35 pb-md-50 pb-xl-75">
-				<div class="container">
-					<!-- Page subheader -->
-					<header class="page-subheader mb-30 mb-md-40 d-lg-flex align-items-center justify-content-between">
-						<h1 class="h4 mb-25 mb-lg-0">Showing 1 to 12 of 300 jobs</h1>
-						<div class="subhead-filters">
-							<div class="subhead-filters-item">
-								<div class="form-group d-lg-flex align-items-center">
-									<select class="select2" name="state" data-placeholder="Sort by">
-										<option label="Sort by"></option>
-										<option>Newest Jobs</option>
-										<option>Old Jobs</option>
-										<option>Sort by Date</option>
-										<option>Sort by Name</option>
-									</select>
-								</div>
-							</div>
-							<div class="grid-buttons">
-								<button class="btn btn-list" type="button">
-									<img src="images/list-icon.svg" width="20" height="20" alt="List">
-								</button>
-								<button class="btn btn-grid active" type="button">
-									<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
-								</button>
-								<button class="btn btn-filters filters-opener" type="button">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-lg-4">
+							<!-- <div class="d-flex align-items-center justify-content-between d-lg-none mb-25 filters-head">
+								<h2 class="h5">Filters</h2>
+								<a href="#" class="filters-opener"><span></span></a>
+							</div> -->
+							<!-- Filters Sidebar -->
+							<aside class="filters-sidebar bg-light-gray">
+								<button class="btn btn-filters filters-opener d-lg-none" type="button">
 									<span></span>
 								</button>
-							</div>
+								<form action="#">
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseLocation">
+											<h2 class="h5">Location</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseLocation">
+											<div class="form-group">
+												<select class="select2 medium" name="state" data-placeholder="Location">
+													<option label="Select Category"></option>
+													<option>Indonesia</option>
+													<option>Indonesia</option>
+													<option>Indonesia</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseType">
+											<h2 class="h5">Job Type</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseType">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Full Time</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Part Time</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Remote</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseExperience">
+											<h2 class="h5">Experience</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseExperience">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Fresher</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Intermediate</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">No-Experience</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Internship</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Expert</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseCategory">
+											<h2 class="h5">Category</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseCategory">
+											<div class="form-group">
+												<div class="checkbox-limit">
+													<ul class="checkbox-list">
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Management</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Retail</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Marketing</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Translation</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Ux Designer</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">UI/UX</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Web Design</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Graphic Design</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Website Development</span>
+															</label>
+														</li>
+														<li>
+															<label class="custom-checkbox">
+																<input type="checkbox">
+																<span class="fake-checkbox"></span>
+																<span class="label-text">Programming</span>
+															</label>
+														</li>
+													</ul>
+													<a href="#" class="btn btn-primary btn-sm buttonShowMore">
+														<span class="btn-text">Show 
+															<span class="show">More</span>
+															<span class="hide">Less</span>
+														</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseTags">
+											<h2 class="h5">Tags</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseTags">
+											<div class="form-group">
+												<ul class="tags-list">
+													<li><a href="#" class="tag">Design</a></li>
+													<li><a href="#" class="tag">Business</a></li>
+													<li><a href="#" class="tag">Video</a></li>
+													<li><a href="#" class="tag">Design & Art</a></li>
+													<li><a href="#" class="tag">Sales</a></li>
+													<li><a href="#" class="tag">Banking</a></li>
+													<li><a href="#" class="tag">Real Estate</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Box -->
+									<div class="filter-box">
+										<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseSalary">
+											<h2 class="h5">Salary</h2>
+											<span class="collapse-icon"></span>
+										</a>
+										<div class="collapse show" id="collapseSalary">
+											<div class="form-group">
+												<div class="price-inputs">
+													<input type="text" id="amount-start" class="form-control" readonly placeholder="Form" value="">
+													<input type="text" id="amount-end" class="form-control" readonly placeholder="To" value="">
+												</div>
+												<div class="range-box">
+													<div id="slider-range"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Filter Buttons -->
+									<div class="filter-buttons">
+										<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">Filter</span></a>
+										<a href="#" class="btn btn-text btn-sm">Reset all filters</a>
+									</div>
+								</form>
+							</aside>
 						</div>
-					</header>
-					<!-- Filters Sidebar -->
-					<aside class="filters-sidebar custom-filters">
-						<button class="btn btn-filters filters-opener" type="button">
-							<span></span>
-						</button>
-						<form action="#">
-							<!-- Filter Box -->
-							<div class="filter-box">
-								<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseCategory">
-									<h2 class="h5">Category</h2>
-									<span class="collapse-icon"></span>
-								</a>
-								<div class="collapse show" id="collapseCategory">
-									<div class="form-group">
-										<div class="checkbox-limit">
-											<ul class="checkbox-list">
+						<div class="col-12 col-lg-8">
+							<!-- Page subheader -->
+							<header class="page-subheader mb-30 mb-md-40 d-lg-flex align-items-center justify-content-between">
+								<h1 class="h4 mb-25 mb-lg-0">Showing 1 to 12 of 300 jobs</h1>
+								<div class="subhead-filters">
+									<div class="subhead-filters-item">
+										<div class="form-group d-lg-flex align-items-center">
+											<select class="select2" name="state" data-placeholder="Sort by">
+												<option label="Sort by"></option>
+												<option>Newest Jobs</option>
+												<option>Old Jobs</option>
+												<option>Sort by Date</option>
+												<option>Sort by Name</option>
+											</select>
+										</div>
+									</div>
+									<div class="grid-buttons">
+										<button class="btn btn-list" type="button">
+											<img src="images/list-icon.svg" width="20" height="20" alt="List">
+										</button>
+										<button class="btn btn-grid active" type="button">
+											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
+										</button>
+										<button class="btn btn-filters filters-opener d-lg-none" type="button">
+											<span></span>
+										</button>
+									</div>
+								</div>
+							</header>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-6 mb-15 mb-md-30">
+									<!-- Featured Box -->
+									<article class="featured-box">
+										<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+										<div class="textbox">
+											<h3 class="h4"><a href="#">UI/UX Designer</a></h3>
+											<strong class="subtitle">
+												<span class="icon"><img src="images/ico-job01.png" width="43" height="43" alt="Creative Hut"></span>
+												<span class="txt">Creative Hut</span>
+											</strong>
+											<ul class="stats-list">
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Management</span>
-													</label>
+													<i class="icon icon-briefcase1"></i>
+													<span class="text">Social Media</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Retail</span>
-													</label>
+													<i class="icon icon-map-pin"></i>
+													<span class="text">United Kingdom</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Marketing</span>
-													</label>
+													<i class="icon icon-clock"></i>
+													<span class="text">1 Day Ago</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Translation</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Ux Designer</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">UI/UX</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Web Design</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Graphic Design</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Website Development</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Programming</span>
-													</label>
+													<i class="icon icon-work_outline"></i>
+													<span class="text">2 Vacancies</span>
 												</li>
 											</ul>
-											<a href="#" class="btn btn-primary btn-sm buttonShowMore">
-												<span class="btn-text">Show 
-													<span class="show">More</span>
-													<span class="hide">Less</span>
-												</span>
-											</a>
+											<ul class="tags-list">
+												<li><span class="tag">Experience</span></li>
+												<li><span class="tag">Developer</span></li>
+												<li><span class="tag">Full Time</span></li>
+											</ul>
+											<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
+											<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
 										</div>
-									</div>
+									</article>
 								</div>
-							</div>
-							<!-- Filter Box -->
-							<div class="filter-box">
-								<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseExperience">
-									<h2 class="h5">Experience</h2>
-									<span class="collapse-icon"></span>
-								</a>
-								<div class="collapse show" id="collapseExperience">
-									<div class="form-group">
-										<div class="checkbox-limit">
-											<ul class="checkbox-list">
+								<div class="col-12 col-md-6 mb-15 mb-md-30">
+									<!-- Featured Box -->
+									<article class="featured-box">
+										<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+										<div class="textbox">
+											<h3 class="h4"><a href="#">Front End Developer</a></h3>
+											<strong class="subtitle">
+												<span class="icon"><img src="images/ico-job02.png" width="37" height="42" alt="Ever Media Studio"></span>
+												<span class="txt">Ever Media Studio</span>
+											</strong>
+											<ul class="stats-list">
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Fresher</span>
-													</label>
+													<i class="icon icon-briefcase1"></i>
+													<span class="text">Social Media</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Intermediate</span>
-													</label>
+													<i class="icon icon-map-pin"></i>
+													<span class="text">United Kingdom</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">No-Experience</span>
-													</label>
+													<i class="icon icon-clock"></i>
+													<span class="text">1 Day Ago</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Internship</span>
-													</label>
-												</li>
-												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Expert</span>
-													</label>
+													<i class="icon icon-work_outline"></i>
+													<span class="text">2 Vacancies</span>
 												</li>
 											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Experience</span></li>
+												<li><span class="tag">Developer</span></li>
+												<li><span class="tag">Full Time</span></li>
+											</ul>
+											<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
+											<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
 										</div>
-									</div>
+									</article>
 								</div>
-							</div>
-							<!-- Filter Box -->
-							<div class="filter-box">
-								<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseType">
-									<h2 class="h5">Job Type</h2>
-									<span class="collapse-icon"></span>
-								</a>
-								<div class="collapse show" id="collapseType">
-									<div class="form-group">
-										<div class="checkbox-limit">
-											<ul class="checkbox-list">
+								<div class="col-12 col-md-6 mb-15 mb-md-30">
+									<!-- Featured Box -->
+									<article class="featured-box">
+										<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+										<div class="textbox">
+											<h3 class="h4"><a href="#">Social Media Expert</a></h3>
+											<strong class="subtitle">
+												<span class="icon"><img src="images/ico-job03.png" width="41" height="40" alt="Ever Media Studio"></span>
+												<span class="txt">Circle Media</span>
+											</strong>
+											<ul class="stats-list">
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Full Time</span>
-													</label>
+													<i class="icon icon-briefcase1"></i>
+													<span class="text">Social Media</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Part Time</span>
-													</label>
+													<i class="icon icon-map-pin"></i>
+													<span class="text">United Kingdom</span>
 												</li>
 												<li>
-													<label class="custom-checkbox">
-														<input type="checkbox">
-														<span class="fake-checkbox"></span>
-														<span class="label-text">Remote</span>
-													</label>
+													<i class="icon icon-clock"></i>
+													<span class="text">1 Day Ago</span>
+												</li>
+												<li>
+													<i class="icon icon-work_outline"></i>
+													<span class="text">2 Vacancies</span>
 												</li>
 											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Experience</span></li>
+												<li><span class="tag">Developer</span></li>
+												<li><span class="tag">Full Time</span></li>
+											</ul>
+											<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
+											<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
 										</div>
-									</div>
+									</article>
 								</div>
-							</div>
-							<!-- Filter Box -->
-							<div class="filter-box">
-								<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseLocation">
-									<h2 class="h5">Location</h2>
-									<span class="collapse-icon"></span>
-								</a>
-								<div class="collapse show" id="collapseLocation">
-									<div class="form-group">
-										<select class="select2 medium" name="state" data-placeholder="Location">
-											<option label="Select Category"></option>
-											<option>Indonesia</option>
-											<option>Indonesia</option>
-											<option>Indonesia</option>
-										</select>
-									</div>
-								</div>
-							</div>
-							<!-- Filter Box -->
-							<div class="filter-box">
-								<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseTags">
-									<h2 class="h5">Tags</h2>
-									<span class="collapse-icon"></span>
-								</a>
-								<div class="collapse show" id="collapseTags">
-									<div class="form-group">
-										<ul class="tags-list">
-											<li><a href="#" class="tag">Design</a></li>
-											<li><a href="#" class="tag">Business</a></li>
-											<li><a href="#" class="tag">Video</a></li>
-											<li><a href="#" class="tag">Design & Art</a></li>
-											<li><a href="#" class="tag">Sales</a></li>
-											<li><a href="#" class="tag">Banking</a></li>
-											<li><a href="#" class="tag">Real Estate</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- Filter Box -->
-							<div class="filter-box">
-								<a class="filter-box-head" data-bs-toggle="collapse" href="#collapseSalary">
-									<h2 class="h5">Salary</h2>
-									<span class="collapse-icon"></span>
-								</a>
-								<div class="collapse show" id="collapseSalary">
-									<div class="form-group">
-										<div class="price-inputs">
-											<input type="text" id="amount-start" class="form-control" readonly placeholder="Form" value="">
-											<input type="text" id="amount-end" class="form-control" readonly placeholder="To" value="">
+								<div class="col-12 col-md-6 mb-15 mb-md-30">
+									<!-- Featured Box -->
+									<article class="featured-box">
+										<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+										<div class="textbox">
+											<h3 class="h4"><a href="#">Django Developer</a></h3>
+											<strong class="subtitle">
+												<span class="icon"><img src="images/ico-job04.png" width="32" height="32" alt="Ever Media Studio"></span>
+												<span class="txt">Nindo Studio</span>
+											</strong>
+											<ul class="stats-list">
+												<li>
+													<i class="icon icon-briefcase1"></i>
+													<span class="text">Social Media</span>
+												</li>
+												<li>
+													<i class="icon icon-map-pin"></i>
+													<span class="text">United Kingdom</span>
+												</li>
+												<li>
+													<i class="icon icon-clock"></i>
+													<span class="text">1 Day Ago</span>
+												</li>
+												<li>
+													<i class="icon icon-work_outline"></i>
+													<span class="text">2 Vacancies</span>
+												</li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Experience</span></li>
+												<li><span class="tag">Developer</span></li>
+												<li><span class="tag">Full Time</span></li>
+											</ul>
+											<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
+											<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
 										</div>
-										<div class="range-box">
-											<div id="slider-range"></div>
+									</article>
+								</div>
+								<div class="col-12 col-md-6 mb-15 mb-md-30">
+									<!-- Featured Box -->
+									<article class="featured-box">
+										<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+										<div class="textbox">
+											<h3 class="h4"><a href="#">Python Developer</a></h3>
+											<strong class="subtitle">
+												<span class="icon"><img src="images/ico-job05.png" width="41" height="40" alt="Ever Media Studio"></span>
+												<span class="txt">Star Solution</span>
+											</strong>
+											<ul class="stats-list">
+												<li>
+													<i class="icon icon-briefcase1"></i>
+													<span class="text">Social Media</span>
+												</li>
+												<li>
+													<i class="icon icon-map-pin"></i>
+													<span class="text">United Kingdom</span>
+												</li>
+												<li>
+													<i class="icon icon-clock"></i>
+													<span class="text">1 Day Ago</span>
+												</li>
+												<li>
+													<i class="icon icon-work_outline"></i>
+													<span class="text">2 Vacancies</span>
+												</li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Experience</span></li>
+												<li><span class="tag">Developer</span></li>
+												<li><span class="tag">Full Time</span></li>
+											</ul>
+											<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
+											<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
 										</div>
-									</div>
+									</article>
+								</div>
+								<div class="col-12 col-md-6 mb-15 mb-md-30">
+									<!-- Featured Box -->
+									<article class="featured-box">
+										<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
+										<div class="textbox">
+											<h3 class="h4"><a href="#">Java Developer</a></h3>
+											<strong class="subtitle">
+												<span class="icon"><img src="images/ico-job06.png" width="50" height="49" alt="Ever Media Studio"></span>
+												<span class="txt">Diamond Media</span>
+											</strong>
+											<ul class="stats-list">
+												<li>
+													<i class="icon icon-briefcase1"></i>
+													<span class="text">Social Media</span>
+												</li>
+												<li>
+													<i class="icon icon-map-pin"></i>
+													<span class="text">United Kingdom</span>
+												</li>
+												<li>
+													<i class="icon icon-clock"></i>
+													<span class="text">1 Day Ago</span>
+												</li>
+												<li>
+													<i class="icon icon-work_outline"></i>
+													<span class="text">2 Vacancies</span>
+												</li>
+											</ul>
+											<ul class="tags-list">
+												<li><span class="tag">Experience</span></li>
+												<li><span class="tag">Developer</span></li>
+												<li><span class="tag">Full Time</span></li>
+											</ul>
+											<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
+											<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
+										</div>
+									</article>
 								</div>
 							</div>
-							<!-- Filter Buttons -->
-							<div class="filter-buttons">
-								<a href="#" class="btn btn-primary btn-sm"><span class="btn-text">Filter</span></a>
-								<a href="#" class="btn btn-text btn-sm">Reset all filters</a>
-							</div>
-						</form>
-					</aside>
-					<div class="row justify-content-center">
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">UI/UX Designer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job01.png" width="43" height="43" alt="Creative Hut"></span>
-										<span class="txt">Creative Hut</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Front End Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job02.png" width="37" height="42" alt="Ever Media Studio"></span>
-										<span class="txt">Ever Media Studio</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Social Media Expert</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job03.png" width="41" height="40" alt="Ever Media Studio"></span>
-										<span class="txt">Circle Media</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Django Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job04.png" width="32" height="32" alt="Ever Media Studio"></span>
-										<span class="txt">Nindo Studio</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Python Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job05.png" width="41" height="40" alt="Ever Media Studio"></span>
-										<span class="txt">Star Solution</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Java Developer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job06.png" width="50" height="49" alt="Ever Media Studio"></span>
-										<span class="txt">Diamond Media</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">Graphic Designer</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job07.png" width="37" height="30" alt="Ever Media Studio"></span>
-										<span class="txt">Graphic Designer</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">SEO Expert</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job08.png" width="37" height="43" alt="Ever Media Studio"></span>
-										<span class="txt">iPrint Solution</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
-						</div>
-						<div class="col-12 col-md-6 col-xl-4 mb-15 mb-md-30">
-							<!-- Featured Box -->
-							<article class="featured-box">
-								<a href="#" class="pin-job"><i class="icon icon-bookmark"></i></a>
-								<div class="textbox">
-									<h3 class="h4"><a href="#">QA Testing</a></h3>
-									<strong class="subtitle">
-										<span class="icon"><img src="images/ico-job09.png" width="40" height="44" alt="Ever Media Studio"></span>
-										<span class="txt">Befol Press</span>
-									</strong>
-									<ul class="stats-list">
-										<li>
-											<i class="icon icon-briefcase1"></i>
-											<span class="text">Social Media</span>
-										</li>
-										<li>
-											<i class="icon icon-map-pin"></i>
-											<span class="text">United Kingdom</span>
-										</li>
-										<li>
-											<i class="icon icon-clock"></i>
-											<span class="text">1 Day Ago</span>
-										</li>
-										<li>
-											<i class="icon icon-work_outline"></i>
-											<span class="text">2 Vacancies</span>
-										</li>
-									</ul>
-									<ul class="tags-list">
-										<li><span class="tag">Experience</span></li>
-										<li><span class="tag">Developer</span></li>
-										<li><span class="tag">Full Time</span></li>
-									</ul>
-									<p>Lorem ipsum sit amet, consectetur adipiscing elit. Pellentesque convallis non nisl eget cursus. Pellentesque odio elit, commodo.</p>
-									<a href="#" class="btn btn-primary"><span class="btn-text">Apply Now</span></a>
-								</div>
-							</article>
 						</div>
 					</div>
 				</div>

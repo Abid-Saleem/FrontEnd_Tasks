@@ -2058,6 +2058,10 @@
     h1 {
         margin: 0 0 23px;
     }
+
+    &.subvisual-block {
+        min-height: inherit !important;
+    }
 }
 
 /* Breadcrumb Nav Styles */
@@ -3896,7 +3900,7 @@
         bottom: 0;
         width: 380px;
         z-index: 100;
-        background: #f5f7fc;
+        background: #f5f7fc !important;
         transform: translateX(-105%);
         display: block;
         transition: transform 0.3s ease-in-out;
@@ -3930,6 +3934,10 @@
             margin: 0;
             color: $black;
             line-height: 30px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 16px;
+            }
         }
 
         .collapse-icon {
@@ -3965,6 +3973,25 @@
             .collapse-icon {
                 &:after {
                     display: block;
+                }
+            }
+        }
+    }
+
+    .custom-checkbox {
+        .fake-checkbox {
+            @include media-breakpoint-down(lg) {
+                width: 18px;
+                height: 18px;
+                margin-right: 7px;
+                border-radius: 4px;
+            }
+
+            &:before {
+                @include media-breakpoint-down(lg) {
+                    width: 10px;
+                    height: 6px;
+                    margin: -1px 0 0 0;
                 }
             }
         }
@@ -4233,6 +4260,10 @@
             width: 100%;
             padding-top: 15px;
 
+            @include media-breakpoint-down(lg) {
+                padding-top: 0;
+            }
+
             .btn {
                 width: auto;
 
@@ -4262,6 +4293,10 @@
     position: relative;
     overflow: hidden;
     margin: 0 0 20px;
+
+    @include media-breakpoint-down(lg) {
+        border-bottom: 1px solid #b0b0b0;
+    }
 
     h2 {
         margin-bottom: 12px;
@@ -6211,7 +6246,7 @@
     position: relative;
 
     #map {
-        height: 700px;
+        height: 600px;
 
         @include media-breakpoint-down(lg) {
             height: 500px;

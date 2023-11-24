@@ -442,12 +442,15 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-lg-4">
-							<div class="d-flex align-items-center justify-content-between d-lg-none mb-25 filters-head">
+							<!-- <div class="d-flex align-items-center justify-content-between d-lg-none mb-25 filters-head">
 								<h2 class="h5">Filters</h2>
 								<a href="#" class="filters-opener"><span></span></a>
-							</div>
+							</div> -->
 							<!-- Filters Sidebar -->
 							<aside class="filters-sidebar bg-light-gray">
+								<button class="btn btn-filters filters-opener d-lg-none" type="button">
+									<span></span>
+								</button>
 								<form action="#">
 									<!-- Filter Box -->
 									<div class="filter-box">
@@ -706,11 +709,14 @@
 										</div>
 									</div>
 									<div class="grid-buttons">
-										<button class="btn btn-list active" type="button">
+										<button class="btn btn-list" type="button">
 											<img src="images/list-icon.svg" width="20" height="20" alt="List">
 										</button>
-										<button class="btn btn-grid" type="button">
+										<button class="btn btn-grid active" type="button">
 											<img src="images/grid-icon.svg" width="22" height="22" alt="Grid">
+										</button>
+										<button class="btn btn-filters filters-opener d-lg-none" type="button">
+											<span></span>
 										</button>
 									</div>
 								</div>

@@ -1,5 +1,6 @@
 // page init
 jQuery(function(){
+	initTabs();
 	initSlickCarousel();
 	initSelect2();
     initFancybox();
@@ -29,6 +30,22 @@ jQuery(function(){
 		}
 	});
 }(window));
+
+// Tabs init 
+function initTabs() {
+	// Mega Menu Tabs Function
+	$(function () {
+		$('.mega').find('.tabContentActive').show(0);
+		$('.mega .megamenu-tabs li a').hover(function (e) {
+			e.preventDefault();
+			var getHash = $(this).attr('data-title');
+			$(this).parents('.mega').find('.tabActive').removeClass('tabActive'); 
+			$(this).parents('.mega').find('.tabsMainContent').hide(0).removeClass('tabContentActive');
+			$(this).parent().addClass('tabActive');
+			$(getHash).fadeIn(0).addClass('tabContentActive');
+		});
+	});
+}
 
 // slick init
 function initSlickCarousel() {

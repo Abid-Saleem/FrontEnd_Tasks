@@ -21,7 +21,8 @@
     }
 
     + .visual-block,
-    + .subvisual-block {
+    + .subvisual-block,
+    + .visual-map {
         margin-top: 80px;
 
         @include media-breakpoint-up(md) {
@@ -145,6 +146,13 @@
                         > a {
                             color: $white;
                         }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $green;
+                        color: $white;
                     }
                 }
             }
