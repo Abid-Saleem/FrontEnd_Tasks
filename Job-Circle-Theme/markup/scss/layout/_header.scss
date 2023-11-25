@@ -334,6 +334,13 @@
                     color: $primary;
                 }
             }
+
+            &.tabActive {
+                > a {
+                    background: $primary;
+                    color: $white;
+                }
+            }
         }
 
         .dropdown-item {
@@ -480,22 +487,6 @@
             @include media-breakpoint-up(xxxl) {
                 padding: 40px 0;
             }
-        }
-    }
-
-    .visual-map {
-        margin-top: 85px;
-
-        @include media-breakpoint-up(md) {
-            margin-top: 120px;
-        }
-
-        @include media-breakpoint-up(xl) {
-            margin-top: 125px;
-        }
-
-        @include media-breakpoint-up(xxl) {
-            margin-top: 140px;
         }
     }
 }

@@ -190,6 +190,13 @@
                         }
                     }
                 }
+
+                &.tabActive {
+                    > a {
+                        background: $brown;
+                        color: $white;
+                    }
+                }
             }
 
             .dropdown-item {

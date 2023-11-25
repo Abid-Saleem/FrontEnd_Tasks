@@ -172,6 +172,13 @@
 						}
 					}
 				}
+
+				&.tabActive {
+                    > a {
+                        background: $light-green;
+                        color: $white;
+                    }
+                }
 			}
 
 			.dropdown-item {

@@ -2059,8 +2059,20 @@
         margin: 0 0 23px;
     }
 
-    &.subvisual-block {
-        min-height: inherit !important;
+    &.map-spacer {
+        min-height: 85px;
+
+        @include media-breakpoint-up(md) {
+            min-height: 118px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            min-height: 125px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            min-height: 140px;
+        }
     }
 }
 
@@ -6233,6 +6245,58 @@
     }
 }
 
+/* listing-page-map Styles */
+.listing-page-map {
+    .visual-map {
+        margin-top: 85px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 118px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: 125px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            margin-top: 140px;
+        }
+    }
+
+    .form-search {
+        margin-bottom: 10px;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 20px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+
+        .fields-holder {
+            @include media-breakpoint-up(md) {
+                margin: 0 0 15px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                margin: 0 0 20px;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+            }
+        }
+
+        .form-group {
+            margin: 0 0 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+
+            @include media-breakpoint-up(md) {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
 /* Map Styles */
 #map {
     width: 100%;
@@ -6250,6 +6314,10 @@
 
         @include media-breakpoint-down(lg) {
             height: 500px;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 400px;
         }
     }
 

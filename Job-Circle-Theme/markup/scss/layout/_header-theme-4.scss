@@ -162,6 +162,13 @@
 						}
 					}
 				}
+
+				&.tabActive {
+                    > a {
+                        background: var(--purple-heart);
+                        color: $white;
+                    }
+                }
 			}
 
 			.dropdown-item {
