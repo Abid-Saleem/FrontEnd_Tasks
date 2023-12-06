@@ -1,25 +1,6 @@
 .header-theme-3 {
     background: $white;
 
-    @include media-breakpoint-up(md) {
-        padding: 20px 0;
-    }
-
-    .sticky-header & {
-        @include media-breakpoint-up(md) {
-            padding: 15px 0 !important;
-        }
-    }
-
-    .logo {
-        width: 165px;
-        display: block;
-
-        @include media-breakpoint-up(md) {
-            width: 175px;
-        }
-    }
-
     + .visual-block,
     + .subvisual-block {
         margin-top: 80px;
@@ -78,23 +59,7 @@
     }
 
     .navigation {
-        font-size: 16px;
-        font-family: $font-family-epilogue;
-
-        @include media-breakpoint-up(lg) {
-            font-size: 14px;
-        }
-
-        @include media-breakpoint-up(xl) {
-            font-size: 16px;
-        }
-
         > li {
-            &:not(:last-child) {
-                @include media-breakpoint-up(xxl) {
-                    padding: 0 30px;
-                }
-            }
 
             > a {
                 &:not(.btn) {
@@ -108,26 +73,6 @@
                         @include media-breakpoint-down(lg) {
                             color: $lt-brown;
                         }
-                    }
-                }
-
-                &.btn-brown {
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    font-size: 16px;
-
-                    @include media-breakpoint-up(lg) {
-                        font-size: 14px;
-                    }
-                
-                    @include media-breakpoint-up(xl) {
-                        font-size: 16px;
-                    }
-
-                    @include media-breakpoint-down(lg) {
-                        text-align: center;
-                        justify-content: center;
-                        margin-top: 15px;
                     }
                 }
 

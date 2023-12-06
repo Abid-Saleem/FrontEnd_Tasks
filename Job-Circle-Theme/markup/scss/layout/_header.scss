@@ -6,17 +6,10 @@
     width: 100%;
     padding: 20px 0;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    font-family: $font-family-epilogue;
 
     @include media-breakpoint-up(md) {
-        padding: 35px 0;
-    }
-
-    @include media-breakpoint-up(xxl) {
-        padding: 50px 0;
-    }
-
-    @include media-breakpoint-up(xxxl) {
-        padding: 72px 0;
+        padding: 20px 0;
     }
 
     .sticky-header & {
@@ -26,7 +19,7 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.15);
 
         @include media-breakpoint-up(md) {
-            padding: 20px 0 !important;
+            padding: 13px 0 !important;
         }
     }
 
@@ -43,14 +36,6 @@
 
         @include media-breakpoint-up(md) {
             width: 175px;
-        }
-
-        @include media-breakpoint-up(xl) {
-            width: 200px;
-        }
-
-        @include media-breakpoint-up(xxl) {
-            width: 222px;
         }
 
         a {
@@ -139,7 +124,7 @@
 
 .nav-drop {
     @include media-breakpoint-down(lg) {
-        background: $blue-dark;
+        background: $dark-green;
         position: fixed;
         right: 0;
         top: 0;
@@ -163,20 +148,16 @@
     list-style: none;
     padding: 70px 30px;
     margin: 0;
-    font-family: $headings-font-family;
 
     @include media-breakpoint-up(lg) {
         display: flex;
         align-items: center;
         padding: 0;
+        font-size: 15px;
     }
 
     @include media-breakpoint-up(xl) {
-        font-size: 20px;
-    }
-
-    @include media-breakpoint-up(xxxl) {
-        font-size: 24px;
+        font-size: 16px;
     }
 
     > li {
@@ -194,10 +175,6 @@
             @include media-breakpoint-up(xxl) {
                 padding: 0 30px;
             }
-            
-            @include media-breakpoint-up(xxxl) {
-                padding: 0 40px;
-            }
         }
 
         > a {
@@ -207,9 +184,13 @@
             &:not(.btn) {
                 color: $white;
                 padding: 10px 0;
+                
+                @include media-breakpoint-up(lg) {
+                    color: $black;
+                }
 
                 &:hover {
-                    color: $primary;
+                    color: $green;
                 }
             }
 
@@ -231,6 +212,23 @@
                 }
             }
 
+            &.btn {
+                font-size: inherit !important;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                @include media-breakpoint-down(lg) {
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 15px;
+                }
+
+                &.btn-sm {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                }
+            }
+
             &.dropdown-toggle {
                 &:after {
                     border: 0;
@@ -245,8 +243,9 @@
             }
 
             &.btn-info {
-                padding-top: 12px;
-                padding-bottom: 12px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: inherit !important;
 
                 @include media-breakpoint-down(lg) {
                     text-align: center;
@@ -258,7 +257,7 @@
             &.dropdown-toggle {
                 &.show {
                     @include media-breakpoint-down(lg) {
-                        color: $primary;
+                        color: $green;
                     }
                 }
             }
@@ -266,13 +265,13 @@
 
         &:hover {
             .dropdown-toggle {
-                color: $primary;
+                color: $green;
             }
         }
 
         &.active {
             > a {
-                color: $primary;
+                color: $green;
             }
         }
 
@@ -298,11 +297,7 @@
     .dropdown-menu {
         background: $white;
         border: 0;
-
-        @include media-breakpoint-up(lg) {
-            max-height: 400px;
-            overflow: auto;
-        }
+        font-size: 14px;
 
         @include media-breakpoint-up(lg) {
             display: block;
@@ -315,10 +310,8 @@
             margin-top: 20px;
             left: 50%;
             transform: translateX(-50%);
-        }
-
-        @include media-breakpoint-up(xl) {
-            font-size: 16px;
+            max-height: 500px;
+            overflow: auto;
         }
 
         @include media-breakpoint-down(lg) {
@@ -337,7 +330,7 @@
 
             &.tabActive {
                 > a {
-                    background: $primary;
+                    background: $green;
                     color: $white;
                 }
             }
@@ -353,7 +346,7 @@
 
             &:hover {
                 color: $white;
-                background: $primary;
+                background: $green;
             }
         }
 
@@ -449,7 +442,7 @@
             > a {
                 &:not(.btn, :hover) {
                     @include media-breakpoint-up(lg) {
-                        color: $secondary;
+                        color: $black;
                     }
                 }
             }
@@ -457,7 +450,7 @@
             &:hover {
                 .dropdown-toggle {
                     @include media-breakpoint-up(lg) {
-                        color: $primary;
+                        color: $green;
                     }
                 }
             }
@@ -469,7 +462,7 @@
             &:before,
             &:after,
             span {
-                background: $secondary;
+                background: $green;
             }
         }
     }
