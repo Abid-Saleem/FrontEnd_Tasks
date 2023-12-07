@@ -1,0 +1,235 @@
+.header-theme-9 {
+    font-family: 'DM Sans', sans-serif;
+
+    @include media-breakpoint-up(md) {
+        padding: 42px 0;
+    }
+
+    .sticky-header & {
+        background: #262586;
+        @include media-breakpoint-up(md) {
+            padding: 15px 0 !important;
+        }
+    }
+
+    .logo {
+        width: 165px;
+        display: block;
+
+        @include media-breakpoint-up(md) {
+            width: 175px;
+        }
+    }
+
+    .nav-opener,
+    .nav-close {
+        &:before,
+        &:after,
+        span {
+            background: $dark-yellow;
+        }
+
+        &:hover {
+            &:before,
+            &:after,
+            span {
+                background: $dark-yellow;
+            }
+        }
+    }
+
+    .nav-drop {
+        @include media-breakpoint-down(lg) {
+            background: $dark-blue;
+        }
+    }
+
+    .navigation {
+        font-size: 16px;
+        font-family: 'DM Sans', sans-serif;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 14px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 16px;
+        }
+
+        > li {
+            &:not(:last-child) {
+                @include media-breakpoint-up(lg) {
+                    padding: 0 6px;
+                }
+                @include media-breakpoint-up(xxxl) {
+                    padding: 0 15px;
+                }
+            }
+
+            > a {
+                &:not(.btn) {
+                    @include media-breakpoint-up(lg) {
+                        color: $white;
+                    }
+
+                    &:hover {
+                        color: $dark-yellow;
+                    }
+                }
+
+                &.btn-blue {
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-size: 16px;
+
+                    @include media-breakpoint-up(lg) {
+                        font-size: 14px;
+                    }
+                
+                    @include media-breakpoint-up(xl) {
+                        font-size: 16px;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        text-align: center;
+                        justify-content: center;
+                    }
+                }
+
+                &.dropdown-toggle {
+                    &.show {
+                        @include media-breakpoint-down(lg) {
+                            color: $dark-yellow;
+                        }
+                    }
+                }
+            }
+
+            &.text-login {
+                display: inline-flex;
+                align-items: center;
+
+                @include media-breakpoint-up(xl) {
+                    margin: 0 21px;
+                }
+
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    background: #4543b0;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                    display: none;
+                    flex-shrink: 0;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include media-breakpoint-up(xl) {
+                        display: flex;
+                    }
+
+                    img {
+                        display: inline-block;
+                        height: auto;
+                        max-width: 100%;
+                    }
+                }
+
+                .text {
+                    flex-grow: 1;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 400;
+
+                    @include media-breakpoint-up(xl) {
+                        font-size: 15px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-toggle {
+                    color: $dark-yellow;
+                }
+            }
+
+            &.active {
+                > a {
+                    color: $dark-yellow;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            font-size: 14px;
+
+            li {
+                &.active {
+                    > a {
+                        color: $dark-yellow;
+                    }
+
+                    &:hover {
+                        > a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.tabActive {
+                    > a {
+                        background: $dark-yellow;
+                        color: $white;
+                    }
+                }
+            }
+
+            .dropdown-item {
+                &:hover {
+                    background: $dark-yellow;
+                }
+            }
+        }
+    }
+}
+
+.sticky-header {
+    .header-theme-9 {
+        .navigation {
+            > li {
+                > a {
+                    &:not(.btn, :hover) {
+                        @include media-breakpoint-up(lg) {
+                            color: $white;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .dropdown-toggle {
+                        @include media-breakpoint-up(lg) {
+                            color: $dark-yellow;
+                        }
+                    }
+                }
+
+                &.active {
+                    > a {
+                        color: $dark-yellow;
+                    }
+                }
+            }
+        }
+
+        .nav-opener {
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $dark-yellow;
+                }
+            }
+        }
+    }
+}

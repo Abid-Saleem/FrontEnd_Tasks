@@ -1,0 +1,179 @@
+
+body {
+    min-width: 360px;
+    background: #fff;
+    color: #fff;
+    margin: 0;
+    font: 16px/1.5 "Inter", sans-serif;
+  }
+  @media (max-width: 1199px) {
+    body {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 1023px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.2;
+    margin: 0 0 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    color: inherit;
+  }
+  h1 span,
+  h2 span,
+  h3 span,
+  h4 span,
+  h5 span,
+  h6 span {
+    position: relative;
+    color: #4285f4;
+  }
+  
+  h1 {
+    font-size: 57px;
+    text-transform: inherit;
+  }
+  @media (max-width: 1199px) {
+    h1 {
+      font-size: 45px;
+    }
+  }
+  @media (max-width: 1023px) {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 35px;
+    }
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  @media (max-width: 1199px) {
+    h2 {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 1023px) {
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  h2.border {
+    padding: 0 0 40px;
+  }
+  @media (max-width: 1023px) {
+    h2.border {
+      padding: 0 0 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    h2.border {
+      padding: 0 0 20px;
+    }
+  }
+  h2.border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #c14334;
+    width: 100px;
+    height: 8px;
+  }
+  
+  h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  @media (max-width: 1199px) {
+    h3 {
+      font-size: 30px;
+    }
+  }
+  @media (max-width: 1023px) {
+    h3 {
+      font-size: 23px;
+    }
+  }
+  @media (max-width: 767px) {
+    h3 {
+      font-size: 20px;
+    }
+  }
+  h3.border {
+    padding: 0 0 40px;
+  }
+  h3.border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #c14334;
+    width: 100px;
+    height: 8px;
+  }
+  
+  h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  @media (max-width: 1023px) {
+    h4 {
+      font-size: 18px;
+    }
+  }
+  
+  h5 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  @media (max-width: 1023px) {
+    h5 {
+      font-size: 16px;
+    }
+  }
+  
+  p,
+  ul {
+    margin: 0 0 20px;
+  }
+  @media (max-width: 1023px) {
+    p,
+    ul {
+      margin: 0 0 15px;
+    }
+  }
+  p:last-child,
+  ul:last-child {
+    margin: 0;
+  }
+
