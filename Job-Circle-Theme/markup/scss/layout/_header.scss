@@ -6,7 +6,6 @@
     width: 100%;
     padding: 20px 0;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    font-family: $font-family-epilogue;
 
     @include media-breakpoint-up(md) {
         padding: 20px 0;
