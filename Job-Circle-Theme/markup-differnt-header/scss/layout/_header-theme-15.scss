@@ -1,0 +1,343 @@
+.header-theme-15 {
+	background: transparent;
+	font-family: $font-family-DMSans;
+
+	@include media-breakpoint-up(md) {
+		padding: 20px 0;
+	}
+
+	.sticky-header & {
+		background: $white;
+		@include media-breakpoint-up(md) {
+			padding: 7px 0 !important;
+		}
+	}
+	.logo {
+		display: block;
+		flex: 0 0 178px;
+		@include size(178px, 43px);
+		transition: height 0.3s ease-in-out;
+
+		a {
+			display: block;
+			@include size(100%);
+			img {
+				@include size(100%, auto);
+			}
+		}
+	}
+	.btn {
+		color: $white;
+		padding: 8px 15px;
+		border-radius: 5px;
+		background: $royal-blue;
+		font-family: $font-family-DMSans;
+		@include media-breakpoint-up(lg) {
+			font-size: 14px;
+			padding: 8px 15px;
+		}
+		@include media-breakpoint-up(xl) {
+			font-size: 16px;
+			padding: 15px 40px;
+		}
+		&:before {
+			border-radius: 5px;
+		}
+		&:hover:before {
+			opacity: 0.5;
+			background: darken($royal-blue, 10%);
+		}
+	}
+
+	.main-nav {
+		display: flex;
+
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+			.nav-drop {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				background: transparent;
+				justify-content: space-between;
+			}
+		}
+
+		.sticky-header & {
+			@include media-breakpoint-up(lg) {
+				padding: 7px 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 7px 0;
+			}
+		}
+	}
+	.nav-opener,
+	.nav-close {
+		&:before,
+		&:after,
+		span {
+			background: $black;
+			.nav-active & {
+				background: $black;
+			}
+		}
+
+		&:hover {
+			&:before,
+			&:after,
+			span {
+				background: $royal-blue;
+			}
+		}
+	}
+
+	.nav-drop {
+		background: $white;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+		@include media-breakpoint-up(lg) {
+			width: 100%;
+			box-shadow: none;
+		}
+	}
+
+	.navigation {
+		padding-bottom: 30px;
+		font-family: $font-family-DMSans;
+		@include media-breakpoint-up(lg) {
+			font-size: 16px;
+			padding-bottom: 0;
+			padding-left: 25px;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 480px;
+			padding-left: 60px;
+		}
+		@include media-breakpoint-up(xxl) {
+			padding-left: 0;
+		}
+		> li {
+			@include media-breakpoint-up(lg) {
+				padding: 0;
+			}
+			&:not(:last-child) {
+				margin-right: 10px;
+				@include media-breakpoint-up(xl) {
+					margin-right: 18px;
+				}
+				@include media-breakpoint-up(xxl) {
+					margin-right: 22px;
+				}
+			}
+			> a {
+				&:not(.btn) {
+					color: $black;
+					@include media-breakpoint-up(lg) {
+						color: $black;
+					}
+
+					&:hover {
+						color: $royal-blue;
+					}
+				}
+				&.dropdown-toggle {
+					&.show {
+						@include media-breakpoint-down(lg) {
+							color: $royal-blue;
+						}
+					}
+				}
+			}
+
+			&:hover {
+				.dropdown-toggle {
+					color: $royal-blue;
+				}
+			}
+
+			&.active {
+				> a {
+					color: $royal-blue;
+				}
+			}
+		}
+
+		.dropdown-menu {
+			font-size: 14px;
+
+			li {
+				&.active {
+					> a {
+						color: $royal-blue;
+					}
+
+					&:hover {
+						> a {
+							color: $white;
+						}
+					}
+				}
+
+				&.tabActive {
+                    > a {
+                        background: $royal-blue;
+                        color: $white;
+                    }
+                }
+			}
+
+			.dropdown-item {
+				color: $black;
+				&:hover {
+					color: $white;
+					background: $royal-blue;
+				}
+			}
+		}
+	}
+	.user-box {
+		display: flex;
+		padding: 0 30px;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media-breakpoint-up(lg) {
+			padding: 0;
+			width: 300px;
+			justify-content: flex-end;
+		}
+		@include media-breakpoint-up(xl) {
+			width: 480px;
+		}
+
+		.btn {
+			@include media-breakpoint-down(lg) {
+				width: 100%;
+				display: flex;
+				text-align: center;
+				justify-content: center;
+			}
+			i {
+				display: flex;
+				font-size: 18px;
+				justify-content: center;
+				transition: all ease-in-out 0.3s;
+				@include media-breakpoint-up(lg) {
+					margin-right: 10px;
+				}
+				@include media-breakpoint-up(xl) {
+					margin-right: 12px;
+				}
+			}
+		}
+		.btn-user {
+			color: $black;
+			background: $white;
+			margin-right: 10px;
+			.sticky-header & {
+				color: $white;
+				background: $black;
+				i {
+					color: $white;
+				}
+			}
+			@include media-breakpoint-up(xl) {
+				padding: 15px 33px;
+			}
+			@include media-breakpoint-down(lg) {
+				display: flex;
+				@include size(40px);
+				align-items: center;
+				border-radius: 50%;
+				justify-content: center;
+				i {
+					z-index: 2;
+					position: relative;
+				}
+			}
+			&:hover {
+				color: $white;
+				background: $black;
+				i {
+					z-index: 2;
+					color: $white;
+					position: relative;
+				}
+			}
+			i {
+				color: $black;
+			}
+		}
+	}
+	.menu-link {
+		display: flex;
+		font-size: 18px;
+		border-radius: 50%;
+		background: $white;
+		@include size(40px);
+		align-items: center;
+		justify-content: center;
+		transition: all ease-in-out 0.3s;
+		&:hover {
+			background: $royal-blue;
+			img {
+				filter: grayscale(0) invert(0);
+			}
+		}
+		img {
+			width: 15px;
+			filter: grayscale(1) invert(1);
+			transition: all ease-in-out 0.3s;
+		}
+	}
+}
+
+.sticky-header {
+	.header-theme-10 {
+		.nav-opener {
+			&:not(:hover) {
+				&:before,
+				&:after,
+				span {
+					background: $black;
+				}
+			}
+		}
+		.navigation {
+			> li {
+				> a {
+					&:not(.btn) {
+						@include media-breakpoint-up(lg) {
+							color: $black;
+						}
+
+						&:hover {
+							color: $royal-blue;
+						}
+					}
+					&.dropdown-toggle {
+						&.show {
+							@include media-breakpoint-down(lg) {
+								color: $royal-blue;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					.dropdown-toggle {
+						color: $royal-blue;
+					}
+				}
+
+				&.active {
+					> a {
+						color: $royal-blue;
+					}
+				}
+			}
+
+		}
+	}
+}

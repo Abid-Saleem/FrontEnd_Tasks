@@ -30,9 +30,10 @@
             }
         }
     }
+
     @include media-breakpoint-up(xxxl) {
 	 	.container {
-	 		max-width: 1322px;
+	 		// max-width: 1322px;
 	 	} 
 	}
 }
