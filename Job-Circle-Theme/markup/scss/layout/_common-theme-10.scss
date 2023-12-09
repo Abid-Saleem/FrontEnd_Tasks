@@ -1052,19 +1052,19 @@
 				padding-right: 11px;
 			}
 			&.slick-current {
-				a {
-					box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.05);
-					@include media-breakpoint-up(lg) {
-						border: 0;
-					}
-				}
+				// a {
+				// 	box-shadow: 0 3px 49px 0 rgba(0, 0, 0, 0.05);
+				// 	@include media-breakpoint-up(lg) {
+				// 		border: 0;
+				// 	}
+				// }
 			}
 		}
 	}
 	.slide {
 		height: 100%;
 		padding-top: 30px;
-		a {
+		.companies-carousel-box {
 			height: 100%;
 			display: flex;
 			padding: 15px;
@@ -1093,6 +1093,10 @@
 		line-height: normal;
 		@include media-breakpoint-up(lg) {
 			font-size: 24px;
+		}
+
+		a {
+			color: currentColor;
 		}
 	}
 	.sub-title {

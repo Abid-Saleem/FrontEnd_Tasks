@@ -2060,18 +2060,18 @@
     }
 
     &.map-spacer {
-        min-height: 85px;
+        min-height: 80px;
 
         @include media-breakpoint-up(md) {
-            min-height: 118px;
+            min-height: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            min-height: 91px;
         }
 
         @include media-breakpoint-up(xl) {
-            min-height: 125px;
-        }
-
-        @include media-breakpoint-up(xxl) {
-            min-height: 140px;
+            min-height: 94px;
         }
     }
 }
@@ -6248,18 +6248,18 @@
 /* listing-page-map Styles */
 .listing-page-map {
     .visual-map {
-        margin-top: 85px;
+        margin-top: 80px;
 
         @include media-breakpoint-up(md) {
-            margin-top: 118px;
+            margin-top: 83px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 91px;
         }
 
         @include media-breakpoint-up(xl) {
-            margin-top: 125px;
-        }
-
-        @include media-breakpoint-up(xxl) {
-            margin-top: 140px;
+            margin-top: 94px;
         }
     }
 

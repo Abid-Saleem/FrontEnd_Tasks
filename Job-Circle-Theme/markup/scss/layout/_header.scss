@@ -471,14 +471,6 @@
     &:not(.sticky-header) {
         .header {
             background: $blue;
-
-            @include media-breakpoint-up(xxl) {
-                padding: 40px 0;
-            }
-    
-            @include media-breakpoint-up(xxxl) {
-                padding: 40px 0;
-            }
         }
     }
 }
