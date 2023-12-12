@@ -1,0 +1,50 @@
+@import "vendors/bootstrap/functions";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/mixins";
+
+.btn.btn-green,
+.nav-tabs.nav-tabs-line li .nav-link.active::after,
+.leadership-box .social-networks li a:hover,
+.accordion_list li .icon,
+.subvisual-theme-1.bg-dark-green,
+.section-theme-1 .pagination .page-item.active .page-link,
+.section-theme-1 .pagination .page-item .page-link:hover {
+    background: $brown !important;
+}
+
+.btn.btn-green,
+.leadership-box .social-networks li a:hover,
+.section-theme-1 .pagination .page-item.active .page-link,
+.section-theme-1 .pagination .page-item .page-link:hover,
+.section-theme-1 .pagination .page-item:first-child .page-link, 
+.section-theme-1 .pagination .page-item:last-child .page-link,
+.section-theme-1 .pagination .page-item:first-child .page-link:hover, 
+.section-theme-1 .pagination .page-item:last-child .page-link:hover {
+    border-color: $brown !important;
+}
+
+.leadership-box .number a:hover {
+    color: $brown !important;
+}
+
+.how-work-box .icon,
+.section-theme-6.learning-block.bg-light-sky .text-info-slider::before {
+    background: $lt-brown !important;
+}
+
+.section-theme-6.learning-block.bg-light-sky .text-info-slider {
+    border-color: $lt-brown !important;
+}
+
+.subvisual-theme-1 .breadcrumb-nav .breadcrumb a:hover {
+    color: $lt-brown !important;
+}
+
+.section-theme-6.learning-block.bg-light-sky .thumbs-list .thumbnail::before {
+    background: $brown !important;
+    opacity: 0.7;
+}
+
+.subvisual-theme-1 .pattern-image img {
+    mix-blend-mode: multiply;
+}

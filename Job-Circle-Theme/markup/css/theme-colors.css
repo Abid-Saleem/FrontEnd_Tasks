@@ -1,0 +1,46 @@
+.btn.btn-green,
+.nav-tabs.nav-tabs-line li .nav-link.active::after,
+.leadership-box .social-networks li a:hover,
+.accordion_list li .icon,
+.subvisual-theme-1.bg-dark-green,
+.section-theme-1 .pagination .page-item.active .page-link,
+.section-theme-1 .pagination .page-item .page-link:hover {
+  background: #e66f3b !important;
+}
+
+.btn.btn-green,
+.leadership-box .social-networks li a:hover,
+.section-theme-1 .pagination .page-item.active .page-link,
+.section-theme-1 .pagination .page-item .page-link:hover,
+.section-theme-1 .pagination .page-item:first-child .page-link,
+.section-theme-1 .pagination .page-item:last-child .page-link,
+.section-theme-1 .pagination .page-item:first-child .page-link:hover,
+.section-theme-1 .pagination .page-item:last-child .page-link:hover {
+  border-color: #e66f3b !important;
+}
+
+.leadership-box .number a:hover {
+  color: #e66f3b !important;
+}
+
+.how-work-box .icon,
+.section-theme-6.learning-block.bg-light-sky .text-info-slider::before {
+  background: #fee0ab !important;
+}
+
+.section-theme-6.learning-block.bg-light-sky .text-info-slider {
+  border-color: #fee0ab !important;
+}
+
+.subvisual-theme-1 .breadcrumb-nav .breadcrumb a:hover {
+  color: #fee0ab !important;
+}
+
+.section-theme-6.learning-block.bg-light-sky .thumbs-list .thumbnail::before {
+  background: #e66f3b !important;
+  opacity: 0.7;
+}
+
+.subvisual-theme-1 .pattern-image img {
+  mix-blend-mode: multiply;
+}
