@@ -519,28 +519,9 @@
 			}
 		}
 	}
+	
 	.download-btns {
 		display: flex;
-		max-width: 315px;
-		@include media-breakpoint-up(lg) {
-			max-width: inherit;
-		}
-		a:not(:last-child) {
-			margin-right: 15px;
-			@include media-breakpoint-up(lg) {
-				margin-right: 20px;
-			}
-		}
-		a, img {
-			display: block;
-		}
-		img {
-			width: 150px;
-			@include media-breakpoint-up(lg) {
-				width: auto;
-				max-width: 100%;
-			}
-		}
 	}
 
 	&.candidate-block {
@@ -806,6 +787,7 @@
 /* Candidate Post Styles */
 .candidate-post {
 	padding: 30px 10px 0;
+
 	@include media-breakpoint-up(lg) {
 		padding: 0;
 	}
@@ -813,18 +795,19 @@
 		height: 100%;
 		padding: 20px;
 		display: block;
-		  background: $white;
-		  border-radius: 15px;
+		background: $white;
+		border-radius: 15px;
 		border: 1px solid $alto;
+
 		@include media-breakpoint-up(lg) {
 			border-radius: 30px;
 			padding: 20px 20px 30px;
 		}
 	}
+
 	&:hover {
 		a {
-			border-color: $purple-heart;
-			box-shadow: 0 3px 40px 0 rgba(35, 72, 255, 0.21);
+			box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.15);
 		}
 	}
 
