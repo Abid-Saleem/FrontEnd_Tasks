@@ -522,6 +522,11 @@
 	
 	.download-btns {
 		display: flex;
+        margin: 0 -5px;
+
+        @include media-breakpoint-up(xl) {
+            margin: 0 -10px;
+        }
 	}
 
 	&.candidate-block {
@@ -703,37 +708,39 @@
 		}
 	}
 
-	.btn-purple,
-	.btn-green {
-		color: $black;
-		background: $white;
-		border: 2px solid $purple-heart;
+	.btn {
+		&.btn-purple,
+		&.btn-green {
+			color: $black;
+			background: $white !important;
+			border: 2px solid $purple-heart;
 
-		@include media-breakpoint-up(md) {
-			max-width: 156px;
-			min-width: 156px;
-			padding: 14px 30px;
-			font-size: 16px;
+			@include media-breakpoint-up(md) {
+				max-width: 156px;
+				min-width: 156px;
+				padding: 14px 30px;
+				font-size: 16px;
+			}
+			&:before {
+				z-index: 1;
+				background: $purple-heart;
+			}
+			&:hover {
+				color: $white;
+			}
+			span {
+				z-index: 2;
+				position: relative;
+			}
 		}
-		&:before {
-			z-index: 1;
-			background: $purple-heart;
-		}
-		&:hover {
-			color: $white;
-		}
-		span {
-			z-index: 2;
-			position: relative;
-		}
-	}
 
-	.btn-green {
-		border-color: $green;
+		&.btn-green {
+			border-color: $green;
 
-		&:before {
-			background: $green !important;
-			opacity: 1;
+			&:before {
+				background: $green !important;
+				opacity: 1;
+			}
 		}
 	}
 }

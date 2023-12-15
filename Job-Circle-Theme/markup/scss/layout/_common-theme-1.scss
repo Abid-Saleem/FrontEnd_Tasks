@@ -437,7 +437,18 @@
                 display: block;
             }
 
-            input[type="checkbox"]{
+            input[type="radio"] {
+                + .fake-checkbox {
+                    border-radius: 50%;
+
+                    &:before {
+                        border-radius: 50%; 
+                    }
+                }
+            }
+
+            input[type="checkbox"],
+            input[type="radio"] {
                 &:checked {
                     + .fake-checkbox {
                         background: $green;
@@ -451,7 +462,7 @@
             margin-top: 15px;
             padding: 0;
             border-radius: 0;
-            background: transparent;
+            background: transparent !important;
             width: auto;
             color: $tundora;
             text-decoration: underline;
@@ -4420,7 +4431,7 @@
                 }
 
                 &:hover {
-                    background: transparent;
+                    background: transparent !important;
                     color: $green;
                 }
             }
@@ -4578,7 +4589,7 @@
                 bottom: 15px;
                 background: $code-gray;
                 border-radius: 20px;
-                color: $white;
+                color: $white !important;
                 padding: 9px 15px 7px;
                 text-transform: uppercase;
                 font-size: 13px;

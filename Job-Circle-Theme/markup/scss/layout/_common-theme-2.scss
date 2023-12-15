@@ -619,7 +619,7 @@
         }
 
         &:hover {
-            background: $white;
+            background: $white !important;
             border-color: #ddd;
             color: $body-color;
             box-shadow: 5px 5px 15px rgba(0,0,0,0.1);

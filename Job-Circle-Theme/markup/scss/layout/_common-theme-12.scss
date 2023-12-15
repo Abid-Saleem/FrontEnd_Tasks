@@ -393,9 +393,10 @@
 .apps-block.section-theme-12{
 	.align-items-center{
 		background-size: 100% 100%;
+
 		@include media-breakpoint-down(md) {
 			background: $white;
-			padding: 30px;
+			padding: 30px 0;
 		}
 	}
 }
@@ -568,19 +569,21 @@
 .apps-block.section-theme-12{
 	.download-btns{
 		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		a{
-			width: 48%;
-			img{
-				width: 100%;
-				display: block;
-			}
-		}
+		margin: 0 -5px;
+
+        @include media-breakpoint-up(xl) {
+            margin: 0 -10px;
+        }
 	}
-	.img-holder{
+
+	.image-holder {
+		@include media-breakpoint-down(md) {
+			padding-top: 15px;
+		}
+
 		img{
 			width: 80%;
+
 			@include media-breakpoint-up(lg) {
 				width: 80%;
 			}
@@ -591,6 +594,10 @@
 	}
 	.align-items-center{
 		@include media-breakpoint-up(md){
+			padding: 30px 0;
+		}
+
+		@include media-breakpoint-up(lg){
 			padding: 30px;	
 		}
 	}

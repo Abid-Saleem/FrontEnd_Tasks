@@ -4451,8 +4451,8 @@
             color: $black;
             min-width: 70px;
             font-weight: 500;
-            background: $primary;
-            border-color: $primary;
+            background: $light-yellow;
+            border-color: $light-yellow;
             padding: 5px 15px;
             margin-bottom: 0;
 
@@ -4628,11 +4628,12 @@
             border-right: 0;
             transition: all 0.3s ease-in-out;
             opacity: 0;
-            margin: -1px 0 0 0;
+            margin: -2px 0 0 0;
         }
     }
 
-    input[type="checkbox"] {
+    input[type="checkbox"],
+    input[type="radio"] {
         position: absolute;
         left: 0;
         top: 0;
@@ -4647,6 +4648,12 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+
+    input[type="radio"] {
+        + .fake-checkbox {
+            border-radius: 50%;
         }
     }
 
@@ -5084,6 +5091,7 @@
 .post-tags,
 .post-social {
     display: flex;
+    align-items: center;
 
     @include media-breakpoint-down(md) {
         width: 100%;
@@ -6552,6 +6560,22 @@
     }
 
     &.btn-app-store {
-        background: $dark-green;
+        background: #080808;
+    }
+
+    &.purple-btn {
+        background: $purple-heart;
+    }
+
+    &.rose-btn {
+        background: $texas-rose;
+    }
+
+    &.orange-btn {
+        background: $orange;
+    }
+
+    &.blue-btn {
+        background: #3f71ef;
     }
 }
