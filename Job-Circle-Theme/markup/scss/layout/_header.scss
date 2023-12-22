@@ -53,6 +53,107 @@
     }
 }
 
+.top-bar {
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.85);
+    color: $black;
+    padding: 15px 0;
+    margin-top: -20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    
+    .sticky-header & {
+        opacity: 0;
+        margin-top: -58px;
+        margin-bottom: 0;
+    }
+
+    .subscribe{
+        display: flex;
+        align-items: center;
+
+        .icon {
+            display: block;
+            margin-right: 10px;
+
+            img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        .subs_text {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 400;
+
+            a {
+                font-weight: 600;
+                text-decoration: underline;
+                color: currentColor;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .hotline {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        font: 400 16px/1 $headings-font-family;
+
+        .icon-hotline {
+            color: $green;
+            font-size: 28px;
+            margin-right: 11px;
+        }
+
+        a {
+            color: currentColor;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+
+    .social-links-top {
+        font-size: 16px;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+
+        .list-inline-item {
+            position: relative; 
+            margin-left: 18px;
+            padding-left: 18px;
+            margin-right: 0;
+
+            &:after {
+                top: 50%;
+                left: 0;
+                content: "";
+                position: absolute;
+                background: $grayish;
+                @include size(2px, 16px);
+                transform: translateY(-50%);
+            }
+        }
+
+        a {
+            color: currentColor;
+
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+}
+
 .nav-opener,
 .nav-close {
     width: 36px;

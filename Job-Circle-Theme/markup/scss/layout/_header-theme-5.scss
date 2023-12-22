@@ -1,15 +1,5 @@
 .header-theme-5 {
 	background: transparent;
-
-	.btn {
-		color: $white;
-		background: var(--purple-heart);
-
-		&:hover:before {
-			opacity: 0.5;
-			background: var(--navy-dark);
-		}
-	}
 	
 	.nav-opener,
 	.nav-close {
@@ -23,7 +13,7 @@
 			&:before,
 			&:after,
 			span {
-				background: var(--purple-heart);
+				background: $green;
 			}
 		}
 	}
@@ -43,14 +33,14 @@
 					}
 
 					&:hover {
-						color: var(--purple-heart);
+						color: $green;
 					}
 				}
 
 				&.dropdown-toggle {
 					&.show {
 						@include media-breakpoint-down(lg) {
-							color: var(--purple-heart);
+							color: $green;
 						}
 					}
 				}
@@ -58,13 +48,13 @@
 
 			&:hover {
 				.dropdown-toggle {
-					color: var(--purple-heart);
+					color: $green;
 				}
 			}
 
 			&.active {
 				> a {
-					color: var(--purple-heart);
+					color: $green;
 				}
 			}
 		}
@@ -73,7 +63,7 @@
 			li {
 				&.active {
 					> a {
-						color: var(--purple-heart);
+						color: $green;
 					}
 
 					&:hover {
@@ -85,7 +75,7 @@
 
 				&.tabActive {
                     > a {
-                        background: var(--purple-heart);
+                        background: $green;
                         color: $white;
                     }
                 }
@@ -93,7 +83,7 @@
 
 			.dropdown-item {
 				&:hover {
-					background: var(--purple-heart);
+					background: $green;
 				}
 			}
 		}
@@ -103,48 +93,13 @@
 .sticky-header {
 	.header-theme-5 {
 		.nav-opener {
-			&:not(:hover) {
-				&:before,
-				&:after,
-				span {
-					background: var(--navy-dark);
-				}
-			}
-		}
-		
-		.navigation {
-			> li {
-				> a {
-					&:not(.btn) {
-						@include media-breakpoint-up(lg) {
-							color: var(--navy-dark);
-						}
-
-						&:hover {
-							color: var(--purple-heart);
-						}
-					}
-					&.dropdown-toggle {
-						&.show {
-							@include media-breakpoint-down(lg) {
-								color: var(--purple-heart);
-							}
-						}
-					}
-				}
-
-				&:hover {
-					.dropdown-toggle {
-						color: var(--purple-heart);
-					}
-				}
-
-				&.active {
-					> a {
-						color: var(--purple-heart);
-					}
-				}
-			}
-		}
+            &:not(:hover) {
+                &:before,
+                &:after,
+                span {
+                    background: $green;
+                }
+            }
+        }
 	}
 }

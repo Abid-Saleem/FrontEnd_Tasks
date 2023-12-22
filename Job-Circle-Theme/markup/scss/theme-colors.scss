@@ -9,9 +9,9 @@
 // }
 
 :root {
-    --colorPrimary: #00b196;
-    --colorDarkPrimary: #015649;
-    --colorLightPrimary: #a9f7eb;
+    --colorPrimary: #c59c16;
+    --colorDarkPrimary: #7d6209;
+    --colorLightPrimary: #f0cd59;
 }
 
 /* Theme Base Color Styles */
@@ -128,7 +128,10 @@
 .section-theme-1 .filters-sidebar .filters-sidebar-Head .btn-clear:hover,
 .section-theme-1 .filter-box .buttonShowMore:hover,
 .featured-box h3 a:hover,
-.service-box h3 a:hover {
+.service-box h3 a:hover,
+.top-bar .hotline .icon-hotline,
+.top-bar .hotline a:hover,
+.top-bar .social-links-top a:hover {
     color: var(--colorPrimary) !important;
 }
 
