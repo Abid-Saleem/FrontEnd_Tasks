@@ -56,19 +56,24 @@
 .top-bar {
     transition: all 0.3s ease-in-out;
     margin-bottom: 20px;
-    background: rgba(255,255,255,0.85);
-    color: $black;
-    padding: 15px 0;
+    background: rgba(255,255,255,0.15) !important;
+    color: $white;
+    padding: 10px 0;
     margin-top: -20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
+
+    &.bg-light-sky {
+        padding: 10px 0 !important;
+        background: rgba(255,255,255,0.15) !important;
+    }
     
     .sticky-header & {
         opacity: 0;
-        margin-top: -58px;
+        margin-top: -48px;
         margin-bottom: 0;
     }
 
-    .subscribe{
+    .subscribe {
         display: flex;
         align-items: center;
 
@@ -103,7 +108,7 @@
     .hotline {
         display: flex;
         align-items: center;
-        margin-right: 0;
+        margin-right: 50px;
         font: 400 16px/1 $headings-font-family;
 
         .icon-hotline {
@@ -129,8 +134,8 @@
 
         .list-inline-item {
             position: relative; 
-            margin-left: 18px;
-            padding-left: 18px;
+            margin-left: 22px;
+            padding-left: 22px;
             margin-right: 0;
 
             &:after {
@@ -150,6 +155,70 @@
             &:hover {
                 color: $green;
             }
+        }
+    }
+
+    .contact-links {
+        display: flex;
+        color: $white;
+        margin-right: 70px;
+        align-items: center;
+        font: 400 15px/1 $font-family-DMSans;
+        li {
+            display: flex;
+            align-items: center;
+            &:not(:last-child) {
+                margin-right: 15px;
+                @include media-breakpoint-up(lg) {
+                    margin-right: 30px;
+                }
+                @include media-breakpoint-up(xl) {
+                    margin-right: 60px;
+                }
+            }
+        }
+        i {
+            color: $white;
+            line-height: 1;
+            font-size: 18px;
+            margin-right: 11px;
+        }
+        a {
+            color: $white;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+
+    .contact-options {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .hold {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .icon {
+            display: block;
+            margin-right: 10px;
+
+            img {
+                display: block;
+                height: auto;
+                max-width: 100%;
+            }
+        }
+
+        .text {
+            display: block;
+            font-size: 15px;
+            line-height: 18px;
+            font-weight: 400;
+            color: currentColor;
         }
     }
 }

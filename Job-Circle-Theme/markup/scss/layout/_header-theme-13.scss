@@ -5,14 +5,18 @@
 		background: $holy;
 	}
 
-	.btn {
-		color: $white;
-		background: $green;
-
-		&:hover:before {
-			opacity: 0.5;
-			background: darken($green, 10%);
+	.social-links-top {
+		li {
+			&:first-child {
+				&:after {
+					display: none;
+				}
+			}
 		}
+	}
+
+	.btn {
+		background: $rain-forst;
 	}
 
 	.nav-opener,
@@ -21,6 +25,7 @@
 		&:after,
 		span {
 			background: $white;
+
 			.nav-active & {
 				background: $white;
 			}
@@ -91,7 +96,7 @@
 
 				&.tabActive {
                     > a {
-                        background: $green;
+                        background: $rain-forst;
                         color: $white;
                     }
                 }
@@ -99,7 +104,7 @@
 
 			.dropdown-item {
 				&:hover {
-					background: $green;
+					background: $rain-forst;
 				}
 			}
 		}
