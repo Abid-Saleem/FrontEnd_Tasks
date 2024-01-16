@@ -55,23 +55,18 @@
 
 .top-bar {
     transition: all 0.3s ease-in-out;
-    margin-bottom: 20px;
-    background: rgba(255,255,255,0.15) !important;
-    color: $white;
-    padding: 10px 0;
-    margin-top: -20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-
-    &.bg-light-sky {
-        padding: 10px 0 !important;
-        background: rgba(255,255,255,0.15) !important;
-    }
+    // margin-bottom: 20px;
+    // background: rgba(255,255,255,0.15) !important;
+    // color: $white;
+    // padding: 10px 0;
+    // margin-top: -20px;
+    // box-shadow: 0 0 10px rgba(0,0,0,0.15);
     
-    .sticky-header & {
-        opacity: 0;
-        margin-top: -48px;
-        margin-bottom: 0;
-    }
+    // .sticky-header & {
+    //     opacity: 0;
+    //     margin-top: -48px;
+    //     margin-bottom: 0;
+    // }
 
     .subscribe {
         display: flex;
@@ -557,6 +552,7 @@
 
             .dropdown-item {
                 border-radius: 7px;
+                white-space: normal;
             }
 
             .tabsMainContent {
