@@ -1502,6 +1502,40 @@ function initSlickCarousel() {
 			},
 		],
 	});
+
+	jQuery('.services-slider').slick({
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		rows: 0,
+		arrows: false,
+		dots: true,
+		focusOnSelect: false,
+		infinite: true,
+		autoplay: false,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				},
+			},
+		],
+	});
 }
 
 $window = jQuery(window);
