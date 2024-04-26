@@ -938,16 +938,312 @@
 
             img {
                 transition: 0.3s;
+                opacity: 0.6;
             }
         }
 
         &:hover {
             color: #200df2;
+
+            .arrow {
+                background: #200df2;
+                border-color: #200df2;
+
+                img {
+                    opacity: 1;
+                    filter: invert(1);
+                }
+            }
         }
     }
 
     .image-holder {
         overflow: hidden;
         text-align: center;
+    }
+
+    &.faq {
+        .image-box {
+            margin-left: auto;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .image-holder {
+            position: relative;
+            border-radius: 20px;
+        }
+
+        .info-block {
+            position: absolute;
+            left: -20%;
+            top: 18%;
+            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 260px;
+        }
+
+        .info-box {
+            overflow: hidden;
+            color: $black;
+            background: $white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+
+            &.dark {
+                background: #252525;
+                color: $white;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+
+            .subtitle {
+                display: block;
+                font-size: 18px;
+            }
+
+            .numbers {
+                display: block;
+                font-size: 50px;
+                line-height: 1;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+/* Work Block Styles */
+.work-block {
+    overflow: hidden;
+    background: #fbf2ef;
+    position: relative;
+
+    .img-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 22.5%;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .button-holder {
+        overflow: hidden;
+        padding: 40px 0 0;
+
+        .btn {
+            min-width: 200px;
+        }
+    }
+}
+
+/* Work Box Styles */
+.work-box {
+    overflow: hidden;
+    background: $white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    padding: 0 50px 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 25px;
+    height: calc(100% - 25px);
+
+    .textbox {
+        overflow: hidden;
+        color: #444;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .icon {
+        width: 104px;
+        height: 138px;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: #ffd6d6;
+        margin: 0 0 30px;
+        padding: 15px 15px 28px;
+
+        &.bg-green {
+            background: #cbffc2 !important;
+        }
+
+        &.bg-blue {
+            background: #cfe8ff !important;
+        }
+    }
+
+    h4 {
+        font-size: 26px;
+        color: $black;
+        margin: 0 0 18px;
+    }
+
+    p {
+        line-height: 1.45;
+        margin: 0 0 30px;
+    }
+
+    .link-discover {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #979797;
+        border-radius: 100%;
+        transition: 0.3s;
+
+        img {
+            transition: 0.3s;
+            opacity: 0.6;
+        }
+
+        &:hover {
+            background: #200df2;
+            border-color: #200df2;
+
+            img {
+                opacity: 1;
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+/* Faq Accordion Styles */
+.faq-accordion {
+    .accordion-item {
+        border-bottom: 1px solid #bdbdbd;
+    }
+
+    .accordion-header {
+        margin: 0;
+    }
+
+    .accordion-button {
+        font-size: 22px;
+        line-height: 1.3;
+        color: #200df2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: $white;
+        border: 0;
+        font-weight: 700;
+        padding: 25px 0 22px;
+        position: relative;
+        transition: 0.3s;
+
+        .icon-plus {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            position: relative;
+
+            &:before,
+            &:after {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                content: '';
+                background: #200df2;
+                width: 20px;
+                height: 2px;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+
+            &:after {
+                width: 2px;
+                height: 20px;
+            }
+        }
+
+        &.collapsed {
+            color: $black;
+
+            .icon-plus {
+                &:before,
+                &:after {
+                    background: $black;
+                }
+            }
+
+            &:hover {
+                color: #200df2;
+                
+                .icon-plus {
+                    &:before,
+                    &:after {
+                        background: #200df2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inflencers-block {
+    overflow: hidden;
+
+    .inflencers-holder {
+        background: #200df2;
+        border-radius: 20px;
+    }
+
+    .section-header {
+        color: $white;
+        padding: 0 5% 0 10%;
+
+        @include media-breakpoint-up(xl) {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            font-size: 20px;
+        }
+
+        h2 {
+            color: $white;
+
+            @include media-breakpoint-up(xxl) {
+                font-size: 55px;
+            }
+        }
+
+        p {
+            margin: 0 0 40px;
+        }
+    }
+
+    .image-holder {
+        width: 100%;
+        max-width: 646px;
+        margin-left: auto;
+        margin-right: 25px;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 }

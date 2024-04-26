@@ -1,0 +1,140 @@
+.footer-theme-20 {
+    overflow: hidden;
+    background: url('../images/background-footer.jpg') no-repeat;
+    background-size: 100% 100%;
+
+    .btn {
+        border-radius: 5px;
+        line-height: 24px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 16px;
+            padding: 13px 30px;
+        }
+
+        &:before {
+            display: none;
+        }
+
+        &.btn-primary {
+            color: $white;
+            background: #200df2;
+
+            &:hover {
+                color: #200df2;
+                background: #d2cffc;
+            }
+        }
+
+        &.btn-white {
+            &:hover {
+                color: #200df2;
+                background: #d2cffc;
+            }
+        }
+    }
+
+    .pri-footer {
+        border-bottom: 1px solid #2b2b2b;
+
+        .logo {
+            width: 181px;
+            margin: 0 30px 0 0;
+        }
+    }
+
+    .footer-copyrights {
+        border-top: 1px solid #2b2b2b;
+        color: $white;
+        text-align: center;
+        font-weight: 300;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .social-networks {
+        font-size: 16px;
+
+        li {
+            a {
+                border: 1px solid $white;
+                background: transparent;
+
+                &:hover {
+                    background: #200df2;
+                    border-color: #200df2;
+                }
+            }
+        }
+    }
+
+    .form-newsletter {
+        max-width: 485px;
+        margin-left: auto;
+
+        .form-control {
+            background: transparent;
+            border-radius: 5px;
+            border: 1px solid $white;
+        }
+    }
+}
+
+.footer-nav {
+    overflow: hidden;
+
+    .h5 {
+        color: $white;
+        display: block;
+        font-size: 26px;
+        line-height: 1.25;
+        position: relative;
+        padding: 0 0 10px;
+        margin: 0 0 30px;
+
+        &:before {
+            width: 42px;
+            height: 3px;
+            background: #200df2;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '',
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 2;
+
+        li {
+            padding: 5px 0 5px 20px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                width: 10px;
+                height: 10px;
+                content: '';
+                transform: translateY(-50%);
+                background: url('../images/forward-icon.svg') no-repeat;
+                background-size: 100% 100%;
+            }
+
+            a {
+                color: #bcbcbc;
+                display: inline-block;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
