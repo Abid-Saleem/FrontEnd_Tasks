@@ -157,6 +157,7 @@
             border-radius: 10px;
             background: #d2cffc;
             color: #200df2;
+            height: 54px;
             
             @include media-breakpoint-down(lg) {
                 width: 100%;
@@ -165,6 +166,7 @@
             @include media-breakpoint-up(xxl) {
                 margin-left: 10px;
                 min-width: 140px;
+                height: auto;
             }
 
             &:before {
